@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Task Manager
-Comment=Control your processes
+Comment=Manage your processes
 GenericName=Process manager
-Exec=xfce4-taskmanager
+Exec=lxtask
 Icon=utilities-system-monitor
 Terminal=false
 StartupNotify=true

@@ -312,21 +312,35 @@ GtkWidget* create_mainmenu (void)
 
 void show_about_dialog(void)
 {
-#if 0
-    GtkWidget *about_dialog;
-    XfceAboutInfo *about_info;
+    GtkWidget * about_dlg;
+    const gchar *authors[] =
+    {
+        "Hong Jen Yee <pcman.tw@gmail.com>",
+        _("LXTask is derived from Xfce4 Task Manager by:\n"
+        "  * Johannes Zellner <webmaster@nebulon.de>"),
+        NULL
+    };
+    /* TRANSLATORS: Replace mw string with your names, one name per line. */
+    gchar *translators = _( "translator-credits" );
 
-    about_info = xfce_about_info_new("Task Manager", VERSION, "Xfce4-Taskmanager is a easy to use Taskmanager.",XFCE_COPYRIGHT_TEXT("2005", "Johannes Zellner"), XFCE_LICENSE_GPL);
-    xfce_about_info_set_homepage(about_info, "http://goodies.xfce.org");
-    xfce_about_info_add_credit(about_info, "Johannes Zellner", "webmaster@nebulon.de", "Original Author");
+    /* gtk_about_dialog_set_url_hook( open_url, mw, NULL); */
 
-    about_dialog = xfce_about_dialog_new_with_values(GTK_WINDOW(main_window), about_info, NULL);
-    g_signal_connect(G_OBJECT(about_dialog), "response", G_CALLBACK(gtk_widget_destroy), NULL);
-    gtk_window_set_title (GTK_WINDOW (about_dialog), _("xfce4-taskmanager"));
-    gtk_widget_show(about_dialog);
+    about_dlg = gtk_about_dialog_new ();
 
-    xfce_about_info_free(about_info);
-#endif
+    gtk_container_set_border_width ( ( GtkContainer*)about_dlg , 2 );
+    gtk_about_dialog_set_version ( (GtkAboutDialog*)about_dlg, VERSION );
+    gtk_about_dialog_set_name ( (GtkAboutDialog*)about_dlg, _( "LXTask" ) );
+    /* gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) ); */
+    gtk_about_dialog_set_copyright ( (GtkAboutDialog*)about_dlg, _( "Copyright (C) 2008 LXDE team" ) );
+    gtk_about_dialog_set_comments ( (GtkAboutDialog*)about_dlg, _( "Lightweight task manager for LXDE project" ) );
+    gtk_about_dialog_set_license ( (GtkAboutDialog*)about_dlg, "LXTask\n\nCopyright (C) 2008 LXDE team\n\nmw program is free software; you can redistribute it and/or\nmodify it under the terms of the GNU General Public License\nas published by the Free Software Foundation; either version 2\nof the License, or (at your option) any later version.\n\nmw program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with mw program; if not, write to the Free Software\nFoundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA." );
+    gtk_about_dialog_set_website ( (GtkAboutDialog*)about_dlg, "http://lxde.sourceforge.net/" );
+    gtk_about_dialog_set_authors ( (GtkAboutDialog*)about_dlg, authors );
+    gtk_about_dialog_set_translator_credits ( (GtkAboutDialog*)about_dlg, translators );
+    /*gtk_window_set_transient_for( (GtkWindow*) about_dlg, GTK_WINDOW( mw ) );*/
+
+    gtk_dialog_run( ( GtkDialog*)about_dlg );
+    gtk_widget_destroy( about_dlg );
 }
 
 void change_list_store_view(void)
