@@ -1,0 +1,6 @@
++ *BSD support with the 'kvm' files
++ ability to switch to a tree-store
++ sending custom signals
++ overall-cpu-usage and mem-usage display
++ more languages
++ tray-icon

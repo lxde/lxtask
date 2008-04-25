@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Task Manager
+Comment=Control your processes
+GenericName=Process manager
+Exec=xfce4-taskmanager
+Icon=utilities-system-monitor
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Application;System;Utility;

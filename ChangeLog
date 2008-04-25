@@ -1,0 +1,37 @@
+2007-01-12	Nick Schermer <nick@xfce.org>
+
+	* Change version number and svn revision support in configure.in.in
+
+2007-01-12	Nick Schermer <nick@xfce.org>
+
+	* Apply patch from Álvaro Lopes to fix CPU usage per task, with
+	  more then 1 CPU.
+	* Added a THANKS file.
+	* Remove some svn executable properties and add svn keywords.
+	* Added LINGUAS support and removed the configure.ac > configure.in.in file.
+	* Improved the configure.in.in and Makefiles.
+
+2007-01-12	Nick Schermer <nick@xfce.org>
+
+	* Apply patch from bug 2714.
+	* Fix all typo and compiler warnings.
+
+2006-06-26	Johannes Zellner <webmaster@nebulon.de>
+
+	* rewrite of the taskmanager ;)
+	* now using seperate files for each os to get the processinfos
+	
+2005-07-05	Johannes Zellner <webmaster@nebulon.de>
+
+	* added finnish translation
+	* fixed a memory leak in functions.c
+	
+2005-06-30	Johannes Zellner <webmaster@nebulon.de>
+
+	* bugfix in the sorting function
+	* name of about-dialog changed
+	* scrollbars only showed when needed
+	
+2005-06-30 	Johannes Zellner <webmaster@nebulon.de>
+
+	* started completly new ;)

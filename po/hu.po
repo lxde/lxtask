@@ -1,0 +1,119 @@
+# Hungarian translation for xfce4-taskmanager
+# Copyright (c) Johannes Zellner <webmaster@nebulon.de>
+# This file is distributed under the same license as the xfce4-taskmanager package.
+# SZERVÁC Attila <sas@321>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-taskmanager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-13 11:01+0100\n"
+"PO-Revision-Date: 2007-01-19 20:09+0100\n"
+"Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+
+#: ../src/callbacks.c:60
+msgid "Really kill the task?"
+msgstr "Tényleg megölöd a feladatot?"
+
+#: ../src/callbacks.c:61
+msgid "Really terminate the task?"
+msgstr "Tényleg lezárod a feladatot?"
+
+#: ../src/functions.c:124
+#, c-format
+msgid "%d kB of %d kB used"
+msgstr "%d kB/%d kB használt"
+
+#: ../src/functions.c:129
+#, c-format
+msgid "%0.0f %%"
+msgstr "%0.0f %%"
+
+#: ../src/interface.c:45
+#: ../src/interface.c:272
+msgid "xfce4-taskmanager"
+msgstr "xfce4-folyamatkezelő"
+
+#: ../src/interface.c:59
+msgid "cpu usage"
+msgstr "cpu használat"
+
+#: ../src/interface.c:67
+msgid "memory usage"
+msgstr "memória használat"
+
+#: ../src/interface.c:99
+msgid "more details"
+msgstr "részletek"
+
+#: ../src/interface.c:125
+msgid "Command"
+msgstr "Parancs"
+
+#: ../src/interface.c:131
+msgid "PID"
+msgstr "PID"
+
+#: ../src/interface.c:137
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/interface.c:143
+msgid "State"
+msgstr "Állapot"
+
+#: ../src/interface.c:149
+msgid "VM-Size"
+msgstr "VM-méret"
+
+#: ../src/interface.c:155
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/interface.c:161
+msgid "User"
+msgstr "Felhasználó"
+
+#: ../src/interface.c:167
+msgid "CPU%"
+msgstr "CPU%"
+
+#: ../src/interface.c:183
+msgid "Stop"
+msgstr "Megállítás"
+
+#: ../src/interface.c:188
+msgid "Continue"
+msgstr "Folytatás"
+
+#: ../src/interface.c:193
+msgid "Term"
+msgstr "Leállítás"
+
+#: ../src/interface.c:198
+msgid "Kill"
+msgstr "Kilövés"
+
+#: ../src/interface.c:230
+msgid "Show user tasks"
+msgstr "Felhasználói folyamatok megjelenítése"
+
+#: ../src/interface.c:235
+msgid "Show root tasks"
+msgstr "Root folyamatok megjelenítése"
+
+#: ../src/interface.c:240
+msgid "Show other tasks"
+msgstr "Más folyamatok megjelenítése"
+
+#: ../src/interface.c:245
+msgid "Show memory used by cache as free"
+msgstr "A gyorstár által használt memória mutatása szabadként"
+

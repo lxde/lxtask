@@ -1,0 +1,115 @@
+# Polish translations for xfce4-taskmanager package.
+# Copyright (C) 2005-2006 Johannes Zellner.
+# This file is distributed under the same license as
+#   the xfce4-taskmanager package.
+# Piotr Maliński <admin@rk.edu.pl>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-13 11:01+0100\n"
+"PO-Revision-Date: 2006-04-08 13:19+0900\n"
+"Last-Translator: Piotr Maliński <admin@rk.edu.pl>\n"
+"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/callbacks.c:60
+msgid "Really kill the task?"
+msgstr "Na pewno zabić zadanie (przez SIGKILL)?"
+
+#: ../src/callbacks.c:61
+msgid "Really terminate the task?"
+msgstr "Na pewno zakończyć zadanie (przez SIGTERM)?"
+
+#: ../src/functions.c:124
+#, c-format
+msgid "%d kB of %d kB used"
+msgstr "używane %d kB z %d kB"
+
+#: ../src/functions.c:129
+#, c-format
+msgid "%0.0f %%"
+msgstr "%0.0f %%"
+
+#: ../src/interface.c:45 ../src/interface.c:272
+msgid "xfce4-taskmanager"
+msgstr "xfce4-taskmanager"
+
+#: ../src/interface.c:59
+msgid "cpu usage"
+msgstr "wykorzystanie procesora"
+
+#: ../src/interface.c:67
+msgid "memory usage"
+msgstr "wykorzystanie pamięci"
+
+#: ../src/interface.c:99
+msgid "more details"
+msgstr "więcej szczegółów"
+
+#: ../src/interface.c:125
+msgid "Command"
+msgstr "Polecenie"
+
+#: ../src/interface.c:131
+msgid "PID"
+msgstr "PID"
+
+#: ../src/interface.c:137
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/interface.c:143
+msgid "State"
+msgstr "Stan"
+
+#: ../src/interface.c:149
+msgid "VM-Size"
+msgstr "VM-Rozmiar"
+
+#: ../src/interface.c:155
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/interface.c:161
+msgid "User"
+msgstr "Użytkownik"
+
+#: ../src/interface.c:167
+msgid "CPU%"
+msgstr "CPU%"
+
+#: ../src/interface.c:183
+msgid "Stop"
+msgstr "Zatrzymaj"
+
+#: ../src/interface.c:188
+msgid "Continue"
+msgstr "Kontynuuj"
+
+#: ../src/interface.c:193
+msgid "Term"
+msgstr "Zakończ"
+
+#: ../src/interface.c:198
+msgid "Kill"
+msgstr "Zabij"
+
+#: ../src/interface.c:230
+msgid "Show user tasks"
+msgstr "Pokaż procesy użytkownika"
+
+#: ../src/interface.c:235
+msgid "Show root tasks"
+msgstr "Pokaż procesy roota"
+
+#: ../src/interface.c:240
+msgid "Show other tasks"
+msgstr "Pokaż inne procesy"
+
+#: ../src/interface.c:245
+msgid "Show memory used by cache as free"
+msgstr "Pokaż pamięć użytą przez cache jako wolną"
