@@ -29,6 +29,26 @@
 #include "interface.h"
 #include "functions.h"
 
+GtkWidget *main_window;
+
+GArray *task_array;
+gint tasks;
+gint own_uid;
+
+gchar *config_file;
+
+gboolean show_user_tasks;
+gboolean show_root_tasks;
+gboolean show_other_tasks;
+
+gboolean show_cached_as_free; /* Show memory used Cache as free memory */
+
+gboolean full_view;
+
+guint win_width;
+guint win_height;
+
+
 int main (int argc, char *argv[])
 {
 

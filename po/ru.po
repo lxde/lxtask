@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-13 11:01+0100\n"
+"POT-Creation-Date: 2008-04-26 04:13+0800\n"
 "PO-Revision-Date: 2006-03-24 21:52+0500\n"
 "Last-Translator: Andrey Fedoseev <andrey.fedoseev@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -16,100 +16,161 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:60
+#: ../src/callbacks.c:70
 msgid "Really kill the task?"
 msgstr ""
 
-#: ../src/callbacks.c:61
+#: ../src/callbacks.c:74
 msgid "Really terminate the task?"
 msgstr ""
 
-#: ../src/functions.c:124
+#: ../src/functions.c:143
 #, c-format
-msgid "%d kB of %d kB used"
+msgid "Memory: %d MB of %d MB used"
 msgstr ""
 
-#: ../src/functions.c:129
+#: ../src/functions.c:149
 #, c-format
-msgid "%0.0f %%"
+msgid "CPU usage: %0.0f %%"
 msgstr ""
 
-#: ../src/interface.c:45 ../src/interface.c:272
-msgid "xfce4-taskmanager"
+#: ../src/interface.c:50
+#, fuzzy
+msgid "Task Manager"
 msgstr "Диспетчер задач Xfce 4"
 
-#: ../src/interface.c:59
+#: ../src/interface.c:64
 msgid "cpu usage"
 msgstr ""
 
-#: ../src/interface.c:67
+#: ../src/interface.c:72
 msgid "memory usage"
 msgstr ""
 
-#: ../src/interface.c:99
+#: ../src/interface.c:104
 msgid "more details"
 msgstr "подробнее"
 
-#: ../src/interface.c:125
+#: ../src/interface.c:131
 msgid "Command"
 msgstr "Команда"
 
-#: ../src/interface.c:131
-msgid "PID"
-msgstr "PID"
-
 #: ../src/interface.c:137
-msgid "PPID"
-msgstr "PPID"
-
-#: ../src/interface.c:143
-msgid "State"
-msgstr "Состояние"
-
-#: ../src/interface.c:149
-msgid "VM-Size"
-msgstr "Память"
-
-#: ../src/interface.c:155
-msgid "RSS"
-msgstr "RSS"
-
-#: ../src/interface.c:161
 msgid "User"
 msgstr "Пользователь"
 
-#: ../src/interface.c:167
+#: ../src/interface.c:143
 msgid "CPU%"
 msgstr ""
 
-#: ../src/interface.c:183
+#: ../src/interface.c:149
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/interface.c:155
+msgid "VM-Size"
+msgstr "Память"
+
+#: ../src/interface.c:161
+msgid "PID"
+msgstr "PID"
+
+#: ../src/interface.c:167
+msgid "State"
+msgstr "Состояние"
+
+#: ../src/interface.c:173
+msgid "Prio"
+msgstr ""
+
+#: ../src/interface.c:179
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/interface.c:195
 msgid "Stop"
 msgstr "Остановить"
 
-#: ../src/interface.c:188
+#: ../src/interface.c:200
 msgid "Continue"
 msgstr "Продолжить"
 
-#: ../src/interface.c:193
+#: ../src/interface.c:205
 msgid "Term"
 msgstr "Завершить"
 
-#: ../src/interface.c:198
+#: ../src/interface.c:210
 msgid "Kill"
 msgstr "Убить"
 
-#: ../src/interface.c:230
+#: ../src/interface.c:215
+msgid "Priority"
+msgstr ""
+
+#: ../src/interface.c:228
+msgid "  -10"
+msgstr ""
+
+#: ../src/interface.c:233
+msgid "  -5"
+msgstr ""
+
+#: ../src/interface.c:238
+msgid "    0"
+msgstr ""
+
+#: ../src/interface.c:243
+msgid "   5"
+msgstr ""
+
+#: ../src/interface.c:248
+msgid "   10"
+msgstr ""
+
+#: ../src/interface.c:280
 msgid "Show user tasks"
 msgstr "Показать задачи пользователя"
 
-#: ../src/interface.c:235
+#: ../src/interface.c:285
 msgid "Show root tasks"
 msgstr "Показать задачи суперпользователя"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:290
 msgid "Show other tasks"
 msgstr "Показать другие задачи"
 
-#: ../src/interface.c:245
+#: ../src/interface.c:295
 msgid "Show memory used by cache as free"
+msgstr ""
+
+#: ../src/interface.c:317
+msgid ""
+"LXTask is derived from Xfce4 Task Manager by:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+msgstr ""
+
+#. TRANSLATORS: Replace mw string with your names, one name per line.
+#: ../src/interface.c:322
+msgid "translator-credits"
+msgstr ""
+
+#: ../src/interface.c:330
+msgid "LXTask"
+msgstr ""
+
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:332
+msgid "Copyright (C) 2008 LXDE team"
+msgstr ""
+
+#: ../src/interface.c:333
+msgid "Lightweight task manager for LXDE project"
+msgstr ""
+
+#: ../src/utils.c:43
+msgid "Error"
+msgstr ""
+
+#: ../src/utils.c:56
+msgid "Confirm"
 msgstr ""

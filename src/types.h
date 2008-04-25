@@ -26,54 +26,54 @@
 
 struct task
 {
-	gint pid;
-	gint ppid;
-	gint uid;
-	gchar uname[64];
-	gchar name[64];
-	gchar state[16];
-	gint size;
-	gint rss;
-	gboolean checked;
-	gint time;
-	gint old_time;
-	gdouble time_percentage;
-	gint prio;	/* my change */
+    gint pid;
+    gint ppid;
+    gint uid;
+    gchar uname[64];
+    gchar name[64];
+    gchar state[16];
+    gint size;
+    gint rss;
+    gboolean checked;
+    gint time;
+    gint old_time;
+    gdouble time_percentage;
+    gint prio;  /* my change */
 };
 
 typedef struct
 {
-	guint mem_total;
-	guint mem_free;
-	guint mem_cached;
-	guint cpu_count;
-	guint cpu_idle;
-	guint cpu_user;
-	guint cpu_nice;
-	guint cpu_system;
-	guint cpu_old_jiffies;
-	guint cpu_old_used;
-	gboolean valid_proc_reading;
+    guint mem_total;
+    guint mem_free;
+    guint mem_cached;
+    guint cpu_count;
+    guint cpu_idle;
+    guint cpu_user;
+    guint cpu_nice;
+    guint cpu_system;
+    guint cpu_old_jiffies;
+    guint cpu_old_used;
+    gboolean valid_proc_reading;
 } system_status;
 
-GtkWidget *main_window;
+extern GtkWidget *main_window;
 
-GArray *task_array;
-gint tasks;
-gint own_uid;
+extern GArray *task_array;
+extern gint tasks;
+extern gint own_uid;
 
-gchar *config_file;
+extern gchar *config_file;
 
-gboolean show_user_tasks;
-gboolean show_root_tasks;
-gboolean show_other_tasks;
+extern gboolean show_user_tasks;
+extern gboolean show_root_tasks;
+extern gboolean show_other_tasks;
 
-gboolean show_cached_as_free; /* Show memory used Cache as free memory */
+extern gboolean show_cached_as_free; /* Show memory used Cache as free memory */
 
-gboolean full_view;
+extern gboolean full_view;
 
-guint win_width;
-guint win_height;
+extern guint win_width;
+extern guint win_height;
 
 const gchar *custom_signal_0;
 const gchar *custom_signal_1;

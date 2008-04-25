@@ -1,8 +1,11 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Task Manager
-Comment=Manage your processes
+Name[zh_TW]=工作管理員
+Comment=Manage running processes
+Comment[zh_TW]=管理執行中的程式
 GenericName=Process manager
+GenericName=工作管理員
 Exec=lxtask
 Icon=utilities-system-monitor
 Terminal=false

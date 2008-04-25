@@ -50,15 +50,17 @@ GtkWidget *mem_usage_progress_bar;
 GtkWidget *cpu_usage_progress_bar_box;
 GtkWidget *mem_usage_progress_bar_box;
 
-#define COLUMN_NAME 0
-#define COLUMN_PID  1
-#define COLUMN_PPID 2
-#define COLUMN_STATE    3
-#define COLUMN_MEM  4
-#define COLUMN_RSS  5
-#define COLUMN_UNAME    6
-#define COLUMN_TIME 7
-#define COLUMN_PRIO     8
+enum {
+    COLUMN_NAME = 0,
+    COLUMN_UNAME,
+    COLUMN_TIME,
+    COLUMN_RSS,
+    COLUMN_MEM,
+    COLUMN_PID,
+    COLUMN_STATE,
+    COLUMN_PRIO,
+    COLUMN_PPID
+};
 
 GtkTreeViewColumn *column;
 

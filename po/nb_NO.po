@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.3.2svn-r02842\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-13 11:01+0100\n"
+"POT-Creation-Date: 2008-04-26 04:13+0800\n"
 "PO-Revision-Date: 2007-07-02 00:37+0200\n"
 "Last-Translator: Terje Uriansrud <ter@operamail.com>\n"
 "Language-Team: Norwegian Bokmal\n"
@@ -16,100 +16,164 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/callbacks.c:60
+#: ../src/callbacks.c:70
 msgid "Really kill the task?"
 msgstr "Virkelig avslutte oppgaven?"
 
-#: ../src/callbacks.c:61
+#: ../src/callbacks.c:74
 msgid "Really terminate the task?"
 msgstr "Virkelig terminere oppgaven?"
 
-#: ../src/functions.c:124
-#, c-format
-msgid "%d kB of %d kB used"
+#: ../src/functions.c:143
+#, fuzzy, c-format
+msgid "Memory: %d MB of %d MB used"
 msgstr "%d kB av %d kB brukt"
 
-#: ../src/functions.c:129
+#: ../src/functions.c:149
 #, c-format
-msgid "%0.0f %%"
-msgstr "%0.0f %%"
+msgid "CPU usage: %0.0f %%"
+msgstr ""
 
-#: ../src/interface.c:45 ../src/interface.c:272
-msgid "xfce4-taskmanager"
+#: ../src/interface.c:50
+#, fuzzy
+msgid "Task Manager"
 msgstr "xfce4-oppgavebehandler"
 
-#: ../src/interface.c:59
+#: ../src/interface.c:64
 msgid "cpu usage"
 msgstr "Prosessorbruk"
 
-#: ../src/interface.c:67
+#: ../src/interface.c:72
 msgid "memory usage"
 msgstr "Minnebruk"
 
-#: ../src/interface.c:99
+#: ../src/interface.c:104
 msgid "more details"
 msgstr "flere detaljer"
 
-#: ../src/interface.c:125
+#: ../src/interface.c:131
 msgid "Command"
 msgstr "Kommando"
 
-#: ../src/interface.c:131
-msgid "PID"
-msgstr "PID"
-
 #: ../src/interface.c:137
-msgid "PPID"
-msgstr "PPID"
-
-#: ../src/interface.c:143
-msgid "State"
-msgstr "Status"
-
-#: ../src/interface.c:149
-msgid "VM-Size"
-msgstr "VM-størrelse"
-
-#: ../src/interface.c:155
-msgid "RSS"
-msgstr "RSS"
-
-#: ../src/interface.c:161
 msgid "User"
 msgstr "Bruker"
 
-#: ../src/interface.c:167
+#: ../src/interface.c:143
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:183
+#: ../src/interface.c:149
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/interface.c:155
+msgid "VM-Size"
+msgstr "VM-størrelse"
+
+#: ../src/interface.c:161
+msgid "PID"
+msgstr "PID"
+
+#: ../src/interface.c:167
+msgid "State"
+msgstr "Status"
+
+#: ../src/interface.c:173
+msgid "Prio"
+msgstr ""
+
+#: ../src/interface.c:179
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/interface.c:195
 msgid "Stop"
 msgstr "Stopp"
 
-#: ../src/interface.c:188
+#: ../src/interface.c:200
 msgid "Continue"
 msgstr "Fortsett"
 
-#: ../src/interface.c:193
+#: ../src/interface.c:205
 msgid "Term"
 msgstr "Term"
 
-#: ../src/interface.c:198
+#: ../src/interface.c:210
 msgid "Kill"
 msgstr "Avsl"
 
-#: ../src/interface.c:230
+#: ../src/interface.c:215
+msgid "Priority"
+msgstr ""
+
+#: ../src/interface.c:228
+msgid "  -10"
+msgstr ""
+
+#: ../src/interface.c:233
+msgid "  -5"
+msgstr ""
+
+#: ../src/interface.c:238
+msgid "    0"
+msgstr ""
+
+#: ../src/interface.c:243
+msgid "   5"
+msgstr ""
+
+#: ../src/interface.c:248
+msgid "   10"
+msgstr ""
+
+#: ../src/interface.c:280
 msgid "Show user tasks"
 msgstr "Vis brukeroppgaver"
 
-#: ../src/interface.c:235
+#: ../src/interface.c:285
 msgid "Show root tasks"
 msgstr "Vis superbrukeroppgaver"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:290
 msgid "Show other tasks"
 msgstr "Vis andre oppgaver"
 
-#: ../src/interface.c:245
+#: ../src/interface.c:295
 msgid "Show memory used by cache as free"
 msgstr "Vis minne benyttet av hurtiglager som ledig"
+
+#: ../src/interface.c:317
+msgid ""
+"LXTask is derived from Xfce4 Task Manager by:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+msgstr ""
+
+#. TRANSLATORS: Replace mw string with your names, one name per line.
+#: ../src/interface.c:322
+msgid "translator-credits"
+msgstr ""
+
+#: ../src/interface.c:330
+msgid "LXTask"
+msgstr ""
+
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:332
+msgid "Copyright (C) 2008 LXDE team"
+msgstr ""
+
+#: ../src/interface.c:333
+msgid "Lightweight task manager for LXDE project"
+msgstr ""
+
+#: ../src/utils.c:43
+msgid "Error"
+msgstr ""
+
+#: ../src/utils.c:56
+msgid "Confirm"
+msgstr ""
+
+#~ msgid "%0.0f %%"
+#~ msgstr "%0.0f %%"
