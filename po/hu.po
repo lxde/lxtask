@@ -1,14 +1,14 @@
-# Hungarian translation for xfce4-taskmanager
+# Hungarian translation for LXTask
 # Copyright (c) Johannes Zellner <webmaster@nebulon.de>
-# This file is distributed under the same license as the xfce4-taskmanager package.
-# SZERVÁC Attila <sas@321>, 2006.
+# This file is distributed under the same license as the LXTask package.
+# SZERVÁC Attila <sas@321>, 2006-2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-taskmanager\n"
+"Project-Id-Version: LXTask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-26 04:13+0800\n"
-"PO-Revision-Date: 2007-01-19 20:09+0100\n"
+"PO-Revision-Date: 2008-04-26 06:58+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -27,19 +27,18 @@ msgid "Really terminate the task?"
 msgstr "Tényleg lezárod a feladatot?"
 
 #: ../src/functions.c:143
-#, fuzzy, c-format
+#, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "%d kB/%d kB használt"
+msgstr "Memória: %d MB/%d MB használt"
 
 #: ../src/functions.c:149
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "CPU használat: %0.0f %%"
 
 #: ../src/interface.c:50
-#, fuzzy
 msgid "Task Manager"
-msgstr "xfce4-folyamatkezelő"
+msgstr "Feladatkezelő"
 
 #: ../src/interface.c:64
 msgid "cpu usage"
@@ -83,7 +82,7 @@ msgstr "Állapot"
 
 #: ../src/interface.c:173
 msgid "Prio"
-msgstr ""
+msgstr "Prio"
 
 #: ../src/interface.c:179
 msgid "PPID"
@@ -107,27 +106,27 @@ msgstr "Kilövés"
 
 #: ../src/interface.c:215
 msgid "Priority"
-msgstr ""
+msgstr "Prioritás"
 
 #: ../src/interface.c:228
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:233
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:238
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:243
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:248
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:280
 msgid "Show user tasks"
@@ -150,32 +149,35 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"Az LXTask az Xfce4 feladat-kezelőből származik, amit:\n"
+"  * Johannes Zellner <webmaster@nebulon.de> írt"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:322
 msgid "translator-credits"
-msgstr ""
+msgstr "SZERVÁC Attila"
 
 #: ../src/interface.c:330
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:332
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Copyright (C) 2008 LXDE csapat"
 
 #: ../src/interface.c:333
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Pehelysúlyú feladat-kezelő az LXDE projekthez"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Hiba"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Megerősít"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
+
