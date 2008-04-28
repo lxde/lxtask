@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: LXTask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-29 02:35+0800\n"
-"PO-Revision-Date: 2008-04-26 06:58+0100\n"
+"PO-Revision-Date: 2008-04-28 21:43+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -42,15 +42,15 @@ msgstr "Feladatkezelő"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "_Fájl"
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "_Nézet"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "_Súgó"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
@@ -192,3 +192,4 @@ msgstr "Megerősít"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
+
