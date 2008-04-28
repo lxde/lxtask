@@ -111,7 +111,6 @@ gboolean refresh_task_list(void)
 
     }
 
-
     /* check for unchecked new tasks for inserting */
     for(i = 0; i < new_task_list->len; i++)
     {

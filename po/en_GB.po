@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the xfce4-taskmanager package.
 # Jeff Bailes <thepizzaking@gmail.com>, 2007.
 # , fuzzy
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-26 04:13+0800\n"
+"POT-Creation-Date: 2008-04-28 23:54+0800\n"
 "PO-Revision-Date: 2007-03-31 10:28+1000\n"
 "Last-Translator: Jeff Bailes <thepizzaking@gmail.com>\n"
 "Language-Team: English/GB\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:70
+#: ../src/callbacks.c:62
 msgid "Really kill the task?"
 msgstr "Really kill the task?"
 
-#: ../src/callbacks.c:74
+#: ../src/callbacks.c:66
 msgid "Really terminate the task?"
 msgstr "Really terminate the task?"
 
@@ -35,136 +35,148 @@ msgstr "%d kB of %d kB used"
 msgid "CPU usage: %0.0f %%"
 msgstr ""
 
-#: ../src/interface.c:50
+#: ../src/interface.c:53
 #, fuzzy
 msgid "Task Manager"
 msgstr "xfce4-taskmanager"
 
-#: ../src/interface.c:64
+#: ../src/interface.c:66
+msgid "_File"
+msgstr ""
+
+#: ../src/interface.c:74
+msgid "_View"
+msgstr ""
+
+#: ../src/interface.c:80
+msgid "_Help"
+msgstr ""
+
+#: ../src/interface.c:104
 msgid "cpu usage"
 msgstr "cpu usage"
 
-#: ../src/interface.c:72
+#: ../src/interface.c:112
 msgid "memory usage"
 msgstr "memory usage"
 
-#: ../src/interface.c:104
+#: ../src/interface.c:140
 msgid "more details"
 msgstr "more details"
 
-#: ../src/interface.c:131
+#: ../src/interface.c:166
 msgid "Command"
 msgstr "Command"
 
-#: ../src/interface.c:137
+#: ../src/interface.c:172
 msgid "User"
 msgstr "User"
 
-#: ../src/interface.c:143
+#: ../src/interface.c:178
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:149
+#: ../src/interface.c:184
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:155
+#: ../src/interface.c:190
 msgid "VM-Size"
 msgstr "VM-Size"
 
-#: ../src/interface.c:161
+#: ../src/interface.c:196
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:167
+#: ../src/interface.c:202
 msgid "State"
 msgstr "State"
 
-#: ../src/interface.c:173
+#: ../src/interface.c:208
 msgid "Prio"
 msgstr ""
 
-#: ../src/interface.c:179
+#: ../src/interface.c:214
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:195
+#: ../src/interface.c:230
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/interface.c:200
+#: ../src/interface.c:235
 msgid "Continue"
 msgstr "Continue"
 
-#: ../src/interface.c:205
+#: ../src/interface.c:240
 msgid "Term"
 msgstr "Term"
 
-#: ../src/interface.c:210
+#: ../src/interface.c:245
 msgid "Kill"
 msgstr "Kill"
 
-#: ../src/interface.c:215
+#: ../src/interface.c:250
 msgid "Priority"
 msgstr ""
 
-#: ../src/interface.c:228
+#: ../src/interface.c:263
 msgid "  -10"
 msgstr ""
 
-#: ../src/interface.c:233
+#: ../src/interface.c:268
 msgid "  -5"
 msgstr ""
 
-#: ../src/interface.c:238
+#: ../src/interface.c:273
 msgid "    0"
 msgstr ""
 
-#: ../src/interface.c:243
+#: ../src/interface.c:278
 msgid "   5"
 msgstr ""
 
-#: ../src/interface.c:248
+#: ../src/interface.c:283
 msgid "   10"
 msgstr ""
 
-#: ../src/interface.c:280
+#: ../src/interface.c:306
 msgid "Show user tasks"
 msgstr "Show user tasks"
 
-#: ../src/interface.c:285
+#: ../src/interface.c:311
 msgid "Show root tasks"
 msgstr "Show root tasks"
 
-#: ../src/interface.c:290
+#: ../src/interface.c:316
 msgid "Show other tasks"
 msgstr "Show other tasks"
 
-#: ../src/interface.c:295
+#: ../src/interface.c:321
 msgid "Show memory used by cache as free"
 msgstr "Show memory used by cache as free"
 
-#: ../src/interface.c:317
+#: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/interface.c:322
+#: ../src/interface.c:347
 msgid "translator-credits"
 msgstr ""
 
-#: ../src/interface.c:330
+#: ../src/interface.c:355
 msgid "LXTask"
 msgstr ""
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:332
+#: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
 msgstr ""
 
-#: ../src/interface.c:333
+#: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
 msgstr ""
 

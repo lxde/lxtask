@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LXTask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-26 04:13+0800\n"
+"POT-Creation-Date: 2008-04-28 23:54+0800\n"
 "PO-Revision-Date: 2008-04-26 06:58+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "X-Poedit-Language: Hungarian\n"
 "X-Poedit-Country: HUNGARY\n"
 
-#: ../src/callbacks.c:70
+#: ../src/callbacks.c:62
 msgid "Really kill the task?"
 msgstr "Tényleg megölöd a feladatot?"
 
-#: ../src/callbacks.c:74
+#: ../src/callbacks.c:66
 msgid "Really terminate the task?"
 msgstr "Tényleg lezárod a feladatot?"
 
@@ -36,115 +36,127 @@ msgstr "Memória: %d MB/%d MB használt"
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU használat: %0.0f %%"
 
-#: ../src/interface.c:50
+#: ../src/interface.c:53
 msgid "Task Manager"
 msgstr "Feladatkezelő"
 
-#: ../src/interface.c:64
+#: ../src/interface.c:66
+msgid "_File"
+msgstr ""
+
+#: ../src/interface.c:74
+msgid "_View"
+msgstr ""
+
+#: ../src/interface.c:80
+msgid "_Help"
+msgstr ""
+
+#: ../src/interface.c:104
 msgid "cpu usage"
 msgstr "cpu használat"
 
-#: ../src/interface.c:72
+#: ../src/interface.c:112
 msgid "memory usage"
 msgstr "memória használat"
 
-#: ../src/interface.c:104
+#: ../src/interface.c:140
 msgid "more details"
 msgstr "részletek"
 
-#: ../src/interface.c:131
+#: ../src/interface.c:166
 msgid "Command"
 msgstr "Parancs"
 
-#: ../src/interface.c:137
+#: ../src/interface.c:172
 msgid "User"
 msgstr "Felhasználó"
 
-#: ../src/interface.c:143
+#: ../src/interface.c:178
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:149
+#: ../src/interface.c:184
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:155
+#: ../src/interface.c:190
 msgid "VM-Size"
 msgstr "VM-méret"
 
-#: ../src/interface.c:161
+#: ../src/interface.c:196
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:167
+#: ../src/interface.c:202
 msgid "State"
 msgstr "Állapot"
 
-#: ../src/interface.c:173
+#: ../src/interface.c:208
 msgid "Prio"
 msgstr "Prio"
 
-#: ../src/interface.c:179
+#: ../src/interface.c:214
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:195
+#: ../src/interface.c:230
 msgid "Stop"
 msgstr "Megállítás"
 
-#: ../src/interface.c:200
+#: ../src/interface.c:235
 msgid "Continue"
 msgstr "Folytatás"
 
-#: ../src/interface.c:205
+#: ../src/interface.c:240
 msgid "Term"
 msgstr "Leállítás"
 
-#: ../src/interface.c:210
+#: ../src/interface.c:245
 msgid "Kill"
 msgstr "Kilövés"
 
-#: ../src/interface.c:215
+#: ../src/interface.c:250
 msgid "Priority"
 msgstr "Prioritás"
 
-#: ../src/interface.c:228
+#: ../src/interface.c:263
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:233
+#: ../src/interface.c:268
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:238
+#: ../src/interface.c:273
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:243
+#: ../src/interface.c:278
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:248
+#: ../src/interface.c:283
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:280
+#: ../src/interface.c:306
 msgid "Show user tasks"
 msgstr "Felhasználói folyamatok megjelenítése"
 
-#: ../src/interface.c:285
+#: ../src/interface.c:311
 msgid "Show root tasks"
 msgstr "Root folyamatok megjelenítése"
 
-#: ../src/interface.c:290
+#: ../src/interface.c:316
 msgid "Show other tasks"
 msgstr "Más folyamatok megjelenítése"
 
-#: ../src/interface.c:295
+#: ../src/interface.c:321
 msgid "Show memory used by cache as free"
 msgstr "A gyorstár által használt memória mutatása szabadként"
 
-#: ../src/interface.c:317
+#: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -153,20 +165,20 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de> írt"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/interface.c:322
+#: ../src/interface.c:347
 msgid "translator-credits"
 msgstr "SZERVÁC Attila"
 
-#: ../src/interface.c:330
+#: ../src/interface.c:355
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:332
+#: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright (C) 2008 LXDE csapat"
 
-#: ../src/interface.c:333
+#: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
 msgstr "Pehelysúlyú feladat-kezelő az LXDE projekthez"
 
@@ -180,4 +192,3 @@ msgstr "Megerősít"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
-

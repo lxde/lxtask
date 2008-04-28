@@ -17,6 +17,8 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
+/* 2008-04-26 modified by Hong Jen Yee to be used in LXDE. */
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -34,6 +36,7 @@
 GtkWidget* create_main_window (void)
 {
     GtkWidget *window;
+    GtkWidget *menubar, *menu, *item, *sub;
     GtkWidget *vbox1;
     GtkWidget *bbox1;
     GtkWidget *scrolledwindow1;
@@ -50,10 +53,47 @@ GtkWidget* create_main_window (void)
     gtk_window_set_title (GTK_WINDOW (window), _("Task Manager"));
     gtk_window_set_default_size (GTK_WINDOW (window), win_width, win_height);
 
+    bbox1 = gtk_vbox_new (FALSE, 10);
+    gtk_widget_show (bbox1);
+    gtk_container_add (GTK_CONTAINER (window), bbox1);
+
+	menubar = gtk_menu_bar_new();
+	gtk_widget_show( menubar );
+	gtk_box_pack_start(bbox1, menubar, FALSE, TRUE, 0 );
+
+	/* build menu */
+	menu = gtk_menu_new();
+	item = gtk_menu_item_new_with_mnemonic( _("_File") );
+	gtk_menu_item_set_submenu( item, menu );
+	gtk_menu_shell_append( (GtkMenuShell*)menubar, item );
+
+	item = gtk_image_menu_item_new_from_stock( GTK_STOCK_QUIT, NULL );
+	gtk_menu_shell_append( (GtkMenuShell*)menu, item );
+	g_signal_connect( item, "activate", G_CALLBACK(gtk_main_quit), NULL );
+
+	item = gtk_menu_item_new_with_mnemonic( _("_View") );
+	gtk_menu_shell_append( (GtkMenuShell*)menubar, item );
+
+	menu = create_mainmenu();
+	gtk_menu_item_set_submenu( item, menu );
+
+	item = gtk_menu_item_new_with_mnemonic( _("_Help") );
+	gtk_menu_shell_append( (GtkMenuShell*)menubar, item );
+	menu = gtk_menu_new();
+	gtk_menu_item_set_submenu( item, menu );
+
+    item= gtk_image_menu_item_new_from_stock ("gtk-about", NULL);
+    gtk_widget_show (item);
+    gtk_menu_shell_append(GTK_MENU_SHELL(menu), item);
+    g_signal_connect ((gpointer) item, "activate", G_CALLBACK (show_about_dialog), NULL);
+
+	gtk_widget_show_all( menubar );
+
+	/* window content */
     vbox1 = gtk_vbox_new (FALSE, 10);
     gtk_widget_show (vbox1);
-    gtk_container_add (GTK_CONTAINER (window), vbox1);
-    gtk_container_set_border_width (GTK_CONTAINER (vbox1), 10);
+    gtk_box_pack_start( bbox1, vbox1, TRUE, TRUE, 0 );
+    gtk_container_set_border_width (GTK_CONTAINER (vbox1), 6);
 
     system_info_box = gtk_hbox_new (FALSE, 10);
     gtk_widget_show (system_info_box);
@@ -97,10 +137,6 @@ GtkWidget* create_main_window (void)
     gtk_box_pack_start(GTK_BOX(vbox1), bbox1, FALSE, TRUE, 0);
     gtk_widget_show (bbox1);
 
-    button2 = gtk_button_new_from_stock ("gtk-preferences");
-    gtk_widget_show (button2);
-    gtk_box_pack_start (GTK_BOX (bbox1), button2, FALSE, FALSE, 0);
-
     button3 = gtk_toggle_button_new_with_label (_("more details"));
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(button3), full_view);
     gtk_widget_show (button3);
@@ -113,7 +149,6 @@ GtkWidget* create_main_window (void)
     g_signal_connect ((gpointer) window, "destroy", G_CALLBACK (on_quit), NULL);
     g_signal_connect_swapped ((gpointer) treeview, "button-press-event", G_CALLBACK(on_treeview1_button_press_event), NULL);
     g_signal_connect ((gpointer) button1, "clicked",  G_CALLBACK (on_quit),  NULL);
-    g_signal_connect ((gpointer) button2, "button_release_event",  G_CALLBACK (on_button1_button_press_event),  NULL);
     g_signal_connect ((gpointer) button3, "toggled",  G_CALLBACK (on_button3_toggled_event),  NULL);
 
     return window;
@@ -268,15 +303,6 @@ GtkWidget* create_mainmenu (void)
 
     mainmenu = gtk_menu_new ();
 
-    info1 = gtk_image_menu_item_new_from_stock ("gtk-about", accel_group);
-    gtk_widget_show (info1);
-    gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), info1);
-
-    trennlinie1 = gtk_separator_menu_item_new ();
-    gtk_widget_show (trennlinie1);
-    gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), trennlinie1);
-    gtk_widget_set_sensitive (trennlinie1, FALSE);
-
     show_user_tasks1 = gtk_check_menu_item_new_with_mnemonic (_("Show user tasks"));
     gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM(show_user_tasks1), show_user_tasks);
     gtk_widget_show (show_user_tasks1);
@@ -297,7 +323,6 @@ GtkWidget* create_mainmenu (void)
     gtk_widget_show (show_cached_as_free1);
     gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), show_cached_as_free1);
 
-    g_signal_connect ((gpointer) info1, "activate", G_CALLBACK (on_info1_activate), NULL);
     g_signal_connect ((gpointer) show_user_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)own_uid);
     g_signal_connect ((gpointer) show_root_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)0);
     g_signal_connect ((gpointer) show_other_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)-1);
@@ -426,7 +451,7 @@ void remove_list_item(gint pid)
     while(valid)
     {
         gchar *str_data = "";
-        gtk_tree_model_get(GTK_TREE_MODEL(list_store), &iter, 1, &str_data, -1);
+        gtk_tree_model_get(GTK_TREE_MODEL(list_store), &iter, COLUMN_PID, &str_data, -1);
 
         if(pid == atoi(str_data))
         {

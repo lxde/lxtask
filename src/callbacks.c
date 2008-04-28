@@ -26,14 +26,6 @@
 
 #include "callbacks.h"
 
-void on_button1_button_press_event(GtkButton *button, GdkEventButton *event)
-{
-    GdkEventButton *mouseevent = (GdkEventButton *)event;
-    if(mainmenu == NULL)
-        mainmenu = create_mainmenu ();
-    gtk_menu_popup(GTK_MENU(mainmenu), NULL, NULL, NULL, NULL, mouseevent->button, mouseevent->time);
-}
-
 void on_button3_toggled_event(GtkButton *button, GdkEventButton *event)
 {
     full_view = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(button));
@@ -50,12 +42,6 @@ gboolean on_treeview1_button_press_event(GtkButton *button, GdkEventButton *even
         gtk_menu_popup(GTK_MENU(taskpopup), NULL, NULL, NULL, NULL, mouseevent->button, mouseevent->time);
     }
     return FALSE;
-}
-
-
-void on_info1_activate(GtkMenuItem *menuitem, gpointer user_data)
-{
-    show_about_dialog();
 }
 
 void handle_task_menu(GtkWidget *widget, gchar *signal)
