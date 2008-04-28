@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-28 23:54+0800\n"
+"POT-Creation-Date: 2008-04-29 02:35+0800\n"
 "PO-Revision-Date: 2006-08-17 19:43+0000\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -16,20 +16,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/callbacks.c:62
+#: ../src/callbacks.c:56
 msgid "Really kill the task?"
 msgstr ""
 
-#: ../src/callbacks.c:66
+#: ../src/callbacks.c:60
 msgid "Really terminate the task?"
 msgstr ""
 
-#: ../src/functions.c:143
+#: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr ""
 
-#: ../src/functions.c:149
+#: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr ""

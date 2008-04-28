@@ -21,6 +21,8 @@
 #include <config.h>
 #endif
 
+#include <errno.h>
+
 #include <glib/gi18n.h>
 #include "xfce-taskmanager-linux.h"
 
@@ -298,7 +300,7 @@ void send_signal_to_task(gint task_id, gint signal)
         ret = kill(task_id, signal);
 
         if(ret != 0)
-            show_error(_("Couldn't send signal to the task with ID %d"), signal, task_id);
+            show_error(_("Couldn't send signal %d to the task with ID %d\n\n%s"), signal, task_id, g_strerror(errno) );
     }
 }
 
@@ -307,10 +309,11 @@ void set_priority_to_task(gint task_id, gint prio)
 {
     if(task_id > 0)
     {
+    	int status = 0;
         gchar command[128] = "";
         g_sprintf(command, "renice %d %d > /dev/null", prio, task_id);
 
-        if(system(command) != 0)
+        if( ! g_spawn_command_line_sync(command, NULL, NULL, &status, NULL) ||status )
             show_error(_("Couldn't set priority %d to the task with ID %d"), prio, task_id);
     }
 }

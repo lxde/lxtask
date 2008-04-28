@@ -1,5 +1,7 @@
+src/xfce-taskmanager-linux.c
 src/callbacks.c
 src/functions.c
 src/interface.c
 src/main.c
 src/utils.c
+

@@ -78,7 +78,7 @@ void handle_task_menu(GtkWidget *widget, gchar *signal)
 
             if(gtk_tree_selection_get_selected(selection, &model, &iter))
             {
-                gtk_tree_model_get(model, &iter, 1, &task_id, -1);
+                gtk_tree_model_get(model, &iter, COLUMN_PID, &task_id, -1);
                 send_signal_to_task(atoi(task_id), task_action);
                 refresh_task_list();
             }
