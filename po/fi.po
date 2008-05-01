@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-29 02:35+0800\n"
-"PO-Revision-Date: 2007-01-19 18:00+0200\n"
-"Last-Translator: Jari Rahkonen <jari.rahkonen@pp1.inet.fi>\n"
+"PO-Revision-Date: 2008-04-30 21:23+0200\n"
+"Last-Translator: Elias Julkunen <elias.julkunen@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,31 +26,30 @@ msgid "Really terminate the task?"
 msgstr "Haluatko katkaista tehtävän suorittamisen?"
 
 #: ../src/functions.c:142
-#, fuzzy, c-format
+#, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "%d kt:sta käytössä %d kt"
+msgstr "Muisti: %d Mt/%d Mt käytössä"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "CPU:n käyttö: %0.0f %%"
 
 #: ../src/interface.c:53
-#, fuzzy
 msgid "Task Manager"
-msgstr "xfce4-prosessienhallinta"
+msgstr "Tehtävienhallinta"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "_Tiedosto"
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "_Näytä"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "_Ohje"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
@@ -62,7 +61,7 @@ msgstr "muistin käyttö"
 
 #: ../src/interface.c:140
 msgid "more details"
-msgstr "Lisätiedot"
+msgstr "lisätietoja"
 
 #: ../src/interface.c:166
 msgid "Command"
@@ -118,27 +117,27 @@ msgstr "Tapa"
 
 #: ../src/interface.c:250
 msgid "Priority"
-msgstr ""
+msgstr "Tärkeys"
 
 #: ../src/interface.c:263
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:268
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:273
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:278
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:283
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
@@ -161,32 +160,35 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask on johdettu Xfce 4 tehtävienhallinnasta\n"
+"Johannes Zellnerin <webmaster@nebulon.de> toimesta."
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr ""
+msgstr "Elias Julkunen"
 
 #: ../src/interface.c:355
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Tekijänoikeudet (C) 2008 LXDE-ryhmä"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Kevyt tehtävienhallinta LXDE-projektille"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Virhe"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Varmista"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
+
