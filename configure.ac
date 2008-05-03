@@ -45,7 +45,7 @@ echo Prefix....................................... : $prefix
 echo
 echo The binary will be installed in $prefix/bin
 echo
-echo http://lxde.sourceforge.net/
+echo http://lxde.org/
 echo
 echo Have fun!
 echo
