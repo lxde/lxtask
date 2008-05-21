@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-29 02:35+0800\n"
-"PO-Revision-Date: 2008-05-11 00:37+0200\n"
+"PO-Revision-Date: 2008-05-17 22:52+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@t-online.de>\n"
 "Language-Team: German <xfce4-dev@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -168,8 +168,10 @@ msgstr ""
 #: ../src/interface.c:347
 msgid "translator-credits"
 msgstr ""
-"Fabian Nowak <timystery@arcor.de>, 2007\n"
-"Mario Blättermann <mario.blaettermann@t-online.de>, 2008"
+"Johannes Zellner <xfce4-taskmanager@nebulon.de>, 2005.\n"
+"Enrico Tröger <enrico.troeger@uvena.de>, 2006.\n"
+"Fabian Nowak <timystery@arcor.de>, 2007.\n"
+"Mario Blättermann <mario.blaettermann@t-online.de>, 2008."
 
 #: ../src/interface.c:355
 msgid "LXTask"
@@ -179,7 +181,7 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright (C) 2008 LXDE team"
+msgstr "Copyright (C) 2008 LXDE-Team"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
