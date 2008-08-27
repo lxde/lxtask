@@ -1,0 +1,5 @@
+lxtask (0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: 495784)
+
+ -- Andrew Lee <andrew@linux.org.tw>  Wed, 20 Aug 2008 20:17:57 +0800

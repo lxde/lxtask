@@ -1,0 +1,2 @@
+?package(lxtask):needs="X11|text|vc|wm" section="Applications/System Tools"\
+  title="lxtask" command="/usr/bin/lxtask"
