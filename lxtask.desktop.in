@@ -1,5 +1,4 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Task Manager
 Name[zh_TW]=工作管理員
 Name[fi]=Tehtävienhallinta
@@ -14,4 +13,5 @@ Icon=utilities-system-monitor
 Terminal=false
 StartupNotify=true
 Type=Application
-Categories=Application;System;Utility;
+Categories=GTK;System;Monitor;
+
