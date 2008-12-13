@@ -1,20 +1,24 @@
 # Spanish translations for lxtask package.
 # Copyright (C) 2008 THE lxtask'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the lxtask package.
+#
 # Xoan Sampaiño Villagra <xoansampainho@gmail.com>, 2008.
+# Daniel Pacheco <daniel@tunki.org>, 2008.
+# Julio Napurí Carlos <julionc@gmail.org>, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: lxtask 0.1\n"
+"Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-29 10:23+0200\n"
-"PO-Revision-Date: 2008-04-29 10:23+0200\n"
-"Last-Translator: Xoan Sampaiño Villagra <xoansampainho@gmail.com>\n"
-"Language-Team: Spanish\n"
+"POT-Creation-Date: 2008-12-09 13:38-0500\n"
+"PO-Revision-Date: 2008-12-09 21:23-0500\n"
+"Last-Translator: Julio Napurí Carlos <julionc@gmail.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Spanish\n"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -80,7 +84,7 @@ msgstr "más detalles"
 
 #: ../src/interface.c:166
 msgid "Command"
-msgstr "Tarea"
+msgstr "Comando"
 
 #: ../src/interface.c:172
 msgid "User"
@@ -124,7 +128,7 @@ msgstr "Continuar"
 
 #: ../src/interface.c:240
 msgid "Term"
-msgstr "Terminar"
+msgstr "Finalizar"
 
 #: ../src/interface.c:245
 msgid "Kill"
@@ -148,11 +152,11 @@ msgstr "    0"
 
 #: ../src/interface.c:278
 msgid "   5"
-msgstr "    5"
+msgstr "   5"
 
 #: ../src/interface.c:283
 msgid "   10"
-msgstr "    10"
+msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
@@ -168,18 +172,23 @@ msgstr "Otras tareas"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
-msgstr ""
+msgstr "Mostrar la memoria caché libre"
 
 #: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask es un derivado de Xfce4 Task Manager por:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr "Xoan Sampaiño <xoansampainho@gmail.com>"
+msgstr ""
+"Xoan Sampaiño <xoansampainho@gmail.com>, 2008\n"
+"Daniel Pacheco <daniel@tunki.org>, 2008\n"
+"Julio Napurí Carlos <julionc@gmail.com>, 2008"
 
 #: ../src/interface.c:355
 msgid "LXTask"
@@ -201,3 +210,4 @@ msgstr "Error"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Confirmar"
+
