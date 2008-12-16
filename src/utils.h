@@ -29,6 +29,7 @@ G_BEGIN_DECLS
 
 void show_error( const char* format, ... );
 gboolean confirm( const char* question );
+char* size_to_string( char* buf, guint64 size );
 
 G_END_DECLS
 
