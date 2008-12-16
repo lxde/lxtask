@@ -50,9 +50,9 @@ gboolean confirm( const char* question )
     GtkWidget* dlg;
     int ret;
     dlg = gtk_message_dialog_new_with_markup( NULL, GTK_DIALOG_MODAL,
-                                                                            GTK_MESSAGE_QUESTION,
-                                                                            GTK_BUTTONS_YES_NO,
-                                                                            question );
+                                              GTK_MESSAGE_QUESTION,
+                                              GTK_BUTTONS_YES_NO,
+                                              "%s", question );
     gtk_window_set_title( (GtkWindow*)dlg, _("Confirm") );
     ret = gtk_dialog_run( (GtkDialog*)dlg );
     gtk_widget_destroy( dlg );
