@@ -5,15 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
+"Project-Id-Version: lxtask 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-29 02:35+0800\n"
-"PO-Revision-Date: 2007-11-13 10:35+0100\n"
-"Last-Translator: Nuno Miguel <nunis@netcabo.pt>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2009-01-14 22:31+0100\n"
+"Last-Translator: Álvaro Morais <alvarommorais@gmail.com>\n"
+"Language-Team: Portuguese PT <alvarommorais@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: PORTUGAL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -24,31 +27,30 @@ msgid "Really terminate the task?"
 msgstr "Terminar a tarefa?"
 
 #: ../src/functions.c:142
-#, fuzzy, c-format
+#, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "%d kB de %d kB usados"
+msgstr "Memória: %d MB de %d MB usados"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "Utilização do CPU: %0.0f %%"
 
 #: ../src/interface.c:53
-#, fuzzy
 msgid "Task Manager"
-msgstr "xfce4-taskmanager"
+msgstr "Gestor de Tarefas"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "_Ficheiro"
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "_Ver"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "_Ajuda"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
@@ -116,7 +118,7 @@ msgstr "Matar"
 
 #: ../src/interface.c:250
 msgid "Priority"
-msgstr ""
+msgstr "Prioridade"
 
 #: ../src/interface.c:263
 msgid "  -10"
@@ -159,32 +161,37 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask é uma derivação do Xfce4 Task Manager programado por:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr ""
+msgstr "Álvaro Morais <alvarommorais@gmail.com>"
 
 #: ../src/interface.c:355
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Copyright (C) 2008 Equipa LXDE "
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Gestor de Tarefas para o projecto LXDE"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Erro"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Confirmar"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
+
+
+ 	  	 
