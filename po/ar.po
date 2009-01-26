@@ -1,0 +1,207 @@
+# Arabic translations for PACKAGE package.
+# Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# أحمد فرغل <ahmad.farghal@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LXTask\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-01-25 14:22+0200\n"
+"PO-Revision-Date: 2009-01-25 14:38+0200\n"
+"Last-Translator: Ahmad Farghal <ahmad.farghal@gmail.com>\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/xfce-taskmanager-linux.c:303
+#, c-format
+msgid ""
+"Couldn't send signal %d to the task with ID %d\n"
+"\n"
+"%s"
+msgstr ""
+"غير قادر على إرسال الإشارة %d للمهمة ذات الهوية %d\n"
+"\n"
+"%s"
+
+#: ../src/xfce-taskmanager-linux.c:317
+#, c-format
+msgid "Couldn't set priority %d to the task with ID %d"
+msgstr "غير قادر على تعيين الأولوية %d للمهمة ذات الهوية %d"
+
+#: ../src/callbacks.c:56
+msgid "Really kill the task?"
+msgstr "هل تريد فعلا قتل المهمة؟"
+
+#: ../src/callbacks.c:60
+msgid "Really terminate the task?"
+msgstr "هل تريد فعلا إنهاء المهمة؟"
+
+#: ../src/functions.c:142
+#, c-format
+msgid "Memory: %d MB of %d MB used"
+msgstr "استخدام الذاكرة: %d م.بايت من %d م.بايت مستخدمة"
+
+#: ../src/functions.c:148
+#, c-format
+msgid "CPU usage: %0.0f %%"
+msgstr "استخدام المعالج: %0.0f %%"
+
+#: ../src/interface.c:53
+msgid "Task Manager"
+msgstr "مدير المهام"
+
+#: ../src/interface.c:66
+msgid "_File"
+msgstr "_ملف"
+
+#: ../src/interface.c:74
+msgid "_View"
+msgstr "_عرض"
+
+#: ../src/interface.c:80
+msgid "_Help"
+msgstr "م_ساعدة"
+
+#: ../src/interface.c:104
+msgid "cpu usage"
+msgstr "استخدام المعالج"
+
+#: ../src/interface.c:112
+msgid "memory usage"
+msgstr "استخدام الذاكرة"
+
+#: ../src/interface.c:140
+msgid "more details"
+msgstr "تفاصيل أكثر"
+
+#: ../src/interface.c:166
+msgid "Command"
+msgstr "الأمر"
+
+#: ../src/interface.c:172
+msgid "User"
+msgstr "المستخدم"
+
+#: ../src/interface.c:178
+msgid "CPU%"
+msgstr "% من المعالج"
+
+#: ../src/interface.c:184
+msgid "RSS"
+msgstr "حجم الذاكرة"
+
+#: ../src/interface.c:190
+msgid "VM-Size"
+msgstr "حجم VM"
+
+#: ../src/interface.c:196
+msgid "PID"
+msgstr "الهوية"
+
+#: ../src/interface.c:202
+msgid "State"
+msgstr "الحالة"
+
+#: ../src/interface.c:208
+msgid "Prio"
+msgstr "الاولوية"
+
+#: ../src/interface.c:214
+msgid "PPID"
+msgstr "هوية الأب"
+
+#: ../src/interface.c:230
+msgid "Stop"
+msgstr "أوقف"
+
+#: ../src/interface.c:235
+msgid "Continue"
+msgstr "تابع"
+
+#: ../src/interface.c:240
+msgid "Term"
+msgstr "أنه"
+
+#: ../src/interface.c:245
+msgid "Kill"
+msgstr "اقتل"
+
+#: ../src/interface.c:250
+msgid "Priority"
+msgstr "الأولوية"
+
+#: ../src/interface.c:263
+msgid "  -10"
+msgstr "  -10"
+
+#: ../src/interface.c:268
+msgid "  -5"
+msgstr "  -5"
+
+#: ../src/interface.c:273
+msgid "    0"
+msgstr "    0"
+
+#: ../src/interface.c:278
+msgid "   5"
+msgstr "   5"
+
+#: ../src/interface.c:283
+msgid "   10"
+msgstr "   10"
+
+#: ../src/interface.c:306
+msgid "Show user tasks"
+msgstr "أظهر مهام المستخدم"
+
+#: ../src/interface.c:311
+msgid "Show root tasks"
+msgstr "أظهر مهام الجذر"
+
+#: ../src/interface.c:316
+msgid "Show other tasks"
+msgstr "أظهر المهام الأخرى"
+
+#: ../src/interface.c:321
+msgid "Show memory used by cache as free"
+msgstr "أظهر الذاكرة التي يستخدمها الاختزان على أنها حرة"
+
+#: ../src/interface.c:342
+msgid ""
+"LXTask is derived from Xfce4 Task Manager by:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+msgstr ""
+"LXTask مستمد من برنامج Xfce4 Task Manager، الذي كتبه:\n"
+"  * يوحنا زلنر Johannes Zellner <webmaster@nebulon.de>"
+
+#. TRANSLATORS: Replace mw string with your names, one name per line.
+#: ../src/interface.c:347
+msgid "translator-credits"
+msgstr "أحمد فرغل <ahmad.farghal@gmail.com>"
+
+#: ../src/interface.c:355
+msgid "LXTask"
+msgstr "LXTask"
+
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:357
+msgid "Copyright (C) 2008 LXDE team"
+msgstr "حقوق النشر محفوظة (C) 2008 فريق LXDE"
+
+#: ../src/interface.c:358
+msgid "Lightweight task manager for LXDE project"
+msgstr "مدير مهام خفيف لمشروع LXDE"
+
+#: ../src/utils.c:43
+msgid "Error"
+msgstr "خطأ"
+
+#: ../src/utils.c:56
+msgid "Confirm"
+msgstr "أكّد"
+
+
+ 	  	 
