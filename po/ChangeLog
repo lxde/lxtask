@@ -1,3 +1,10 @@
+2009-01-26 Og Maciel <ogmaciel@gnome.org>
+
+	* POTFILES.in: Updated. Fixes SF.net #2376792.
+	* lxtask.pot: Added.
+	* LINGUAS: Added with all available languages.
+	* .po: Updated all message catalogs against the new lxtask.pot.
+
 2009-01-26	Ming-Ting Wei <medicalwei@gmail.com>
 
 	* ar.po: Added Arabic translation
@@ -81,7 +88,7 @@
 
 2007-01-14  Piarres Beobide <pi@beobide.net>
 
-        * eu.po: Updated basque transaltion
+	* eu.po: Updated basque transaltion
 
 2007-01-14  Maximilian Schleiss <maximilian@xfce.org>
 

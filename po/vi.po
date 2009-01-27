@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-29 02:35+0800\n"
+"POT-Creation-Date: 2009-01-26 20:39-0500\n"
 "PO-Revision-Date: 2006-02-19 22:52+0300\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi@vnlinux.org>\n"
 "Language-Team: Vietnamese <none@li.org>\n"
@@ -14,6 +14,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
+
+#: ../src/xfce-taskmanager-linux.c:303
+#, c-format
+msgid ""
+"Couldn't send signal %d to the task with ID %d\n"
+"\n"
+"%s"
+msgstr ""
+
+#: ../src/xfce-taskmanager-linux.c:317
+#, c-format
+msgid "Couldn't set priority %d to the task with ID %d"
+msgstr ""
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"

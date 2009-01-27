@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-12-09 13:38-0500\n"
+"POT-Creation-Date: 2009-01-26 20:39-0500\n"
 "PO-Revision-Date: 2008-12-09 21:23-0500\n"
 "Last-Translator: Julio Napurí Carlos <julionc@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -210,4 +210,3 @@ msgstr "Error"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Confirmar"
-

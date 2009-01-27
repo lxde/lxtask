@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-29 02:35+0800\n"
+"POT-Creation-Date: 2009-01-26 20:39-0500\n"
 "PO-Revision-Date: 2008-04-24 19:25+0300\n"
 "Last-Translator: Evaggelos Balaskas <ebalaskas@ebalaskas.gr>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -15,6 +15,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: ../src/xfce-taskmanager-linux.c:303
+#, c-format
+msgid ""
+"Couldn't send signal %d to the task with ID %d\n"
+"\n"
+"%s"
+msgstr ""
+
+#: ../src/xfce-taskmanager-linux.c:317
+#, c-format
+msgid "Couldn't set priority %d to the task with ID %d"
+msgstr ""
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"

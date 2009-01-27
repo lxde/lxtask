@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-29 02:47+0800\n"
+"POT-Creation-Date: 2009-01-26 20:39-0500\n"
 "PO-Revision-Date: 2008-08-05 14:32+0800\n"
 "Last-Translator: ideal <05281253@bjtu.edu.cn>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
@@ -19,11 +19,12 @@ msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
 "\n"
 "%s"
-msgstr "无法发送信息 %d 给 ID 为 %d 的进程\n"
+msgstr ""
+"无法发送信息 %d 给 ID 为 %d 的进程\n"
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:316
+#: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "无法设置进程 %2$d 的优先级为 %1$d"
