@@ -1,14 +1,14 @@
 # Czech translations for xfce4-taskmanager package.
 # Copyright (C) 2006 THE xfce4-taskmanager'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-taskmanager package.
-# Michal Várady <miko.vaji@gmail.com>, 2006.
+# Michal Várady <miko.vaji@gmail.com>, 2006-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-26 20:39-0500\n"
-"PO-Revision-Date: 2007-01-14 19:42+0100\n"
+"PO-Revision-Date: 2009-02-03 00:53+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -23,11 +23,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Nelze poslat signál %d úloze s identifikátorem %d\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Nelze nastavit prioritu %d úloze s identifikátorem %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -38,31 +41,30 @@ msgid "Really terminate the task?"
 msgstr "Chcete opravdu ukončit tuto úlohu?"
 
 #: ../src/functions.c:142
-#, fuzzy, c-format
+#, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "%d kB z %d kB použito"
+msgstr "paměť: %d MB z %d MB použito"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "Využití procesoru: %0.0f %%"
 
 #: ../src/interface.c:53
-#, fuzzy
 msgid "Task Manager"
-msgstr "xfce4-taskmanager"
+msgstr "Správce úloh"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "_Soubor"
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "_Zobrazit"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "_Nápověda"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
@@ -106,7 +108,7 @@ msgstr "Stav"
 
 #: ../src/interface.c:208
 msgid "Prio"
-msgstr ""
+msgstr "Prio"
 
 #: ../src/interface.c:214
 msgid "PPID"
@@ -130,27 +132,27 @@ msgstr "Ukončit signálem KILL"
 
 #: ../src/interface.c:250
 msgid "Priority"
-msgstr ""
+msgstr "Priorita"
 
 #: ../src/interface.c:263
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:268
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:273
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:278
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:283
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
@@ -173,32 +175,35 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"Apliakce LXTask je odvozena ze Správce úloh pro prostředí Xfce4 od:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr ""
+msgstr "Michal Várady <miko.vaji@gmail.com>"
 
 #: ../src/interface.c:355
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Copyright (C) 2008 LXDE team"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Odlehčený správce úloh pro projekt LXDE"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Chyba"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Potvrdit"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
+
