@@ -2,18 +2,18 @@
 #
 # Japanese translations for xfce4-taskmanager package.
 # Copyright (C) 2005-2006 Johannes Zellner.
-# This file is distributed under the same license as
-#   the xfce4-taskmanager package.
+# This file is distributed under the same license as the package.
 # Daichi Kawahata <daichi@xfce.org>, 2006.
+# Hironao Komatsu <hironao@users.sourceforge.net>, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
+"Project-Id-Version: lxtask 0.1 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-09 02:51+0100\n"
-"PO-Revision-Date: 2006-04-01 17:57+0900\n"
-"Last-Translator: Daichi Kawahata <daichi@xfce.org>\n"
-"Language-Team: Japanese <xfce-users-jp@ml.fdiary.net>\n"
+"POT-Creation-Date: 2008-05-11 22:32+0900\n"
+"PO-Revision-Date: 2008-12-26 12:04+0900\n"
+"Last-Translator: Hironao Komatsu <hironao@users.sourceforge.net>\n"
+"Language-Team: Japanese <hironao@users.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,54 +25,56 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"シグナル %d をタスク %d に送ることができませんでした\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "タスク %2$d に優先度 %1$d を設定することができませんでした"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr ""
+msgstr "本当にこのタスクを強制終了しますか?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr ""
+msgstr "本当にこのタスクを終了しますか?"
 
 #: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr ""
+msgstr "メモリ: %2$d MB 中の %1$d MB が使用中"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "CPU 使用量: %0.0f %%"
 
 #: ../src/interface.c:53
-#, fuzzy
 msgid "Task Manager"
-msgstr "xfce4-taskmanager"
+msgstr "タスクマネージャ"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "ファイル(_F)"
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "表示(_V)"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "ヘルプ(_H)"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
-msgstr ""
+msgstr "CPU 使用量"
 
 #: ../src/interface.c:112
 msgid "memory usage"
-msgstr ""
+msgstr "メモリ使用量"
 
 #: ../src/interface.c:140
 msgid "more details"
@@ -88,7 +90,7 @@ msgstr "ユーザー"
 
 #: ../src/interface.c:178
 msgid "CPU%"
-msgstr ""
+msgstr "CPU%"
 
 #: ../src/interface.c:184
 msgid "RSS"
@@ -96,7 +98,7 @@ msgstr "RSS"
 
 #: ../src/interface.c:190
 msgid "VM-Size"
-msgstr "VMサイズ"
+msgstr "VM サイズ"
 
 #: ../src/interface.c:196
 msgid "PID"
@@ -108,7 +110,7 @@ msgstr "状態"
 
 #: ../src/interface.c:208
 msgid "Prio"
-msgstr ""
+msgstr "Prio"
 
 #: ../src/interface.c:214
 msgid "PPID"
@@ -116,88 +118,92 @@ msgstr "PPID"
 
 #: ../src/interface.c:230
 msgid "Stop"
-msgstr "中止"
+msgstr "停止"
 
 #: ../src/interface.c:235
 msgid "Continue"
-msgstr "続行"
+msgstr "実行再開"
 
 #: ../src/interface.c:240
 msgid "Term"
-msgstr "中断"
+msgstr "終了"
 
 #: ../src/interface.c:245
 msgid "Kill"
-msgstr "Kill"
+msgstr "強制終了"
 
 #: ../src/interface.c:250
 msgid "Priority"
-msgstr ""
+msgstr "優先度"
 
 #: ../src/interface.c:263
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:268
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:273
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:278
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:283
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
-msgstr "ユーザータスクを表示"
+msgstr "ユーザーのタスクを表示"
 
 #: ../src/interface.c:311
 msgid "Show root tasks"
-msgstr "ルートタスクを表示"
+msgstr "root のタスクを表示"
 
 #: ../src/interface.c:316
 msgid "Show other tasks"
-msgstr "その他のタスクを表示"
+msgstr "他のユーザのタスクを表示"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
-msgstr ""
+msgstr "キャッシュを保持しているメモリを空きメモリとして表示"
 
 #: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask は Xfce4 Task Manager から派生しており、原作者は:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
 msgstr ""
+"Daichi Kawahata <daichi@xfce.org>\n"
+"Hironao Komatsu <hironao@users.sourceforge.net>"
 
 #: ../src/interface.c:355
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Copyright (C) 2008 LXDE team"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "LXDE プロジェクトのための軽量タスクマネージャ"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "エラー"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "確認"
