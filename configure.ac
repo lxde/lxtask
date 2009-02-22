@@ -29,7 +29,8 @@ AM_GNU_GETTEXT_VERSION(0.14.1)
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 
-ALL_LINGUAS="cs de el en_GB eu fi fr gl hu ja lv nb_NO nl pl pt_BR pt_PT ru ur vi zh_TW es zh_CN et sv ar da"
+#These codes are NOT maintained by Pootle ca el en_GB lv sq ur
+ALL_LINGUAS="ar ca cs da de el en_GB es et eu fa fi fr gl hu id it ja ko lt lv ml nb nl nn pl pt pt_BR ru sk sq sv uk ur vi zh_CN zh_TW"
 AM_GLIB_GNU_GETTEXT
 
 AC_OUTPUT([
