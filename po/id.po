@@ -1,19 +1,18 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Indonesian translation for lxtask.
+# Copyright (C) YEAR THE lxtask'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the lxtask package.
+# Andhika Padmawan <andhika.padmawan@gmail.com>, 2009.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-09 02:51+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2009-02-27 22:43+0700\n"
+"Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
+"Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/xfce-taskmanager-linux.c:303
@@ -23,178 +22,184 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Tak dapat mengirim sinyal %d ke tugas dengan ID %d\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Tak dapat mengatur prioritas %d ke tugas dengan ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr ""
+msgstr "Yakin matikan tugas?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr ""
+msgstr "Yakin tutup tugas?"
 
 #: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr ""
+msgstr "Memori: %d MB dari %d MB yang digunakan"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "Penggunaan CPU: %0.0f %%"
 
 #: ../src/interface.c:53
 msgid "Task Manager"
-msgstr ""
+msgstr "Manajer Tugas"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "_Berkas "
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "_Tampilan"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "Ba_ntuan"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
-msgstr ""
+msgstr "penggunaan cpu"
 
 #: ../src/interface.c:112
 msgid "memory usage"
-msgstr ""
+msgstr "penggunaan memori"
 
 #: ../src/interface.c:140
 msgid "more details"
-msgstr ""
+msgstr "detail lebih lanjut"
 
 #: ../src/interface.c:166
 msgid "Command"
-msgstr ""
+msgstr "Perintah"
 
 #: ../src/interface.c:172
 msgid "User"
-msgstr ""
+msgstr "Pengguna"
 
 #: ../src/interface.c:178
 msgid "CPU%"
-msgstr ""
+msgstr "CPU%"
 
 #: ../src/interface.c:184
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: ../src/interface.c:190
 msgid "VM-Size"
-msgstr ""
+msgstr "Ukuran VM"
 
 #: ../src/interface.c:196
 msgid "PID"
-msgstr ""
+msgstr "PID"
 
 #: ../src/interface.c:202
 msgid "State"
-msgstr ""
+msgstr "Kondisi"
 
 #: ../src/interface.c:208
 msgid "Prio"
-msgstr ""
+msgstr "Prio"
 
 #: ../src/interface.c:214
 msgid "PPID"
-msgstr ""
+msgstr "PPID"
 
 #: ../src/interface.c:230
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 #: ../src/interface.c:235
 msgid "Continue"
-msgstr ""
+msgstr "Lanjut"
 
 #: ../src/interface.c:240
 msgid "Term"
-msgstr ""
+msgstr "Tutup"
 
 #: ../src/interface.c:245
 msgid "Kill"
-msgstr ""
+msgstr "Matikan"
 
 #: ../src/interface.c:250
 msgid "Priority"
-msgstr ""
+msgstr "Prioritas"
 
 #: ../src/interface.c:263
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:268
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:273
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:278
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:283
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
-msgstr ""
+msgstr "Tampilkan tugas pengguna"
 
 #: ../src/interface.c:311
 msgid "Show root tasks"
-msgstr ""
+msgstr "Tampilkan tugas root"
 
 #: ../src/interface.c:316
 msgid "Show other tasks"
-msgstr ""
+msgstr "Tampilkan tugas lainnya"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
-msgstr ""
+msgstr "Tampilkan memori yang digunakan oleh tembolok sebagai bebas"
 
 #: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask adalah derivasi dari Manajer Tugas Xfce 4 oleh:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr ""
+msgstr "Andhika Padmawan <andhika.padmawan@gmail.com>, 2009."
 
 #: ../src/interface.c:355
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Hak Cipta (C) 2008 Tim LXDE"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Manajer tugas ringan untuk proyek LXDE"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Galat"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Konfirmasi"
+
