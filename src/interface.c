@@ -178,7 +178,7 @@ void create_list_store(void)
     column = gtk_tree_view_column_new_with_attributes(_("CPU%"), cell_renderer, "text", COLUMN_TIME, NULL);
     gtk_tree_view_column_set_resizable(column, TRUE);
     gtk_tree_view_column_set_sort_column_id(column, COLUMN_TIME);
-    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_TIME, compare_string_list_item, (void *)COLUMN_TIME, NULL);
+    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_TIME, compare_int_list_item, (void *)COLUMN_TIME, NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
 
     column = gtk_tree_view_column_new_with_attributes(_("RSS"), cell_renderer, "text", COLUMN_RSS, NULL);
