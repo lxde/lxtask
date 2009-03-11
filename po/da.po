@@ -10,13 +10,14 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.3.2svn-r02842\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-09 02:51+0100\n"
-"PO-Revision-Date: 2009-01-30 15:28+0000\n"
-"Last-Translator: Vidar Jon Bauge <vidarjb@gmail.com>\n"
+"PO-Revision-Date: 2009-03-10 17:29+0100\n"
+"Last-Translator: charlie tyrrestrup <chalze06@gmail.com>\n"
 "Language-Team: Danish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 1.1.0\n"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -25,11 +26,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Kunne ikke sende signal %d til opgaven med ID %d\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Kunne ikke indstille prioritet %d til opgaven med ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -37,7 +41,7 @@ msgstr "Virkelig afslutte opgaven?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Virkelig terminere oppgaven?"
+msgstr "Virkelig terminere opgaven?"
 
 #: ../src/functions.c:142
 #, c-format
@@ -63,15 +67,15 @@ msgstr "_Vis"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr "_HjÊlp"
+msgstr "_Hj√¶lp"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
-msgstr "Prosessorbruk"
+msgstr "Prosessorbrug"
 
 #: ../src/interface.c:112
 msgid "memory usage"
-msgstr "Minnebruk"
+msgstr "Hukommelses Brug"
 
 #: ../src/interface.c:140
 msgid "more details"
@@ -83,7 +87,7 @@ msgstr "Kommando"
 
 #: ../src/interface.c:172
 msgid "User"
-msgstr "Bruker"
+msgstr "Bruger"
 
 #: ../src/interface.c:178
 msgid "CPU%"
@@ -95,7 +99,7 @@ msgstr "RSS"
 
 #: ../src/interface.c:190
 msgid "VM-Size"
-msgstr "VM-st¯rrelse"
+msgstr "VM-st√∏rrelse"
 
 #: ../src/interface.c:196
 msgid "PID"
@@ -115,19 +119,19 @@ msgstr "PPID"
 
 #: ../src/interface.c:230
 msgid "Stop"
-msgstr "Stopp"
+msgstr "Stop"
 
 #: ../src/interface.c:235
 msgid "Continue"
-msgstr "Fortsett"
+msgstr "Forts√¶t"
 
 #: ../src/interface.c:240
 msgid "Term"
-msgstr "Term"
+msgstr "Termin√©r"
 
 #: ../src/interface.c:245
 msgid "Kill"
-msgstr "Avsl"
+msgstr "Afslut"
 
 #: ../src/interface.c:250
 msgid "Priority"
@@ -155,32 +159,32 @@ msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
-msgstr "Vis brukeroppgaver"
+msgstr "Vis brugeropgaver"
 
 #: ../src/interface.c:311
 msgid "Show root tasks"
-msgstr "Vis superbrukeroppgaver"
+msgstr "Vis administrator opgaver"
 
 #: ../src/interface.c:316
 msgid "Show other tasks"
-msgstr "Vis andre oppgaver"
+msgstr "Vis andre opgaver"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
-msgstr "Vis minne benyttet av hurtiglager som ledig"
+msgstr "Vis hukommelse brugt af cachen som fri"
 
 #: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask er bygget pÂ Xfce4 Task Manager af:\n"
+"LXTask er bygget p√• Xfce4 Task Manager af:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr "Vidar Jon Bauge"
+msgstr "Vidar Jon Bauge, Charlie Tyrrestrup"
 
 #: ../src/interface.c:355
 msgid "LXTask"
@@ -193,7 +197,7 @@ msgstr "Copyright (C) 2008 LXDE team"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr "LetvÊgts opgavebehandler for LXDE projektet"
+msgstr "Letv√¶gts opgavebehandler for LXDE projektet"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -201,7 +205,7 @@ msgstr "Fejl"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr "BekrÊft"
+msgstr "Bekr√¶ft"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
