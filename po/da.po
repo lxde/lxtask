@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.3.2svn-r02842\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-09 02:51+0100\n"
-"PO-Revision-Date: 2009-03-10 17:29+0100\n"
-"Last-Translator: charlie tyrrestrup <chalze06@gmail.com>\n"
+"PO-Revision-Date: 2009-03-13 14:57+0100\n"
+"Last-Translator: Vidar Jon Bauge <vidarjb@gmail.com>\n"
 "Language-Team: Danish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
@@ -46,7 +46,7 @@ msgstr "Virkelig terminere opgaven?"
 #: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "RAM: %d kB af %d kB i brug"
+msgstr "RAM: %d MB af %d MB i brug"
 
 #: ../src/functions.c:148
 #, c-format
@@ -67,7 +67,7 @@ msgstr "_Vis"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr "_Hjælp"
+msgstr "_HjÃ¦lp"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
@@ -99,7 +99,7 @@ msgstr "RSS"
 
 #: ../src/interface.c:190
 msgid "VM-Size"
-msgstr "VM-størrelse"
+msgstr "VM-stÃ¸rrelse"
 
 #: ../src/interface.c:196
 msgid "PID"
@@ -123,11 +123,11 @@ msgstr "Stop"
 
 #: ../src/interface.c:235
 msgid "Continue"
-msgstr "Fortsæt"
+msgstr "FortsÃ¦t"
 
 #: ../src/interface.c:240
 msgid "Term"
-msgstr "Terminér"
+msgstr "TerminÃ©r"
 
 #: ../src/interface.c:245
 msgid "Kill"
@@ -178,7 +178,7 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask er bygget på Xfce4 Task Manager af:\n"
+"LXTask er bygget pÃ¥ Xfce4 Task Manager af:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
@@ -197,7 +197,7 @@ msgstr "Copyright (C) 2008 LXDE team"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr "Letvægts opgavebehandler for LXDE projektet"
+msgstr "LetvÃ¦gts opgavebehandler for LXDE projektet"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -205,7 +205,7 @@ msgstr "Fejl"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr "Bekræft"
+msgstr "BekrÃ¦ft"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
