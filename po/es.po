@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-09 02:51+0100\n"
-"PO-Revision-Date: 2009-03-22 02:14+0100\n"
+"PO-Revision-Date: 2009-03-22 19:29+0100\n"
 "Last-Translator: Guillermo Iguaran <johnnyprez@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -161,15 +161,15 @@ msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
-msgstr "Tareas de usuario"
+msgstr "Mostrar tareas de usuario"
 
 #: ../src/interface.c:311
 msgid "Show root tasks"
-msgstr "Tareas de root"
+msgstr "Mostrar tareas de root"
 
 #: ../src/interface.c:316
 msgid "Show other tasks"
-msgstr "Otras tareas"
+msgstr "Mostrar otras tareas"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
@@ -189,7 +189,8 @@ msgid "translator-credits"
 msgstr ""
 "Xoan Sampaiño <xoansampainho@gmail.com>, 2008\n"
 "Daniel Pacheco <daniel@tunki.org>, 2008\n"
-"Julio Napurí Carlos <julionc@gmail.com>, 2008"
+"Julio Napurí Carlos <julionc@gmail.com>, 2008\n"
+"Guillermo Iguarán <tronador@cuteam.org>, 2009"
 
 #: ../src/interface.c:355
 msgid "LXTask"
