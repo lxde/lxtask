@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-09 02:51+0100\n"
+"POT-Creation-Date: 2009-04-15 19:58+0200\n"
 "PO-Revision-Date: 2009-02-27 22:43+0700\n"
 "Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
@@ -202,4 +202,3 @@ msgstr "Galat"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Konfirmasi"
-
