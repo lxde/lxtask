@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 19:58+0200\n"
-"PO-Revision-Date: 2009-04-10 01:34+0200\n"
+"PO-Revision-Date: 2009-04-16 10:20+0200\n"
 "Last-Translator: Cilyan Olowen <gaknar@gmail.com>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,11 +24,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Impossible d'envoyer le signal %d à la tâche d'ID %d\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Impossible de régler la priorité %s pour la tâche d'ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -39,31 +42,30 @@ msgid "Really terminate the task?"
 msgstr "Vraiment terminer la tâche?"
 
 #: ../src/functions.c:142
-#, fuzzy, c-format
+#, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Mémoire : %d Ko de %d Ko utilisés"
+msgstr "Mémoire : %d Mo de %d Mo utilisés"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "Utilisation du processeur : %0.0f %%"
 
 #: ../src/interface.c:53
-#, fuzzy
 msgid "Task Manager"
-msgstr "Gestionnaire de tâches Xfce4"
+msgstr "Gestionnaire des tâches"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "_Fichier"
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "_Affichage"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "Aid_e"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
@@ -107,7 +109,7 @@ msgstr "État"
 
 #: ../src/interface.c:208
 msgid "Prio"
-msgstr ""
+msgstr "Prio"
 
 #: ../src/interface.c:214
 msgid "PPID"
@@ -131,27 +133,27 @@ msgstr "Tuer"
 
 #: ../src/interface.c:250
 msgid "Priority"
-msgstr ""
+msgstr "Priorité"
 
 #: ../src/interface.c:263
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:268
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:273
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:278
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:283
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
@@ -174,32 +176,34 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask est dérivé du Gestionnaire des tâches d'Xfce4 par:\n"
+"    * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr ""
+msgstr "Cilyan Olowen <gaknar@gmail.com>"
 
 #: ../src/interface.c:355
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Copyright (C) 2008 LXDE team"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Gestionnaire des taĉhes léger pour le projet LXDE"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Confirmer"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
