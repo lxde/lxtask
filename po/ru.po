@@ -9,12 +9,13 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 19:58+0200\n"
-"PO-Revision-Date: 2006-03-24 21:52+0500\n"
-"Last-Translator: Andrey Fedoseev <andrey.fedoseev@gmail.com>\n"
+"PO-Revision-Date: 2009-04-25 10:36+0200\n"
+"Last-Translator: Александр Голубев <ag@lhp.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -23,54 +24,56 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Не смог послать сигнал %d процессу с ID %d\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Не смог установить приоритет %d процессу с ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr ""
+msgstr "Завершить выбранный процесс?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr ""
+msgstr "Снять выбранный процесс?"
 
 #: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr ""
+msgstr "Память: %d Мб из %d Мб использовано"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "Процессор: %0.0f %% используется"
 
 #: ../src/interface.c:53
-#, fuzzy
 msgid "Task Manager"
-msgstr "Диспетчер задач Xfce 4"
+msgstr "Диспетчер задач"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "_Файл"
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "_Вид"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "_Справка"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
-msgstr ""
+msgstr "использование процессора"
 
 #: ../src/interface.c:112
 msgid "memory usage"
-msgstr ""
+msgstr "использование памяти"
 
 #: ../src/interface.c:140
 msgid "more details"
@@ -86,7 +89,7 @@ msgstr "Пользователь"
 
 #: ../src/interface.c:178
 msgid "CPU%"
-msgstr ""
+msgstr "CPU%"
 
 #: ../src/interface.c:184
 msgid "RSS"
@@ -106,7 +109,7 @@ msgstr "Состояние"
 
 #: ../src/interface.c:208
 msgid "Prio"
-msgstr ""
+msgstr "Приоритет"
 
 #: ../src/interface.c:214
 msgid "PPID"
@@ -130,27 +133,27 @@ msgstr "Убить"
 
 #: ../src/interface.c:250
 msgid "Priority"
-msgstr ""
+msgstr "Приоритет"
 
 #: ../src/interface.c:263
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:268
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:273
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:278
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:283
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
@@ -166,36 +169,38 @@ msgstr "Показать другие задачи"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
-msgstr ""
+msgstr "Показать свободную кэш-память"
 
 #: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask создан на основе Xfce4 Task Manager от:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr ""
+msgstr "Alexander Golubev <ag@lhp.ru>"
 
 #: ../src/interface.c:355
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Copyright (C) 2008 LXDE team"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Легкий менеджер задачи для проекта LXDE"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Ошибка"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Подтверждение"
