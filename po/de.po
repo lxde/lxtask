@@ -11,12 +11,13 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 19:58+0200\n"
-"PO-Revision-Date: 2008-11-15 22:35+0200\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@t-online.de>\n"
+"PO-Revision-Date: 2009-04-30 00:57+0200\n"
+"Last-Translator: Christoph Wickert <christoph.wickert@googlemail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -159,19 +160,19 @@ msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
-msgstr "Zeige eigene Prozesse"
+msgstr "_Eigene Prozesse anzeigen"
 
 #: ../src/interface.c:311
 msgid "Show root tasks"
-msgstr "Zeige Systemprozesse"
+msgstr "_Systemprozesse anzeigen"
 
 #: ../src/interface.c:316
 msgid "Show other tasks"
-msgstr "Zeige andere Prozesse"
+msgstr "S_onstige Prozesse anzeigen"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
-msgstr "Zeige vom Cache verwendeten Speicher als freien Speicher an"
+msgstr "Vom _Cache verwendeten Speicher als freien Speicher anzeigen"
 
 #: ../src/interface.c:342
 msgid ""
