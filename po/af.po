@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-15 21:20+0200\n"
+"PO-Revision-Date: 2009-05-19 09:53+0200\n"
+"Last-Translator: F Wolff <friedel@translate.org.za>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
+
+#: ../src/xfce-taskmanager-linux.c:303
+#, c-format
+msgid ""
+"Couldn't send signal %d to the task with ID %d\n"
+"\n"
+"%s"
+msgstr ""
+
+#: ../src/xfce-taskmanager-linux.c:317
+#, c-format
+msgid "Couldn't set priority %d to the task with ID %d"
+msgstr ""
+
+#: ../src/callbacks.c:56
+msgid "Really kill the task?"
+msgstr ""
+
+#: ../src/callbacks.c:60
+msgid "Really terminate the task?"
+msgstr ""
+
+#: ../src/functions.c:142
+#, c-format
+msgid "Memory: %d MB of %d MB used"
+msgstr "Geheue: %d MG van %d MG gebruik"
+
+#: ../src/functions.c:148
+#, c-format
+msgid "CPU usage: %0.0f %%"
+msgstr "SVE-gebruik: %0.0f %%"
+
+#: ../src/interface.c:53
+msgid "Task Manager"
+msgstr "Taakbestuurder"
+
+#: ../src/interface.c:66
+msgid "_File"
+msgstr "_Lêer"
+
+#: ../src/interface.c:74
+msgid "_View"
+msgstr "_Bekyk"
+
+#: ../src/interface.c:80
+msgid "_Help"
+msgstr "_Hulp"
+
+#: ../src/interface.c:104
+msgid "cpu usage"
+msgstr "SVE-gebruik"
+
+#: ../src/interface.c:112
+msgid "memory usage"
+msgstr "geheueverbruik"
+
+#: ../src/interface.c:140
+msgid "more details"
+msgstr "meer detail"
+
+#: ../src/interface.c:166
+msgid "Command"
+msgstr "Opdrag"
+
+#: ../src/interface.c:172
+msgid "User"
+msgstr "Gebruiker"
+
+#: ../src/interface.c:178
+msgid "CPU%"
+msgstr "SVE%"
+
+#: ../src/interface.c:184
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/interface.c:190
+msgid "VM-Size"
+msgstr "VM-grootte"
+
+#: ../src/interface.c:196
+msgid "PID"
+msgstr "PID"
+
+#: ../src/interface.c:202
+msgid "State"
+msgstr "Toestand"
+
+#: ../src/interface.c:208
+msgid "Prio"
+msgstr "Prio"
+
+#: ../src/interface.c:214
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/interface.c:230
+msgid "Stop"
+msgstr "Stop"
+
+#: ../src/interface.c:235
+msgid "Continue"
+msgstr "Gaan voort"
+
+#: ../src/interface.c:240
+msgid "Term"
+msgstr "Termineer"
+
+#: ../src/interface.c:245
+msgid "Kill"
+msgstr "Vermoor"
+
+#: ../src/interface.c:250
+msgid "Priority"
+msgstr "Prioriteit"
+
+#: ../src/interface.c:263
+msgid "  -10"
+msgstr "  -10"
+
+#: ../src/interface.c:268
+msgid "  -5"
+msgstr "  -5"
+
+#: ../src/interface.c:273
+msgid "    0"
+msgstr "    0"
+
+#: ../src/interface.c:278
+msgid "   5"
+msgstr "   5"
+
+#: ../src/interface.c:283
+msgid "   10"
+msgstr "   10"
+
+#: ../src/interface.c:306
+msgid "Show user tasks"
+msgstr "Wys gebruikertake"
+
+#: ../src/interface.c:311
+msgid "Show root tasks"
+msgstr "Wys root se take"
+
+#: ../src/interface.c:316
+msgid "Show other tasks"
+msgstr "Wys ander take"
+
+#: ../src/interface.c:321
+msgid "Show memory used by cache as free"
+msgstr "Wys kasgeheue as beskikbaar"
+
+#: ../src/interface.c:342
+msgid ""
+"LXTask is derived from Xfce4 Task Manager by:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+msgstr ""
+"LXTask is afgelei vanaf Xfce4-taakbestuurder deur:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+
+#. TRANSLATORS: Replace mw string with your names, one name per line.
+#: ../src/interface.c:347
+msgid "translator-credits"
+msgstr "Friedel Wolff"
+
+#: ../src/interface.c:355
+msgid "LXTask"
+msgstr "LXTaak"
+
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:357
+msgid "Copyright (C) 2008 LXDE team"
+msgstr "Kopiereg (C) 2008 LXDE-span"
+
+#: ../src/interface.c:358
+msgid "Lightweight task manager for LXDE project"
+msgstr "Liggewig taakbestuurder vir die LXDE-projek"
+
+#: ../src/utils.c:43
+msgid "Error"
+msgstr "Fout"
+
+#: ../src/utils.c:56
+msgid "Confirm"
+msgstr "Bevestig"
