@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: LXTask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 19:58+0200\n"
-"PO-Revision-Date: 2008-04-28 21:43+0100\n"
+"PO-Revision-Date: 2009-05-25 16:22+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,11 +25,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Nem tudok %d szignált küldeni a %d azonosítójú feladatra\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Nem tudok %d prioritást beállítani e %d azonosítójú feladatra"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -205,3 +208,4 @@ msgstr "Megerősít"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
+
