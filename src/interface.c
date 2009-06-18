@@ -59,12 +59,12 @@ GtkWidget* create_main_window (void)
 
 	menubar = gtk_menu_bar_new();
 	gtk_widget_show( menubar );
-	gtk_box_pack_start(bbox1, menubar, FALSE, TRUE, 0 );
+	gtk_box_pack_start(GTK_BOX (bbox1), menubar, FALSE, TRUE, 0 );
 
 	/* build menu */
 	menu = gtk_menu_new();
 	item = gtk_menu_item_new_with_mnemonic( _("_File") );
-	gtk_menu_item_set_submenu( item, menu );
+	gtk_menu_item_set_submenu(GTK_MENU_ITEM (item), menu );
 	gtk_menu_shell_append( (GtkMenuShell*)menubar, item );
 
 	item = gtk_image_menu_item_new_from_stock( GTK_STOCK_QUIT, NULL );
@@ -75,12 +75,12 @@ GtkWidget* create_main_window (void)
 	gtk_menu_shell_append( (GtkMenuShell*)menubar, item );
 
 	menu = create_mainmenu();
-	gtk_menu_item_set_submenu( item, menu );
+	gtk_menu_item_set_submenu(GTK_MENU_ITEM (item), menu );
 
 	item = gtk_menu_item_new_with_mnemonic( _("_Help") );
 	gtk_menu_shell_append( (GtkMenuShell*)menubar, item );
 	menu = gtk_menu_new();
-	gtk_menu_item_set_submenu( item, menu );
+	gtk_menu_item_set_submenu(GTK_MENU_ITEM (item), menu );
 
     item= gtk_image_menu_item_new_from_stock ("gtk-about", NULL);
     gtk_widget_show (item);
@@ -92,7 +92,7 @@ GtkWidget* create_main_window (void)
 	/* window content */
     vbox1 = gtk_vbox_new (FALSE, 10);
     gtk_widget_show (vbox1);
-    gtk_box_pack_start( bbox1, vbox1, TRUE, TRUE, 0 );
+    gtk_box_pack_start( GTK_BOX(bbox1), vbox1, TRUE, TRUE, 0 );
     gtk_container_set_border_width (GTK_CONTAINER (vbox1), 6);
 
     system_info_box = gtk_hbox_new (FALSE, 10);
