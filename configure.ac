@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT(lxtask,[0.1], [],lxtask)
+AC_INIT(lxtask,[0.1.1], [],lxtask)
 AM_INIT_AUTOMAKE()
 AC_PROG_INTLTOOL(, [no-xml])
 AM_MAINTAINER_MODE
@@ -13,7 +13,7 @@ AM_PROG_CC_C_O
 dnl Check for UNIX variants
 AC_AIX()
 AC_ISC_POSIX()
-AC_MINIX()
+#AC_MINIX()
 
 AC_HEADER_STDC()
 AC_CHECK_HEADERS([dirent.h pwd.h sys/types.h sys/stat.h sys/param.h \
