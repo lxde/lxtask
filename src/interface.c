@@ -95,7 +95,7 @@ GtkWidget* create_main_window (void)
     gtk_box_pack_start( GTK_BOX(bbox1), vbox1, TRUE, TRUE, 0 );
     gtk_container_set_border_width (GTK_CONTAINER (vbox1), 6);
 
-    system_info_box = gtk_hbox_new (FALSE, 10);
+    system_info_box = gtk_hbox_new (TRUE, 10);
     gtk_widget_show (system_info_box);
     gtk_box_pack_start (GTK_BOX (vbox1), system_info_box, FALSE, TRUE, 0);
 
