@@ -175,6 +175,9 @@ void create_list_store(void)
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_UNAME, compare_int_list_item, (void *)COLUMN_UNAME, NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
 
+    cell_renderer = gtk_cell_renderer_text_new();
+    g_object_set(cell_renderer, "xalign", 1.0, NULL);
+
     column = gtk_tree_view_column_new_with_attributes(_("CPU%"), cell_renderer, "text", COLUMN_TIME, NULL);
     gtk_tree_view_column_set_resizable(column, TRUE);
     gtk_tree_view_column_set_sort_column_id(column, COLUMN_TIME);
