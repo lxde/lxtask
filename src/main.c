@@ -63,7 +63,7 @@ int main (int argc, char *argv[])
 
     own_uid = getuid();
 
-    config_file = g_build_filename(g_get_user_config_dir(), "lxtask.conf", FALSE);
+    config_file = g_build_filename(g_get_user_config_dir(), "lxtask.conf", NULL);
     load_config();
 
     task_array = g_array_new (FALSE, FALSE, sizeof (struct task));
