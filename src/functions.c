@@ -31,6 +31,8 @@
 
 #include "functions.h"
 
+extern guint refresh_interval;
+
 static system_status *sys_stat =NULL;
 
 gboolean refresh_task_list(void)
@@ -66,7 +68,7 @@ gboolean refresh_task_list(void)
 
                 tmp->time = new_tmp->time;
 
-                tmp->time_percentage = (gdouble)(tmp->time - tmp->old_time) * (gdouble)(1000.0 / (REFRESH_INTERVAL*num_cpus));
+                tmp->time_percentage = (gdouble)(tmp->time - tmp->old_time) * (gdouble)(1000.0 / (refresh_interval * 1000 * num_cpus));
                 if(
                     (gint)tmp->ppid != (gint)new_tmp->ppid ||
                     strcmp(tmp->state,new_tmp->state) ||
@@ -230,6 +232,7 @@ void load_config(void)
 
     win_width = key_file_get_int(rc_file, group, "win_width", 500 );
     win_height = key_file_get_int(rc_file, group, "win_height", 400 );
+    refresh_interval = key_file_get_int(rc_file, group, "refresh_interval", 1 );
 
     g_key_file_free(rc_file);
 }
@@ -251,6 +254,7 @@ void save_config(void)
 
     fprintf( rc_file, "win_width=%d\n", win_width);
     fprintf( rc_file, "win_height=%d\n", win_height);
+    fprintf( rc_file, "refresh_interval=%d\n", refresh_interval);
 
     fclose(rc_file);
 }

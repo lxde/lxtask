@@ -33,6 +33,11 @@
 #define GLADE_HOOKUP_OBJECT_NO_REF(component,widget,name) \
   g_object_set_data (G_OBJECT (component), name, widget)
 
+void show_preferences(void);
+extern guint refresh_interval;
+extern guint rID;
+GtkWidget *refresh_spin;
+
 GtkWidget* create_main_window (void)
 {
     GtkWidget *window;
@@ -296,10 +301,12 @@ GtkWidget* create_mainmenu (void)
     GtkWidget *mainmenu;
     GtkWidget *info1;
     GtkWidget *trennlinie1;
+    GtkWidget *preferences1;
     GtkWidget *show_user_tasks1;
     GtkWidget *show_root_tasks1;
     GtkWidget *show_other_tasks1;
     GtkWidget *show_cached_as_free1;
+    GtkWidget *separator1;
     GtkAccelGroup *accel_group;
 
     accel_group = gtk_accel_group_new ();
@@ -326,6 +333,15 @@ GtkWidget* create_mainmenu (void)
     gtk_widget_show (show_cached_as_free1);
     gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), show_cached_as_free1);
 
+    separator1 = gtk_separator_menu_item_new();
+    gtk_widget_show(separator1);
+    gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), separator1);
+
+    preferences1 = gtk_image_menu_item_new_from_stock(GTK_STOCK_PREFERENCES, NULL);
+    g_signal_connect(G_OBJECT (preferences1), "activate", G_CALLBACK (show_preferences), NULL);
+    gtk_widget_show(preferences1);
+    gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), preferences1);
+
     g_signal_connect ((gpointer) show_user_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)own_uid);
     g_signal_connect ((gpointer) show_root_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)0);
     g_signal_connect ((gpointer) show_other_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)-1);
@@ -342,6 +358,7 @@ void show_about_dialog(void)
     const gchar *authors[] =
     {
         "Hong Jen Yee <pcman.tw@gmail.com>",
+        "Jan Dlabal <dlabaljan@gmail.com>",
         _("LXTask is derived from Xfce4 Task Manager by:\n"
         "  * Johannes Zellner <webmaster@nebulon.de>"),
         NULL
@@ -540,3 +557,36 @@ void change_task_view(void)
 }
 
 
+void apply_prefs()
+{
+    g_source_remove(rID);
+    refresh_interval = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON (refresh_spin));
+    rID = g_timeout_add(1000 * refresh_interval, (gpointer) refresh_task_list, NULL);
+}
+
+
+void show_preferences(void)
+{
+    GtkWidget *dlg;
+    GtkWidget *c_area;
+    GtkWidget *notebook = gtk_notebook_new();
+    GtkWidget *general_box = gtk_vbox_new(FALSE, 0);
+    GtkWidget *refresh_box = gtk_hbox_new(FALSE, 0);
+    refresh_spin = gtk_spin_button_new_with_range(1, 60, 1);
+    gtk_spin_button_set_value(GTK_SPIN_BUTTON(refresh_spin), refresh_interval);
+
+    dlg = gtk_dialog_new_with_buttons(_("Preferences"), NULL, 0, GTK_STOCK_CANCEL, GTK_RESPONSE_REJECT, GTK_STOCK_OK, GTK_RESPONSE_ACCEPT, NULL);
+    c_area = gtk_dialog_get_content_area(GTK_DIALOG (dlg));
+
+    gtk_box_pack_start_defaults(GTK_BOX (c_area), notebook);
+    gtk_notebook_append_page(GTK_NOTEBOOK (notebook), general_box, gtk_label_new(_("General")));
+    gtk_box_pack_start_defaults(GTK_BOX (refresh_box), gtk_label_new(_("Refresh rate (seconds):")));
+    gtk_box_pack_start_defaults(GTK_BOX (refresh_box), refresh_spin);
+    gtk_box_pack_start_defaults(GTK_BOX (general_box), refresh_box);
+
+    gtk_widget_show_all(notebook);
+
+    if (gtk_dialog_run(GTK_DIALOG (dlg)) == GTK_RESPONSE_ACCEPT)
+      apply_prefs();
+    gtk_widget_destroy(dlg);
+}

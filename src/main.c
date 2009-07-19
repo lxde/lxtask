@@ -47,6 +47,8 @@ gboolean full_view;
 
 guint win_width;
 guint win_height;
+guint refresh_interval;
+guint rID;
 
 
 int main (int argc, char *argv[])
@@ -75,7 +77,7 @@ int main (int argc, char *argv[])
     if(!refresh_task_list())
         return 0;
 
-    g_timeout_add(REFRESH_INTERVAL, (gpointer) refresh_task_list, NULL);
+    rID = g_timeout_add(1000 * refresh_interval, (gpointer) refresh_task_list, NULL);
 
     gtk_main ();
 
