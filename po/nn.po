@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-27 19:46+0200\n"
+"POT-Creation-Date: 2009-04-15 21:20+0200\n"
 "PO-Revision-Date: 2009-07-27 20:42+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -41,137 +41,137 @@ msgstr "Er du sikker på at du vil drepa oppgåva?"
 msgid "Really terminate the task?"
 msgstr "Er du sikker på at du vil avslutta oppgåva?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Minne: %d MB av %d MB brukt"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "Prosessorbruk: %0.0f %%"
 
-#: ../src/interface.c:58
+#: ../src/interface.c:53
 msgid "Task Manager"
 msgstr "Oppgåvestyring"
 
-#: ../src/interface.c:71
+#: ../src/interface.c:66
 msgid "_File"
 msgstr "_Fil"
 
-#: ../src/interface.c:79
+#: ../src/interface.c:74
 msgid "_View"
 msgstr "_Vis"
 
-#: ../src/interface.c:85
+#: ../src/interface.c:80
 msgid "_Help"
 msgstr "_Hjelp"
 
-#: ../src/interface.c:109
+#: ../src/interface.c:104
 msgid "cpu usage"
 msgstr "prosessorbruk"
 
-#: ../src/interface.c:117
+#: ../src/interface.c:112
 msgid "memory usage"
 msgstr "minnebruk"
 
-#: ../src/interface.c:145
+#: ../src/interface.c:140
 msgid "more details"
 msgstr "detaljar"
 
-#: ../src/interface.c:171
+#: ../src/interface.c:166
 msgid "Command"
 msgstr "Kommando"
 
-#: ../src/interface.c:177
+#: ../src/interface.c:172
 msgid "User"
 msgstr "Brukar"
 
-#: ../src/interface.c:186
+#: ../src/interface.c:178
 msgid "CPU%"
 msgstr "Prosessor-%"
 
-#: ../src/interface.c:192
+#: ../src/interface.c:184
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:198
+#: ../src/interface.c:190
 msgid "VM-Size"
 msgstr "VM-storleik"
 
-#: ../src/interface.c:204
+#: ../src/interface.c:196
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:210
+#: ../src/interface.c:202
 msgid "State"
 msgstr "Tilstand"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:208
 msgid "Prio"
 msgstr "Prioritert"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:214
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:238
+#: ../src/interface.c:230
 msgid "Stop"
 msgstr "Stopp"
 
-#: ../src/interface.c:243
+#: ../src/interface.c:235
 msgid "Continue"
 msgstr "Hald fram"
 
-#: ../src/interface.c:248
+#: ../src/interface.c:240
 msgid "Term"
 msgstr "Avslutt"
 
-#: ../src/interface.c:253
+#: ../src/interface.c:245
 msgid "Kill"
 msgstr "Drep"
 
-#: ../src/interface.c:258
+#: ../src/interface.c:250
 msgid "Priority"
 msgstr "Prioritet"
 
-#: ../src/interface.c:271
+#: ../src/interface.c:263
 msgid "  -10"
 msgstr "  −10"
 
-#: ../src/interface.c:276
+#: ../src/interface.c:268
 msgid "  -5"
 msgstr "  −5"
 
-#: ../src/interface.c:281
+#: ../src/interface.c:273
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:286
+#: ../src/interface.c:278
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:291
+#: ../src/interface.c:283
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:306
 msgid "Show user tasks"
 msgstr "Vis brukaroppgåver"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:311
 msgid "Show root tasks"
 msgstr "Vis rotoppgåver"
 
-#: ../src/interface.c:326
+#: ../src/interface.c:316
 msgid "Show other tasks"
 msgstr "Vis andre oppgåver"
 
-#: ../src/interface.c:331
+#: ../src/interface.c:321
 msgid "Show memory used by cache as free"
 msgstr "Vis minne brukt av cache som ledig"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -180,34 +180,22 @@ msgstr ""
 "  – Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/interface.c:367
+#: ../src/interface.c:347
 msgid "translator-credits"
 msgstr "Karl Ove Hufthammer"
 
-#: ../src/interface.c:375
+#: ../src/interface.c:355
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:377
+#: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright © 2008 LXDE team"
 
-#: ../src/interface.c:378
+#: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
 msgstr "Lett oppgåvestyrar for LXDE"
-
-#: ../src/interface.c:578
-msgid "Preferences"
-msgstr "Innstillingar"
-
-#: ../src/interface.c:582
-msgid "General"
-msgstr "Generelt"
-
-#: ../src/interface.c:583
-msgid "Refresh rate (seconds):"
-msgstr "Oppfriskingsrate (sekund):"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -216,3 +204,12 @@ msgstr "Feil"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Stadfest"
+
+#~ msgid "Preferences"
+#~ msgstr "Innstillingar"
+
+#~ msgid "General"
+#~ msgstr "Generelt"
+
+#~ msgid "Refresh rate (seconds):"
+#~ msgstr "Oppfriskingsrate (sekund):"

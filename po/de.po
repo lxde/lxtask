@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-20 20:50+0200\n"
+"POT-Creation-Date: 2009-04-15 21:20+0200\n"
 "PO-Revision-Date: 2009-07-20 20:55+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -34,7 +34,8 @@ msgstr ""
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Priorität %d konnte nicht für den Prozess mit der Kennung %d gesetzt werden"
+msgstr ""
+"Priorität %d konnte nicht für den Prozess mit der Kennung %d gesetzt werden"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -44,137 +45,137 @@ msgstr "Prozess wirklich töten?"
 msgid "Really terminate the task?"
 msgstr "Prozess wirklich beenden?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Speicher: %d MB von %d MB benutzt"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU-Auslastung: %0.0f %%"
 
-#: ../src/interface.c:58
+#: ../src/interface.c:53
 msgid "Task Manager"
 msgstr "LXDE-Taskmanager"
 
-#: ../src/interface.c:71
+#: ../src/interface.c:66
 msgid "_File"
 msgstr "_Datei"
 
-#: ../src/interface.c:79
+#: ../src/interface.c:74
 msgid "_View"
 msgstr "_Ansicht"
 
-#: ../src/interface.c:85
+#: ../src/interface.c:80
 msgid "_Help"
 msgstr "_Hilfe"
 
-#: ../src/interface.c:109
+#: ../src/interface.c:104
 msgid "cpu usage"
 msgstr "CPU-Auslastung"
 
-#: ../src/interface.c:117
+#: ../src/interface.c:112
 msgid "memory usage"
 msgstr "Speicherverbrauch"
 
-#: ../src/interface.c:145
+#: ../src/interface.c:140
 msgid "more details"
 msgstr "Mehr Info"
 
-#: ../src/interface.c:171
+#: ../src/interface.c:166
 msgid "Command"
 msgstr "Befehl"
 
-#: ../src/interface.c:177
+#: ../src/interface.c:172
 msgid "User"
 msgstr "Benutzer"
 
-#: ../src/interface.c:186
+#: ../src/interface.c:178
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:192
+#: ../src/interface.c:184
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:198
+#: ../src/interface.c:190
 msgid "VM-Size"
 msgstr "Speicher"
 
-#: ../src/interface.c:204
+#: ../src/interface.c:196
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:210
+#: ../src/interface.c:202
 msgid "State"
 msgstr "Status"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:208
 msgid "Prio"
 msgstr "Prio"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:214
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:238
+#: ../src/interface.c:230
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/interface.c:243
+#: ../src/interface.c:235
 msgid "Continue"
 msgstr "Fortsetzen"
 
-#: ../src/interface.c:248
+#: ../src/interface.c:240
 msgid "Term"
 msgstr "Beenden"
 
-#: ../src/interface.c:253
+#: ../src/interface.c:245
 msgid "Kill"
 msgstr "Kill"
 
-#: ../src/interface.c:258
+#: ../src/interface.c:250
 msgid "Priority"
 msgstr "Priorität"
 
-#: ../src/interface.c:271
+#: ../src/interface.c:263
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:276
+#: ../src/interface.c:268
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:281
+#: ../src/interface.c:273
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:286
+#: ../src/interface.c:278
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:291
+#: ../src/interface.c:283
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:306
 msgid "Show user tasks"
 msgstr "_Eigene Prozesse anzeigen"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:311
 msgid "Show root tasks"
 msgstr "_Systemprozesse anzeigen"
 
-#: ../src/interface.c:326
+#: ../src/interface.c:316
 msgid "Show other tasks"
 msgstr "S_onstige Prozesse anzeigen"
 
-#: ../src/interface.c:331
+#: ../src/interface.c:321
 msgid "Show memory used by cache as free"
 msgstr "Vom _Cache verwendeten Speicher als freien Speicher anzeigen"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -183,7 +184,7 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/interface.c:367
+#: ../src/interface.c:347
 msgid "translator-credits"
 msgstr ""
 "Johannes Zellner <xfce4-taskmanager@nebulon.de>, 2005.\n"
@@ -192,30 +193,18 @@ msgstr ""
 "Mario Blättermann <mariobl@gnome.org>, 2008.\n"
 "Christoph Wickert <christoph.wickert@googlemail.com>, 2009."
 
-#: ../src/interface.c:375
+#: ../src/interface.c:355
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:377
+#: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright (C) 2008 LXDE-Team"
 
-#: ../src/interface.c:378
+#: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
 msgstr "Leichtgewichtiger Taskmanager des LXDE-Projekts"
-
-#: ../src/interface.c:578
-msgid "Preferences"
-msgstr "Einstellungen"
-
-#: ../src/interface.c:582
-msgid "General"
-msgstr "Allgemein"
-
-#: ../src/interface.c:583
-msgid "Refresh rate (seconds):"
-msgstr "Aktualisierungsrate (Sekunden):"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -225,3 +214,11 @@ msgstr "Fehler"
 msgid "Confirm"
 msgstr "Bestätigen"
 
+#~ msgid "Preferences"
+#~ msgstr "Einstellungen"
+
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgid "Refresh rate (seconds):"
+#~ msgstr "Aktualisierungsrate (Sekunden):"
