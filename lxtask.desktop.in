@@ -1,16 +1,18 @@
 [Desktop Entry]
 Name=Task Manager
-Name[zh_TW]=工作管理員
 Name[fi]=Tehtävienhallinta
 Name[ja]=タスクマネージャ
+Name[zh_TW]=工作管理員
 Comment=Manage running processes
-Comment[zh_TW]=管理執行中的程式
+Comment[de]=Laufende Prozesse verwalten
 Comment[fi]=Hallitse käynnissä olevia prosesseja
 Comment[ja]=実行中のプロセスを管理します
+Comment[zh_TW]=管理執行中的程式
 GenericName=Process manager
-GenericName=工作管理員
+GenericName[de]=Prozessverwaltung
 GenericName[fi]=Prosessien käsittelijä
 GenericName[ja]=プロセスマネージャ
+GenericName[zh_TW]=工作管理員
 Exec=lxtask
 Icon=utilities-system-monitor
 Terminal=false
