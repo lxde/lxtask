@@ -1,7 +1,7 @@
 # Indonesian translation for lxtask.
 # Copyright (C) YEAR THE lxtask'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the lxtask package.
-# Andhika Padmawan <andhika.padmawan@gmail.com>, 2009.
+# Andhika Padmawan <andhika.padmawan@gmail.com>, Rahman Yusri Aftian <aftian@yahoo.com>, 2009.
 #
 msgid ""
 msgstr ""
