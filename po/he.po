@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 21:20+0200\n"
-"PO-Revision-Date: 2009-09-23 09:19+0200\n"
+"PO-Revision-Date: 2009-09-23 09:33+0200\n"
 "Last-Translator: Yaron Shahrbani <sh.yaron@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -43,161 +43,163 @@ msgstr "באמת לחסל את המשימה?"
 #: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr ""
+msgstr "זכרון: %d מ\"ב מתוך %d מ\"ב בשימוש"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "ניצול המעבד: %0.0f %%"
 
 #: ../src/interface.c:53
 msgid "Task Manager"
-msgstr ""
+msgstr "מנהל המשימות"
 
 #: ../src/interface.c:66
 msgid "_File"
-msgstr ""
+msgstr "_קובץ"
 
 #: ../src/interface.c:74
 msgid "_View"
-msgstr ""
+msgstr "_תצוגה"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr ""
+msgstr "ע_זרה"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
-msgstr ""
+msgstr "ניצול המעבד"
 
 #: ../src/interface.c:112
 msgid "memory usage"
-msgstr ""
+msgstr "ניצול הזכרון"
 
 #: ../src/interface.c:140
 msgid "more details"
-msgstr ""
+msgstr "פרטים נוספים"
 
 #: ../src/interface.c:166
 msgid "Command"
-msgstr ""
+msgstr "פקודה"
 
 #: ../src/interface.c:172
 msgid "User"
-msgstr ""
+msgstr "משתמש"
 
 #: ../src/interface.c:178
 msgid "CPU%"
-msgstr ""
+msgstr "%מהמעבד"
 
 #: ../src/interface.c:184
 msgid "RSS"
-msgstr ""
+msgstr "RSS"
 
 #: ../src/interface.c:190
 msgid "VM-Size"
-msgstr ""
+msgstr "גודל הזכרון הווירטואלי"
 
 #: ../src/interface.c:196
 msgid "PID"
-msgstr ""
+msgstr "מזהה התהליך"
 
 #: ../src/interface.c:202
 msgid "State"
-msgstr ""
+msgstr "מצב"
 
 #: ../src/interface.c:208
 msgid "Prio"
-msgstr ""
+msgstr "עדיפות"
 
 #: ../src/interface.c:214
 msgid "PPID"
-msgstr ""
+msgstr "מזהה ההורה"
 
 #: ../src/interface.c:230
 msgid "Stop"
-msgstr ""
+msgstr "עצירה"
 
 #: ../src/interface.c:235
 msgid "Continue"
-msgstr ""
+msgstr "המשך"
 
 #: ../src/interface.c:240
 msgid "Term"
-msgstr ""
+msgstr "משך"
 
 #: ../src/interface.c:245
 msgid "Kill"
-msgstr ""
+msgstr "סיום"
 
 #: ../src/interface.c:250
 msgid "Priority"
-msgstr ""
+msgstr "עדיפות"
 
 #: ../src/interface.c:263
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:268
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:273
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:278
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:283
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:306
 msgid "Show user tasks"
-msgstr ""
+msgstr "הצגת משימות המשתמש"
 
 #: ../src/interface.c:311
 msgid "Show root tasks"
-msgstr ""
+msgstr "הצגת משימות העל"
 
 #: ../src/interface.c:316
 msgid "Show other tasks"
-msgstr ""
+msgstr "הצגת משימות אחרות"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
-msgstr ""
+msgstr "הצגת הזכרון בו נעשה שימוש על ידי המטמון כחופשי"
 
 #: ../src/interface.c:342
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask נגזר מתוך מנהל המשימות של  Xfce4, נכתב על ידי:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr ""
+msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 
 #: ../src/interface.c:355
 msgid "LXTask"
-msgstr ""
+msgstr "מנהל המשימות LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "כל הזכויות שמורות (C) 2008 צוות LXDE"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "מנהל משימות קליל עבור מיזם LXDE"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "שגיאה"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "אישור"
