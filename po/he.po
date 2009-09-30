@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 21:20+0200\n"
-"PO-Revision-Date: 2009-09-23 09:33+0200\n"
+"PO-Revision-Date: 2009-09-29 20:07+0200\n"
 "Last-Translator: Yaron Shahrbani <sh.yaron@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr ""
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "לא ניתן להגדיר עדיפות מס' %d למשימה בעלת המזהה %d"
+msgstr "לא ניתן להגדיר עדיפות מספר %d למשימה בעלת המזהה %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -175,7 +175,7 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask נגזר מתוך מנהל המשימות של  Xfce4, נכתב על ידי:\n"
+"LXTask נגזר מתוך מנהל המשימות של Xfce4, נכתב על ידי:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
@@ -190,7 +190,7 @@ msgstr "מנהל המשימות LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:357
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "כל הזכויות שמורות (C) 2008 צוות LXDE"
+msgstr "כל הזכויות שמורות (C) ‏2008 צוות LXDE"
 
 #: ../src/interface.c:358
 msgid "Lightweight task manager for LXDE project"
