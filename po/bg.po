@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 21:20+0200\n"
-"PO-Revision-Date: 2009-10-09 12:35+0200\n"
+"PO-Revision-Date: 2009-10-09 15:12+0200\n"
 "Last-Translator: Rossen Karpuzov <gustav cointech net>\n"
 "Language-Team: Mandriva User Group - Bulgaria <mandriva-bg@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -199,4 +199,3 @@ msgstr "Грешка"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Потвърждение"
-
