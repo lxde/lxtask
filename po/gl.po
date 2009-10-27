@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 19:58+0200\n"
-"PO-Revision-Date: 2009-10-05 11:36+0200\n"
+"PO-Revision-Date: 2009-10-27 10:36+0100\n"
 "Last-Translator: Indalecio Freiría Santos <ifreiria@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,16 +34,16 @@ msgstr "No se puido fixar a prioridade %d á tarefa con ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Quere matar a tarefa?"
+msgstr "Desexa matar esta tarefa?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Memoria: %d MB de %d MB usados"
+msgstr "Desexa finalizar esta tarefa?"
 
 #: ../src/functions.c:142
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Uso da CPU: %0.0f %%"
+msgstr "Memoria: Usados %d MB de %d MB "
 
 #: ../src/functions.c:148
 #, c-format
@@ -52,7 +52,7 @@ msgstr "Uso da CPU: %0.0f %%"
 
 #: ../src/interface.c:53
 msgid "Task Manager"
-msgstr "Administrador de Tarefas"
+msgstr "Xestor de tarefas"
 
 #: ../src/interface.c:66
 msgid "_File"
@@ -64,7 +64,7 @@ msgstr "_Ver"
 
 #: ../src/interface.c:80
 msgid "_Help"
-msgstr "Ax_uda"
+msgstr "_Axuda"
 
 #: ../src/interface.c:104
 msgid "cpu usage"
@@ -96,7 +96,7 @@ msgstr "RSS"
 
 #: ../src/interface.c:190
 msgid "VM-Size"
-msgstr "Memoria Virtual"
+msgstr "Tamaño da memoria virtual"
 
 #: ../src/interface.c:196
 msgid "PID"
@@ -168,7 +168,7 @@ msgstr "Amosar outras tarefas"
 
 #: ../src/interface.c:321
 msgid "Show memory used by cache as free"
-msgstr "Mostrar a memoria usada pola cache como libre"
+msgstr "Amosar a memoria usada por caché como libre"
 
 #: ../src/interface.c:342
 msgid ""
@@ -181,7 +181,10 @@ msgstr ""
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:347
 msgid "translator-credits"
-msgstr "Indalecio Freiría <ifreiria@gmail.com>, 2009"
+msgstr ""
+"Miguel Anxo Bouzada <mbouzada@gmail.com>, 2009 \n"
+"Indalecio Freiría <ifreiria@gmail.com>, 2009 \n"
+"Proxecto Trasno <proxecto@trasno>"
 
 #: ../src/interface.c:355
 msgid "LXTask"
