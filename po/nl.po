@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-15 19:58+0200\n"
+"POT-Creation-Date: 2009-11-01 14:52+0800\n"
 "PO-Revision-Date: 2009-05-04 15:33+0100\n"
 "Last-Translator: Sander De Voogdt <celettu@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -15,6 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=ASCII\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../lxtask.desktop.in.h:1
+msgid "Manage running processes"
+msgstr ""
+
+#: ../lxtask.desktop.in.h:2
+msgid "Process manager"
+msgstr ""
+
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+msgid "Task Manager"
+msgstr "Taakbeheer"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -40,137 +52,133 @@ msgstr "Taak echt geforceerd afsluiten?"
 msgid "Really terminate the task?"
 msgstr "Taak echt afsluiten?"
 
-#: ../src/functions.c:142
+#: ../src/functions.c:144
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Geheugen: %d MB van %d MB gebruikt"
 
-#: ../src/functions.c:148
+#: ../src/functions.c:150
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU gebruik: %0.0f %%"
 
-#: ../src/interface.c:53
-msgid "Task Manager"
-msgstr "Taakbeheer"
-
-#: ../src/interface.c:66
+#: ../src/interface.c:71
 msgid "_File"
 msgstr "Bestand"
 
-#: ../src/interface.c:74
+#: ../src/interface.c:79
 msgid "_View"
 msgstr "Beeld"
 
-#: ../src/interface.c:80
+#: ../src/interface.c:85
 msgid "_Help"
 msgstr "Help"
 
-#: ../src/interface.c:104
+#: ../src/interface.c:109
 msgid "cpu usage"
 msgstr "cpu gebruik"
 
-#: ../src/interface.c:112
+#: ../src/interface.c:117
 msgid "memory usage"
 msgstr "geheugen gebruik"
 
-#: ../src/interface.c:140
+#: ../src/interface.c:145
 msgid "more details"
 msgstr "meer details"
 
-#: ../src/interface.c:166
+#: ../src/interface.c:171
 msgid "Command"
 msgstr "Commando"
 
-#: ../src/interface.c:172
+#: ../src/interface.c:177
 msgid "User"
 msgstr "Gebruiker"
 
-#: ../src/interface.c:178
+#: ../src/interface.c:186
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:184
+#: ../src/interface.c:192
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:190
+#: ../src/interface.c:198
 msgid "VM-Size"
 msgstr "VM-Grootte"
 
-#: ../src/interface.c:196
+#: ../src/interface.c:204
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:202
+#: ../src/interface.c:210
 msgid "State"
 msgstr "Status"
 
-#: ../src/interface.c:208
+#: ../src/interface.c:216
 msgid "Prio"
 msgstr "Prio"
 
-#: ../src/interface.c:214
+#: ../src/interface.c:222
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:230
+#: ../src/interface.c:238
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/interface.c:235
+#: ../src/interface.c:243
 msgid "Continue"
 msgstr "Verder"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:248
 msgid "Term"
 msgstr "Term"
 
-#: ../src/interface.c:245
+#: ../src/interface.c:253
 msgid "Kill"
 msgstr "Geforceerd afsluiten"
 
-#: ../src/interface.c:250
+#: ../src/interface.c:258
 msgid "Priority"
 msgstr "Prioriteit"
 
-#: ../src/interface.c:263
+#: ../src/interface.c:271
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:268
+#: ../src/interface.c:276
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:273
+#: ../src/interface.c:281
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:278
+#: ../src/interface.c:286
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:283
+#: ../src/interface.c:291
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:306
+#: ../src/interface.c:316
 msgid "Show user tasks"
 msgstr "Toon gebruikers taken"
 
-#: ../src/interface.c:311
+#: ../src/interface.c:321
 msgid "Show root tasks"
 msgstr "Toon root taken"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:326
 msgid "Show other tasks"
 msgstr "Toon andere taken"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:331
 msgid "Show memory used by cache as free"
 msgstr "Geheugen dat niet gebruikt wordt door cache weergeven als vrij"
 
-#: ../src/interface.c:342
+#: ../src/interface.c:362
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -179,22 +187,34 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/interface.c:347
+#: ../src/interface.c:367
 msgid "translator-credits"
 msgstr "Sander De Voogdt <celettu@gmail.com>"
 
-#: ../src/interface.c:355
+#: ../src/interface.c:375
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:357
+#: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright (C) 2008 LXDE team"
 
-#: ../src/interface.c:358
+#: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
 msgstr "Lichtgewicht taakbeheer applicatie voor LXDE"
+
+#: ../src/interface.c:578
+msgid "Preferences"
+msgstr ""
+
+#: ../src/interface.c:582
+msgid "General"
+msgstr ""
+
+#: ../src/interface.c:583
+msgid "Refresh rate (seconds):"
+msgstr ""
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -203,4 +223,3 @@ msgstr "Fout"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Bevestig"
-

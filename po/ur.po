@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-15 21:20+0200\n"
+"POT-Creation-Date: 2009-11-01 14:52+0800\n"
 "PO-Revision-Date: 2009-05-10 04:01+0500\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
@@ -18,6 +18,18 @@ msgstr ""
 "X-Poedit-Language: Urdu\n"
 "X-Poedit-Country: PAKISTAN\n"
 "X-Poedit-SourceCharset: utf-8\n"
+
+#: ../lxtask.desktop.in.h:1
+msgid "Manage running processes"
+msgstr ""
+
+#: ../lxtask.desktop.in.h:2
+msgid "Process manager"
+msgstr ""
+
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+msgid "Task Manager"
+msgstr "ٹاسک منیجر"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -43,137 +55,133 @@ msgstr "کیا واقعی اس پروگرام کو قتل کردیں؟"
 msgid "Really terminate the task?"
 msgstr "کیا واقعی اس پروگرام کو بند کردیں؟"
 
-#: ../src/functions.c:142
+#: ../src/functions.c:144
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "یاداشت: %d م.ب برائے %d م.ب استعمال کردہ"
 
-#: ../src/functions.c:148
+#: ../src/functions.c:150
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "سی پی یو استعمال: %0.0f %%"
 
-#: ../src/interface.c:53
-msgid "Task Manager"
-msgstr "ٹاسک منیجر"
-
-#: ../src/interface.c:66
+#: ../src/interface.c:71
 msgid "_File"
 msgstr "_فائل"
 
-#: ../src/interface.c:74
+#: ../src/interface.c:79
 msgid "_View"
 msgstr "_منظر"
 
-#: ../src/interface.c:80
+#: ../src/interface.c:85
 msgid "_Help"
 msgstr "_ہدایات"
 
-#: ../src/interface.c:104
+#: ../src/interface.c:109
 msgid "cpu usage"
 msgstr "سی پی یو استعمال"
 
-#: ../src/interface.c:112
+#: ../src/interface.c:117
 msgid "memory usage"
 msgstr "یاداشت استعمال"
 
-#: ../src/interface.c:140
+#: ../src/interface.c:145
 msgid "more details"
 msgstr "مزید تفصیلات"
 
-#: ../src/interface.c:166
+#: ../src/interface.c:171
 msgid "Command"
 msgstr "کمانڈ"
 
-#: ../src/interface.c:172
+#: ../src/interface.c:177
 msgid "User"
 msgstr "صارف"
 
-#: ../src/interface.c:178
+#: ../src/interface.c:186
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:184
+#: ../src/interface.c:192
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:190
+#: ../src/interface.c:198
 msgid "VM-Size"
 msgstr "VM-حجم"
 
-#: ../src/interface.c:196
+#: ../src/interface.c:204
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:202
+#: ../src/interface.c:210
 msgid "State"
 msgstr "حالت"
 
-#: ../src/interface.c:208
+#: ../src/interface.c:216
 msgid "Prio"
 msgstr "اہمیت"
 
-#: ../src/interface.c:214
+#: ../src/interface.c:222
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:230
+#: ../src/interface.c:238
 msgid "Stop"
 msgstr "روکیں"
 
-#: ../src/interface.c:235
+#: ../src/interface.c:243
 msgid "Continue"
 msgstr "جاری"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:248
 msgid "Term"
 msgstr "بند کریں"
 
-#: ../src/interface.c:245
+#: ../src/interface.c:253
 msgid "Kill"
 msgstr "قتل کریں"
 
-#: ../src/interface.c:250
+#: ../src/interface.c:258
 msgid "Priority"
 msgstr "اہمیت"
 
-#: ../src/interface.c:263
+#: ../src/interface.c:271
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:268
+#: ../src/interface.c:276
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:273
+#: ../src/interface.c:281
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:278
+#: ../src/interface.c:286
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:283
+#: ../src/interface.c:291
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:306
+#: ../src/interface.c:316
 msgid "Show user tasks"
 msgstr "صارف کی ٹاسک دکھائیں"
 
-#: ../src/interface.c:311
+#: ../src/interface.c:321
 msgid "Show root tasks"
 msgstr "روٹ کی ٹاسک دکھائیں"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:326
 msgid "Show other tasks"
 msgstr "دیگر ٹاسک دکھائیں"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:331
 msgid "Show memory used by cache as free"
 msgstr "کیشے کی استعمال کردہ یاداشت کو بطور خالی دکھائیں"
 
-#: ../src/interface.c:342
+#: ../src/interface.c:362
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -182,7 +190,7 @@ msgstr ""
 "  * جوہانز زیلنر <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/interface.c:347
+#: ../src/interface.c:367
 msgid "translator-credits"
 msgstr ""
 "محمد علی مکی\n"
@@ -192,18 +200,30 @@ msgstr ""
 "مکی کا بلاگ\n"
 "http://makki.urducoder.com"
 
-#: ../src/interface.c:355
+#: ../src/interface.c:375
 msgid "LXTask"
 msgstr "ایل ایکس ٹاسک"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:357
+#: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "کاپی رائٹ (C) 2008 ایل ایکس ڈی ای ٹیم"
 
-#: ../src/interface.c:358
+#: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
 msgstr "ہلکا پھلکا ٹاسک منیجر برائے ایل ایکس ڈی ای پراجیکٹ"
+
+#: ../src/interface.c:578
+msgid "Preferences"
+msgstr ""
+
+#: ../src/interface.c:582
+msgid "General"
+msgstr ""
+
+#: ../src/interface.c:583
+msgid "Refresh rate (seconds):"
+msgstr ""
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -212,4 +232,3 @@ msgstr "غلطی"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "تصدیق"
-

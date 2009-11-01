@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-15 21:20+0200\n"
+"POT-Creation-Date: 2009-11-01 14:52+0800\n"
 "PO-Revision-Date: 2009-05-19 09:53+0200\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0\n"
+
+#: ../lxtask.desktop.in.h:1
+msgid "Manage running processes"
+msgstr ""
+
+#: ../lxtask.desktop.in.h:2
+msgid "Process manager"
+msgstr ""
+
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+msgid "Task Manager"
+msgstr "Taakbestuurder"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -37,137 +49,133 @@ msgstr ""
 msgid "Really terminate the task?"
 msgstr ""
 
-#: ../src/functions.c:142
+#: ../src/functions.c:144
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Geheue: %d MG van %d MG gebruik"
 
-#: ../src/functions.c:148
+#: ../src/functions.c:150
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "SVE-gebruik: %0.0f %%"
 
-#: ../src/interface.c:53
-msgid "Task Manager"
-msgstr "Taakbestuurder"
-
-#: ../src/interface.c:66
+#: ../src/interface.c:71
 msgid "_File"
 msgstr "_Lêer"
 
-#: ../src/interface.c:74
+#: ../src/interface.c:79
 msgid "_View"
 msgstr "_Bekyk"
 
-#: ../src/interface.c:80
+#: ../src/interface.c:85
 msgid "_Help"
 msgstr "_Hulp"
 
-#: ../src/interface.c:104
+#: ../src/interface.c:109
 msgid "cpu usage"
 msgstr "SVE-gebruik"
 
-#: ../src/interface.c:112
+#: ../src/interface.c:117
 msgid "memory usage"
 msgstr "geheueverbruik"
 
-#: ../src/interface.c:140
+#: ../src/interface.c:145
 msgid "more details"
 msgstr "meer detail"
 
-#: ../src/interface.c:166
+#: ../src/interface.c:171
 msgid "Command"
 msgstr "Opdrag"
 
-#: ../src/interface.c:172
+#: ../src/interface.c:177
 msgid "User"
 msgstr "Gebruiker"
 
-#: ../src/interface.c:178
+#: ../src/interface.c:186
 msgid "CPU%"
 msgstr "SVE%"
 
-#: ../src/interface.c:184
+#: ../src/interface.c:192
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:190
+#: ../src/interface.c:198
 msgid "VM-Size"
 msgstr "VM-grootte"
 
-#: ../src/interface.c:196
+#: ../src/interface.c:204
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:202
+#: ../src/interface.c:210
 msgid "State"
 msgstr "Toestand"
 
-#: ../src/interface.c:208
+#: ../src/interface.c:216
 msgid "Prio"
 msgstr "Prio"
 
-#: ../src/interface.c:214
+#: ../src/interface.c:222
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:230
+#: ../src/interface.c:238
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/interface.c:235
+#: ../src/interface.c:243
 msgid "Continue"
 msgstr "Gaan voort"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:248
 msgid "Term"
 msgstr "Termineer"
 
-#: ../src/interface.c:245
+#: ../src/interface.c:253
 msgid "Kill"
 msgstr "Vermoor"
 
-#: ../src/interface.c:250
+#: ../src/interface.c:258
 msgid "Priority"
 msgstr "Prioriteit"
 
-#: ../src/interface.c:263
+#: ../src/interface.c:271
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:268
+#: ../src/interface.c:276
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:273
+#: ../src/interface.c:281
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:278
+#: ../src/interface.c:286
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:283
+#: ../src/interface.c:291
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:306
+#: ../src/interface.c:316
 msgid "Show user tasks"
 msgstr "Wys gebruikertake"
 
-#: ../src/interface.c:311
+#: ../src/interface.c:321
 msgid "Show root tasks"
 msgstr "Wys root se take"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:326
 msgid "Show other tasks"
 msgstr "Wys ander take"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:331
 msgid "Show memory used by cache as free"
 msgstr "Wys kasgeheue as beskikbaar"
 
-#: ../src/interface.c:342
+#: ../src/interface.c:362
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -176,22 +184,34 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
-#: ../src/interface.c:347
+#: ../src/interface.c:367
 msgid "translator-credits"
 msgstr "Friedel Wolff"
 
-#: ../src/interface.c:355
+#: ../src/interface.c:375
 msgid "LXTask"
 msgstr "LXTaak"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:357
+#: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Kopiereg (C) 2008 LXDE-span"
 
-#: ../src/interface.c:358
+#: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
 msgstr "Liggewig taakbestuurder vir die LXDE-projek"
+
+#: ../src/interface.c:578
+msgid "Preferences"
+msgstr ""
+
+#: ../src/interface.c:582
+msgid "General"
+msgstr ""
+
+#: ../src/interface.c:583
+msgid "Refresh rate (seconds):"
+msgstr ""
 
 #: ../src/utils.c:43
 msgid "Error"
