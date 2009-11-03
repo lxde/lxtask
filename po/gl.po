@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 14:52+0800\n"
-"PO-Revision-Date: 2009-10-27 15:09+0100\n"
+"PO-Revision-Date: 2009-11-03 08:55+0100\n"
 "Last-Translator: Indalecio Freiría Santos <ifreiria@gmail.com>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -18,11 +18,11 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Xestionar os procesos en execución"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Xestor de procesos"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
@@ -209,15 +209,15 @@ msgstr "Administrador de tarefas lixeiro para o escritorio LXDE"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Preferencias"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Xeral"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Taxa de actualización (segundos):"
 
 #: ../src/utils.c:43
 msgid "Error"
