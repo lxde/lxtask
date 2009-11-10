@@ -17,11 +17,11 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Gestioneu els processos en execució"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Gestor de processos"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
@@ -205,15 +205,15 @@ msgstr "Gestor lleuger de tasques del projecte LXDE"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Preferències"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Rati de refresc (segons)"
 
 #: ../src/utils.c:43
 msgid "Error"

@@ -8,21 +8,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 14:52+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2009-11-07 13:48+0100\n"
 "Last-Translator: Julius Vitkauskas <zadintuvas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
 "X-Language: lt_LT\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Valdo veikiančius procesus"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Procesų valdyklė"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
@@ -206,15 +207,15 @@ msgstr "Lengviasvorė LXDE projekto procesų tvarkyklė"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Nustatymai"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Bendri"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Atnaujinimo intervalas (sekundėmis):"
 
 #: ../src/utils.c:43
 msgid "Error"
