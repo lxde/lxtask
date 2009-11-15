@@ -8,20 +8,21 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 14:52+0800\n"
-"PO-Revision-Date: 2009-01-05 10:42+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"PO-Revision-Date: 2009-11-13 09:56+0100\n"
+"Last-Translator: Martin Bagge <brother@bsnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Hantera processer som kör"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Processhanterare"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
@@ -209,15 +210,15 @@ msgstr "Lättviktig aktivitetshanterare för LXDE-projektet"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Egenskaper"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Allmänt"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Uppdateringsintervall (sekunder):"
 
 #: ../src/utils.c:43
 msgid "Error"
