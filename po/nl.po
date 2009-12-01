@@ -18,11 +18,11 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Beheer lopende processen"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Processenbeheer"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
@@ -46,11 +46,11 @@ msgstr "Kon prioriteit %d niet geven aan taak met ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Taak echt geforceerd afsluiten?"
+msgstr "Taak echt geforceerd be-eindigen?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Taak echt afsluiten?"
+msgstr "Taak echt be-eindigen?"
 
 #: ../src/functions.c:144
 #, c-format
@@ -206,15 +206,15 @@ msgstr "Lichtgewicht taakbeheer applicatie voor LXDE"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Voorkeuren"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Algemeen"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Verversingssnelheid (seconden)"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -223,3 +223,5 @@ msgstr "Fout"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Bevestig"
+
+ 	  	 
