@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 14:52+0800\n"
-"PO-Revision-Date: 2009-02-13 15:47+0100\n"
+"PO-Revision-Date: 2009-12-02 15:01+0100\n"
 "Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -17,13 +17,14 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Spravovať bežiace procesy"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Správca procesov"
 
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+#: ../lxtask.desktop.in.h:3
+#: ../src/interface.c:58
 msgid "Task Manager"
 msgstr "Správca úloh"
 
@@ -205,15 +206,15 @@ msgstr "Odľahčený správca úloh pre projekt LXDE"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Nastavenia"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Všeobecné"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Obnovovacia frekvencia (sekundy):"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -222,3 +223,4 @@ msgstr "Chyba"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Potvrdiť"
+
