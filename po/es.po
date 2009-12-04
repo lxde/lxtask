@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 14:52+0800\n"
-"PO-Revision-Date: 2009-12-01 14:04+0100\n"
+"PO-Revision-Date: 2009-12-03 21:30+0100\n"
 "Last-Translator: Hugo Florentino <sysadmin@cips.cu>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -224,7 +224,6 @@ msgid "General"
 msgstr "General"
 
 #: ../src/interface.c:583
-#, fuzzy
 msgid "Refresh rate (seconds):"
 msgstr "Tasa de refresco (segundos):"
 
