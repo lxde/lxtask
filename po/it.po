@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 14:52+0800\n"
-"PO-Revision-Date: 2009-04-17 19:28+0200\n"
+"PO-Revision-Date: 2009-12-08 16:40+0100\n"
 "Last-Translator: Alessandro Pellizzari <alex@amiran.it>\n"
 "Language-Team: Italian <xfce-i18n@xfce.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Gestione processi attivi"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Gestione processi"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
-msgstr "Gestione Processi"
+msgstr "Gestione Task"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -207,15 +207,15 @@ msgstr "Gestore di processi leggero per il progetto LXDE"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Impostazioni"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Generale"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Tempo di aggiornamento (secondi)"
 
 #: ../src/utils.c:43
 msgid "Error"
