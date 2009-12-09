@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 14:52+0800\n"
-"PO-Revision-Date: 2009-02-03 00:53+0100\n"
+"PO-Revision-Date: 2009-12-09 18:32+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -18,13 +18,14 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Správa spuštěných procesů"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Správce procesů"
 
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+#: ../lxtask.desktop.in.h:3
+#: ../src/interface.c:58
 msgid "Task Manager"
 msgstr "Správce úloh"
 
@@ -206,15 +207,15 @@ msgstr "Odlehčený správce úloh pro projekt LXDE"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Předvolby"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Rychlost obnovování (v sekundách):"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -226,3 +227,4 @@ msgstr "Potvrdit"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
+
