@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 14:52+0800\n"
-"PO-Revision-Date: 2009-05-19 09:53+0200\n"
+"PO-Revision-Date: 2009-12-10 09:22+0100\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,11 +18,11 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Bestuur prosesse wat uitvoer"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Prosesbestuurder"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
@@ -35,11 +35,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Kon nie sein %d stuur aan die taak met ID %d nie\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Kon nie prioriteit %d stel vir die taak met ID %d nie"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -203,15 +206,15 @@ msgstr "Liggewig taakbestuurder vir die LXDE-projek"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Voorkeure"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Algemeen"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Verfristempo (sekondes):"
 
 #: ../src/utils.c:43
 msgid "Error"
