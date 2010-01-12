@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-01 14:52+0800\n"
+"POT-Creation-Date: 2010-01-12 01:14+0100\n"
 "PO-Revision-Date: 2009-12-02 15:01+0100\n"
 "Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -23,8 +23,7 @@ msgstr "Spravovať bežiace procesy"
 msgid "Process manager"
 msgstr "Správca procesov"
 
-#: ../lxtask.desktop.in.h:3
-#: ../src/interface.c:58
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
 msgstr "Správca úloh"
 
@@ -223,4 +222,3 @@ msgstr "Chyba"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Potvrdiť"
-
