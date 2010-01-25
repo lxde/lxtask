@@ -1,34 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: LXDE\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-12 01:14+0100\n"
-"PO-Revision-Date: 2010-01-25 15:57+0200\n"
-"Last-Translator: Hamidreza <n3gb0y@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fa\n"
+"PO-Revision-Date: 2010-01-24 11:10-0800\n"
+"Last-Translator: alexxed <alexxed@gmail.com>\n"
+"Language-Team: Romanian <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.1\n"
+"Plural-Forms:  nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Narro 0.9.4 on http://tradu.softwareliber.ro\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr "مدیریت فرآیندهای درحال اجرا"
+msgstr "Gestionează procesele pornite"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "مدیر فرآیند"
+msgstr "Gestionar de procese"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
-msgstr "مدیر وظیفه"
+msgstr "Gestionar de procese"
 
 #: ../src/xfce-taskmanager-linux.c:303
 #, c-format
@@ -36,166 +31,162 @@ msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
 "\n"
 "%s"
-msgstr "ناتوانی در ارسال علامت %d برای وظیفه با مشخصه %d\n"
+msgstr ""
+"Nu s-a putut trimite semnalul %d procesului cu numărul %d\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "ناتوانی در تنظیم اولویت %d برای وظیفه با مشخصه %d"
+msgstr "Nu s-a putut seta prioritatea %d pentru procesul cu numărul %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "واقعا می‌خواهید وظیفه را نابود کنید؟"
+msgstr "Chiar doriți să omorâți procesul?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "واقعا می‌خواهید وظیفه را خاتمه دهید؟"
+msgstr "Chiar doriți să terminați procesul?"
 
 #: ../src/functions.c:144
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "حافظه : %d مگابایت از %d مگابایت استفاده شده"
+msgstr "Memorie folosită: %d MO din %d MO"
 
 #: ../src/functions.c:150
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "استفاده از پردازنده : %0.0f %%"
+msgstr "CPU folosit: %0.0f %%"
 
 #: ../src/interface.c:71
 msgid "_File"
-msgstr "ـ پرونده"
+msgstr "_Fișier"
 
 #: ../src/interface.c:79
 msgid "_View"
-msgstr "ـمشاهده"
+msgstr "_Vizualizare"
 
 #: ../src/interface.c:85
 msgid "_Help"
-msgstr "ـکمک"
+msgstr "_Ajutor"
 
 #: ../src/interface.c:109
 msgid "cpu usage"
-msgstr "استفاده از پردازنده"
+msgstr "utilizare cpu"
 
 #: ../src/interface.c:117
 msgid "memory usage"
-msgstr "استفاده از حافظه"
+msgstr "memorie utilizată"
 
 #: ../src/interface.c:145
 msgid "more details"
-msgstr "شرح بیشتر"
+msgstr "mai multe detalii"
 
 #: ../src/interface.c:171
 msgid "Command"
-msgstr "دستور"
+msgstr "Comandă"
 
 #: ../src/interface.c:177
 msgid "User"
-msgstr "کاربر"
+msgstr "Utilizator"
 
 #: ../src/interface.c:186
 msgid "CPU%"
-msgstr "واحد پردازشگر مرکزی%"
+msgstr "CPU%"
 
 #: ../src/interface.c:192
 msgid "RSS"
-msgstr "آر اس اس"
+msgstr "RSS"
 
-# virtual memory size
 #: ../src/interface.c:198
-#, fuzzy
 msgid "VM-Size"
-msgstr "اندازه ی حافظه ی مجازی"
+msgstr "Mărime-VM"
 
 #: ../src/interface.c:204
 msgid "PID"
-msgstr "مشخصه برنامه"
+msgstr "PID"
 
 #: ../src/interface.c:210
 msgid "State"
-msgstr "چگونگی"
+msgstr "Stare"
 
-# priority
 #: ../src/interface.c:216
 msgid "Prio"
-msgstr "اولویت"
+msgstr "Prio"
 
-# Definition: PPID: the processes Parent PID, the creator of the process. 
 #: ../src/interface.c:222
-#, fuzzy
 msgid "PPID"
-msgstr "مشخصه ی سرپرست برنامه"
+msgstr "PPID"
 
 #: ../src/interface.c:238
 msgid "Stop"
-msgstr "توقف"
+msgstr "Oprește"
 
 #: ../src/interface.c:243
 msgid "Continue"
-msgstr "ادامه"
+msgstr "Continuă"
 
 #: ../src/interface.c:248
-#, fuzzy
 msgid "Term"
-msgstr "دوره"
+msgstr "Terminare"
 
 #: ../src/interface.c:253
 msgid "Kill"
-msgstr "نابودی"
+msgstr "Omorâre"
 
 #: ../src/interface.c:258
 msgid "Priority"
-msgstr "اولویت"
+msgstr "Prioritate"
 
 #: ../src/interface.c:271
 msgid "  -10"
-msgstr "-۱۰"
+msgstr "  -10"
 
 #: ../src/interface.c:276
 msgid "  -5"
-msgstr "-۵"
+msgstr "  -5"
 
 #: ../src/interface.c:281
 msgid "    0"
-msgstr "۰"
+msgstr "    0"
 
 #: ../src/interface.c:286
 msgid "   5"
-msgstr "۵"
+msgstr "   5"
 
 #: ../src/interface.c:291
 msgid "   10"
-msgstr "۱۰"
+msgstr "   10"
 
 #: ../src/interface.c:316
 msgid "Show user tasks"
-msgstr "نمایش وظایف کاربر"
+msgstr "Arată procesele utilizatorului"
 
 #: ../src/interface.c:321
 msgid "Show root tasks"
-msgstr "نمایش وظایف کاربر ریشه"
+msgstr "Arată procesele lui root"
 
 #: ../src/interface.c:326
 msgid "Show other tasks"
-msgstr "نمایش بقیه وظایف"
+msgstr "Arată celelalte procese"
 
 #: ../src/interface.c:331
 msgid "Show memory used by cache as free"
-msgstr "نمایش حافظه استفاده شده به‌وسیله حافظه نهان به عنوان فضای خالی"
+msgstr "Arată memoria tampon ca liberă"
 
 #: ../src/interface.c:362
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTaskاز مدیر وظیفه Xfce4 سرچشمه گرفته به‌وسیله:\n"
-"  * Johannes Zellner <webmaster@nebulon.de>"
+"LXTask e derivat din Xfce4 Task Manager de către:\n"
+" * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:367
-#, fuzzy
 msgid "translator-credits"
-msgstr "اعتبارات-مترجم"
+msgstr "Comunitatea de traducători de pe tradu.softwareliber.ro"
 
 #: ../src/interface.c:375
 msgid "LXTask"
@@ -204,28 +195,28 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "حق نشر (C) ۲۰۰۸ تیم LXDE"
+msgstr "Drepturi de autor pe 2008 aparțin echipei LXDE"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
-msgstr "مدیر وظیفه سبک برای پروژه اِل اِکس دی ای"
+msgstr "Gestionar de procese pentru proiectul LXDE"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr "تنظیمات"
+msgstr "Preferințe"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr "عمومی"
+msgstr "General"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr "نرخ تازه‌سازی (بر حسب ثانیه):"
+msgstr "Rată de reîmprospătare (secunde):"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr "خطا"
+msgstr "Eroare"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr "تصدیق"
+msgstr "Confirmare"
