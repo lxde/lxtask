@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-12 01:14+0100\n"
-"PO-Revision-Date: 2010-01-28 15:08+0200\n"
+"PO-Revision-Date: 2010-01-28 15:31+0200\n"
 "Last-Translator: Kılıç <kilickoken@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -122,27 +122,27 @@ msgstr "Öncelik"
 
 #: ../src/interface.c:222
 msgid "PPID"
-msgstr ""
+msgstr "ÜSK"
 
 #: ../src/interface.c:238
 msgid "Stop"
-msgstr ""
+msgstr "Dur"
 
 #: ../src/interface.c:243
 msgid "Continue"
-msgstr ""
+msgstr "Sürdür"
 
 #: ../src/interface.c:248
 msgid "Term"
-msgstr ""
+msgstr "Sonlandır"
 
 #: ../src/interface.c:253
 msgid "Kill"
-msgstr ""
+msgstr "Öldür"
 
 #: ../src/interface.c:258
 msgid "Priority"
-msgstr ""
+msgstr "Öncelik"
 
 #: ../src/interface.c:271
 msgid "  -10"
@@ -166,15 +166,15 @@ msgstr ""
 
 #: ../src/interface.c:316
 msgid "Show user tasks"
-msgstr ""
+msgstr "Kullanıcı görevlerini göster"
 
 #: ../src/interface.c:321
 msgid "Show root tasks"
-msgstr ""
+msgstr "Kök görevlerini göster"
 
 #: ../src/interface.c:326
 msgid "Show other tasks"
-msgstr ""
+msgstr "Öteki görevleri göster"
 
 #: ../src/interface.c:331
 msgid "Show memory used by cache as free"
