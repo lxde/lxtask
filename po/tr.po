@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-12 01:14+0100\n"
-"PO-Revision-Date: 2010-01-28 15:31+0200\n"
+"PO-Revision-Date: 2010-01-29 02:27+0200\n"
 "Last-Translator: Kılıç <kilickoken@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -146,23 +146,23 @@ msgstr "Öncelik"
 
 #: ../src/interface.c:271
 msgid "  -10"
-msgstr ""
+msgstr "  -10"
 
 #: ../src/interface.c:276
 msgid "  -5"
-msgstr ""
+msgstr "  -5"
 
 #: ../src/interface.c:281
 msgid "    0"
-msgstr ""
+msgstr "    0"
 
 #: ../src/interface.c:286
 msgid "   5"
-msgstr ""
+msgstr "   5"
 
 #: ../src/interface.c:291
 msgid "   10"
-msgstr ""
+msgstr "   10"
 
 #: ../src/interface.c:316
 msgid "Show user tasks"
@@ -189,37 +189,37 @@ msgstr ""
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
-msgstr ""
+msgstr "Kılıç Köken (kilickoken@gmail.com)"
 
 #: ../src/interface.c:375
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Yayım Hakkı (YH) 2008 LXDE takımı"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "LXDE girişimi için yeğnice görev yöneticisi"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Yeğlenenler"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Genel"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Yenileme oranı (saniye):"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Kusur:"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Onayla"
