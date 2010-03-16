@@ -26,6 +26,106 @@
 #include <glib/gi18n.h>
 #include "xfce-taskmanager-linux.h"
 
+#if 1
+struct task get_task_details(gint pid)
+{
+	FILE *fp;
+	struct task task;
+	gchar line[255];
+	struct stat status;
+	struct passwd *passwdp;
+
+	task.pid=-1;
+	task.checked=FALSE;
+
+	sprintf(line,"/proc/%d/stat",pid);
+	stat(line, &status);
+	fp=fopen(line,"r");
+	if(fp)
+	{
+		gint utime = 0;
+		gint stime = 0;
+
+		fscanf(fp, "%i (%s %1s %i %s %s %s %s %s %s %s %s %s %i %i %s %s %s %i",
+                        &task.pid,  // processid
+                        task.name,  // processname
+                        task.state, // processstate
+                        &task.ppid, // parentid
+                        line,      // processs groupid
+
+                        line,      // session id
+                        line,      // tty id
+                        line,      // tpgid: The process group ID of the process running on tty of the process
+                        line,      // flags
+                        line,      // minflt minor faults the process has maid
+
+                        line,      // cminflt
+                        line,      // majflt
+                        line,      // cmajflt
+                        &utime,     // utime the number of jiffies that this process has scheduled in user mode
+                        &stime,     // stime " kernel mode
+
+                        line,      // cutime " waited for children in user
+                        line,      // cstime " kernel mode
+                        line,      // priority (nice value + fifteen)
+                        &task.prio // nice range from 19 to -19    /* my change */
+                    );
+		task.time = stime + utime;
+		task.old_time = task.time;
+		task.time_percentage = 0;
+		task.size = task.size / 1024;
+
+		fclose(fp);
+
+		task.uid = status.st_uid;
+	        passwdp = getpwuid(task.uid);
+        	if(passwdp != NULL && passwdp->pw_name != NULL)
+	            g_strlcpy(task.uname, passwdp->pw_name, sizeof task.uname);
+	}
+	
+	sprintf(line,"/proc/%d/status",pid);
+	fp=fopen(line,"r");
+	if(fp)
+	{
+		while(fgets(line, sizeof(line), fp) != NULL)
+		{
+			if(!strncmp(line,"VmSize:",7))
+			{
+				task.size=atoi(line+7);
+			}
+			else if(!strncmp(line,"VmRSS:",6))
+			{
+				task.rss=atoi(line+6);
+			}
+		}
+		fclose(fp);
+	}
+	sprintf(line, "/proc/%i/cmdline", pid);
+	fp=fopen(line,"r");
+	if(fp)
+	{
+	        gchar dummy[255];
+		dummy[0]=0;
+	        fscanf(fp, "%255s", dummy);
+	        if(dummy[0])
+        	{
+			gchar *p=g_strrstr(dummy,"/");
+            		if(p != NULL)
+		                g_strlcpy(task.name, p+1, 255);
+			else
+                		g_strlcpy(task.name, dummy, 255);
+
+			// workaround for cmd-line entries with leading "-"
+			if(g_str_has_prefix(task.name, "-"))
+                		sscanf(task.name, "-%255s", task.name);
+        	}
+		fclose(fp);
+	}
+	return task;
+}
+
+#else
+
 struct task get_task_details(gint pid)
 {
     FILE *task_file;
@@ -146,6 +246,7 @@ struct task get_task_details(gint pid)
 
     return task;
 }
+#endif
 
 GArray *get_task_list(void)
 {
