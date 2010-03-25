@@ -192,13 +192,13 @@ void create_list_store(void)
     column = gtk_tree_view_column_new_with_attributes(_("RSS"), cell_renderer, "text", COLUMN_RSS, NULL);
     gtk_tree_view_column_set_resizable(column, TRUE);
     gtk_tree_view_column_set_sort_column_id(column, COLUMN_RSS);
-    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_RSS, compare_int_list_item, (void *)COLUMN_RSS, NULL);
+    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_RSS, compare_size_list_item, (void *)COLUMN_RSS, NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
 
     column = gtk_tree_view_column_new_with_attributes(_("VM-Size"), cell_renderer, "text", COLUMN_MEM, NULL);
     gtk_tree_view_column_set_resizable(column, TRUE);
     gtk_tree_view_column_set_sort_column_id(column, COLUMN_MEM);
-    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_MEM, compare_int_list_item, (void *)COLUMN_MEM, NULL);
+    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_MEM, compare_size_list_item, (void *)COLUMN_MEM, NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
 
     column = gtk_tree_view_column_new_with_attributes(_("PID"), cell_renderer, "text", COLUMN_PID, NULL);
@@ -512,6 +512,27 @@ gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter 
         g_free(s1);
     if(s2 != NULL)
         g_free(s2);
+
+    return ret;
+}
+
+gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
+{
+    gchar *s1 = "";
+    gchar *s2 = "";
+
+    gint ret = 0;
+
+    gtk_tree_model_get(model, iter1, column, &s1, -1);
+    gtk_tree_model_get(model, iter2, column, &s2, -1);
+
+    gint64 i1 = string_to_size(s1);
+    gint64 i2 = string_to_size(s2);
+
+    ret = i2 - i1;
+
+    g_free(s1);
+    g_free(s2);
 
     return ret;
 }

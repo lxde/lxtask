@@ -124,3 +124,20 @@ char* size_to_string( char* buf, guint64 size )
 
     return buf;
 }
+
+guint64 string_to_size(char *s)
+{
+    double ret=0;
+    char c;
+    int count;
+    if(!s) return 0;
+
+    count=sscanf(s,"%lf %c",&ret,&c);
+    if(count==0) return 0;
+    if(c=='K') ret*=1LL<<10;
+    else if(c=='M') ret*=1LL<<20;
+    else if(c=='G') ret*=1LL<<30;
+    else if(c=='T') ret*=1LL<<40;
+    return (guint64)ret;
+}
+
