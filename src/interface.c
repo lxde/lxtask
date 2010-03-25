@@ -390,7 +390,14 @@ void change_list_store_view(void)
 {
     gtk_tree_view_column_set_visible (gtk_tree_view_get_column(GTK_TREE_VIEW(treeview), COLUMN_PPID), full_view);
     gtk_tree_view_column_set_visible (gtk_tree_view_get_column(GTK_TREE_VIEW(treeview), COLUMN_MEM), full_view);
-    gtk_tree_view_column_set_visible (gtk_tree_view_get_column(GTK_TREE_VIEW(treeview), COLUMN_RSS), full_view);
+    //gtk_tree_view_column_set_visible (gtk_tree_view_get_column(GTK_TREE_VIEW(treeview), COLUMN_RSS), full_view);
+    gtk_tree_view_column_set_visible (gtk_tree_view_get_column(GTK_TREE_VIEW(treeview), COLUMN_STATE), full_view);
+    gtk_tree_view_column_set_visible (gtk_tree_view_get_column(GTK_TREE_VIEW(treeview), COLUMN_PRIO), full_view);
+
+    if(!show_root_tasks && !show_other_tasks)
+        gtk_tree_view_column_set_visible (gtk_tree_view_get_column(GTK_TREE_VIEW(treeview), COLUMN_UNAME), full_view);
+    else
+        gtk_tree_view_column_set_visible (gtk_tree_view_get_column(GTK_TREE_VIEW(treeview), COLUMN_UNAME), TRUE);
 }
 
 void fill_list_item(gint i, GtkTreeIter *iter)
@@ -563,8 +570,10 @@ gint compare_string_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIt
 /* change the task view (user, root, other) */
 void change_task_view(void)
 {
-    gtk_tree_store_clear(GTK_TREE_STORE(list_store));
     gint i = 0;
+
+    gtk_tree_store_clear(GTK_TREE_STORE(list_store));
+    change_list_store_view();
 
     for(i = 0; i < tasks; i++)
     {
