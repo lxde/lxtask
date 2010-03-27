@@ -68,23 +68,28 @@ gboolean refresh_task_list(void)
 
                 tmp->time = new_tmp->time;
 
-                tmp->time_percentage = (gdouble)(tmp->time - tmp->old_time) * (gdouble)(1000.0 / (refresh_interval * 1000 * num_cpus));
+                new_tmp->time_percentage = (gfloat)(tmp->time - tmp->old_time) * (gfloat)(1000.0f / (refresh_interval * 1000 * num_cpus));
                 if(
                     (gint)tmp->ppid != (gint)new_tmp->ppid ||
-                    strcmp(tmp->state,new_tmp->state) ||
+                    tmp->state[0]!=new_tmp->state[0] ||
                     (unsigned int)tmp->size != (unsigned int)new_tmp->size ||
                     (unsigned int)tmp->rss != (unsigned int)new_tmp->rss ||
-                    (unsigned int)tmp->time != (unsigned int)tmp->old_time ||
+                    (unsigned int)tmp->time_percentage != (unsigned int)new_tmp->time_percentage ||
                     tmp->prio != new_tmp->prio
                  )
                 {
                     tmp->ppid = new_tmp->ppid;
-                    strcpy(tmp->state, new_tmp->state);
+                    tmp->state[0]=new_tmp->state[0];
                     tmp->size = new_tmp->size;
                     tmp->rss = new_tmp->rss;
                     tmp->prio = new_tmp->prio;
+                    tmp->time_percentage=new_tmp->time_percentage;
 
                     refresh_list_item(i);
+                }
+                else
+                {
+                    tmp->time_percentage=new_tmp->time_percentage;
                 }
                 tmp->checked = TRUE;
                 new_tmp->checked = TRUE;
@@ -121,7 +126,6 @@ gboolean refresh_task_list(void)
         if(!new_tmp->checked)
         {
             struct task *new_task = new_tmp;
-
             g_array_append_val(task_array, *new_task);
             if((show_user_tasks && new_task->uid == own_uid) || (show_root_tasks && new_task->uid == 0) ||  (show_other_tasks && new_task->uid != own_uid && new_task->uid != 0))
                 add_new_list_item(tasks);
@@ -133,7 +137,7 @@ gboolean refresh_task_list(void)
 
     /* update the CPU and memory progress bars */
     if (sys_stat == NULL)
-        sys_stat = g_new (system_status, 1);
+        sys_stat = g_new0 (system_status, 1);
     get_system_status (sys_stat);
 
     memory_used = sys_stat->mem_total - sys_stat->mem_free;
@@ -145,16 +149,14 @@ gboolean refresh_task_list(void)
 //    gtk_tooltips_set_tip (tooltips, mem_usage_progress_bar_box, mem_tooltip, NULL);
     gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (mem_usage_progress_bar),  (gdouble)memory_used / sys_stat->mem_total);
     gtk_progress_bar_set_text (GTK_PROGRESS_BAR (mem_usage_progress_bar), mem_tooltip);
+    g_free (mem_tooltip);
 
     cpu_usage = get_cpu_usage (sys_stat);
     cpu_tooltip = g_strdup_printf (_("CPU usage: %0.0f %%"), cpu_usage * 100.0);
 //    gtk_tooltips_set_tip (tooltips, cpu_usage_progress_bar_box, cpu_tooltip, NULL);
     gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (cpu_usage_progress_bar), cpu_usage);
     gtk_progress_bar_set_text (GTK_PROGRESS_BAR (cpu_usage_progress_bar), cpu_tooltip);
-
-    g_free (mem_tooltip);
     g_free (cpu_tooltip);
-
     return TRUE;
 }
 
@@ -232,7 +234,7 @@ void load_config(void)
 
     win_width = key_file_get_int(rc_file, group, "win_width", 500 );
     win_height = key_file_get_int(rc_file, group, "win_height", 400 );
-    refresh_interval = key_file_get_int(rc_file, group, "refresh_interval", 1 );
+    refresh_interval = key_file_get_int(rc_file, group, "refresh_interval", 2 );
 
     g_key_file_free(rc_file);
 }

@@ -37,7 +37,7 @@ struct task
     gboolean checked;
     gint time;
     gint old_time;
-    gdouble time_percentage;
+    gfloat time_percentage;
     gint prio;  /* my change */
 };
 
@@ -77,5 +77,7 @@ extern guint win_height;
 
 const gchar *custom_signal_0;
 const gchar *custom_signal_1;
+
+extern int PAGE_SIZE;
 
 #endif

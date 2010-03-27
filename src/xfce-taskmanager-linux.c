@@ -22,35 +22,47 @@
 #endif
 
 #include <errno.h>
+#include <unistd.h>
 
 #include <glib/gi18n.h>
 #include "xfce-taskmanager-linux.h"
 
+
 #if 1
-struct task get_task_details(gint pid)
+void get_task_details(gint pid,struct task *task)
 {
 	FILE *fp;
-	struct task task;
-	gchar line[255];
-	struct stat status;
-	struct passwd *passwdp;
+	gchar line[256];
 
-	task.pid=-1;
-	task.checked=FALSE;
+	task->pid=-1;
+	task->checked=FALSE;
+        task->size=0;
+
+	sprintf(line,"/proc/%d/statm",pid);
+        fp=fopen(line,"rb");
+        if(!fp) return;
+        fscanf(fp,"%d %d",&task->size,&task->rss);
+        fclose(fp);
+        if(!task->size) return;
+	task->size*=PAGE_SIZE;
+	task->rss*=PAGE_SIZE;
 
 	sprintf(line,"/proc/%d/stat",pid);
-	stat(line, &status);
-	fp=fopen(line,"r");
+	fp=fopen(line,"rb");
 	if(fp)
 	{
+		struct passwd *passwdp;
+		struct stat st;
+		char name[256],*p=name;
+		size_t len;
 		gint utime = 0;
 		gint stime = 0;
 
 		fscanf(fp, "%i (%s %1s %i %s %s %s %s %s %s %s %s %s %i %i %s %s %s %i",
-                        &task.pid,  // processid
-                        task.name,  // processname
-                        task.state, // processstate
-                        &task.ppid, // parentid
+                        &task->pid,  // processid
+                        name,      // processname
+                        task->state, // processstate
+                        &task->ppid, // parentid
                         line,      // processs groupid
 
                         line,      // session id
@@ -68,60 +80,25 @@ struct task get_task_details(gint pid)
                         line,      // cutime " waited for children in user
                         line,      // cstime " kernel mode
                         line,      // priority (nice value + fifteen)
-                        &task.prio // nice range from 19 to -19    /* my change */
+                        &task->prio // nice range from 19 to -19    /* my change */
                     );
-		task.time = stime + utime;
-		task.old_time = task.time;
-		task.time_percentage = 0;
-		task.size = task.size / 1024;
+		task->time = stime + utime;
+		task->old_time = task->time;
+		task->time_percentage = 0;
+		if(p[0]=='(') p++;
+		len=strlen(p);
+		if(len && p[len-1]==')')
+			p[len-1]=0;
+		strcpy(task->name,name);
+
+		fstat(fileno(fp),&st);
+		task->uid=st.st_uid;
+		passwdp = getpwuid(task->uid);
+		if( passwdp != NULL && passwdp->pw_name != NULL)
+			g_strlcpy(task->uname, passwdp->pw_name, sizeof task->uname);
 
 		fclose(fp);
-
-		task.uid = status.st_uid;
-	        passwdp = getpwuid(task.uid);
-        	if(passwdp != NULL && passwdp->pw_name != NULL)
-	            g_strlcpy(task.uname, passwdp->pw_name, sizeof task.uname);
 	}
-	
-	sprintf(line,"/proc/%d/status",pid);
-	fp=fopen(line,"r");
-	if(fp)
-	{
-		while(fgets(line, sizeof(line), fp) != NULL)
-		{
-			if(!strncmp(line,"VmSize:",7))
-			{
-				task.size=atoi(line+7);
-			}
-			else if(!strncmp(line,"VmRSS:",6))
-			{
-				task.rss=atoi(line+6);
-			}
-		}
-		fclose(fp);
-	}
-	sprintf(line, "/proc/%i/cmdline", pid);
-	fp=fopen(line,"r");
-	if(fp)
-	{
-	        gchar dummy[255];
-		dummy[0]=0;
-	        fscanf(fp, "%255s", dummy);
-	        if(dummy[0])
-        	{
-			gchar *p=g_strrstr(dummy,"/");
-            		if(p != NULL)
-		                g_strlcpy(task.name, p+1, 255);
-			else
-                		g_strlcpy(task.name, dummy, 255);
-
-			// workaround for cmd-line entries with leading "-"
-			if(g_str_has_prefix(task.name, "-"))
-                		sscanf(task.name, "-%255s", task.name);
-        	}
-		fclose(fp);
-	}
-	return task;
 }
 
 #else
@@ -254,25 +231,23 @@ GArray *get_task_list(void)
     struct dirent *dir_entry;
     GArray *task_list;
 
-    task_list = g_array_new (FALSE, FALSE, sizeof (struct task));
-
     if((dir = opendir("/proc/")) == NULL)
     {
         fprintf(stderr, "Error: couldn't load the /proc directory\n");
         return NULL;
     }
 
-    gint count = 0;
+    task_list = g_array_sized_new (FALSE, FALSE, sizeof (struct task), 128);
 
     while((dir_entry = readdir(dir)) != NULL)
     {
         if(atoi(dir_entry->d_name) != 0)
         {
-            struct task task = get_task_details(atoi(dir_entry->d_name));
-            if(task.pid != -1)
+            struct task task;
+            get_task_details(atoi(dir_entry->d_name),&task);
+            if(task.pid != -1 && task.size>0)	// don't show error or kenerl threads
                 g_array_append_val(task_list, task);
         }
-        count++;
     }
 
     closedir(dir);
@@ -283,8 +258,6 @@ GArray *get_task_list(void)
 gboolean get_cpu_usage_from_proc(system_status *sys_stat)
 {
     const gchar *file_name = "/proc/stat";
-    gchar buffer[100];
-    gboolean retval = FALSE;
     FILE *file;
 
     if ( sys_stat->valid_proc_reading == TRUE ) {
@@ -303,92 +276,58 @@ gboolean get_cpu_usage_from_proc(system_status *sys_stat)
 
     sys_stat->valid_proc_reading = FALSE;
 
-    if (!g_file_test (file_name, G_FILE_TEST_EXISTS))
-    {
-        return FALSE;
-    }
-
-
     file = fopen (file_name, "r");
-
-    if (file)
+    if(!file) return FALSE;
+    if ( fscanf (file, "cpu\t%u %u %u %u",
+                 &sys_stat->cpu_user,
+                 &sys_stat->cpu_nice,
+                 &sys_stat->cpu_system,
+                 &sys_stat->cpu_idle
+                ) == 4 )
     {
-        if ( fgets (buffer, 100, file) != NULL )
-        {
-            if ( sscanf (buffer, "cpu\t%u %u %u %u",
-                     &sys_stat->cpu_user,
-                     &sys_stat->cpu_nice,
-                     &sys_stat->cpu_system,
-                     &sys_stat->cpu_idle
-                    ) == 4 )
-            {
-                sys_stat->valid_proc_reading = TRUE;
-                retval = TRUE;
-            }
-        }
-        fclose( file );
+        sys_stat->valid_proc_reading = TRUE;
     }
-        return retval;
+    fclose( file );
+    return TRUE;
 }
 
 gboolean get_system_status (system_status *sys_stat)
 {
     FILE *file;
-    gchar *file_name;
-    gchar *buffer;
+    gchar buffer[100];
+    int reach;
+    static int cpu_count;
 
-    buffer = g_new (gchar, 100);
-
-    file_name = g_strdup ("/proc/meminfo");
-
-    if (!g_file_test (file_name, G_FILE_TEST_EXISTS))
+    file = fopen ("/proc/meminfo", "r");
+    if(!file) return FALSE;
+    reach=0;
+    while (fgets (buffer, 100, file) != NULL)
     {
-        g_free(file_name);
-        return FALSE;
+        if(!strncmp(buffer,"MemTotal:",9))
+            sys_stat->mem_total=atoi(buffer+10),reach++;
+        else if(!strncmp(buffer,"MemFree:",8))
+            sys_stat->mem_free=atoi(buffer+9),reach++;
+        else if(!strncmp(buffer,"Cached:",7))
+            sys_stat->mem_cached=atoi(buffer+8),reach++;
+        if(reach==3) break;
     }
+    fclose (file);
 
-    file = fopen (file_name, "r");
-
-    if (file)
+    if(!cpu_count)
     {
+        file = fopen ("/proc/cpuinfo", "r");
+        if(!file) return FALSE;
         while (fgets (buffer, 100, file) != NULL)
         {
-            sscanf (buffer, "MemTotal:\t%u kB", &sys_stat->mem_total);
-            sscanf (buffer, "MemFree:\t%u kB", &sys_stat->mem_free);
-            sscanf (buffer, "Cached:\t%u kB", &sys_stat->mem_cached);
+            if(buffer[0]!='p') continue;
+            if(!strncmp(buffer,"processor",9))
+            {
+                cpu_count++;
+            }
         }
         fclose (file);
     }
-    g_free (buffer);
-    g_free (file_name);
-
-    buffer = g_new (gchar, 100);
-
-    file_name = g_strdup ("/proc/cpuinfo");
-
-    if (!g_file_test (file_name, G_FILE_TEST_EXISTS))
-    {
-        g_free(file_name);
-        return FALSE;
-    }
-
-    file = fopen (file_name, "r");
-
-    sys_stat->cpu_count = -1;
-
-    if (file)
-    {
-
-        while (fgets (buffer, 100, file) != NULL)
-        {
-            sscanf (buffer, "processor : %i", &sys_stat->cpu_count);
-        }
-        fclose (file);
-        sys_stat->cpu_count++;
-    }
-    g_free (buffer);
-    g_free (file_name);
-
+    sys_stat->cpu_count=cpu_count;
     return TRUE;
 }
 

@@ -443,7 +443,6 @@ void fill_list_item(gint i, GtkTreeIter *iter)
 void add_new_list_item(gint i)
 {
         GtkTreeIter iter;
-
         gtk_tree_store_append(GTK_TREE_STORE(list_store), &iter, NULL);
 
         fill_list_item(i, &iter);
@@ -453,14 +452,13 @@ void refresh_list_item(gint i)
 {
     GtkTreeIter iter;
     gboolean valid = gtk_tree_model_get_iter_first(GTK_TREE_MODEL(list_store), &iter);
-    struct task task = g_array_index(task_array, struct task, i);
-
+    struct task *task = &g_array_index(task_array, struct task, i);
     while(valid)
     {
-        gchar *str_data = "";
+        gchar *str_data = NULL;
         gtk_tree_model_get(GTK_TREE_MODEL(list_store), &iter, COLUMN_PID, &str_data, -1);
 
-        if(task.pid == atoi(str_data))
+        if(str_data && task->pid == atoi(str_data))
         {
             g_free(str_data);
             fill_list_item(i, &iter);
@@ -479,10 +477,10 @@ void remove_list_item(gint pid)
 
     while(valid)
     {
-        gchar *str_data = "";
+        gchar *str_data = NULL;
         gtk_tree_model_get(GTK_TREE_MODEL(list_store), &iter, COLUMN_PID, &str_data, -1);
 
-        if(pid == atoi(str_data))
+        if(str_data && pid == atoi(str_data))
         {
             g_free(str_data);
             gtk_tree_store_remove(GTK_TREE_STORE(list_store), &iter);
@@ -577,9 +575,9 @@ void change_task_view(void)
 
     for(i = 0; i < tasks; i++)
     {
-        struct task task = g_array_index(task_array, struct task, i);
+        struct task *task = &g_array_index(task_array, struct task, i);
 
-        if((task.uid == own_uid && show_user_tasks) || (task.uid == 0 && show_root_tasks) || (task.uid != own_uid && task.uid != 0 && show_other_tasks))
+        if((task->uid == own_uid && show_user_tasks) || (task->uid == 0 && show_root_tasks) || (task->uid != own_uid && task->uid != 0 && show_other_tasks))
             add_new_list_item(i);
     }
 

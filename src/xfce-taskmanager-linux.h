@@ -38,7 +38,7 @@
 #define SIGNAL_CONT SIGCONT
 #define SIGNAL_STOP SIGSTOP
 
-struct task get_task_details(gint pid);
+void get_task_details(gint pid,struct task *task);
 GArray *get_task_list(void);
 gboolean get_system_status(system_status *sys_stat);
 gboolean get_cpu_usage_from_proc(system_status *sys_stat);
