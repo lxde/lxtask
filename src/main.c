@@ -80,7 +80,7 @@ int main (int argc, char *argv[])
     if(!refresh_task_list())
         return 0;
 
-    rID = g_timeout_add(1000 * refresh_interval, (gpointer) refresh_task_list, NULL);
+    rID = g_timeout_add_seconds(refresh_interval, (gpointer) refresh_task_list, NULL);
 
     gtk_main ();
 
