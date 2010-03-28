@@ -39,10 +39,10 @@ gboolean refresh_task_list(void)
 {
     gint i, j;
     GArray *new_task_list;
-    gchar *cpu_tooltip, *mem_tooltip;
     gdouble cpu_usage;
     guint num_cpus;
     guint memory_used;
+    char tooltip[256];
 
     if (sys_stat!=NULL)
         num_cpus = sys_stat->cpu_count;
@@ -145,18 +145,22 @@ gboolean refresh_task_list(void)
     {
         memory_used-=sys_stat->mem_cached;
     }
-    mem_tooltip = g_strdup_printf (_("Memory: %d MB of %d MB used"), memory_used / 1024, sys_stat->mem_total / 1024);
+    sprintf (tooltip, _("Memory: %d MB of %d MB used"), memory_used / 1024, sys_stat->mem_total / 1024);
+    if(strcmp(tooltip,gtk_progress_bar_get_text(GTK_PROGRESS_BAR(mem_usage_progress_bar))))
+    {
 //    gtk_tooltips_set_tip (tooltips, mem_usage_progress_bar_box, mem_tooltip, NULL);
-    gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (mem_usage_progress_bar),  (gdouble)memory_used / sys_stat->mem_total);
-    gtk_progress_bar_set_text (GTK_PROGRESS_BAR (mem_usage_progress_bar), mem_tooltip);
-    g_free (mem_tooltip);
+        gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (mem_usage_progress_bar),  (gdouble)memory_used / sys_stat->mem_total);
+        gtk_progress_bar_set_text (GTK_PROGRESS_BAR (mem_usage_progress_bar), tooltip);
+    }
 
     cpu_usage = get_cpu_usage (sys_stat);
-    cpu_tooltip = g_strdup_printf (_("CPU usage: %0.0f %%"), cpu_usage * 100.0);
+    sprintf (tooltip,_("CPU usage: %0.0f %%"), cpu_usage * 100.0);
+    if(strcmp(tooltip,gtk_progress_bar_get_text(GTK_PROGRESS_BAR(cpu_usage_progress_bar))))
+    {
 //    gtk_tooltips_set_tip (tooltips, cpu_usage_progress_bar_box, cpu_tooltip, NULL);
-    gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (cpu_usage_progress_bar), cpu_usage);
-    gtk_progress_bar_set_text (GTK_PROGRESS_BAR (cpu_usage_progress_bar), cpu_tooltip);
-    g_free (cpu_tooltip);
+        gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (cpu_usage_progress_bar), cpu_usage);
+        gtk_progress_bar_set_text (GTK_PROGRESS_BAR (cpu_usage_progress_bar), tooltip);
+    }
     return TRUE;
 }
 

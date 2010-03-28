@@ -404,21 +404,15 @@ void fill_list_item(gint i, GtkTreeIter *iter)
 {
     if(iter != NULL)
     {
-        char buf[16] = "";
+        char buf[32];
         struct task *task = &g_array_index(task_array, struct task, i);
 
-        gchar *pid = g_strdup_printf("%i", task->pid);
-        gchar *ppid = g_strdup_printf("%i", task->ppid);
-        gchar *state = g_strdup_printf("%s", task->state);
-        gchar *name = g_strdup_printf("%s", task->name);
-        gchar *uname = g_strdup_printf("%s", task->uname);
-        gchar *time = g_strdup_printf("%0d%%", (guint)task->time_percentage);
-        gchar *prio = g_strdup_printf("%i", task->prio);    /* my change */
-
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_NAME, name, -1);
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_PID, pid, -1);
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_PPID, ppid, -1);
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_STATE, state, -1);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_NAME, task->name, -1);
+        sprintf(buf,"%d",task->pid);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_PID, buf, -1);
+        sprintf(buf,"%d",task->ppid);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_PPID, buf, -1);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_STATE, task->state, -1);
 
         /* size */
         gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_MEM, size_to_string(buf, task->size * 1024), -1);
@@ -426,17 +420,11 @@ void fill_list_item(gint i, GtkTreeIter *iter)
         /* rss */
         gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_RSS, size_to_string(buf, task->rss*1024), -1);
 
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_UNAME, uname, -1);
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_TIME, time, -1);
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_PRIO, prio, -1);    /* my change */
-
-        g_free(pid);
-        g_free(ppid);
-        g_free(state);
-        g_free(name);
-        g_free(uname);
-        g_free(time);
-        g_free(prio);   /* my change */
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_UNAME, task->uname, -1);
+        sprintf(buf,"%0d%%", (guint)task->time_percentage);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_TIME, buf, -1);
+        sprintf(buf,"%d",task->prio);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_PRIO, buf, -1);    /* my change */
     }
 }
 
@@ -497,7 +485,7 @@ gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter 
     gchar *s1 = "";
     gchar *s2 = "";
 
-    gint ret = 0;
+    gint ret;
 
     gtk_tree_model_get(model, iter1, column, &s1, -1);
     gtk_tree_model_get(model, iter2, column, &s2, -1);
@@ -507,16 +495,13 @@ gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter 
 
     if(s1 != NULL)
         i1 = atoi(s1);
-
     if(s2 != NULL)
         i2 = atoi(s2);
 
     ret = i2 - i1;
 
-    if(s1 != NULL)
-        g_free(s1);
-    if(s2 != NULL)
-        g_free(s2);
+    g_free(s1);
+    g_free(s2);
 
     return ret;
 }
@@ -526,7 +511,7 @@ gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter
     gchar *s1 = "";
     gchar *s2 = "";
 
-    gint ret = 0;
+    gint ret;
 
     gtk_tree_model_get(model, iter1, column, &s1, -1);
     gtk_tree_model_get(model, iter2, column, &s2, -1);
@@ -554,13 +539,9 @@ gint compare_string_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIt
 
     if(s1 != NULL && s2 != NULL)
         ret = strcmp(s2, s1);
-    else
-        ret = 0;
 
-    if(s1 != NULL)
-        g_free(s1);
-    if(s2 != NULL)
-        g_free(s2);
+    g_free(s1);
+    g_free(s2);
 
     return ret;
 }
