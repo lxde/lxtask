@@ -8,20 +8,23 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-12 01:14+0100\n"
-"PO-Revision-Date: 2009-02-27 22:43+0700\n"
-"Last-Translator: Andhika Padmawan <andhika.padmawan@gmail.com>\n"
+"PO-Revision-Date: 2010-03-20 01:54+0200\n"
+"Last-Translator: Rahman Yusri Aftian <aftian@yahoo.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.1\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Mengelola proses yang berjalan"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Pengelola proses"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
@@ -205,15 +208,15 @@ msgstr "Manajer tugas ringan untuk proyek LXDE"
 
 #: ../src/interface.c:578
 msgid "Preferences"
-msgstr ""
+msgstr "Prefensi"
 
 #: ../src/interface.c:582
 msgid "General"
-msgstr ""
+msgstr "Umum"
 
 #: ../src/interface.c:583
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Penyegaran peringkat (detik):"
 
 #: ../src/utils.c:43
 msgid "Error"
