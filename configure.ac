@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT(lxtask,[0.1.1], [],lxtask)
+AC_INIT(lxtask,[0.1.2], [],lxtask)
 AM_INIT_AUTOMAKE()
 AC_PROG_INTLTOOL(, [no-xml])
 AM_MAINTAINER_MODE
