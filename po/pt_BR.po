@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2007-12-03 01:50-0300\n"
 "Last-Translator: Henrique P. Machado <zehrique@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
@@ -30,7 +30,7 @@ msgstr "Gerenciador de processos"
 msgid "Task Manager"
 msgstr "Gerenciador de Tarefas"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,7 +41,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Não foi possível atribuir a prioridade %d para a tarefa com a ID %d"
@@ -54,12 +54,12 @@ msgstr "Matar realmente a tarefa?"
 msgid "Really terminate the task?"
 msgstr "Terminar realmente a tarefa?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Memória: %d MB de %d MB usada"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "Uso de CPU: %0.0f %%"
@@ -209,15 +209,15 @@ msgstr "Copyright (C) 2008 O Time do LXDE"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Gerenciador de tarefas leve para o projeto LXDE"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr "Preferências"
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr "Geral"
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr "Taxa de atualização (segundos):"
 

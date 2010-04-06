@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2010-01-26 11:55+0200\n"
 "Last-Translator: Hiếu <scamemiv@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.1\n"
 
@@ -30,7 +30,7 @@ msgstr "Quản lý tiến trình"
 msgid "Task Manager"
 msgstr "Quản lý tác vụ"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,7 +41,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Không thể đặt ưu tiên %d cho tiến trình với ID %d"
@@ -54,12 +54,12 @@ msgstr "Thực sự muốn tắt ngay tác vụ?"
 msgid "Really terminate the task?"
 msgstr "Thực sự muốn kết thúc tác vụ?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Bộ nhớ: %d MB trong %d MB đã sử dụng"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "Mức sử dụng CPU: %0.0f %%"
@@ -206,15 +206,15 @@ msgstr "Bản quyền (C) 2008 LXDE team"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Chương trình quản lý tác vụ cho dự án LXDE"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr "Tùy chỉnh"
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr "Tổng quát"
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr "Tốc độ làm tươi (giây):"
 

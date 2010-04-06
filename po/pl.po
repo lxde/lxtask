@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2010-01-13 23:16+0200\n"
 "Last-Translator: Artur <mazdac@gmail.com>\n"
 "Language-Team: Polish\n"
-"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.0.0\n"
@@ -35,7 +35,7 @@ msgstr "Zarządca procesów"
 msgid "Task Manager"
 msgstr "Zarządca zadań"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -46,7 +46,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Nie można ustawić priorytetu %d zadaniu  z ID %d"
@@ -59,12 +59,12 @@ msgstr "Na pewno zabić zadanie (przez SIGKILL)?"
 msgid "Really terminate the task?"
 msgstr "Na pewno zakończyć zadanie (przez SIGTERM)?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Pamięć w użyciu %d MB z %d MB"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "Użycie procesora: %0.z %%"
@@ -211,15 +211,15 @@ msgstr "Prawa zastrzeżone (C) 2008 Ekipa LXDE"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Lekki menedżer procesów dla projektu LXDE"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr "Ustawienia"
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr "Ogólne"
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr "Częstotliwość odświeżania (sekundy):"
 

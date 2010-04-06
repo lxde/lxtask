@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2009-12-09 18:32+0100\n"
 "Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
@@ -28,7 +28,7 @@ msgstr "Správce procesů"
 msgid "Task Manager"
 msgstr "Správce úloh"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -39,7 +39,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Nelze nastavit prioritu %d úloze s identifikátorem %d"
@@ -52,12 +52,12 @@ msgstr "Chcete opravdu ukončit tuto úlohu signálem kill?"
 msgid "Really terminate the task?"
 msgstr "Chcete opravdu ukončit tuto úlohu?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "paměť: %d MB z %d MB použito"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "Využití procesoru: %0.0f %%"
@@ -204,15 +204,15 @@ msgstr "Copyright (C) 2008 LXDE team"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Odlehčený správce úloh pro projekt LXDE"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr "Předvolby"
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr "Obecné"
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr "Rychlost obnovování (v sekundách):"
 

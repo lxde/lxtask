@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2010-01-25 19:56+0200\n"
 "Last-Translator: Hamidreza <n3gb0y@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.1\n"
 
@@ -30,15 +30,18 @@ msgstr "مدیر فرآیند"
 msgid "Task Manager"
 msgstr "مدیر وظیفه"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
 "\n"
 "%s"
-msgstr "ناتوانی در ارسال علامت %d برای وظیفه با مشخصه %d\n"
+msgstr ""
+"ناتوانی در ارسال علامت %d برای وظیفه با مشخصه %d\n"
+"\n"
+"%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "ناتوانی در تنظیم اولویت %d برای وظیفه با مشخصه %d"
@@ -51,12 +54,12 @@ msgstr "واقعا می‌خواهید وظیفه را نابود کنید؟"
 msgid "Really terminate the task?"
 msgstr "واقعا می‌خواهید وظیفه را خاتمه دهید؟"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "حافظه : %d مگابایت از %d مگابایت استفاده شده"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "استفاده از پردازنده : %0.0f %%"
@@ -211,15 +214,15 @@ msgstr "حق نشر (C) ۲۰۰۸ تیم LXDE"
 msgid "Lightweight task manager for LXDE project"
 msgstr "مدیر وظیفه سبک برای پروژه اِل اِکس دی ای"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr "تنظیمات"
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr "عمومی"
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr "نرخ تازه‌سازی (بر حسب ثانیه):"
 

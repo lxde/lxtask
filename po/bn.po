@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2010-02-01 13:43+0600\n"
 "Last-Translator: Loba Yeasmeen <loba@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -23,12 +23,11 @@ msgstr "চলমান প্রসেস ব্যবস্থাপনা"
 msgid "Process manager"
 msgstr "প্রসেস ম্যানেজার"
 
-#: ../lxtask.desktop.in.h:3
-#: ../src/interface.c:58
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
 msgstr "টাস্ক ম্যানেজার"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -39,7 +38,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "%2d ID এর টাস্কে %1d অগ্রাধিকার নির্ধারণ করতে পারে না "
@@ -52,12 +51,13 @@ msgstr "সত্যিই টাস্কটি বন্ধ করতে চ�
 msgid "Really terminate the task?"
 msgstr "সত্যিই টাস্কটি বাতিল করতে চান?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "মেমরি: %d MB এর %d MB ব্যবহৃত হয়েছে"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
+#, fuzzy, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU এর ব্যবহার: %0.এর %% "
 
@@ -203,15 +203,15 @@ msgstr "কপিরাইট (C) ২০০৮ LXDE দল"
 msgid "Lightweight task manager for LXDE project"
 msgstr "LXDE প্রকল্পের জন্য ঝামেলাবিহীন টাস্ক ম্যানেজার"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr "পছন্দসমূহ"
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr "সাধারণ"
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr "রিফ্রেশ করার হার (সেকেন্ডে):"
 
@@ -222,4 +222,3 @@ msgstr "ত্রুটি"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "নিশ্চিতকরণ"
-

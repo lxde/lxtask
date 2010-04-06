@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2008-04-30 21:23+0200\n"
 "Last-Translator: Elias Julkunen <elias.julkunen@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
@@ -29,7 +29,7 @@ msgstr "Prosessien käsittelijä"
 msgid "Task Manager"
 msgstr "Tehtävienhallinta"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -37,7 +37,7 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr ""
@@ -50,12 +50,12 @@ msgstr "Tapetaanko tehtävä?"
 msgid "Really terminate the task?"
 msgstr "Haluatko katkaista tehtävän suorittamisen?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Muisti: %d Mt/%d Mt käytössä"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU:n käyttö: %0.0f %%"
@@ -202,15 +202,15 @@ msgstr "Tekijänoikeudet (C) 2008 LXDE-ryhmä"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Kevyt tehtävienhallinta LXDE-projektille"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr ""
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr ""
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr ""
 

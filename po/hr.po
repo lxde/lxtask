@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask_hr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Boljsa <asjlob AT vip.hr>\n"
 "Language-Team:  <asjlob AT vip.hr>\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Task Manager"
 msgstr "Upravitelj Zadacima"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -35,7 +35,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Ne mogu postavitit prioritet %d zadatku sa ID %d"
@@ -48,12 +48,12 @@ msgstr "Stvarno ¾elite ubiti zadatak?"
 msgid "Really terminate the task?"
 msgstr "Stvarno ¾elite prekinuti zadatak?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Memorija: %d MB od %d MB kori¹teno"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "Kori¹tenje CPU: %0.0f %%"
@@ -200,15 +200,15 @@ msgstr "Copyright (C) 2008 LXDE team"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Lagani upravitelj zadataka za LXDE projekt"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr ""
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr ""
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr ""
 

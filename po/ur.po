@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2009-05-10 04:01+0500\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "Task Manager"
 msgstr "ٹاسک منیجر"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -42,7 +42,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "اہمیت %d بمع آئی ڈی %d ٹاسک پر مرتب نہیں کی جاسکتی"
@@ -55,12 +55,12 @@ msgstr "کیا واقعی اس پروگرام کو قتل کردیں؟"
 msgid "Really terminate the task?"
 msgstr "کیا واقعی اس پروگرام کو بند کردیں؟"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "یاداشت: %d م.ب برائے %d م.ب استعمال کردہ"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "سی پی یو استعمال: %0.0f %%"
@@ -213,15 +213,15 @@ msgstr "کاپی رائٹ (C) 2008 ایل ایکس ڈی ای ٹیم"
 msgid "Lightweight task manager for LXDE project"
 msgstr "ہلکا پھلکا ٹاسک منیجر برائے ایل ایکس ڈی ای پراجیکٹ"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr ""
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr ""
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-12 01:14+0100\n"
+"POT-Creation-Date: 2010-04-06 15:47+0200\n"
 "PO-Revision-Date: 2009-05-04 15:33+0100\n"
 "Last-Translator: Sander De Voogdt <celettu@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -28,7 +28,7 @@ msgstr "Processenbeheer"
 msgid "Task Manager"
 msgstr "Taakbeheer"
 
-#: ../src/xfce-taskmanager-linux.c:303
+#: ../src/xfce-taskmanager-linux.c:385
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -39,7 +39,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:317
+#: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Kon prioriteit %d niet geven aan taak met ID %d"
@@ -52,12 +52,12 @@ msgstr "Taak echt geforceerd be-eindigen?"
 msgid "Really terminate the task?"
 msgstr "Taak echt be-eindigen?"
 
-#: ../src/functions.c:144
+#: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Geheugen: %d MB van %d MB gebruikt"
 
-#: ../src/functions.c:150
+#: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU gebruik: %0.0f %%"
@@ -204,15 +204,15 @@ msgstr "Copyright (C) 2008 LXDE team"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Lichtgewicht taakbeheer applicatie voor LXDE"
 
-#: ../src/interface.c:578
+#: ../src/interface.c:587
 msgid "Preferences"
 msgstr "Voorkeuren"
 
-#: ../src/interface.c:582
+#: ../src/interface.c:591
 msgid "General"
 msgstr "Algemeen"
 
-#: ../src/interface.c:583
+#: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
 msgstr "Verversingssnelheid (seconden)"
 
