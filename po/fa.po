@@ -32,6 +32,7 @@ msgstr "مدیر وظیفه"
 
 #: ../src/xfce-taskmanager-linux.c:385
 #, c-format
+#, fuzzy
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
 "\n"
