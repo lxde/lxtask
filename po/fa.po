@@ -34,9 +34,10 @@ msgstr "مدیر وظیفه"
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
-"\n"
 "%s"
-msgstr "ناتوانی در ارسال علامت %d برای وظیفه با مشخصه %d\n"
+msgstr ""
+ "ناتوانی در ارسال علامت %d برای وظیفه با مشخصه %d\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:317
 #, c-format
