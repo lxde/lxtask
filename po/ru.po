@@ -9,24 +9,24 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2010-02-04 17:13+0200\n"
-"Last-Translator: Alexander <kazancas@gmail.com>\n"
+"PO-Revision-Date: 2010-04-06 16:28+0200\n"
+"Last-Translator: Max <mpui@tut.by>\n"
 "Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.0.1\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Управлять запущенными приложениями и процессами"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Диспетчер процессов"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
@@ -213,7 +213,6 @@ msgid "Preferences"
 msgstr "Настройки"
 
 #: ../src/interface.c:591
-#, fuzzy
 msgid "General"
 msgstr "Основные"
 
