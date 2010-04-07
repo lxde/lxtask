@@ -55,7 +55,7 @@ msgstr "Επιμένετε να τερματιστεί η εργασία;"
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Μνήμη: %d kB από %d kB χρησιμοποιούνται"
+msgstr "Μνήμη: %d MB από %d MB χρησιμοποιούνται"
 
 #: ../src/functions.c:157
 #, c-format
