@@ -25,6 +25,7 @@
 #include <glib.h>
 #include <signal.h>
 #include <unistd.h>
+#include <libintl.h>
 
 #include "types.h"
 #include "interface.h"
