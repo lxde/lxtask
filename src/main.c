@@ -26,6 +26,10 @@
 #include <signal.h>
 #include <unistd.h>
 
+#ifdef ENABLE_NLS
+#include <libintl.h>
+#endif
+
 #include "types.h"
 #include "interface.h"
 #include "functions.h"
@@ -45,6 +49,7 @@ gboolean show_other_tasks;
 gboolean show_cached_as_free; /* Show memory used Cache as free memory */
 
 gboolean full_view;
+
 
 guint win_width;
 guint win_height;
