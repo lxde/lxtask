@@ -26,6 +26,7 @@
 #include <fcntl.h>
 
 #include <glib/gi18n.h>
+#include <glib/gprintf.h>
 #include "xfce-taskmanager-linux.h"
 
 

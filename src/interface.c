@@ -41,12 +41,12 @@ GtkWidget *refresh_spin;
 GtkWidget* create_main_window (void)
 {
     GtkWidget *window;
-    GtkWidget *menubar, *menu, *item, *sub;
+    GtkWidget *menubar, *menu, *item;// *sub;
     GtkWidget *vbox1;
     GtkWidget *bbox1;
     GtkWidget *scrolledwindow1;
     GtkWidget *button1;
-    GtkWidget *button2;
+ //   GtkWidget *button2;
     GtkWidget *button3;
 
     GtkWidget *system_info_box;
@@ -299,8 +299,8 @@ GtkWidget *create_prio_submenu(void)
 GtkWidget* create_mainmenu (void)
 {
     GtkWidget *mainmenu;
-    GtkWidget *info1;
-    GtkWidget *trennlinie1;
+//    GtkWidget *info1;
+//    GtkWidget *trennlinie1;
     GtkWidget *preferences1;
     GtkWidget *show_user_tasks1;
     GtkWidget *show_root_tasks1;
