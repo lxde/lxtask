@@ -46,6 +46,7 @@ typedef struct
     guint mem_total;
     guint mem_free;
     guint mem_cached;
+    guint mem_buffered;
     guint cpu_count;
     guint cpu_idle;
     guint cpu_user;

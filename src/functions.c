@@ -143,7 +143,7 @@ gboolean refresh_task_list(void)
     memory_used = sys_stat->mem_total - sys_stat->mem_free;
     if ( show_cached_as_free )
     {
-        memory_used-=sys_stat->mem_cached;
+        memory_used-=sys_stat->mem_cached+sys_stat->mem_buffered;
     }
     sprintf (tooltip, _("Memory: %d MB of %d MB used"), memory_used / 1024, sys_stat->mem_total / 1024);
     if(strcmp(tooltip,gtk_progress_bar_get_text(GTK_PROGRESS_BAR(mem_usage_progress_bar))))

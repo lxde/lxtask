@@ -352,7 +352,9 @@ gboolean get_system_status (system_status *sys_stat)
             sys_stat->mem_free=atoi(buffer+9),reach++;
         else if(!strncmp(buffer,"Cached:",7))
             sys_stat->mem_cached=atoi(buffer+8),reach++;
-        if(reach==3) break;
+        else if(!strncmp(buffer,"Buffers:",8))
+            sys_stat->mem_buffered=atoi(buffer+9),reach++;
+        if(reach==4) break;
     }
     fclose (file);
 
