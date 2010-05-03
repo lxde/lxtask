@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2010-04-15 22:21+0200\n"
+"PO-Revision-Date: 2010-05-03 01:12+0200\n"
 "Last-Translator: Gunleif <gunleif@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fo\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Umsit koyrandi tilgongdir"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
@@ -37,19 +37,21 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Kundi ikki senda bákn %d til koyrsluna við ID %d\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Kundi ikki senda raðfesti %d til koyrsluna við ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr ""
+msgstr "Veruliga drepa koyrsluna?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr ""
+msgstr "Veruliga enda koyrsluna?"
 
 #: ../src/functions.c:148
 #, c-format
@@ -83,7 +85,7 @@ msgstr "minnisnýtsla"
 
 #: ../src/interface.c:145
 msgid "more details"
-msgstr ""
+msgstr "nágreinilig lýsing"
 
 #: ../src/interface.c:171
 msgid "Command"
@@ -131,7 +133,7 @@ msgstr "Halt fram"
 
 #: ../src/interface.c:248
 msgid "Term"
-msgstr ""
+msgstr "Enda"
 
 #: ../src/interface.c:253
 msgid "Kill"
@@ -167,11 +169,11 @@ msgstr "Vís brúkara koyrslur"
 
 #: ../src/interface.c:321
 msgid "Show root tasks"
-msgstr ""
+msgstr "Vís rótakoyrslur"
 
 #: ../src/interface.c:326
 msgid "Show other tasks"
-msgstr ""
+msgstr "Vís aðrar koyrslur"
 
 #: ../src/interface.c:331
 msgid "Show memory used by cache as free"
