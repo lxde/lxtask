@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2010-04-06 16:28+0200\n"
+"PO-Revision-Date: 2010-05-25 18:16+0200\n"
 "Last-Translator: Max <mpui@tut.by>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "Language: ru\n"
@@ -59,7 +59,7 @@ msgstr "Снять выбранный процесс?"
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Память: %d Мб из %d Мб использовано"
+msgstr "Память: %d МБ из %d МБ использовано"
 
 #: ../src/functions.c:157
 #, c-format
