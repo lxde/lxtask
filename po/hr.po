@@ -1,30 +1,32 @@
+#
+# Ivica Koliƒá<ikoli@yahoo.com> <>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: lxtask_hr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Boljsa <asjlob AT vip.hr>\n"
+"POT-Creation-Date: 2010-05-30 04:51+0000\n"
+"PO-Revision-Date: 2010-05-31 00:54+0200\n"
+"Last-Translator: Ivica Koliƒá<ikoli@yahoo.com> <>\n"
 "Language-Team:  <asjlob AT vip.hr>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Croatian\n"
 "X-Poedit-Country: CROATIA\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Upravljaj pokrenutim procesima"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Upravitelj procesa"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
 msgstr "Upravitelj Zadacima"
 
-#: ../src/xfce-taskmanager-linux.c:385
+#: ../src/xfce-taskmanager-linux.c:388
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -35,28 +37,28 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:399
+#: ../src/xfce-taskmanager-linux.c:402
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Ne mogu postavitit prioritet %d zadatku sa ID %d"
+msgstr "Ne mogu postaviti prioritet %d zadatku sa ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Stvarno æelite ubiti zadatak?"
+msgstr "Stvarno ≈æelite ubiti zadatak?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Stvarno æelite prekinuti zadatak?"
+msgstr "Stvarno ≈æelite prekinuti zadatak?"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Memorija: %d MB od %d MB koriπteno"
+msgstr "Memorija: %d MB od %d MB kori≈°teno"
 
 #: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "Koriπtenje CPU: %0.0f %%"
+msgstr "Kori≈°tenje CPU: %0.0f %%"
 
 #: ../src/interface.c:71
 msgid "_File"
@@ -68,19 +70,19 @@ msgstr "_Izgled"
 
 #: ../src/interface.c:85
 msgid "_Help"
-msgstr "_PomoÊ"
+msgstr "_Pomoƒá"
 
 #: ../src/interface.c:109
 msgid "cpu usage"
-msgstr "koriπtenje cpu"
+msgstr "kori≈°tenje cpu"
 
 #: ../src/interface.c:117
 msgid "memory usage"
-msgstr "koriπtenje memorije"
+msgstr "kori≈°tenje memorije"
 
 #: ../src/interface.c:145
 msgid "more details"
-msgstr "viπe detalja"
+msgstr "vi≈°e detalja"
 
 #: ../src/interface.c:171
 msgid "Command"
@@ -100,7 +102,7 @@ msgstr "RSS"
 
 #: ../src/interface.c:198
 msgid "VM-Size"
-msgstr "VM-VeliËina"
+msgstr "VM-Veliƒçina"
 
 #: ../src/interface.c:204
 msgid "PID"
@@ -160,19 +162,19 @@ msgstr "   10"
 
 #: ../src/interface.c:316
 msgid "Show user tasks"
-msgstr "Prikaæi korisniËke zadatke"
+msgstr "Prika≈æi korisniƒçke zadatke"
 
 #: ../src/interface.c:321
 msgid "Show root tasks"
-msgstr "Prikaæi zadatke root korisnika"
+msgstr "Prika≈æi zadatke root korisnika"
 
 #: ../src/interface.c:326
 msgid "Show other tasks"
-msgstr "Prikaæi ostale zadatke"
+msgstr "Prika≈æi ostale zadatke"
 
 #: ../src/interface.c:331
 msgid "Show memory used by cache as free"
-msgstr "Prikaæi memoriju koju koristi cache kao slobodnu"
+msgstr "Prika≈æi memoriju koju koristi cache kao slobodnu"
 
 #: ../src/interface.c:362
 msgid ""
@@ -182,10 +184,12 @@ msgstr ""
 "LXTask je izveden iz Xfce4 Upravitelja Zadataka od:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
-#. TRANSLATORS: Replace mw string with your names, one name per line.
+#. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
-msgstr "boljsa"
+msgstr ""
+"boljsa\n"
+"Ivica Koliƒá<ikoli@yahoo.com>"
 
 #: ../src/interface.c:375
 msgid "LXTask"
@@ -202,19 +206,19 @@ msgstr "Lagani upravitelj zadataka za LXDE projekt"
 
 #: ../src/interface.c:587
 msgid "Preferences"
-msgstr ""
+msgstr "Osobitosti"
 
 #: ../src/interface.c:591
 msgid "General"
-msgstr ""
+msgstr "Osnovno"
 
 #: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Osvje≈æenje ( u sekundama)"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr "Pogreπka"
+msgstr "Pogre¬πka"
 
 #: ../src/utils.c:56
 msgid "Confirm"
