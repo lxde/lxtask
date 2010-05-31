@@ -56,10 +56,12 @@ msgstr "সত্যিই টাস্কটি বাতিল করতে �
 msgid "Memory: %d MB of %d MB used"
 msgstr "মেমরি: %d MB এর %d MB ব্যবহৃত হয়েছে"
 
+# snigdha
 #: ../src/functions.c:157
-#, fuzzy, c-format
+#, c-format
+#, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "CPU এর ব্যবহার: %0.এর %% "
+msgstr "CPU usage: %0.0f %%"
 
 #: ../src/interface.c:71
 msgid "_File"
