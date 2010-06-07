@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2010-05-03 01:12+0200\n"
+"PO-Revision-Date: 2010-06-07 16:03+0200\n"
 "Last-Translator: Gunleif <gunleif@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fo\n"
@@ -38,6 +38,7 @@ msgid ""
 "%s"
 msgstr ""
 "Kundi ikki senda bákn %d til koyrsluna við ID %d\n"
+"\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:399
@@ -177,7 +178,7 @@ msgstr "Vís aðrar koyrslur"
 
 #: ../src/interface.c:331
 msgid "Show memory used by cache as free"
-msgstr "Vís minnið nýtt av kovanum sum verandi tøkt "
+msgstr "Vís minnið nýtt av kovanum sum verandi tøkt"
 
 #: ../src/interface.c:362
 msgid ""
