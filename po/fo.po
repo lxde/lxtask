@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2010-06-07 16:03+0200\n"
+"PO-Revision-Date: 2010-06-08 18:12+0200\n"
 "Last-Translator: Gunleif <gunleif@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fo\n"
@@ -191,7 +191,11 @@ msgstr ""
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
-msgstr "Gunleif Joensen"
+msgstr ""
+"Gunleif Joensen\n"
+"\n"
+"Sjónarmið viðvíkjandi týðingini kunnu sendast til:\n"
+"<fo.umseting@gmail.com>"
 
 #: ../src/interface.c:375
 msgid "LXTask"
