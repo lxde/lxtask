@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2010-02-22 18:41+0200\n"
-"Last-Translator: Kılıç <kilickoken@gmail.com>\n"
+"POT-Creation-Date: 2010-09-05 05:47+0000\n"
+"PO-Revision-Date: 2010-09-06 00:06+0200\n"
+"Last-Translator: Mehmet Gülmen <memetgulmen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -26,11 +26,12 @@ msgstr "Çalışan süreçleri yönet"
 msgid "Process manager"
 msgstr "Süreç yönetici"
 
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+#: ../lxtask.desktop.in.h:3
+#: ../src/interface.c:58
 msgid "Task Manager"
 msgstr "Görev Yönetici"
 
-#: ../src/xfce-taskmanager-linux.c:385
+#: ../src/xfce-taskmanager-linux.c:388
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,7 +42,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:399
+#: ../src/xfce-taskmanager-linux.c:402
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "%d kimlikli göreve %d önceliği atanamadı"
@@ -110,7 +111,7 @@ msgstr "VM-Boyut"
 
 #: ../src/interface.c:204
 msgid "PID"
-msgstr "SK"
+msgstr "PID"
 
 #: ../src/interface.c:210
 msgid "State"
@@ -122,7 +123,7 @@ msgstr "Öncelik"
 
 #: ../src/interface.c:222
 msgid "PPID"
-msgstr "ÜSK"
+msgstr "PPID"
 
 #: ../src/interface.c:238
 msgid "Stop"
@@ -170,7 +171,7 @@ msgstr "Kullanıcı görevlerini göster"
 
 #: ../src/interface.c:321
 msgid "Show root tasks"
-msgstr "Kök görevlerini göster"
+msgstr "Root görevlerini göster"
 
 #: ../src/interface.c:326
 msgid "Show other tasks"
@@ -188,10 +189,12 @@ msgstr ""
 "LXTask Xfce4 Görev Yöneticisinden türetildi. Türeten:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
-#. TRANSLATORS: Replace mw string with your names, one name per line.
+#. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
-msgstr "Kılıç Köken (kilickoken@gmail.com)"
+msgstr ""
+"Mehmet Gülmen (memetgulmen@gmail.com)\n"
+"Kılıç Köken (kilickoken@gmail.com)"
 
 #: ../src/interface.c:375
 msgid "LXTask"
@@ -200,15 +203,15 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Yayım Hakkı (YH) 2008 LXDE takımı"
+msgstr "Telif Hakkı (C) 2008 LXDE takımı"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
-msgstr "LXDE girişimi için yeğnice görev yöneticisi"
+msgstr "LXDE girişimi için hafif görev yöneticisi"
 
 #: ../src/interface.c:587
 msgid "Preferences"
-msgstr "Yeğlenenler"
+msgstr "Tercihler"
 
 #: ../src/interface.c:591
 msgid "General"
@@ -220,8 +223,9 @@ msgstr "Yenileme oranı (saniye):"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr "Kusur:"
+msgstr "Hata:"
 
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Onayla"
+
