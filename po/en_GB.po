@@ -2,14 +2,14 @@
 # Copyright (C) 2007 THE xfce4-taskmanager'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-taskmanager package.
 # Jeff Bailes <thepizzaking@gmail.com>, 2007.
-# , fuzzy
-#
-#
+#, fuzzy
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-06 15:47+0200\n"
+"POT-Creation-Date: 2010-09-19 06:08+0000\n"
 "PO-Revision-Date: 2010-03-28 21:48+0100\n"
 "Last-Translator: Steve Cook (Yorvyk) <yorvik.ubunto@googlemail.com>\n"
 "Language-Team: English/GB\n"
@@ -29,7 +29,7 @@ msgstr "Process manager"
 msgid "Task Manager"
 msgstr "Task Manager"
 
-#: ../src/xfce-taskmanager-linux.c:385
+#: ../src/xfce-taskmanager-linux.c:388
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -40,7 +40,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:399
+#: ../src/xfce-taskmanager-linux.c:402
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Couldn’t set priority %d to the task with ID %d"
@@ -77,7 +77,7 @@ msgstr "_Help"
 
 #: ../src/interface.c:109
 msgid "cpu usage"
-msgstr "cpu usage"
+msgstr "CPU usage"
 
 #: ../src/interface.c:117
 msgid "memory usage"
@@ -187,7 +187,7 @@ msgstr ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
-#. TRANSLATORS: Replace mw string with your names, one name per line.
+#. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
 msgstr "translator-credits"
@@ -196,14 +196,15 @@ msgstr "translator-credits"
 msgid "LXTask"
 msgstr "LXTask"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg,
+#. gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright © 2008 LXDE team"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
-msgstr "Lightweight task manager for LXDE project"
+msgstr "Lightweight task manager for the LXDE project"
 
 #: ../src/interface.c:587
 msgid "Preferences"
