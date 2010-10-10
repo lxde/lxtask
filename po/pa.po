@@ -1,0 +1,229 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# A S Alam <aalam@users.sf.net>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-09 06:08+0000\n"
+"PO-Revision-Date: 2010-10-10 08:34+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../lxtask.desktop.in.h:1
+msgid "Manage running processes"
+msgstr "ਚੱਲ ਰਹੇ ਪਰੋਸੈਸ ਦਾ ਪਰਬੰਧ"
+
+#: ../lxtask.desktop.in.h:2
+msgid "Process manager"
+msgstr "ਪਰੋਸੈਸ ਮੈਨੇਜਰ"
+
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+msgid "Task Manager"
+msgstr "ਟਾਸਕ ਮੈਨੇਜਰ"
+
+#: ../src/xfce-taskmanager-linux.c:388
+#, c-format
+msgid ""
+"Couldn't send signal %d to the task with ID %d\n"
+"\n"
+"%s"
+msgstr ""
+"%2$d ID ਵਾਲੀ ਟਾਸਕ ਲਈ %1$d ਸਿਗਨਲ ਭੇਜਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ\n"
+"\n"
+"%3$s"
+
+#: ../src/xfce-taskmanager-linux.c:402
+#, c-format
+msgid "Couldn't set priority %d to the task with ID %d"
+msgstr "%2$d ID ਵਾਲੀ ਟਾਸਕ ਲਈ ਤਰਜੀਹ %1$d ਸੈੱਟ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ"
+
+#: ../src/callbacks.c:56
+msgid "Really kill the task?"
+msgstr "ਟਾਸਕ ਕਿੱਲ ਕਰਨੀ ਹੈ?"
+
+#: ../src/callbacks.c:60
+msgid "Really terminate the task?"
+msgstr "ਟਾਸਕ ਟਰਮੀਨੇਟ ਕਰਨੀ ਹੈ?"
+
+#: ../src/functions.c:148
+#, c-format
+msgid "Memory: %d MB of %d MB used"
+msgstr "ਮੈਮੋਰੀ: %2$d MB ਵਿੱਚੋਂ %1$d  ਵਰਤੀ"
+
+#: ../src/functions.c:157
+#, c-format
+msgid "CPU usage: %0.0f %%"
+msgstr "CPU ਵਰਤੋਂ: %0.0f %%"
+
+#: ../src/interface.c:71
+msgid "_File"
+msgstr "ਫਾਇਲ(_F)"
+
+#: ../src/interface.c:79
+msgid "_View"
+msgstr "ਵੇਖੋ(_V)"
+
+#: ../src/interface.c:85
+msgid "_Help"
+msgstr "ਮੱਦਦ(_H)"
+
+#: ../src/interface.c:109
+msgid "cpu usage"
+msgstr "cpu ਵਰਤੋਂ"
+
+#: ../src/interface.c:117
+msgid "memory usage"
+msgstr "ਮੈਮੋਰੀ ਵਰਤੋਂ"
+
+#: ../src/interface.c:145
+msgid "more details"
+msgstr "ਹੋਰ ਵੇਰਵਾ"
+
+#: ../src/interface.c:171
+msgid "Command"
+msgstr "ਕਮਾਂਡ"
+
+#: ../src/interface.c:177
+msgid "User"
+msgstr "ਯੂਜ਼ਰ"
+
+#: ../src/interface.c:186
+msgid "CPU%"
+msgstr "CPU%"
+
+#: ../src/interface.c:192
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/interface.c:198
+msgid "VM-Size"
+msgstr "VM-ਆਕਾਰ"
+
+#: ../src/interface.c:204
+msgid "PID"
+msgstr "PID"
+
+#: ../src/interface.c:210
+msgid "State"
+msgstr "ਹਾਲਤ"
+
+#: ../src/interface.c:216
+msgid "Prio"
+msgstr "ਤਰਜੀਹ"
+
+#: ../src/interface.c:222
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/interface.c:238
+msgid "Stop"
+msgstr "ਰੋਕੋ"
+
+#: ../src/interface.c:243
+msgid "Continue"
+msgstr "ਜਾਰੀ ਰੱਖੋ"
+
+#: ../src/interface.c:248
+msgid "Term"
+msgstr "ਟਰਮ"
+
+#: ../src/interface.c:253
+msgid "Kill"
+msgstr "ਕਿੱਲ"
+
+#: ../src/interface.c:258
+msgid "Priority"
+msgstr "ਤਰਜੀਹ"
+
+#: ../src/interface.c:271
+msgid "  -10"
+msgstr "  -10"
+
+#: ../src/interface.c:276
+msgid "  -5"
+msgstr "  -5"
+
+#: ../src/interface.c:281
+msgid "    0"
+msgstr "    0"
+
+#: ../src/interface.c:286
+msgid "   5"
+msgstr "   5"
+
+#: ../src/interface.c:291
+msgid "   10"
+msgstr "   10"
+
+#: ../src/interface.c:316
+msgid "Show user tasks"
+msgstr "ਯੂਜ਼ਰ ਟਾਸਕ ਵੇਖੋ"
+
+#: ../src/interface.c:321
+msgid "Show root tasks"
+msgstr "ਰੂਟ ਟਾਸਕ ਵੇਖੋ"
+
+#: ../src/interface.c:326
+msgid "Show other tasks"
+msgstr "ਹੋਰ ਟਾਸਕ ਵੇਖੋ"
+
+#: ../src/interface.c:331
+msgid "Show memory used by cache as free"
+msgstr "ਕੈਸ਼ ਵਲੋਂ ਵਰਤੀ ਮੈਮੋਰੀ ਖਾਲੀ ਵਜੋਂ ਵੇਖੋ"
+
+#: ../src/interface.c:362
+msgid ""
+"LXTask is derived from Xfce4 Task Manager by:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+msgstr ""
+"LXTask ਨੂੰ Xfce4 ਟਾਸਕ ਮੈਨੇਜਰ ਤੋਂ ਬਣਾਇਆ ਗਿਆ। ਵਲੋਂ:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/interface.c:367
+msgid "translator-credits"
+msgstr ""
+"ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ ੨੦੧੦\n"
+"ਪੰਜਾਬੀ ਓਪਨਸੋਰਸ ਟੀਮ (POST)\n"
+"http://www.satuj.com"
+
+#: ../src/interface.c:375
+msgid "LXTask"
+msgstr "LXTask"
+
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:377
+msgid "Copyright (C) 2008 LXDE team"
+msgstr "Copyright (C) 2008 LXDE ਟੀਮ"
+
+#: ../src/interface.c:378
+msgid "Lightweight task manager for LXDE project"
+msgstr "LXDE ਪਰੋਜੈਕਟ ਲਈ ਹਲਕਾ ਟਾਸਕ ਮੈਨੇਜਰ"
+
+#: ../src/interface.c:587
+msgid "Preferences"
+msgstr "ਮੇਰੀ ਪਸੰਦ"
+
+#: ../src/interface.c:591
+msgid "General"
+msgstr "ਆਮ"
+
+#: ../src/interface.c:592
+msgid "Refresh rate (seconds):"
+msgstr "ਤਾਜ਼ਾ ਦਰ (ਸਕਿੰਟ):"
+
+#: ../src/utils.c:43
+msgid "Error"
+msgstr "ਗਲਤੀ"
+
+#: ../src/utils.c:56
+msgid "Confirm"
+msgstr "ਪੁਸ਼ਟੀ"
+
