@@ -5,12 +5,12 @@
 # Adriano Winter Bess <adriano@xfce.org>, 2006.
 # Pablo Galletti Vieira <pbgozer@gmail.com>, 2007.
 # Henrique P. Machado <zehrique@gmail.com>, 2009.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-06 15:47+0200\n"
+"POT-Creation-Date: 2010-10-15 06:09+0000\n"
 "PO-Revision-Date: 2007-12-03 01:50-0300\n"
 "Last-Translator: Henrique P. Machado <zehrique@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
@@ -28,9 +28,9 @@ msgstr "Gerenciador de processos"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
-msgstr "Gerenciador de Tarefas"
+msgstr "Gerenciador de tarefas"
 
-#: ../src/xfce-taskmanager-linux.c:385
+#: ../src/xfce-taskmanager-linux.c:388
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,7 +41,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:399
+#: ../src/xfce-taskmanager-linux.c:402
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Não foi possível atribuir a prioridade %d para a tarefa com a ID %d"
@@ -188,7 +188,7 @@ msgstr ""
 "LXTask é derivado do Gerenciador de Tarefas do Xfce4 por:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
-#. TRANSLATORS: Replace mw string with your names, one name per line.
+#. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
 msgstr ""
@@ -200,10 +200,11 @@ msgstr ""
 msgid "LXTask"
 msgstr "LXTask"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg,
+#. gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright (C) 2008 O Time do LXDE"
+msgstr "Copyright (C) 2008 Time do LXDE"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
