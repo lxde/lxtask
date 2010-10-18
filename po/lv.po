@@ -2,12 +2,12 @@
 # Copyright (C) 2006 THE xfce4-taskmanager'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-taskmanager package..
 # Rihards Prieditis <Rprieditis@inbox.lv>, 2007.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-06 15:47+0200\n"
+"POT-Creation-Date: 2010-10-18 06:08+0000\n"
 "PO-Revision-Date: 2007-11-17 01:46+0300\n"
 "Last-Translator: Rihards Priedītis <rprieditis@inbox.lv>\n"
 "Language-Team: Lstvian <rprieditis@inbox.lv>\n"
@@ -17,29 +17,31 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Pārvaldīt aktīvos procesus"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Procesu pārvaldnieks"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
-#, fuzzy
 msgid "Task Manager"
-msgstr "xfce4-taskmanager"
+msgstr "Procesu pārvaldnieks"
 
-#: ../src/xfce-taskmanager-linux.c:385
+#: ../src/xfce-taskmanager-linux.c:388
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
 "\n"
 "%s"
 msgstr ""
+"Neizdevās iestatīt signālu %d procesam ar ID %d \n"
+"\n"
+" %s"
 
-#: ../src/xfce-taskmanager-linux.c:399
+#: ../src/xfce-taskmanager-linux.c:402
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Neizdevās iestatīt prioritāti %d procesam ar ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -50,26 +52,26 @@ msgid "Really terminate the task?"
 msgstr "Patiesi terminēt uzdevumu?"
 
 #: ../src/functions.c:148
-#, fuzzy, c-format
+#, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "%d kB no %d kB izmantoti"
 
 #: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "Procesora noslodze:% 0.0f %%"
 
 #: ../src/interface.c:71
 msgid "_File"
-msgstr ""
+msgstr "_Fails"
 
 #: ../src/interface.c:79
 msgid "_View"
-msgstr ""
+msgstr "_Skats"
 
 #: ../src/interface.c:85
 msgid "_Help"
-msgstr ""
+msgstr "_Palīdzība"
 
 #: ../src/interface.c:109
 msgid "cpu usage"
@@ -112,8 +114,9 @@ msgid "State"
 msgstr "Stāvoklis"
 
 #: ../src/interface.c:216
+#, fuzzy
 msgid "Prio"
-msgstr ""
+msgstr "Prio"
 
 #: ../src/interface.c:222
 msgid "PPID"
@@ -136,28 +139,34 @@ msgid "Kill"
 msgstr "Nokaut"
 
 #: ../src/interface.c:258
+#, fuzzy
 msgid "Priority"
-msgstr ""
+msgstr "Prioritāte"
 
 #: ../src/interface.c:271
+#, fuzzy
 msgid "  -10"
-msgstr ""
+msgstr "-10"
 
 #: ../src/interface.c:276
+#, fuzzy
 msgid "  -5"
-msgstr ""
+msgstr "-5"
 
 #: ../src/interface.c:281
+#, fuzzy
 msgid "    0"
-msgstr ""
+msgstr "0"
 
 #: ../src/interface.c:286
+#, fuzzy
 msgid "   5"
-msgstr ""
+msgstr "5"
 
 #: ../src/interface.c:291
+#, fuzzy
 msgid "   10"
-msgstr ""
+msgstr "10"
 
 #: ../src/interface.c:316
 msgid "Show user tasks"
@@ -180,44 +189,48 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask ir izveidots iedvesmojoties no Xfce4 Task Manager \n"
+"Autors: * Johannes Zellner <webmaster@nebulon.de>"
 
-#. TRANSLATORS: Replace mw string with your names, one name per line.
+#. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
-msgstr ""
+msgstr "Edgars Piruška (Lemings)"
 
 #: ../src/interface.c:375
+#, fuzzy
 msgid "LXTask"
-msgstr ""
+msgstr "LXTask"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg,
+#. gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
-msgstr ""
+msgstr "Autortiesības (C) 2008 LXDE team"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr " LXDE projekta procesu pārvaldnieks"
 
 #: ../src/interface.c:587
 msgid "Preferences"
-msgstr ""
+msgstr "Iestatījumi"
 
 #: ../src/interface.c:591
 msgid "General"
-msgstr ""
+msgstr "Vispārīgi"
 
 #: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Atjaunināšanas biežums (sekundes):"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr ""
+msgstr "Kļūda"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr ""
+msgstr "Apstiprināt"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
