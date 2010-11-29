@@ -286,6 +286,7 @@ GArray *get_task_list(void)
     {
         int pid=atoi(namelist[n]->d_name);
         struct task *task=&g_array_index(task_list, struct task, count);
+	free(namelist[n]);
         get_task_details(pid,task);
         if(task->pid != -1 && task->size>0)	// don't show error or kenerl threads
         {
