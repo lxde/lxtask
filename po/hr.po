@@ -5,12 +5,16 @@ msgstr ""
 "Project-Id-Version: lxtask_hr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-30 04:51+0000\n"
-"PO-Revision-Date: 2010-05-31 00:54+0200\n"
-"Last-Translator: Ivica Kolić<ikoli@yahoo.com> <>\n"
-"Language-Team:  <asjlob AT vip.hr>\n"
+"PO-Revision-Date: 2011-01-05 12:28+0200\n"
+"Last-Translator: zvacet <ikoli@yahoo.com>\n"
+"Language-Team: <asjlob AT vip.hr>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.0.5\n"
 "X-Poedit-Language: Croatian\n"
 "X-Poedit-Country: CROATIA\n"
 
@@ -214,11 +218,11 @@ msgstr "Osnovno"
 
 #: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
-msgstr "Osvježenje ( u sekundama)"
+msgstr "Osvježenje ( u sekundama):"
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr "Pogre¹ka"
+msgstr "Pogreška"
 
 #: ../src/utils.c:56
 msgid "Confirm"
