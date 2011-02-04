@@ -1,39 +1,38 @@
-# translation of pl.po to Polish
-# Polish translations for xfce4-taskmanager package.
-# Copyright (C) 2005-2006 Johannes Zellner.
-# This file is distributed under the same license as
-#   the xfce4-taskmanager package.
-#
+# Polish translation of lxtask package
+# Copyright (C) 2008 LXDE team
+# This file is distributed under the same license as the lxtask package.
 # Piotr Maliński <admin@rk.edu.pl>, 2006.
 # Grzegorz Gibas <amigib@gmail.com>, 2009.
 # Artur Kruszewski <mazdac@gmail.com>, 2009.
+# Piotr Sokół <psokol@jabster.pl>, 2010, 2011.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: pl\n"
+"Project-Id-Version: lxtask 0.1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2010-01-13 23:16+0200\n"
-"Last-Translator: Artur <mazdac@gmail.com>\n"
-"Language-Team: Polish\n"
+"PO-Revision-Date: 2011-02-04 19:19+0100\n"
+"Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
+"Language-Team: Polish <>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n"
+"%100<10 || n%100>=20)) ? 1 : 2));\n"
 "X-Generator: Pootle 2.0.0\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr "Zarządzaj uruchomionymi procesami"
+msgstr "Zarządza uruchomionymi procesami"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "Zarządca procesów"
+msgstr "Menedżer procesów"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
-msgstr "Zarządca zadań"
+msgstr "Menedżer zadań"
 
 #: ../src/xfce-taskmanager-linux.c:385
 #, c-format
@@ -42,32 +41,32 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Nie można wysłać sygnału %d do zadania z ID %d\n"
+"Nie można wysłać sygnału %d do procesu o identyfikatorze %d\n"
 "\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Nie można ustawić priorytetu %d zadaniu  z ID %d"
+msgstr "Nie można ustawić priorytetu %d procesu o identyfikatorze %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Na pewno zabić zadanie (przez SIGKILL)?"
+msgstr "Zniszczyć proces?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Na pewno zakończyć zadanie (przez SIGTERM)?"
+msgstr "Zakończyć proces?"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Pamięć w użyciu %d MB z %d MB"
+msgstr "Użycie pamięci: %d MB z %d MB"
 
 #: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "Użycie procesora: %0.z %%"
+msgstr "Obciążenie CPU: %0.f %%"
 
 #: ../src/interface.c:71
 msgid "_File"
@@ -79,19 +78,19 @@ msgstr "_Widok"
 
 #: ../src/interface.c:85
 msgid "_Help"
-msgstr "_Pomoc"
+msgstr "Pomo_c"
 
 #: ../src/interface.c:109
 msgid "cpu usage"
-msgstr "wykorzystanie procesora"
+msgstr "obciążenie CPU"
 
 #: ../src/interface.c:117
 msgid "memory usage"
-msgstr "wykorzystanie pamięci"
+msgstr "użycie pamięci"
 
 #: ../src/interface.c:145
 msgid "more details"
-msgstr "więcej szczegółów"
+msgstr "Wyświetlanie większej ilości szczegółów"
 
 #: ../src/interface.c:171
 msgid "Command"
@@ -103,19 +102,19 @@ msgstr "Użytkownik"
 
 #: ../src/interface.c:186
 msgid "CPU%"
-msgstr "CPU%"
+msgstr "Obciążenie CPU"
 
 #: ../src/interface.c:192
 msgid "RSS"
-msgstr "RSS"
+msgstr "Pamięć zajęta"
 
 #: ../src/interface.c:198
 msgid "VM-Size"
-msgstr "VM-Rozmiar"
+msgstr "Pamięć przydzielona"
 
 #: ../src/interface.c:204
 msgid "PID"
-msgstr "PID"
+msgstr "Identyfikator"
 
 #: ../src/interface.c:210
 msgid "State"
@@ -123,11 +122,11 @@ msgstr "Stan"
 
 #: ../src/interface.c:216
 msgid "Prio"
-msgstr "Prio"
+msgstr "Priorytet"
 
 #: ../src/interface.c:222
 msgid "PPID"
-msgstr "PPID"
+msgstr "Identyfikator rodzica"
 
 #: ../src/interface.c:238
 msgid "Stop"
@@ -143,60 +142,65 @@ msgstr "Zakończ"
 
 #: ../src/interface.c:253
 msgid "Kill"
-msgstr "Zabij"
+msgstr "Zniszcz"
 
 #: ../src/interface.c:258
 msgid "Priority"
-msgstr "Priorytet"
+msgstr "Ustaw priorytet"
 
 #: ../src/interface.c:271
 msgid "  -10"
-msgstr "  -10"
+msgstr "-10"
 
 #: ../src/interface.c:276
 msgid "  -5"
-msgstr "  -5"
+msgstr "-5"
 
 #: ../src/interface.c:281
 msgid "    0"
-msgstr "    0"
+msgstr "0"
 
 #: ../src/interface.c:286
 msgid "   5"
-msgstr "   5"
+msgstr "5"
 
 #: ../src/interface.c:291
 msgid "   10"
-msgstr "   10"
+msgstr "10"
 
 #: ../src/interface.c:316
 msgid "Show user tasks"
-msgstr "Pokaż procesy użytkownika"
+msgstr "Procesy użytkownika"
 
 #: ../src/interface.c:321
 msgid "Show root tasks"
-msgstr "Pokaż procesy roota"
+msgstr "Procesy użytkownika root"
 
 #: ../src/interface.c:326
 msgid "Show other tasks"
-msgstr "Pokaż inne procesy"
+msgstr "Inne procesy"
 
 #: ../src/interface.c:331
 msgid "Show memory used by cache as free"
-msgstr "Pokaż pamięć użytą przez cache jako wolną"
+msgstr "Uwzględnianie pamięci podręcznej jako dostępnej"
 
 #: ../src/interface.c:362
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask wywodzi się z Xfce4 Task Manager  stworzony przez:\n"
-"  * Johannes Zellner <webmaster@nebulon.de>"
+"LXTask został stworzony na podstawie \n"
+"programu Xfce4 Task Manager autorstwa\n"
+"Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
-msgstr "Grzegorz Gibas (amigib@gmail.com)"
+msgstr ""
+"Piotr Maliński <admin@rk.edu.pl>, 2006.\n"
+"Grzegorz Gibas <amigib@gmail.com>, 2009.\n"
+"Artur Kruszewski <mazdac@gmail.com>, 2009.\n"
+"Piotr Sokół <psokol@jabster.pl>, 2010, 2011."
 
 #: ../src/interface.c:375
 msgid "LXTask"
@@ -205,15 +209,15 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Prawa zastrzeżone (C) 2008 Ekipa LXDE"
+msgstr "Prawa zastrzeżone (C) 2008 zespół LXDE"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
-msgstr "Lekki menedżer procesów dla projektu LXDE"
+msgstr "Zarządza uruchomionymi procesami"
 
 #: ../src/interface.c:587
 msgid "Preferences"
-msgstr "Ustawienia"
+msgstr "Preferencje"
 
 #: ../src/interface.c:591
 msgid "General"
@@ -221,7 +225,7 @@ msgstr "Ogólne"
 
 #: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
-msgstr "Częstotliwość odświeżania (sekundy):"
+msgstr "Tempo odświeżania (s):"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -229,4 +233,4 @@ msgstr "Błąd"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr "Potwierdź"
+msgstr "Potwierdzenie"
