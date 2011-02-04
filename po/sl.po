@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: LXTask 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2011-02-04 23:38+0200\n"
+"PO-Revision-Date: 2011-02-04 23:46+0200\n"
 "Last-Translator: Klemen <klemen913@gmail.com>\n"
 "Language-Team: Slovenian <paxmanpwnz@gmail.com>\n"
 "Language: sl\n"
@@ -170,19 +170,19 @@ msgstr "   10"
 
 #: ../src/interface.c:316
 msgid "Show user tasks"
-msgstr "Prikaži uporabnikova opravila"
+msgstr "Pokaži opravila uporabnika"
 
 #: ../src/interface.c:321
 msgid "Show root tasks"
-msgstr "Prikaži skrbnikova opravila"
+msgstr "Pokaži opravila skrbnika"
 
 #: ../src/interface.c:326
 msgid "Show other tasks"
-msgstr "Prikaži druga opravila"
+msgstr "Pokaži druga opravila"
 
 #: ../src/interface.c:331
 msgid "Show memory used by cache as free"
-msgstr "Prikaži pomnilnik, ki ga zaseda predpomnilnik, kot prostega"
+msgstr "Pokaži pomnilnik, ki ga zaseda predpomnilnik, kot prostega"
 
 #: ../src/interface.c:362
 msgid ""
