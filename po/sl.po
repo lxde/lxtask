@@ -9,29 +9,30 @@ msgstr ""
 "Project-Id-Version: LXTask 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2009-12-08 21:14+0100\n"
-"Last-Translator: Matej <paxmanpwnz@gmail.com>\n"
+"PO-Revision-Date: 2011-02-04 23:38+0200\n"
+"Last-Translator: Klemen <klemen913@gmail.com>\n"
 "Language-Team: Slovenian <paxmanpwnz@gmail.com>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 1.1.0\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3);\n"
+"X-Generator: Pootle 2.0.5\n"
 "X-Poedit-Language: Slovenian\n"
 "X-Poedit-Country: SLOVENIA\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr "Upravljanje zagnanih procesov"
+msgstr "Upravljajte zagnana opravila"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "Upravitelj procesov"
+msgstr "Upravljalnik opravil"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:58
 msgid "Task Manager"
-msgstr "Nadzornik opravil"
+msgstr "Upravljalnik opravil"
 
 #: ../src/xfce-taskmanager-linux.c:385
 #, c-format
@@ -40,18 +41,18 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Signala %d ni bilo mogoče poslati opravilu z IDjem %d\n"
+"Signala %d opravilu z ID-jem %d ni mogoče poslati\n"
 "\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:399
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Prioritete %d ni bilo mogoče nastaviti opravilu z IDjem %d"
+msgstr "Prednosti %d opravilu z ID-jem %d ni mogoče nastaviti"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Ali res želite pobiti opravilo?"
+msgstr "Ali res želite ubiti opravilo?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
@@ -109,7 +110,7 @@ msgstr "Sredstva"
 
 #: ../src/interface.c:198
 msgid "VM-Size"
-msgstr "Poraba NS"
+msgstr "Poraba NP"
 
 #: ../src/interface.c:204
 msgid "PID"
@@ -121,7 +122,7 @@ msgstr "Stanje"
 
 #: ../src/interface.c:216
 msgid "Prio"
-msgstr "Prioriteta"
+msgstr "Prednost"
 
 #: ../src/interface.c:222
 msgid "PPID"
@@ -141,31 +142,31 @@ msgstr "Končaj"
 
 #: ../src/interface.c:253
 msgid "Kill"
-msgstr "Pobij"
+msgstr "Ubij"
 
 #: ../src/interface.c:258
 msgid "Priority"
-msgstr "Prioriteta"
+msgstr "Prednost"
 
 #: ../src/interface.c:271
 msgid "  -10"
-msgstr "-10"
+msgstr "  -10"
 
 #: ../src/interface.c:276
 msgid "  -5"
-msgstr "-5"
+msgstr "  -5"
 
 #: ../src/interface.c:281
 msgid "    0"
-msgstr "0"
+msgstr "    0"
 
 #: ../src/interface.c:286
 msgid "   5"
-msgstr "5"
+msgstr "   5"
 
 #: ../src/interface.c:291
 msgid "   10"
-msgstr "10"
+msgstr "   10"
 
 #: ../src/interface.c:316
 msgid "Show user tasks"
@@ -177,7 +178,7 @@ msgstr "Prikaži skrbnikova opravila"
 
 #: ../src/interface.c:326
 msgid "Show other tasks"
-msgstr "Prikaži ostala opravila"
+msgstr "Prikaži druga opravila"
 
 #: ../src/interface.c:331
 msgid "Show memory used by cache as free"
@@ -188,13 +189,15 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask izhaja iz projekta Xfce4 Task Manager avtorjev:\n"
+"LXTask je iz projekta Xfce4 Task Manager izpeljal:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace mw string with your names, one name per line.
 #: ../src/interface.c:367
 msgid "translator-credits"
-msgstr "Slovenski prevod: paxman, paxmanpwnz@gmail.com"
+msgstr ""
+"Klemen Košir https://launchpad.net/~klemen913\n"
+"paxman, paxmanpwnz@gmail.com"
 
 #: ../src/interface.c:375
 msgid "LXTask"
@@ -203,15 +206,15 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Vse pravice pridržane (C) 2008 ekipa LXDE "
+msgstr "Vse pravice pridržane (C) 2008 ekipa LXDE"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
-msgstr "Nadzornik opravil projekta LXDE"
+msgstr "Upravljalnik opravil za projekt LXDE"
 
 #: ../src/interface.c:587
 msgid "Preferences"
-msgstr "Nastavitve"
+msgstr "Možnosti"
 
 #: ../src/interface.c:591
 msgid "General"
@@ -219,7 +222,7 @@ msgstr "Splošno"
 
 #: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
-msgstr "Hitrost osveževanja (sekunde)"
+msgstr "Hitrost osveževanja (v sekundah):"
 
 #: ../src/utils.c:43
 msgid "Error"
