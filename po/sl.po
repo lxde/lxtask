@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: LXTask 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2011-02-04 23:51+0200\n"
+"PO-Revision-Date: 2011-02-05 10:59+0200\n"
 "Last-Translator: Klemen <klemen913@gmail.com>\n"
 "Language-Team: Slovenian <paxmanpwnz@gmail.com>\n"
 "Language: sl\n"
@@ -110,7 +110,7 @@ msgstr "Sredstva"
 
 #: ../src/interface.c:198
 msgid "VM-Size"
-msgstr "Poraba NP"
+msgstr "Poraba nav. pomn."
 
 #: ../src/interface.c:204
 msgid "PID"
