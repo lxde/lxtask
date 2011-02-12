@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: LXTask 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2011-02-05 10:59+0200\n"
+"PO-Revision-Date: 2011-02-12 12:23+0200\n"
 "Last-Translator: Klemen <klemen913@gmail.com>\n"
 "Language-Team: Slovenian <paxmanpwnz@gmail.com>\n"
 "Language: sl\n"
@@ -74,11 +74,11 @@ msgstr "_Datoteka"
 
 #: ../src/interface.c:79
 msgid "_View"
-msgstr "P_ogled"
+msgstr "_Pogled"
 
 #: ../src/interface.c:85
 msgid "_Help"
-msgstr "_Pomoč"
+msgstr "Pomo_č"
 
 #: ../src/interface.c:109
 msgid "cpu usage"
@@ -158,7 +158,7 @@ msgstr "  -5"
 
 #: ../src/interface.c:281
 msgid "    0"
-msgstr "    0"
+msgstr "   0"
 
 #: ../src/interface.c:286
 msgid "   5"
@@ -206,7 +206,7 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:377
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Vse pravice pridržane (C) 2008 ekipa LXDE"
+msgstr "Avtorske pravice (C) 2008 ekipa LXDE"
 
 #: ../src/interface.c:378
 msgid "Lightweight task manager for LXDE project"
