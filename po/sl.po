@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: LXTask 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-04-06 15:47+0200\n"
-"PO-Revision-Date: 2011-02-14 15:18+0200\n"
+"PO-Revision-Date: 2011-02-14 17:15+0200\n"
 "Last-Translator: Klemen <klemen.kosir@gmx.com>\n"
 "Language-Team: Slovenian <paxmanpwnz@gmail.com>\n"
 "Language: sl\n"
@@ -52,7 +52,7 @@ msgstr "Prednosti %d opravilu z ID-jem %d ni mogoče nastaviti"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Ali res želite ubiti opravilo?"
+msgstr "Ali res želite uničiti opravilo?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
@@ -142,7 +142,7 @@ msgstr "Končaj"
 
 #: ../src/interface.c:253
 msgid "Kill"
-msgstr "Ubij"
+msgstr "Uniči"
 
 #: ../src/interface.c:258
 msgid "Priority"
