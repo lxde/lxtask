@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: lxtask_hr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-30 04:51+0000\n"
-"PO-Revision-Date: 2011-02-23 00:28+0200\n"
+"PO-Revision-Date: 2011-03-01 14:51+0200\n"
 "Last-Translator: zvacet <ikoli@yahoo.com>\n"
 "Language-Team: <asjlob AT vip.hr>\n"
 "Language: hr\n"
@@ -218,7 +218,7 @@ msgstr "Osnovno"
 
 #: ../src/interface.c:592
 msgid "Refresh rate (seconds):"
-msgstr "Osvježenje ( u sekundama):"
+msgstr "Osvježenje (u sekundama):"
 
 #: ../src/utils.c:43
 msgid "Error"
