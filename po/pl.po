@@ -66,7 +66,7 @@ msgstr "Użycie pamięci: %d MB z %d MB"
 #: ../src/functions.c:157
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "Obciążenie CPU: %0.f %%"
+msgstr "Obciążenie CPU: %0.0f %%"
 
 #: ../src/interface.c:71
 msgid "_File"
