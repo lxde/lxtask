@@ -57,6 +57,7 @@ GtkWidget* create_main_window (void)
     window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title (GTK_WINDOW (window), _("Task Manager"));
     gtk_window_set_default_size (GTK_WINDOW (window), win_width, win_height);
+    gtk_window_set_icon_name (GTK_WINDOW (window),"utilities-system-monitor");
 
     bbox1 = gtk_vbox_new (FALSE, 10);
     gtk_widget_show (bbox1);
