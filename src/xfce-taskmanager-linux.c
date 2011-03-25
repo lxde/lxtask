@@ -65,8 +65,25 @@ void get_task_details(gint pid,struct task *task)
 		
 		read(fd,buf,2048);
 		p=strchr(buf,'(');p++;
-                for(len=0;*p!=')';len++) task->name[len]=*p++;
-                task->name[len]=0;p++;
+		for(len=0;*p!=')';len++) task->name[len]=*p++;
+		task->name[len]=0;p++;
+		if(len>=15)
+		{
+			FILE *fp;
+			sprintf(line,"/proc/%d/cmdline",pid);
+			fp=fopen(line,"r");
+			if(fp)
+			{
+				char *p;
+				fscanf(fp, "%255s", line);
+				fclose(fp);
+				p=strrchr(line,'/');
+				if(p != NULL)
+					strcpy(task->name, p+1);
+				else
+					strcpy(task->name, line);
+			}
+		}
 
 		sscanf(p, "%1s %i %s %s %s %s %s %s %s %s %s %i %i %s %s %s %i",
                         task->state, // processstate
