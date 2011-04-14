@@ -51,9 +51,6 @@ GtkWidget* create_main_window (void)
 
     GtkWidget *system_info_box;
 
-    tooltips = gtk_tooltips_new();
-    gtk_tooltips_enable(tooltips);
-
     window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title (GTK_WINDOW (window), _("Task Manager"));
     gtk_window_set_default_size (GTK_WINDOW (window), win_width, win_height);
@@ -107,6 +104,9 @@ GtkWidget* create_main_window (void)
 
     cpu_usage_progress_bar_box = gtk_event_box_new ();
     cpu_usage_progress_bar = gtk_progress_bar_new ();
+#if GTK_CHECK_VERSION(3,0,0)
+    gtk_progress_bar_set_show_text (GTK_PROGRESS_BAR (cpu_usage_progress_bar), TRUE);
+#endif
     gtk_progress_bar_set_text (GTK_PROGRESS_BAR (cpu_usage_progress_bar), _("cpu usage"));
     gtk_widget_show (cpu_usage_progress_bar);
     gtk_widget_show (cpu_usage_progress_bar_box);
@@ -115,6 +115,9 @@ GtkWidget* create_main_window (void)
 
     mem_usage_progress_bar_box = gtk_event_box_new ();
     mem_usage_progress_bar = gtk_progress_bar_new ();
+#if GTK_CHECK_VERSION(3,0,0)
+    gtk_progress_bar_set_show_text (GTK_PROGRESS_BAR (mem_usage_progress_bar), TRUE);
+#endif
     gtk_progress_bar_set_text (GTK_PROGRESS_BAR (mem_usage_progress_bar), _("memory usage"));
     gtk_widget_show (mem_usage_progress_bar);
     gtk_widget_show (mem_usage_progress_bar_box);
@@ -373,7 +376,11 @@ void show_about_dialog(void)
 
     gtk_container_set_border_width ( ( GtkContainer*)about_dlg , 2 );
     gtk_about_dialog_set_version ( (GtkAboutDialog*)about_dlg, VERSION );
+#if !GTK_CHECK_VERSION(2,12,0)
     gtk_about_dialog_set_name ( (GtkAboutDialog*)about_dlg, _( "LXTask" ) );
+#else
+	gtk_about_dialog_set_program_name ( (GtkAboutDialog*)about_dlg, _( "LXTask" ) );
+#endif
     /* gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) ); */
     gtk_about_dialog_set_copyright ( (GtkAboutDialog*)about_dlg, _( "Copyright (C) 2008 LXDE team" ) );
     gtk_about_dialog_set_comments ( (GtkAboutDialog*)about_dlg, _( "Lightweight task manager for LXDE project" ) );
@@ -588,11 +595,11 @@ void show_preferences(void)
     dlg = gtk_dialog_new_with_buttons(_("Preferences"), NULL, 0, GTK_STOCK_CANCEL, GTK_RESPONSE_REJECT, GTK_STOCK_OK, GTK_RESPONSE_ACCEPT, NULL);
     c_area = gtk_dialog_get_content_area(GTK_DIALOG (dlg));
 
-    gtk_box_pack_start_defaults(GTK_BOX (c_area), notebook);
+    gtk_box_pack_start(GTK_BOX (c_area), notebook, TRUE, TRUE, 0);
     gtk_notebook_append_page(GTK_NOTEBOOK (notebook), general_box, gtk_label_new(_("General")));
-    gtk_box_pack_start_defaults(GTK_BOX (refresh_box), gtk_label_new(_("Refresh rate (seconds):")));
-    gtk_box_pack_start_defaults(GTK_BOX (refresh_box), refresh_spin);
-    gtk_box_pack_start_defaults(GTK_BOX (general_box), refresh_box);
+    gtk_box_pack_start(GTK_BOX (refresh_box), gtk_label_new(_("Refresh rate (seconds):")), TRUE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX (refresh_box), refresh_spin, TRUE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX (general_box), refresh_box, TRUE, TRUE, 0);
 
     gtk_widget_show_all(notebook);
 

@@ -148,7 +148,6 @@ gboolean refresh_task_list(void)
     sprintf (tooltip, _("Memory: %d MB of %d MB used"), memory_used / 1024, sys_stat->mem_total / 1024);
     if(strcmp(tooltip,gtk_progress_bar_get_text(GTK_PROGRESS_BAR(mem_usage_progress_bar))))
     {
-//    gtk_tooltips_set_tip (tooltips, mem_usage_progress_bar_box, mem_tooltip, NULL);
         gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (mem_usage_progress_bar),  (gdouble)memory_used / sys_stat->mem_total);
         gtk_progress_bar_set_text (GTK_PROGRESS_BAR (mem_usage_progress_bar), tooltip);
     }
@@ -157,7 +156,6 @@ gboolean refresh_task_list(void)
     sprintf (tooltip,_("CPU usage: %0.0f %%"), cpu_usage * 100.0);
     if(strcmp(tooltip,gtk_progress_bar_get_text(GTK_PROGRESS_BAR(cpu_usage_progress_bar))))
     {
-//    gtk_tooltips_set_tip (tooltips, cpu_usage_progress_bar_box, cpu_tooltip, NULL);
         gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (cpu_usage_progress_bar), cpu_usage);
         gtk_progress_bar_set_text (GTK_PROGRESS_BAR (cpu_usage_progress_bar), tooltip);
     }

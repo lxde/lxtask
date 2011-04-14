@@ -42,7 +42,6 @@ GtkTreeStore *list_store;
 GtkTreeSelection *selection;
 GtkWidget *treeview;
 GtkWidget *mainmenu;
-GtkTooltips *tooltips;
 GtkWidget *taskpopup;
 GtkWidget *priopopup;
 GtkWidget *cpu_usage_progress_bar;

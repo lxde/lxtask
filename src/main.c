@@ -67,7 +67,9 @@ int main (int argc, char *argv[])
     textdomain (GETTEXT_PACKAGE);
 #endif
 
+#if !GTK_CHECK_VERSION(3,0,0)
     gtk_set_locale ();
+#endif
     gtk_init (&argc, &argv);
 
     PAGE_SIZE=sysconf(_SC_PAGESIZE)>>10;
