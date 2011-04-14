@@ -23,16 +23,17 @@ AC_ARG_ENABLE(gtk3,
 [  --enable-gtk3        enable to use gtk-3.0 instead of gtk-2.0 ],
 [case "${enableval}" in
   yes)  enable_gtk3=yes ;;
-  no)   enable_gtk3=no ;;
-  *) AC_MSG_ERROR([bad value "${enableval}" for --enable-gtk3, use "yes" (default) or "no".]) ;;
+  *)   enable_gtk3=no ;;
 esac],[])
 
+echo "x$enable_gtk3"
 if test "x$enable_gtk3" = "xyes" ; then
-  PKG_CHECK_MODULES(GTK, [gtk+-3.0 >= 3.0.0])
+  pkg_modules="gtk+-3.0 >= 3.0.0"
 else
-  PKG_CHECK_MODULES(GTK, [gtk+-2.0 >= 2.6.0])
+  pkg_modules="gtk+-2.0 >= 2.6.0"
 fi
 
+PKG_CHECK_MODULES(GTK, [$pkg_modules])
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
 
