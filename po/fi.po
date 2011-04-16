@@ -4,15 +4,16 @@
 #   xfce4-taskmanager package.
 # Pasi Sulasalmi <psulasasal@paju.oulu.fi>, 2005.
 # Jari Rahkonen <jari.rahkonen@pp1.inet.fi>, 2006-2007
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-29 05:36+0000\n"
+"POT-Creation-Date: 2011-04-16 22:30+0200\n"
 "PO-Revision-Date: 2008-04-30 21:23+0200\n"
 "Last-Translator: Elias Julkunen <elias.julkunen@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,11 +26,11 @@ msgstr "Hallitse käynnissä olevia prosesseja"
 msgid "Process manager"
 msgstr "Prosessien käsittelijä"
 
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:55
 msgid "Task Manager"
 msgstr "Tehtävienhallinta"
 
-#: ../src/xfce-taskmanager-linux.c:388
+#: ../src/xfce-taskmanager-linux.c:406
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -40,7 +41,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:402
+#: ../src/xfce-taskmanager-linux.c:420
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Ei voitu asettaa tärkeyttä %d tehtävälle, jonka ID on %d"
@@ -58,128 +59,128 @@ msgstr "Haluatko katkaista tehtävän suorittamisen?"
 msgid "Memory: %d MB of %d MB used"
 msgstr "Muisti: %d Mt/%d Mt käytössä"
 
-#: ../src/functions.c:157
+#: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU:n käyttö: %0.0f %%"
 
-#: ../src/interface.c:71
+#: ../src/interface.c:69
 msgid "_File"
 msgstr "_Tiedosto"
 
-#: ../src/interface.c:79
+#: ../src/interface.c:77
 msgid "_View"
 msgstr "_Näytä"
 
-#: ../src/interface.c:85
+#: ../src/interface.c:83
 msgid "_Help"
 msgstr "_Ohje"
 
-#: ../src/interface.c:109
+#: ../src/interface.c:110
 msgid "cpu usage"
 msgstr "prosessorin käyttö"
 
-#: ../src/interface.c:117
+#: ../src/interface.c:121
 msgid "memory usage"
 msgstr "muistin käyttö"
 
-#: ../src/interface.c:145
+#: ../src/interface.c:149
 msgid "more details"
 msgstr "lisätietoja"
 
-#: ../src/interface.c:171
+#: ../src/interface.c:175
 msgid "Command"
 msgstr "Komento"
 
-#: ../src/interface.c:177
+#: ../src/interface.c:181
 msgid "User"
 msgstr "Käyttäjä"
 
-#: ../src/interface.c:186
+#: ../src/interface.c:190
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:192
+#: ../src/interface.c:196
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:198
+#: ../src/interface.c:202
 msgid "VM-Size"
 msgstr "VM-koko"
 
-#: ../src/interface.c:204
+#: ../src/interface.c:208
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:210
+#: ../src/interface.c:214
 msgid "State"
 msgstr "Tila"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:220
 msgid "Prio"
 msgstr "Tärk"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:226
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:238
+#: ../src/interface.c:242
 msgid "Stop"
 msgstr "Pysäytä"
 
-#: ../src/interface.c:243
+#: ../src/interface.c:247
 msgid "Continue"
 msgstr "Jatka"
 
-#: ../src/interface.c:248
+#: ../src/interface.c:252
 msgid "Term"
 msgstr "Lopeta"
 
-#: ../src/interface.c:253
+#: ../src/interface.c:257
 msgid "Kill"
 msgstr "Tapa"
 
-#: ../src/interface.c:258
+#: ../src/interface.c:262
 msgid "Priority"
 msgstr "Tärkeys"
 
-#: ../src/interface.c:271
+#: ../src/interface.c:275
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:276
+#: ../src/interface.c:280
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:281
+#: ../src/interface.c:285
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:286
+#: ../src/interface.c:290
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:291
+#: ../src/interface.c:295
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:320
 msgid "Show user tasks"
 msgstr "Näytä käyttäjän prosessit"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:325
 msgid "Show root tasks"
 msgstr "Näytä pääkäyttäjän prosessit"
 
-#: ../src/interface.c:326
+#: ../src/interface.c:330
 msgid "Show other tasks"
 msgstr "Näytä muut prosessit"
 
-#: ../src/interface.c:331
+#: ../src/interface.c:335
 msgid "Show memory used by cache as free"
 msgstr "Näytä välimuistikäytössä oleva muisti vapaana"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:366
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -188,33 +189,32 @@ msgstr ""
 "Johannes Zellnerin <webmaster@nebulon.de> toimesta."
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:367
+#: ../src/interface.c:371
 msgid "translator-credits"
 msgstr "Elias Julkunen"
 
-#: ../src/interface.c:375
+#: ../src/interface.c:380 ../src/interface.c:382
 msgid "LXTask"
 msgstr "LXTask"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg,
-#. gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:377
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:385
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Tekijänoikeudet (C) 2008 LXDE-ryhmä"
 
-#: ../src/interface.c:378
+#: ../src/interface.c:386
 msgid "Lightweight task manager for LXDE project"
 msgstr "Kevyt tehtävienhallinta LXDE-projektille"
 
-#: ../src/interface.c:587
+#: ../src/interface.c:595
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: ../src/interface.c:591
+#: ../src/interface.c:599
 msgid "General"
 msgstr "Yleiset"
 
-#: ../src/interface.c:592
+#: ../src/interface.c:600
 msgid "Refresh rate (seconds):"
 msgstr "Päivitysväli (sekunteja):"
 

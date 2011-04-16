@@ -2,17 +2,18 @@
 # Copyright (C) 2007 THE xfce4-taskmanager'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce4-taskmanager package.
 # Jeff Bailes <thepizzaking@gmail.com>, 2007.
+#
+#
 #, fuzzy
-# 
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-19 06:08+0000\n"
+"POT-Creation-Date: 2011-04-16 22:30+0200\n"
 "PO-Revision-Date: 2010-03-28 21:48+0100\n"
 "Last-Translator: Steve Cook (Yorvyk) <yorvik.ubunto@googlemail.com>\n"
 "Language-Team: English/GB\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,11 +26,11 @@ msgstr "Manage running processes"
 msgid "Process manager"
 msgstr "Process manager"
 
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:58
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:55
 msgid "Task Manager"
 msgstr "Task Manager"
 
-#: ../src/xfce-taskmanager-linux.c:388
+#: ../src/xfce-taskmanager-linux.c:406
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -40,7 +41,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:402
+#: ../src/xfce-taskmanager-linux.c:420
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Couldn’t set priority %d to the task with ID %d"
@@ -58,128 +59,128 @@ msgstr "Really terminate the task?"
 msgid "Memory: %d MB of %d MB used"
 msgstr "Memory: %d MB of %d MB used"
 
-#: ../src/functions.c:157
+#: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU usage: %0.0f %%"
 
-#: ../src/interface.c:71
+#: ../src/interface.c:69
 msgid "_File"
 msgstr "_File"
 
-#: ../src/interface.c:79
+#: ../src/interface.c:77
 msgid "_View"
 msgstr "_View"
 
-#: ../src/interface.c:85
+#: ../src/interface.c:83
 msgid "_Help"
 msgstr "_Help"
 
-#: ../src/interface.c:109
+#: ../src/interface.c:110
 msgid "cpu usage"
 msgstr "CPU usage"
 
-#: ../src/interface.c:117
+#: ../src/interface.c:121
 msgid "memory usage"
 msgstr "memory usage"
 
-#: ../src/interface.c:145
+#: ../src/interface.c:149
 msgid "more details"
 msgstr "more details"
 
-#: ../src/interface.c:171
+#: ../src/interface.c:175
 msgid "Command"
 msgstr "Command"
 
-#: ../src/interface.c:177
+#: ../src/interface.c:181
 msgid "User"
 msgstr "User"
 
-#: ../src/interface.c:186
+#: ../src/interface.c:190
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:192
+#: ../src/interface.c:196
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:198
+#: ../src/interface.c:202
 msgid "VM-Size"
 msgstr "VM-Size"
 
-#: ../src/interface.c:204
+#: ../src/interface.c:208
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:210
+#: ../src/interface.c:214
 msgid "State"
 msgstr "State"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:220
 msgid "Prio"
 msgstr "Prio"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:226
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:238
+#: ../src/interface.c:242
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/interface.c:243
+#: ../src/interface.c:247
 msgid "Continue"
 msgstr "Continue"
 
-#: ../src/interface.c:248
+#: ../src/interface.c:252
 msgid "Term"
 msgstr "Term"
 
-#: ../src/interface.c:253
+#: ../src/interface.c:257
 msgid "Kill"
 msgstr "Kill"
 
-#: ../src/interface.c:258
+#: ../src/interface.c:262
 msgid "Priority"
 msgstr "Priority"
 
-#: ../src/interface.c:271
+#: ../src/interface.c:275
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:276
+#: ../src/interface.c:280
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:281
+#: ../src/interface.c:285
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:286
+#: ../src/interface.c:290
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:291
+#: ../src/interface.c:295
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:320
 msgid "Show user tasks"
 msgstr "Show user tasks"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:325
 msgid "Show root tasks"
 msgstr "Show root tasks"
 
-#: ../src/interface.c:326
+#: ../src/interface.c:330
 msgid "Show other tasks"
 msgstr "Show other tasks"
 
-#: ../src/interface.c:331
+#: ../src/interface.c:335
 msgid "Show memory used by cache as free"
 msgstr "Show memory used by cache as free"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:366
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -188,33 +189,32 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:367
+#: ../src/interface.c:371
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: ../src/interface.c:375
+#: ../src/interface.c:380 ../src/interface.c:382
 msgid "LXTask"
 msgstr "LXTask"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg,
-#. gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:377
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:385
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright © 2008 LXDE team"
 
-#: ../src/interface.c:378
+#: ../src/interface.c:386
 msgid "Lightweight task manager for LXDE project"
 msgstr "Lightweight task manager for the LXDE project"
 
-#: ../src/interface.c:587
+#: ../src/interface.c:595
 msgid "Preferences"
 msgstr "Preferences"
 
-#: ../src/interface.c:591
+#: ../src/interface.c:599
 msgid "General"
 msgstr "General"
 
-#: ../src/interface.c:592
+#: ../src/interface.c:600
 msgid "Refresh rate (seconds):"
 msgstr "Refresh rate (seconds):"
 
