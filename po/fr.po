@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-16 22:30+0200\n"
-"PO-Revision-Date: 2011-04-17 00:16+0200\n"
+"PO-Revision-Date: 2011-04-17 00:38+0200\n"
 "Last-Translator: Cilyan <gaknar@gmail.com>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
 "Language: fr\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr "Gérer les processus en cours"
+msgstr "Administre les processus en cours"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "Gestionnaire de processus"
+msgstr "Gestionnaire des tâches"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:55
 msgid "Task Manager"
@@ -99,7 +99,7 @@ msgstr "Utilisateur"
 
 #: ../src/interface.c:190
 msgid "CPU%"
-msgstr "%%CPU"
+msgstr "%CPU"
 
 #: ../src/interface.c:196
 msgid "RSS"
@@ -127,7 +127,7 @@ msgstr "PPID"
 
 #: ../src/interface.c:242
 msgid "Stop"
-msgstr "Stop"
+msgstr "Suspendre"
 
 #: ../src/interface.c:247
 msgid "Continue"
@@ -167,15 +167,15 @@ msgstr "   10"
 
 #: ../src/interface.c:320
 msgid "Show user tasks"
-msgstr "Processus utilisateur"
+msgstr "Afficher les processus utilisateur"
 
 #: ../src/interface.c:325
 msgid "Show root tasks"
-msgstr "Processus système"
+msgstr "Afficher les processus système"
 
 #: ../src/interface.c:330
 msgid "Show other tasks"
-msgstr "Autres processus"
+msgstr "Afficher les autres processus"
 
 #: ../src/interface.c:335
 msgid "Show memory used by cache as free"
