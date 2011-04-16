@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-16 22:30+0200\n"
-"PO-Revision-Date: 2010-04-08 10:20+0200\n"
+"PO-Revision-Date: 2011-04-17 00:16+0200\n"
 "Last-Translator: Cilyan <gaknar@gmail.com>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
@@ -49,11 +49,11 @@ msgstr "Impossible de régler la priorité %d pour la tâche d'ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Vraiment tuer la tâche?"
+msgstr "Vraiment tuer la tâche ?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Vraiment terminer la tâche?"
+msgstr "Vraiment terminer la tâche ?"
 
 #: ../src/functions.c:148
 #, c-format
@@ -131,7 +131,7 @@ msgstr "Stop"
 
 #: ../src/interface.c:247
 msgid "Continue"
-msgstr "Continue"
+msgstr "Continuer"
 
 #: ../src/interface.c:252
 msgid "Term"
@@ -186,7 +186,7 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask est dérivé du Gestionnaire des tâches Xfce4 par:\n"
+"LXTask est dérivé du Gestionnaire des tâches de Xfce4 par:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
