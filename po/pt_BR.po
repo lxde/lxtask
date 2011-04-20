@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-16 22:30+0200\n"
-"PO-Revision-Date: 2007-12-03 01:50-0300\n"
-"Last-Translator: Henrique P. Machado <zehrique@gmail.com>\n"
+"PO-Revision-Date: 2011-04-20 15:11-0300\n"
+"Last-Translator: Sérgio Cipolla <secipolla@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,8 @@ msgstr "Gerencie processos em execução"
 msgid "Process manager"
 msgstr "Gerenciador de processos"
 
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:55
+#: ../lxtask.desktop.in.h:3
+#: ../src/interface.c:55
 msgid "Task Manager"
 msgstr "Gerenciador de tarefas"
 
@@ -38,14 +39,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Não foi possível enviar o sinal %d para a tarefa com a ID %d\n"
+"Não foi possível enviar o sinal %d para a tarefa com o ID %d\n"
 "\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:420
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Não foi possível atribuir a prioridade %d para a tarefa com a ID %d"
+msgstr "Não foi possível atribuir a prioridade %d para a tarefa com o ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -155,7 +156,7 @@ msgstr "  -5"
 
 #: ../src/interface.c:285
 msgid "    0"
-msgstr "    0"
+msgstr "   0"
 
 #: ../src/interface.c:290
 msgid "   5"
@@ -186,8 +187,9 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask é derivado do Gerenciador de Tarefas do Xfce4 por:\n"
-"  * Johannes Zellner <webmaster@nebulon.de>"
+"\n"
+"O LXTask é derivado do Gerenciador de Tarefas do Xfce4 por:\n"
+"Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:371
@@ -197,7 +199,8 @@ msgstr ""
 "Pablo Galletti Vieira <pbgozer@gmail.com>\n"
 "Henrique P. Machado <zehrique@gmail.com>"
 
-#: ../src/interface.c:380 ../src/interface.c:382
+#: ../src/interface.c:380
+#: ../src/interface.c:382
 msgid "LXTask"
 msgstr "LXTask"
 
