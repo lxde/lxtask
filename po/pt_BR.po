@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-16 22:30+0200\n"
-"PO-Revision-Date: 2011-04-20 21:09+0200\n"
+"PO-Revision-Date: 2011-04-21 18:23+0200\n"
 "Last-Translator: Sérgio <ikisham@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
 "Language: pt_BR\n"
@@ -90,7 +90,7 @@ msgstr "Uso de memória"
 
 #: ../src/interface.c:149
 msgid "more details"
-msgstr "Mais detalhes"
+msgstr "+/- detalhes"
 
 #: ../src/interface.c:175
 msgid "Command"
