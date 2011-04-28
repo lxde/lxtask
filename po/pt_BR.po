@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-16 22:30+0200\n"
+"POT-Creation-Date: 2011-04-28 23:07+0200\n"
 "PO-Revision-Date: 2011-04-21 18:23+0200\n"
 "Last-Translator: Sérgio <ikisham@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
@@ -29,8 +29,7 @@ msgstr "Gerencie processos em execução"
 msgid "Process manager"
 msgstr "Gerenciador de processos"
 
-#: ../lxtask.desktop.in.h:3
-#: ../src/interface.c:55
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:55
 msgid "Task Manager"
 msgstr "Gerenciador de tarefas"
 
@@ -200,8 +199,7 @@ msgstr ""
 "Pablo Galletti Vieira <pbgozer@gmail.com>\n"
 "Henrique P. Machado <zehrique@gmail.com>"
 
-#: ../src/interface.c:380
-#: ../src/interface.c:382
+#: ../src/interface.c:380 ../src/interface.c:382
 msgid "LXTask"
 msgstr "LXTask"
 
