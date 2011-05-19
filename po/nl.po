@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-28 23:07+0200\n"
-"PO-Revision-Date: 2009-05-04 15:33+0100\n"
-"Last-Translator: Sander De Voogdt <celettu@gmail.com>\n"
+"PO-Revision-Date: 2011-05-19 11:54+0200\n"
+"Last-Translator: Pjotr <pliniusminor@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ASCII\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
@@ -23,11 +24,11 @@ msgstr "Beheer lopende processen"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "Processenbeheer"
+msgstr "Procesbeheerder"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:55
 msgid "Task Manager"
-msgstr "Taakbeheer"
+msgstr "Taakbeheerder"
 
 #: ../src/xfce-taskmanager-linux.c:406
 #, c-format
@@ -36,7 +37,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Kon opdracht %d niet zenden naar de taak met ID %d\n"
+"Kon signaal %d niet zenden naar de taak met ID %d\n"
 "\n"
 "%s"
 
@@ -47,11 +48,11 @@ msgstr "Kon prioriteit %d niet geven aan taak met ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Taak echt geforceerd be-eindigen?"
+msgstr "Taak echt geforceerd afsluiten?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Taak echt be-eindigen?"
+msgstr "Taak echt afsluiten?"
 
 #: ../src/functions.c:148
 #, c-format
@@ -61,35 +62,35 @@ msgstr "Geheugen: %d MB van %d MB gebruikt"
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "CPU gebruik: %0.0f %%"
+msgstr "CPU-gebruik: %0.0f %%"
 
 #: ../src/interface.c:69
 msgid "_File"
-msgstr "Bestand"
+msgstr "_Bestand"
 
 #: ../src/interface.c:77
 msgid "_View"
-msgstr "Beeld"
+msgstr "B_eeld"
 
 #: ../src/interface.c:83
 msgid "_Help"
-msgstr "Help"
+msgstr "_Hulp"
 
 #: ../src/interface.c:110
 msgid "cpu usage"
-msgstr "cpu gebruik"
+msgstr "cpu-gebruik"
 
 #: ../src/interface.c:121
 msgid "memory usage"
-msgstr "geheugen gebruik"
+msgstr "geheugengebruik"
 
 #: ../src/interface.c:149
 msgid "more details"
-msgstr "meer details"
+msgstr "meer bijzonderheden"
 
 #: ../src/interface.c:175
 msgid "Command"
-msgstr "Commando"
+msgstr "Opdracht"
 
 #: ../src/interface.c:181
 msgid "User"
@@ -117,7 +118,7 @@ msgstr "Status"
 
 #: ../src/interface.c:220
 msgid "Prio"
-msgstr "Prio"
+msgstr "Prioriteit"
 
 #: ../src/interface.c:226
 msgid "PPID"
@@ -133,11 +134,11 @@ msgstr "Verder"
 
 #: ../src/interface.c:252
 msgid "Term"
-msgstr "Term"
+msgstr "Sluit af"
 
 #: ../src/interface.c:257
 msgid "Kill"
-msgstr "Geforceerd afsluiten"
+msgstr "Sluit geforceerd af"
 
 #: ../src/interface.c:262
 msgid "Priority"
@@ -165,11 +166,11 @@ msgstr "   10"
 
 #: ../src/interface.c:320
 msgid "Show user tasks"
-msgstr "Toon gebruikers taken"
+msgstr "Toon gebruikerstaken"
 
 #: ../src/interface.c:325
 msgid "Show root tasks"
-msgstr "Toon root taken"
+msgstr "Toon beheerderstaken (root)"
 
 #: ../src/interface.c:330
 msgid "Show other tasks"
@@ -177,20 +178,20 @@ msgstr "Toon andere taken"
 
 #: ../src/interface.c:335
 msgid "Show memory used by cache as free"
-msgstr "Geheugen dat niet gebruikt wordt door cache weergeven als vrij"
+msgstr "Geheugen dat gebruikt wordt door opslag weergeven als vrij"
 
 #: ../src/interface.c:366
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask is afgeleid van de Xfce4 Task Manager door:\n"
+"LXTask is afgeleid van de Xfce4 Taakbeheerder door:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:371
 msgid "translator-credits"
-msgstr "Sander De Voogdt <celettu@gmail.com>"
+msgstr "Sander De Voogdt <celettu@gmail.com>Pjotr"
 
 #: ../src/interface.c:380 ../src/interface.c:382
 msgid "LXTask"
@@ -199,11 +200,11 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:385
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright (C) 2008 LXDE team"
+msgstr "Auteursrecht (C) 2008 LXDE ploeg"
 
 #: ../src/interface.c:386
 msgid "Lightweight task manager for LXDE project"
-msgstr "Lichtgewicht taakbeheer applicatie voor LXDE"
+msgstr "Lichtgewicht taakbeheerder voor LXDE project"
 
 #: ../src/interface.c:595
 msgid "Preferences"
@@ -215,7 +216,7 @@ msgstr "Algemeen"
 
 #: ../src/interface.c:600
 msgid "Refresh rate (seconds):"
-msgstr "Verversingssnelheid (seconden)"
+msgstr "Verversingssnelheid (seconden):"
 
 #: ../src/utils.c:43
 msgid "Error"
