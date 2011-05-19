@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-28 23:07+0200\n"
-"PO-Revision-Date: 2011-04-17 03:54+0200\n"
-"Last-Translator: Praveen <mail2ipn@gmail.com>\n"
+"PO-Revision-Date: 2011-05-19 16:18+0200\n"
+"Last-Translator: PraveenIlla <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -131,7 +131,7 @@ msgstr "కొనసాగించు"
 
 #: ../src/interface.c:252
 msgid "Term"
-msgstr ""
+msgstr "టెర్మ్"
 
 #: ../src/interface.c:257
 msgid "Kill"
@@ -175,7 +175,7 @@ msgstr "ఇతర కార్యములను చూపించు"
 
 #: ../src/interface.c:335
 msgid "Show memory used by cache as free"
-msgstr ""
+msgstr "క్యాచీచే ఉచితముగా వాడబడుతున్న మెమోరీని చూపించు"
 
 #: ../src/interface.c:366
 msgid ""
