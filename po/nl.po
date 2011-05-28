@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-28 23:07+0200\n"
-"PO-Revision-Date: 2011-05-19 11:54+0200\n"
+"PO-Revision-Date: 2011-05-28 17:57+0200\n"
 "Last-Translator: Pjotr <pliniusminor@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -48,7 +48,7 @@ msgstr "Kon prioriteit %d niet geven aan taak met ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Taak echt geforceerd afsluiten?"
+msgstr "Taak echt afbreken?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
@@ -118,7 +118,7 @@ msgstr "Status"
 
 #: ../src/interface.c:220
 msgid "Prio"
-msgstr "Prioriteit"
+msgstr "Prio"
 
 #: ../src/interface.c:226
 msgid "PPID"
@@ -130,15 +130,15 @@ msgstr "Stop"
 
 #: ../src/interface.c:247
 msgid "Continue"
-msgstr "Verder"
+msgstr "Ga door"
 
 #: ../src/interface.c:252
 msgid "Term"
-msgstr "Sluit af"
+msgstr "Sluit"
 
 #: ../src/interface.c:257
 msgid "Kill"
-msgstr "Sluit geforceerd af"
+msgstr "Breek af"
 
 #: ../src/interface.c:262
 msgid "Priority"
@@ -178,7 +178,7 @@ msgstr "Toon andere taken"
 
 #: ../src/interface.c:335
 msgid "Show memory used by cache as free"
-msgstr "Geheugen dat gebruikt wordt door opslag weergeven als vrij"
+msgstr "Toon geheugen dat gebruikt wordt door opslag, als vrij"
 
 #: ../src/interface.c:366
 msgid ""
@@ -200,7 +200,7 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:385
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Auteursrecht (C) 2008 LXDE ploeg"
+msgstr "Auteursrecht (C) 2008 LXDE-ploeg"
 
 #: ../src/interface.c:386
 msgid "Lightweight task manager for LXDE project"
