@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: lxtask 0.1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-28 23:07+0200\n"
-"PO-Revision-Date: 2011-06-01 07:28-0300\n"
+"PO-Revision-Date: 2011-06-01 07:35-0300\n"
 "Last-Translator: Sérgio Cipolla <secipolla@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
 "Language: pt_BR\n"
@@ -199,7 +199,8 @@ msgid "translator-credits"
 msgstr ""
 "Adriano Winter Bess <adriano@xfce.org>\n"
 "Pablo Galletti Vieira <pbgozer@gmail.com>\n"
-"Henrique P. Machado <zehrique@gmail.com>"
+"Henrique P. Machado <zehrique@gmail.com>\n"
+"Sérgio Cipolla <secipolla@gmail.com>"
 
 #: ../src/interface.c:380
 #: ../src/interface.c:382
