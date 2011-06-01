@@ -5,14 +5,15 @@
 # Adriano Winter Bess <adriano@xfce.org>, 2006.
 # Pablo Galletti Vieira <pbgozer@gmail.com>, 2007.
 # Henrique P. Machado <zehrique@gmail.com>, 2009.
+# Sérgio Cipolla <secipolla@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
+"Project-Id-Version: lxtask 0.1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-28 23:07+0200\n"
-"PO-Revision-Date: 2011-04-21 18:23+0200\n"
-"Last-Translator: Sérgio <ikisham@gmail.com>\n"
+"PO-Revision-Date: 2011-06-01 07:28-0300\n"
+"Last-Translator: Sérgio Cipolla <secipolla@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +30,8 @@ msgstr "Gerencie processos em execução"
 msgid "Process manager"
 msgstr "Gerenciador de processos"
 
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:55
+#: ../lxtask.desktop.in.h:3
+#: ../src/interface.c:55
 msgid "Task Manager"
 msgstr "Gerenciador de tarefas"
 
@@ -60,7 +62,7 @@ msgstr "Terminar realmente a tarefa?"
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Memória: %d MB de %d MB usada"
+msgstr "Memória: usados %d MB de %d MB"
 
 #: ../src/functions.c:156
 #, c-format
@@ -199,7 +201,8 @@ msgstr ""
 "Pablo Galletti Vieira <pbgozer@gmail.com>\n"
 "Henrique P. Machado <zehrique@gmail.com>"
 
-#: ../src/interface.c:380 ../src/interface.c:382
+#: ../src/interface.c:380
+#: ../src/interface.c:382
 msgid "LXTask"
 msgstr "LXTask"
 
