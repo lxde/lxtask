@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-04-28 23:07+0200\n"
-"PO-Revision-Date: 2011-05-28 17:57+0200\n"
-"Last-Translator: Pjotr <pliniusminor@gmail.com>\n"
+"PO-Revision-Date: 2011-06-02 23:57+0200\n"
+"Last-Translator: Pjotr <>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -166,11 +166,11 @@ msgstr "   10"
 
 #: ../src/interface.c:320
 msgid "Show user tasks"
-msgstr "Toon gebruikerstaken"
+msgstr "Toon gebruikertaken"
 
 #: ../src/interface.c:325
 msgid "Show root tasks"
-msgstr "Toon beheerderstaken (root)"
+msgstr "Toon beheerdertaken (root)"
 
 #: ../src/interface.c:330
 msgid "Show other tasks"
@@ -185,13 +185,13 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask is afgeleid van de Xfce4 Taakbeheerder door:\n"
+"LXTask is afgeleid van de Xfce4-Taakbeheerder door:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:371
 msgid "translator-credits"
-msgstr "Sander De Voogdt <celettu@gmail.com>Pjotr"
+msgstr "Sander De Voogdt <celettu@gmail.com>, Pjotr"
 
 #: ../src/interface.c:380 ../src/interface.c:382
 msgid "LXTask"
@@ -204,7 +204,7 @@ msgstr "Auteursrecht (C) 2008 LXDE-ploeg"
 
 #: ../src/interface.c:386
 msgid "Lightweight task manager for LXDE project"
-msgstr "Lichtgewicht taakbeheerder voor LXDE project"
+msgstr "Lichtgewicht taakbeheerder voor LXDE-project"
 
 #: ../src/interface.c:595
 msgid "Preferences"
