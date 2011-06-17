@@ -1,4 +1,4 @@
-# Dutch translation of the lxtask package.
+# Dutch translation for the lxtask package.
 # Copyright (C) the author of the lxtask package.
 # This file is distributed under the same license as the 
 # lxtask package.
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
+"Language: nl (Dutch)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lxtask.desktop.in.h:1
@@ -167,11 +167,11 @@ msgstr "   10"
 
 #: ../src/interface.c:320
 msgid "Show user tasks"
-msgstr "Toon gebruikerstaken"
+msgstr "Toon gebruikertaken"
 
 #: ../src/interface.c:325
 msgid "Show root tasks"
-msgstr "Toon beheerderstaken (root)"
+msgstr "Toon beheerdertaken (root)"
 
 #: ../src/interface.c:330
 msgid "Show other tasks"
@@ -186,7 +186,7 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask is afgeleid van de Xfce4 Taakbeheerder door:\n"
+"LXTask is afgeleid van Xfce4 Taakbeheerder door:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
