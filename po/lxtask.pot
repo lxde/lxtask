@@ -1,35 +1,33 @@
-# Danish translations for lxtask package.
-# Copyright (C) 2010 lxtask.
-# This file is distributed under the same license as the lxtask package.
-# Terje Uriansrud <ter@operamail.com>, 2007, 2009.
-# Joe Hansen <joedalton2@yahoo.dk>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: lxtask\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-27 19:22+0200\n"
-"PO-Revision-Date: 2010-04-01 10:38+0100\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
-"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
-"Language: da\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.1.0\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr "Håndter kørende processer"
+msgstr ""
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "Proceshåndtering"
+msgstr ""
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:55
 msgid "Task Manager"
-msgstr "Opgavehåndtering"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:406
 #, c-format
@@ -38,197 +36,186 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Kunne ikke sende signal %d til opgaven med id %d\n"
-"\n"
-"%s"
 
 #: ../src/xfce-taskmanager-linux.c:420
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Kunne ikke angive prioritet %d til opgaven med id %d"
+msgstr ""
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Virkelig dræbe opgaven?"
+msgstr ""
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Virkelig terminere opgaven?"
+msgstr ""
 
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Hukommelse: %d MB af %d MB i brug"
+msgstr ""
 
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "CPU anvendelse: %0.0f %%"
+msgstr ""
 
 #: ../src/interface.c:69
 msgid "_File"
-msgstr "_Fil"
+msgstr ""
 
 #: ../src/interface.c:77
 msgid "_View"
-msgstr "_Vis"
+msgstr ""
 
 #: ../src/interface.c:83
 msgid "_Help"
-msgstr "_Hjælp"
+msgstr ""
 
 #: ../src/interface.c:110
 msgid "cpu usage"
-msgstr "cpu-forbrug"
+msgstr ""
 
 #: ../src/interface.c:121
 msgid "memory usage"
-msgstr "hukommelsesforbrug"
+msgstr ""
 
 #: ../src/interface.c:149
 msgid "more details"
-msgstr "flere detaljer"
+msgstr ""
 
 #: ../src/interface.c:175
 msgid "Command"
-msgstr "Kommando"
+msgstr ""
 
 #: ../src/interface.c:181
 msgid "User"
-msgstr "Bruger"
+msgstr ""
 
 #: ../src/interface.c:190
 msgid "CPU%"
-msgstr "CPU%"
+msgstr ""
 
 #: ../src/interface.c:196
 msgid "RSS"
-msgstr "RSS"
+msgstr ""
 
 #: ../src/interface.c:202
 msgid "VM-Size"
-msgstr "VM-størrelse"
+msgstr ""
 
 #: ../src/interface.c:208
 msgid "PID"
-msgstr "PID"
+msgstr ""
 
 #: ../src/interface.c:214
 msgid "State"
-msgstr "Status"
+msgstr ""
 
 #: ../src/interface.c:220
 msgid "Prio"
-msgstr "Prio"
+msgstr ""
 
 #: ../src/interface.c:226
 msgid "PPID"
-msgstr "PPID"
+msgstr ""
 
 #: ../src/interface.c:242
 msgid "Stop"
-msgstr "Stop"
+msgstr ""
 
 #: ../src/interface.c:247
 msgid "Continue"
-msgstr "Fortsæt"
+msgstr ""
 
 #: ../src/interface.c:252
 msgid "Term"
-msgstr "Terminer"
+msgstr ""
 
 #: ../src/interface.c:257
 msgid "Kill"
-msgstr "Dræb"
+msgstr ""
 
 #: ../src/interface.c:262
 msgid "Priority"
-msgstr "Prioritet"
+msgstr ""
 
 #: ../src/interface.c:275
 msgid "  -10"
-msgstr "  -10"
+msgstr ""
 
 #: ../src/interface.c:280
 msgid "  -5"
-msgstr "  -5"
+msgstr ""
 
 #: ../src/interface.c:285
 msgid "    0"
-msgstr "    0"
+msgstr ""
 
 #: ../src/interface.c:290
 msgid "   5"
-msgstr "   5"
+msgstr ""
 
 #: ../src/interface.c:295
 msgid "   10"
-msgstr "   10"
+msgstr ""
 
 #: ../src/interface.c:320
 msgid "Show user tasks"
-msgstr "Vis brugeropgaver"
+msgstr ""
 
 #: ../src/interface.c:325
 msgid "Show root tasks"
-msgstr "Vis administratoropgaver"
+msgstr ""
 
 #: ../src/interface.c:330
 msgid "Show other tasks"
-msgstr "Vis andre opgaver"
+msgstr ""
 
 #: ../src/interface.c:335
 msgid "Show memory used by cache as free"
-msgstr "Vis hukommelsesforbrug for mellemlageret som ledig"
+msgstr ""
 
 #: ../src/interface.c:366
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask er bygget på Xfce4 Task Manager af:\n"
-"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:371
 msgid "translator-credits"
 msgstr ""
-"Joe Hansen, 2010\n"
-"Vidar Jon Bauge \n"
-"Charlie Tyrrestrup"
 
 #: ../src/interface.c:380 ../src/interface.c:382
 msgid "LXTask"
-msgstr "LXTask"
+msgstr ""
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:385
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Ophavsret 2008 LXDE-holdet"
+msgstr ""
 
 #: ../src/interface.c:386
 msgid "Lightweight task manager for LXDE project"
-msgstr "Enkel opgavehåndtering til LXDE-projektet"
+msgstr ""
 
 #: ../src/interface.c:595
 msgid "Preferences"
-msgstr "Præferencer"
+msgstr ""
 
 #: ../src/interface.c:599
 msgid "General"
-msgstr "Generelt"
+msgstr ""
 
 #: ../src/interface.c:600
 msgid "Refresh rate (seconds):"
-msgstr "Opdateringsfrekvens (sekunder):"
+msgstr ""
 
 #: ../src/utils.c:43
 msgid "Error"
-msgstr "Fejl"
+msgstr ""
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr "Bekræft"
-
-#~ msgid "%0.0f %%"
-#~ msgstr "%0.0f %%"
+msgstr ""
