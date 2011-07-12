@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-27 19:22+0200\n"
-"PO-Revision-Date: 2011-05-19 16:18+0200\n"
+"PO-Revision-Date: 2011-07-12 17:39+0200\n"
 "Last-Translator: PraveenIlla <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr "నడుస్తున్న క్రమణాలను నిర్వహించు"
+msgstr "నడుస్తున్న ప్రక్రియలను నిర్వహించు"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "క్రమణ నిర్వాహకం"
+msgstr "ప్రక్రియ నిర్వాహకం"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:55
 msgid "Task Manager"
@@ -37,11 +37,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"%d సిగ్నల్‌ను %d ఐడితో ఉన్న కార్యమునకు పంపలేకపోతున్నది\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:420
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "%d ప్రాధాన్యతను %d ఐడితో ఉన్న కార్యమునకు అమర్చలేకపోతున్నది"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
