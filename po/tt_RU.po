@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-27 19:22+0200\n"
+"PO-Revision-Date: 2011-07-14 13:33+0200\n"
+"Last-Translator: Ainur <ainur.shakirov.tt@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tt_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../lxtask.desktop.in.h:1
+msgid "Manage running processes"
+msgstr "Җибәрелгән кумышталар һәм процесслар белән идарә итү"
+
+#: ../lxtask.desktop.in.h:2
+msgid "Process manager"
+msgstr "Процесслар диспетчеры"
+
+#: ../lxtask.desktop.in.h:3 ../src/interface.c:55
+msgid "Task Manager"
+msgstr "Мәсьәлә диспетчеры"
+
+#: ../src/xfce-taskmanager-linux.c:406
+#, c-format
+msgid ""
+"Couldn't send signal %d to the task with ID %d\n"
+"\n"
+"%s"
+msgstr ""
+"%d сигналын %d ID'лы мәсьәләгә җибәреп булмады\n"
+"\n"
+"%s"
+
+#: ../src/xfce-taskmanager-linux.c:420
+#, c-format
+msgid "Couldn't set priority %d to the task with ID %d"
+msgstr "%d беренчелеген %d ID'лы мәсьәләгә билгеләп булмады"
+
+#: ../src/callbacks.c:56
+msgid "Really kill the task?"
+msgstr "Бу мәсьәләне чыннан да үтерәсегез киләме?"
+
+#: ../src/callbacks.c:60
+msgid "Really terminate the task?"
+msgstr "Бу мәсьәләне чыннан да юк итәсегез киләме?"
+
+#: ../src/functions.c:148
+#, c-format
+msgid "Memory: %d MB of %d MB used"
+msgstr "Хәтер: %d MБ %d MБ'тан куллануда"
+
+#: ../src/functions.c:156
+#, c-format
+msgid "CPU usage: %0.0f %%"
+msgstr "Процессор: %0.0f %% куллануда"
+
+#: ../src/interface.c:69
+msgid "_File"
+msgstr "_Файл"
+
+#: ../src/interface.c:77
+msgid "_View"
+msgstr "_Күренеш"
+
+#: ../src/interface.c:83
+msgid "_Help"
+msgstr "_Белешмә"
+
+#: ../src/interface.c:110
+msgid "cpu usage"
+msgstr "процессор белән куллану"
+
+#: ../src/interface.c:121
+msgid "memory usage"
+msgstr "хәтер белән куллану"
+
+#: ../src/interface.c:149
+msgid "more details"
+msgstr "җентекле"
+
+#: ../src/interface.c:175
+msgid "Command"
+msgstr "Команда"
+
+#: ../src/interface.c:181
+msgid "User"
+msgstr "Кулланучы"
+
+#: ../src/interface.c:190
+msgid "CPU%"
+msgstr "CPU%"
+
+#: ../src/interface.c:196
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/interface.c:202
+msgid "VM-Size"
+msgstr "Хәтер"
+
+#: ../src/interface.c:208
+msgid "PID"
+msgstr "PID"
+
+#: ../src/interface.c:214
+msgid "State"
+msgstr "Торыш"
+
+#: ../src/interface.c:220
+msgid "Prio"
+msgstr "Беренчелек"
+
+#: ../src/interface.c:226
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/interface.c:242
+msgid "Stop"
+msgstr "Стоп"
+
+#: ../src/interface.c:247
+msgid "Continue"
+msgstr "Дәвам итү"
+
+#: ../src/interface.c:252
+msgid "Term"
+msgstr "Юк итү"
+
+#: ../src/interface.c:257
+msgid "Kill"
+msgstr "Үтерү"
+
+#: ../src/interface.c:262
+msgid "Priority"
+msgstr "Беренчелек"
+
+#: ../src/interface.c:275
+msgid "  -10"
+msgstr "  -10"
+
+#: ../src/interface.c:280
+msgid "  -5"
+msgstr "  -5"
+
+#: ../src/interface.c:285
+msgid "    0"
+msgstr "    0"
+
+#: ../src/interface.c:290
+msgid "   5"
+msgstr "   5"
+
+#: ../src/interface.c:295
+msgid "   10"
+msgstr "   10"
+
+#: ../src/interface.c:320
+msgid "Show user tasks"
+msgstr "Кулланучы мәсьәләләрен күрсәтергә"
+
+#: ../src/interface.c:325
+msgid "Show root tasks"
+msgstr "Баш кулланучы мәсьәләләрен күрсәтергә"
+
+#: ../src/interface.c:330
+msgid "Show other tasks"
+msgstr "Башка мәсьәләләрне күрсәтергә"
+
+#: ../src/interface.c:335
+msgid "Show memory used by cache as free"
+msgstr "Буш кэш хәтерен күрсәтергә"
+
+#: ../src/interface.c:366
+msgid ""
+"LXTask is derived from Xfce4 Task Manager by:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+msgstr ""
+"LXTask Xfce4 мәсьәлә диспетчеры нигезендә төзегән автор:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/interface.c:371
+msgid "translator-credits"
+msgstr "Ainur Shakirov <ainur.shakirov.tt@gmail.com>"
+
+#: ../src/interface.c:380 ../src/interface.c:382
+msgid "LXTask"
+msgstr "LXTask"
+
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:385
+msgid "Copyright (C) 2008 LXDE team"
+msgstr "Copyright (C) 2008 LXDE team"
+
+#: ../src/interface.c:386
+msgid "Lightweight task manager for LXDE project"
+msgstr "LXDE проекты өчен җиңел мәсьәлә диспетчеры"
+
+#: ../src/interface.c:595
+msgid "Preferences"
+msgstr "Көйләүләр"
+
+#: ../src/interface.c:599
+msgid "General"
+msgstr "Төп"
+
+#: ../src/interface.c:600
+msgid "Refresh rate (seconds):"
+msgstr "Яңарту вакыт арасы (сек.):"
+
+#: ../src/utils.c:43
+msgid "Error"
+msgstr "Хата"
+
+#: ../src/utils.c:56
+msgid "Confirm"
+msgstr "Раслау"
