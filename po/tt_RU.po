@@ -1,22 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Ainur Shakirov <ainur.shakirov.tt@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-27 19:22+0200\n"
-"PO-Revision-Date: 2011-07-22 07:30+0200\n"
-"Last-Translator: Ainur <ainur.shakirov.tt@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2011-08-18 01:40+0400\n"
+"Last-Translator: Ainur Shakirov <ainur.shakirov.tt@gmail.com>\n"
+"Language-Team: Tatar <>\n"
 "Language: tt_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Lokalize 1.2\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
@@ -48,11 +47,11 @@ msgstr "%d беренчелеген %d ID'лы мәсьәләгә билгелә
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
-msgstr "Бу мәсьәләне чыннан да үтерәсегез киләме?"
+msgstr "Бу мәсьәләне үтерергәме?"
 
 #: ../src/callbacks.c:60
 msgid "Really terminate the task?"
-msgstr "Бу мәсьәләне чыннан да юк итәсегез киләме?"
+msgstr "Бу мәсьәләне юк итәргәме?"
 
 #: ../src/functions.c:148
 #, c-format
@@ -70,7 +69,7 @@ msgstr "_Файл"
 
 #: ../src/interface.c:77
 msgid "_View"
-msgstr "_Күренеш"
+msgstr "_Кыяфәт"
 
 #: ../src/interface.c:83
 msgid "_Help"
@@ -126,7 +125,7 @@ msgstr "PPID"
 
 #: ../src/interface.c:242
 msgid "Stop"
-msgstr "Стоп"
+msgstr "Туктату"
 
 #: ../src/interface.c:247
 msgid "Continue"
@@ -166,26 +165,26 @@ msgstr "   10"
 
 #: ../src/interface.c:320
 msgid "Show user tasks"
-msgstr "Кулланучы мәсьәләләрен күрсәтергә"
+msgstr "Кулланучы мәсьәләләрен күрсәтү"
 
 #: ../src/interface.c:325
 msgid "Show root tasks"
-msgstr "Баш кулланучы мәсьәләләрен күрсәтергә"
+msgstr "Баш кулланучы мәсьәләләрен күрсәтү"
 
 #: ../src/interface.c:330
 msgid "Show other tasks"
-msgstr "Башка мәсьәләләрне күрсәтергә"
+msgstr "Башка мәсьәләләрне күрсәтү"
 
 #: ../src/interface.c:335
 msgid "Show memory used by cache as free"
-msgstr "Буш кэш хәтерен күрсәтергә"
+msgstr "Буш кэш хәтерен күрсәтү"
 
 #: ../src/interface.c:366
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask Xfce4 мәсьәлә диспетчеры нигезендә төзегән автор:\n"
+"LXTask Xfce4 мәсьәлә диспетчеры нигезендә төзелгән. Автор:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
@@ -225,3 +224,4 @@ msgstr "Хата"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Раслау"
+
