@@ -26,6 +26,8 @@
 
 #include "callbacks.h"
 
+extern guint rID;
+
 void on_button3_toggled_event(GtkButton *button, GdkEventButton *event)
 {
     full_view = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(button));
@@ -137,6 +139,7 @@ void on_show_cached_as_free_toggled (GtkMenuItem *menuitem, gint uid)
 
 void on_quit(void)
 {
+    g_source_remove(rID);
     save_config();
     free(config_file);
 
