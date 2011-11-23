@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-27 19:22+0200\n"
-"PO-Revision-Date: 2009-11-03 08:55+0100\n"
-"Last-Translator: Indalecio Freiría Santos <ifreiria@gmail.com>\n"
+"PO-Revision-Date: 2011-11-22 23:22+0200\n"
+"Last-Translator: mbouzada <mbouzada@gmail.com>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.net>\n"
-"Language: \n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
@@ -36,14 +37,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Non se puido enviar o sinal %d á tarefa con ID %d\n"
+"Non foi posíbel enviar o sinal %d á tarefa con ID %d\n"
 "\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:420
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "No se puido fixar a prioridade %d á tarefa con ID %d"
+msgstr "No foi posíbel fixar a prioridade %d á tarefa con ID %d"
 
 #: ../src/callbacks.c:56
 msgid "Really kill the task?"
@@ -56,7 +57,7 @@ msgstr "Desexa finalizar esta tarefa?"
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Memoria: Usados %d MB de %d MB"
+msgstr "Memoria: usados %d MB de %d MB"
 
 #: ../src/functions.c:156
 #, c-format
@@ -77,7 +78,7 @@ msgstr "_Axuda"
 
 #: ../src/interface.c:110
 msgid "cpu usage"
-msgstr "uso da cpu"
+msgstr "uso da CPU"
 
 #: ../src/interface.c:121
 msgid "memory usage"
@@ -85,7 +86,7 @@ msgstr "uso da memoria"
 
 #: ../src/interface.c:149
 msgid "more details"
-msgstr "máis detalles"
+msgstr "ver máis detalles"
 
 #: ../src/interface.c:175
 msgid "Command"
@@ -169,7 +170,7 @@ msgstr "Amosar as tarefas do usuario"
 
 #: ../src/interface.c:325
 msgid "Show root tasks"
-msgstr "Amosar as tarefas de root"
+msgstr "Amosar as tarefas de administrador (root)"
 
 #: ../src/interface.c:330
 msgid "Show other tasks"
@@ -184,14 +185,14 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask derivase de Xfce4 Task Manager por:\n"
+"LXTask derívase de Xfce4 Task Manager por:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:371
 msgid "translator-credits"
 msgstr ""
-"Miguel Anxo Bouzada <mbouzada@gmail.com>, 2009 \n"
+"Miguel Anxo Bouzada <mbouzada@gmail.com>, 2009, 2010, 2011 \n"
 "Indalecio Freiría <ifreiria@gmail.com>, 2009 \n"
 "Proxecto Trasno <proxecto@trasno>"
 
@@ -202,7 +203,7 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:385
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright (C) 2008 LXDE team"
+msgstr "Copyright (C) 2008 equipo LXDE"
 
 #: ../src/interface.c:386
 msgid "Lightweight task manager for LXDE project"
