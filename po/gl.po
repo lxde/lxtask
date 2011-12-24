@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-06-27 19:22+0200\n"
-"PO-Revision-Date: 2011-12-02 15:04+0200\n"
+"PO-Revision-Date: 2011-12-24 14:04+0200\n"
 "Last-Translator: mbouzada <mbouzada@gmail.com>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.net>\n"
 "Language: gl\n"
@@ -166,19 +166,19 @@ msgstr "   10"
 
 #: ../src/interface.c:320
 msgid "Show user tasks"
-msgstr "Mostrar as tarefas do usuario"
+msgstr "Amosar as tarefas do usuario"
 
 #: ../src/interface.c:325
 msgid "Show root tasks"
-msgstr "Mostrar as tarefas de administrador (root)"
+msgstr "Amosar as tarefas de administrador (root)"
 
 #: ../src/interface.c:330
 msgid "Show other tasks"
-msgstr "Mostrar outras tarefas"
+msgstr "Amosar outras tarefas"
 
 #: ../src/interface.c:335
 msgid "Show memory used by cache as free"
-msgstr "Mostrar a memoria usada por caché como libre"
+msgstr "Amosar a memoria usada por caché como libre"
 
 #: ../src/interface.c:366
 msgid ""
