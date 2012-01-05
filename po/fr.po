@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2011-04-17 00:38+0200\n"
+"PO-Revision-Date: 2012-01-05 15:40+0200\n"
 "Last-Translator: Cilyan <gaknar@gmail.com>\n"
 "Language-Team: French <xfce-i18n@xfce.org>\n"
 "Language: fr\n"
@@ -179,7 +179,7 @@ msgstr "Afficher les autres processus"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Afficher la ligne de commande complète"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
