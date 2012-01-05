@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2010-05-08 10:42+0200\n"
-"Last-Translator: Mario <mb@mariobehling.de>\n"
+"PO-Revision-Date: 2012-01-05 12:12+0200\n"
+"Last-Translator: Duy Hung <nguyentieuhau@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
@@ -178,7 +178,7 @@ msgstr "Hiển thị các tác vụ khác"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Hiển thị đầy đủ dòng lệnh"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
