@@ -45,6 +45,7 @@ gchar *config_file;
 gboolean show_user_tasks;
 gboolean show_root_tasks;
 gboolean show_other_tasks;
+gboolean show_full_path;
 
 gboolean show_cached_as_free; /* Show memory used Cache as free memory */
 

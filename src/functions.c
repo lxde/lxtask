@@ -230,6 +230,7 @@ void load_config(void)
     show_user_tasks = key_file_get_bool(rc_file, group, "show_user_tasks", TRUE);
     show_root_tasks = key_file_get_bool(rc_file, group, "show_root_tasks", FALSE);
     show_other_tasks = key_file_get_bool(rc_file, group, "show_other_tasks", FALSE);
+    show_full_path = key_file_get_bool(rc_file, group, "show_full_path", FALSE);
     show_cached_as_free = key_file_get_bool(rc_file, group, "show_cached_as_free", TRUE);
 
     full_view = key_file_get_bool(rc_file, group, "full_view", TRUE);
@@ -244,11 +245,13 @@ void load_config(void)
 void save_config(void)
 {
     FILE* rc_file = fopen( config_file, "w" );
+    if(!rc_file) return;
 
     fputs( "[General]\n", rc_file );
     fprintf( rc_file, "show_user_tasks=%d\n", show_user_tasks);
     fprintf( rc_file, "show_root_tasks=%d\n", show_root_tasks);
     fprintf( rc_file, "show_other_tasks=%d\n", show_other_tasks);
+    fprintf( rc_file, "show_full_path=%d\n", show_full_path);
 
     fprintf( rc_file, "show_cached_as_free=%d\n", show_cached_as_free);
 

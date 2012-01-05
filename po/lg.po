@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-27 19:22+0200\n"
+"POT-Creation-Date: 2012-01-05 14:50+0800\n"
 "PO-Revision-Date: 2010-10-11 19:25+0200\n"
 "Last-Translator: kizito <kbirabwa@yahoo.co.uk>\n"
 "Language-Team: lg <kbirabwa@yahoo.co.uk>\n"
@@ -30,7 +30,7 @@ msgstr "Ekiteekateeka emirimu"
 msgid "Task Manager"
 msgstr "Kiteekateekamirimu"
 
-#: ../src/xfce-taskmanager-linux.c:406
+#: ../src/xfce-taskmanager-linux.c:271
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,16 +41,16 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:420
+#: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Nemedwa okutegeka ensengeka %d ku mulimu ogulambidwa ne ID %d"
 
-#: ../src/callbacks.c:56
+#: ../src/callbacks.c:58
 msgid "Really kill the task?"
 msgstr "Omulimu ddala gukomezebwe mbagirawo?"
 
-#: ../src/callbacks.c:60
+#: ../src/callbacks.c:62
 msgid "Really terminate the task?"
 msgstr "Omulimu ddala gukomezebwe?"
 
@@ -164,23 +164,27 @@ msgstr "   5"
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:320
+#: ../src/interface.c:321
 msgid "Show user tasks"
 msgstr "Ndaga emirimu gy'abakozesa"
 
-#: ../src/interface.c:325
+#: ../src/interface.c:326
 msgid "Show root tasks"
 msgstr "Ndaga emirimu gya \"root\""
 
-#: ../src/interface.c:330
+#: ../src/interface.c:331
 msgid "Show other tasks"
 msgstr "Ndaga emirimu emirala gyonna"
 
-#: ../src/interface.c:335
+#: ../src/interface.c:336
+msgid "Show full cmdline"
+msgstr ""
+
+#: ../src/interface.c:341
 msgid "Show memory used by cache as free"
 msgstr "Ekitundu eky'eggwanika ekikola ng'ekizibizi kirage nti kyereere"
 
-#: ../src/interface.c:366
+#: ../src/interface.c:373
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -190,32 +194,32 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:371
+#: ../src/interface.c:378
 msgid "translator-credits"
 msgstr "Kizito Birabwa <kbirabwa@yahoo.co.uk>"
 
-#: ../src/interface.c:380 ../src/interface.c:382
+#: ../src/interface.c:387 ../src/interface.c:389
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:385
+#: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright (C) 2008 Tiimu eya LXDE"
 
-#: ../src/interface.c:386
+#: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
 msgstr "Kiteekateekamirimu ekyomu LXDE ekitanyunyunta kompyuta"
 
-#: ../src/interface.c:595
+#: ../src/interface.c:621
 msgid "Preferences"
 msgstr "Entegeka"
 
-#: ../src/interface.c:599
+#: ../src/interface.c:625
 msgid "General"
 msgstr "Eza bulijjo"
 
-#: ../src/interface.c:600
+#: ../src/interface.c:626
 msgid "Refresh rate (seconds):"
 msgstr "Emirundi gy'ekebera embeera y'emirimu (buli sikonda):"
 

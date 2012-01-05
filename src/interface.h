@@ -83,5 +83,6 @@ void remove_list_item(gint i);
 void refresh_list_item(gint i);
 
 void change_task_view(void);
+void change_full_path(void);
 
 #endif

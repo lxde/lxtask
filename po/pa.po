@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-27 19:22+0200\n"
+"POT-Creation-Date: 2012-01-05 14:50+0800\n"
 "PO-Revision-Date: 2010-10-10 08:34+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -29,7 +29,7 @@ msgstr "ਪਰੋਸੈਸ ਮੈਨੇਜਰ"
 msgid "Task Manager"
 msgstr "ਟਾਸਕ ਮੈਨੇਜਰ"
 
-#: ../src/xfce-taskmanager-linux.c:406
+#: ../src/xfce-taskmanager-linux.c:271
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -40,16 +40,16 @@ msgstr ""
 "\n"
 "%3$s"
 
-#: ../src/xfce-taskmanager-linux.c:420
+#: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "%2$d ID ਵਾਲੀ ਟਾਸਕ ਲਈ ਤਰਜੀਹ %1$d ਸੈੱਟ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ"
 
-#: ../src/callbacks.c:56
+#: ../src/callbacks.c:58
 msgid "Really kill the task?"
 msgstr "ਟਾਸਕ ਕਿੱਲ ਕਰਨੀ ਹੈ?"
 
-#: ../src/callbacks.c:60
+#: ../src/callbacks.c:62
 msgid "Really terminate the task?"
 msgstr "ਟਾਸਕ ਟਰਮੀਨੇਟ ਕਰਨੀ ਹੈ?"
 
@@ -163,23 +163,27 @@ msgstr "   5"
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:320
+#: ../src/interface.c:321
 msgid "Show user tasks"
 msgstr "ਯੂਜ਼ਰ ਟਾਸਕ ਵੇਖੋ"
 
-#: ../src/interface.c:325
+#: ../src/interface.c:326
 msgid "Show root tasks"
 msgstr "ਰੂਟ ਟਾਸਕ ਵੇਖੋ"
 
-#: ../src/interface.c:330
+#: ../src/interface.c:331
 msgid "Show other tasks"
 msgstr "ਹੋਰ ਟਾਸਕ ਵੇਖੋ"
 
-#: ../src/interface.c:335
+#: ../src/interface.c:336
+msgid "Show full cmdline"
+msgstr ""
+
+#: ../src/interface.c:341
 msgid "Show memory used by cache as free"
 msgstr "ਕੈਸ਼ ਵਲੋਂ ਵਰਤੀ ਮੈਮੋਰੀ ਖਾਲੀ ਵਜੋਂ ਵੇਖੋ"
 
-#: ../src/interface.c:366
+#: ../src/interface.c:373
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -188,35 +192,35 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:371
+#: ../src/interface.c:378
 msgid "translator-credits"
 msgstr ""
 "ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ ੨੦੧੦\n"
 "ਪੰਜਾਬੀ ਓਪਨਸੋਰਸ ਟੀਮ (POST)\n"
 "http://www.satuj.com"
 
-#: ../src/interface.c:380 ../src/interface.c:382
+#: ../src/interface.c:387 ../src/interface.c:389
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:385
+#: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright (C) 2008 LXDE ਟੀਮ"
 
-#: ../src/interface.c:386
+#: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
 msgstr "LXDE ਪਰੋਜੈਕਟ ਲਈ ਹਲਕਾ ਟਾਸਕ ਮੈਨੇਜਰ"
 
-#: ../src/interface.c:595
+#: ../src/interface.c:621
 msgid "Preferences"
 msgstr "ਮੇਰੀ ਪਸੰਦ"
 
-#: ../src/interface.c:599
+#: ../src/interface.c:625
 msgid "General"
 msgstr "ਆਮ"
 
-#: ../src/interface.c:600
+#: ../src/interface.c:626
 msgid "Refresh rate (seconds):"
 msgstr "ਤਾਜ਼ਾ ਦਰ (ਸਕਿੰਟ):"
 

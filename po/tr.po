@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-27 19:22+0200\n"
+"POT-Creation-Date: 2012-01-05 14:50+0800\n"
 "PO-Revision-Date: 2011-03-17 21:01+0200\n"
 "Last-Translator: enginmanap <enginmanap@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr "Süreç yönetici"
 msgid "Task Manager"
 msgstr "Görev Yönetici"
 
-#: ../src/xfce-taskmanager-linux.c:406
+#: ../src/xfce-taskmanager-linux.c:271
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,16 +41,16 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:420
+#: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "%d önceliği %d kimlikli göreve %d önceliği atanamadı"
 
-#: ../src/callbacks.c:56
+#: ../src/callbacks.c:58
 msgid "Really kill the task?"
 msgstr "Görevi gerçekten öldürmek istiyor musunuz?"
 
-#: ../src/callbacks.c:60
+#: ../src/callbacks.c:62
 msgid "Really terminate the task?"
 msgstr "Görevi gerçekten sonlandırmak istiyor musunuz?"
 
@@ -164,23 +164,27 @@ msgstr "   5"
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:320
+#: ../src/interface.c:321
 msgid "Show user tasks"
 msgstr "Kullanıcı görevlerini göster"
 
-#: ../src/interface.c:325
+#: ../src/interface.c:326
 msgid "Show root tasks"
 msgstr "Root görevlerini göster"
 
-#: ../src/interface.c:330
+#: ../src/interface.c:331
 msgid "Show other tasks"
 msgstr "Öteki görevleri göster"
 
-#: ../src/interface.c:335
+#: ../src/interface.c:336
+msgid "Show full cmdline"
+msgstr ""
+
+#: ../src/interface.c:341
 msgid "Show memory used by cache as free"
 msgstr "Önbelleğin kullandığı belleği boş olarak göster"
 
-#: ../src/interface.c:366
+#: ../src/interface.c:373
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -189,34 +193,34 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:371
+#: ../src/interface.c:378
 msgid "translator-credits"
 msgstr ""
 "Mehmet Gülmen (memetgulmen@gmail.com)\n"
 "Kılıç Köken (kilickoken@gmail.com)"
 
-#: ../src/interface.c:380 ../src/interface.c:382
+#: ../src/interface.c:387 ../src/interface.c:389
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:385
+#: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Telif Hakkı (C) 2008 LXDE takımı"
 
-#: ../src/interface.c:386
+#: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
 msgstr "LXDE girişimi için hafif görev yöneticisi"
 
-#: ../src/interface.c:595
+#: ../src/interface.c:621
 msgid "Preferences"
 msgstr "Tercihler"
 
-#: ../src/interface.c:599
+#: ../src/interface.c:625
 msgid "General"
 msgstr "Genel"
 
-#: ../src/interface.c:600
+#: ../src/interface.c:626
 msgid "Refresh rate (seconds):"
 msgstr "Yenileme oranı (saniye):"
 

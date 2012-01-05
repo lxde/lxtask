@@ -174,6 +174,7 @@ void create_list_store(void)
 
     column = gtk_tree_view_column_new_with_attributes(_("Command"), cell_renderer, "text", COLUMN_NAME, NULL);
     gtk_tree_view_column_set_resizable(column, TRUE);
+    gtk_tree_view_column_set_sizing(column,GTK_TREE_VIEW_COLUMN_AUTOSIZE);
     gtk_tree_view_column_set_sort_column_id(column, COLUMN_NAME);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_NAME, compare_string_list_item, (void *)COLUMN_NAME, NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
@@ -310,6 +311,7 @@ GtkWidget* create_mainmenu (void)
     GtkWidget *show_root_tasks1;
     GtkWidget *show_other_tasks1;
     GtkWidget *show_cached_as_free1;
+    GtkWidget *show_full_path1;
     GtkWidget *separator1;
     GtkAccelGroup *accel_group;
 
@@ -332,6 +334,11 @@ GtkWidget* create_mainmenu (void)
     gtk_widget_show (show_other_tasks1);
     gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), show_other_tasks1);
 
+    show_full_path1 = gtk_check_menu_item_new_with_mnemonic (_("Show full cmdline"));
+    gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM(show_full_path1), show_full_path);
+    gtk_widget_show (show_full_path1);
+    gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), show_full_path1);
+
     show_cached_as_free1 = gtk_check_menu_item_new_with_mnemonic (_("Show memory used by cache as free"));
     gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM(show_cached_as_free1), show_cached_as_free);
     gtk_widget_show (show_cached_as_free1);
@@ -349,6 +356,7 @@ GtkWidget* create_mainmenu (void)
     g_signal_connect ((gpointer) show_user_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)own_uid);
     g_signal_connect ((gpointer) show_root_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)0);
     g_signal_connect ((gpointer) show_other_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)-1);
+    g_signal_connect ((gpointer) show_full_path1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)-2);
     g_signal_connect ((gpointer) show_cached_as_free1, "toggled", G_CALLBACK (on_show_cached_as_free_toggled), (void *)0);
 
     gtk_menu_set_accel_group (GTK_MENU (mainmenu), accel_group);
@@ -573,6 +581,25 @@ void change_task_view(void)
     refresh_task_list();
 }
 
+void change_full_path(void)
+{
+    gint i;
+    GArray *new_task_list;
+
+    /* gets the new task list */
+    new_task_list = (GArray*) get_task_list();
+
+    /* check if task is new and marks the task that its checked*/
+    for(i = 0; i < task_array->len; i++)
+    {
+        struct task *tmp = &g_array_index(task_array, struct task, i);
+        struct task *new_tmp = &g_array_index(new_task_list, struct task, i);
+	g_strlcpy(tmp->name, new_tmp->name, 255);
+        refresh_list_item(i);
+    }
+	
+    g_array_free(new_task_list, TRUE);    
+}
 
 void apply_prefs()
 {

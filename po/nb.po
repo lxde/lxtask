@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.3.2svn-r02842\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-27 19:22+0200\n"
+"POT-Creation-Date: 2012-01-05 14:50+0800\n"
 "PO-Revision-Date: 2011-03-28 11:59+0200\n"
 "Last-Translator: Sam <wilsonsamm@hotmail.com>\n"
 "Language-Team: Norwegian Bokmal\n"
@@ -30,7 +30,7 @@ msgstr "Prosesshåndtering"
 msgid "Task Manager"
 msgstr "Oppgavebehandler"
 
-#: ../src/xfce-taskmanager-linux.c:406
+#: ../src/xfce-taskmanager-linux.c:271
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,16 +41,16 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:420
+#: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Klarte ikke gi prioritet %d til prosessen %d."
 
-#: ../src/callbacks.c:56
+#: ../src/callbacks.c:58
 msgid "Really kill the task?"
 msgstr "Virkelig avslutte oppgaven?"
 
-#: ../src/callbacks.c:60
+#: ../src/callbacks.c:62
 msgid "Really terminate the task?"
 msgstr "Virkelig terminere oppgaven?"
 
@@ -164,55 +164,59 @@ msgstr ""
 msgid "   10"
 msgstr ""
 
-#: ../src/interface.c:320
+#: ../src/interface.c:321
 msgid "Show user tasks"
 msgstr "Vis brukeroppgaver"
 
-#: ../src/interface.c:325
+#: ../src/interface.c:326
 msgid "Show root tasks"
 msgstr "Vis superbrukeroppgaver"
 
-#: ../src/interface.c:330
+#: ../src/interface.c:331
 msgid "Show other tasks"
 msgstr "Vis andre oppgaver"
 
-#: ../src/interface.c:335
+#: ../src/interface.c:336
+msgid "Show full cmdline"
+msgstr ""
+
+#: ../src/interface.c:341
 msgid "Show memory used by cache as free"
 msgstr "Vis minne benyttet av hurtiglager som ledig"
 
-#: ../src/interface.c:366
+#: ../src/interface.c:373
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:371
+#: ../src/interface.c:378
 msgid "translator-credits"
 msgstr ""
 
-#: ../src/interface.c:380 ../src/interface.c:382
+#: ../src/interface.c:387 ../src/interface.c:389
 msgid "LXTask"
 msgstr ""
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:385
+#: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
 msgstr ""
 
-#: ../src/interface.c:386
+#: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
 msgstr ""
 
-#: ../src/interface.c:595
+#: ../src/interface.c:621
 msgid "Preferences"
 msgstr ""
 
-#: ../src/interface.c:599
+#: ../src/interface.c:625
 msgid "General"
 msgstr ""
 
-#: ../src/interface.c:600
+#: ../src/interface.c:626
 msgid "Refresh rate (seconds):"
 msgstr ""
 

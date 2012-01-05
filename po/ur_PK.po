@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-27 19:22+0200\n"
+"POT-Creation-Date: 2012-01-05 14:50+0800\n"
 "PO-Revision-Date: 2009-05-10 04:01+0500\n"
 "Last-Translator: Muhammad Ali Makki <makki.ma@gmail.com>\n"
 "Language-Team: Urdu <makki.ma@gmail.com>\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Task Manager"
 msgstr "ٹاسک منیجر"
 
-#: ../src/xfce-taskmanager-linux.c:406
+#: ../src/xfce-taskmanager-linux.c:271
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -43,16 +43,16 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:420
+#: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "اہمیت %d بمع آئی ڈی %d ٹاسک پر مرتب نہیں کی جاسکتی"
 
-#: ../src/callbacks.c:56
+#: ../src/callbacks.c:58
 msgid "Really kill the task?"
 msgstr "کیا واقعی اس پروگرام کو قتل کردیں؟"
 
-#: ../src/callbacks.c:60
+#: ../src/callbacks.c:62
 msgid "Really terminate the task?"
 msgstr "کیا واقعی اس پروگرام کو بند کردیں؟"
 
@@ -166,23 +166,27 @@ msgstr "   5"
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:320
+#: ../src/interface.c:321
 msgid "Show user tasks"
 msgstr "صارف کی ٹاسک دکھائیں"
 
-#: ../src/interface.c:325
+#: ../src/interface.c:326
 msgid "Show root tasks"
 msgstr "روٹ کی ٹاسک دکھائیں"
 
-#: ../src/interface.c:330
+#: ../src/interface.c:331
 msgid "Show other tasks"
 msgstr "دیگر ٹاسک دکھائیں"
 
-#: ../src/interface.c:335
+#: ../src/interface.c:336
+msgid "Show full cmdline"
+msgstr ""
+
+#: ../src/interface.c:341
 msgid "Show memory used by cache as free"
 msgstr "کیشے کی استعمال کردہ یاداشت کو بطور خالی دکھائیں"
 
-#: ../src/interface.c:366
+#: ../src/interface.c:373
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -191,7 +195,7 @@ msgstr ""
 "  * جوہانز زیلنر <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:371
+#: ../src/interface.c:378
 msgid "translator-credits"
 msgstr ""
 "محمد علی مکی\n"
@@ -201,28 +205,28 @@ msgstr ""
 "مکی کا بلاگ\n"
 "http://makki.urducoder.com"
 
-#: ../src/interface.c:380 ../src/interface.c:382
+#: ../src/interface.c:387 ../src/interface.c:389
 msgid "LXTask"
 msgstr "ایل ایکس ٹاسک"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:385
+#: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "کاپی رائٹ (C) 2008 ایل ایکس ڈی ای ٹیم"
 
-#: ../src/interface.c:386
+#: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
 msgstr "ہلکا پھلکا ٹاسک منیجر برائے ایل ایکس ڈی ای پراجیکٹ"
 
-#: ../src/interface.c:595
+#: ../src/interface.c:621
 msgid "Preferences"
 msgstr ""
 
-#: ../src/interface.c:599
+#: ../src/interface.c:625
 msgid "General"
 msgstr ""
 
-#: ../src/interface.c:600
+#: ../src/interface.c:626
 msgid "Refresh rate (seconds):"
 msgstr ""
 

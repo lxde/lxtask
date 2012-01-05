@@ -30,7 +30,7 @@ struct task
     gint ppid;
     gint uid;
     gchar uname[64];
-    gchar name[64];
+    gchar name[255];
     gchar state[16];
     gint size;
     gint rss;
@@ -68,6 +68,7 @@ extern gchar *config_file;
 extern gboolean show_user_tasks;
 extern gboolean show_root_tasks;
 extern gboolean show_other_tasks;
+extern gboolean show_full_path;
 
 extern gboolean show_cached_as_free; /* Show memory used Cache as free memory */
 

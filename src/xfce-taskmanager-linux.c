@@ -30,7 +30,6 @@
 #include "xfce-taskmanager-linux.h"
 
 
-#if 1
 void get_task_details(gint pid,struct task *task)
 {
 	int fd;
@@ -67,7 +66,33 @@ void get_task_details(gint pid,struct task *task)
 		p=strchr(buf,'(');p++;
 		for(len=0;*p!=')';len++) task->name[len]=*p++;
 		task->name[len]=0;p++;
-		if(len>=15)
+		if(show_full_path)
+		{
+			FILE *fp;
+			sprintf(line,"/proc/%d/cmdline",pid);
+			fp=fopen(line,"r");
+			if(fp)
+			{
+				size_t size;
+				size=fread(task->name,1,sizeof(task->name)-1,fp);
+				if(size>0)
+				{
+					int i;
+					task->name[size]=0;
+					for(i=0;i<size;i++)
+					{
+						if(task->name[i]=='\0')
+						{
+							if(task->name[i+1]=='\n')
+								break;
+							task->name[i]=' ';
+						}
+					}
+				}
+				fclose(fp);
+			}
+		}
+		else if(len>=15)
 		{
 			FILE *fp;
 			sprintf(line,"/proc/%d/cmdline",pid);
@@ -121,165 +146,6 @@ void get_task_details(gint pid,struct task *task)
 	}
 }
 
-#else
-
-struct task get_task_details(gint pid)
-{
-    FILE *task_file;
-    FILE *cmdline_file;
-    gchar dummy[255];
-    gint idummy;
-    gchar buffer_status[255];
-    struct task task;
-    struct passwd *passwdp;
-    struct stat status;
-    gchar filename[255];
-    gchar cmdline_filename[255];
-
-    sprintf(filename, "/proc/%i/stat", pid);
-    sprintf(cmdline_filename, "/proc/%i/cmdline", pid);
-
-    stat(filename, &status);
-
-    task.pid = -1;
-    task.checked = FALSE;
-
-    if((task_file = fopen(filename,"r")) != NULL)
-    {
-        while(fgets(buffer_status, sizeof(buffer_status), task_file) != NULL)
-        {
-            gint utime = 0;
-            gint stime = 0;
-
-            sscanf(buffer_status, "%i (%255s %1s %i %i %i %i %i %255s %255s %255s %255s %255s %i %i %i %i %i %i %i %i %i %i %i %255s %255s %255s %i %255s %255s %255s %255s %255s %255s %255s %255s %255s %255s %i %255s %255s",
-                        &task.pid,  // processid
-                        task.name,  // processname
-                        task.state, // processstate
-                        &task.ppid, // parentid
-                        &idummy,    // processs groupid
-
-                        &idummy,    // session id
-                        &idummy,    // tty id
-                        &idummy,    // tpgid: The process group ID of the process running on tty of the process
-                        dummy,      // flags
-                        dummy,      // minflt minor faults the process has maid
-
-                        dummy,      // cminflt
-                        dummy,      // majflt
-                        dummy,      // cmajflt
-                        &utime,     // utime the number of jiffies that this process has scheduled in user mode
-                        &stime,     // stime " kernel mode
-
-                        &idummy,    // cutime " waited for children in user
-                        &idummy,    // cstime " kernel mode
-                        &idummy,    // priority (nice value + fifteen)
-                        &task.prio, // nice range from 19 to -19    /* my change */
-                        &idummy,    // hardcoded 0
-
-                        &idummy,    // itrealvalue time in jiffies to next SIGALRM send to this process
-                        &idummy,    // starttime jiffies the process startet after system boot
-                        &task.size, // vsize in bytes
-                        &task.rss,  // rss
-                        dummy,      // rlim limit in bytes for rss
-
-                        dummy,      // startcode
-                        dummy,      // endcode
-                        &idummy,        // startstack
-                        dummy,      // kstkesp value of esp (stack pointer)
-                        dummy,      // kstkeip value of EIP (instruction pointer)
-
-                        dummy,      // signal. bitmap of pending signals
-                        dummy,      // blocked: bitmap of blocked signals
-                        dummy,      // sigignore: bitmap of ignored signals
-                        dummy,      // sigcatch: bitmap of catched signals
-                        dummy,      // wchan
-
-                        dummy,      // nswap
-                        dummy,      // cnswap
-                        dummy,      // exit_signal
-                        &idummy,    // CPU number last executed on
-                        dummy,
-
-                        dummy
-                    );
-            task.time = stime + utime;
-            task.old_time = task.time;
-            task.time_percentage = 0;
-            task.size = task.size / 1024;
-        }
-        task.uid = status.st_uid;
-        passwdp = getpwuid(task.uid);
-        if(passwdp != NULL && passwdp->pw_name != NULL)
-            g_strlcpy(task.uname, passwdp->pw_name, sizeof task.uname);
-    }
-
-
-    if(task_file != NULL)
-        fclose(task_file);
-
-    if((cmdline_file = fopen(cmdline_filename,"r")) != NULL)
-    {
-        gchar dummy[255];
-        strcpy(dummy, "");
-        fscanf(cmdline_file, "%255s", dummy);
-        if(strcmp(dummy, "") != 0)
-        {
-            if(g_strrstr(dummy,"/") != NULL)
-                g_strlcpy(task.name, g_strrstr(dummy,"/")+1, 255);
-            else
-                g_strlcpy(task.name, dummy, 255);
-
-            // workaround for cmd-line entries with leading "-"
-            if(g_str_has_prefix(task.name, "-"))
-                sscanf(task.name, "-%255s", task.name);
-        }
-    }
-
-    if(cmdline_file != NULL)
-        fclose(cmdline_file);
-
-    if(g_str_has_suffix(task.name, ")"))
-        *g_strrstr(task.name, ")") = '\0';
-
-    return task;
-}
-#endif
-
-#if 0
-GArray *get_task_list(void)
-{
-    DIR *dir;
-    struct dirent *dir_entry;
-    GArray *task_list;
-    int count=0;
-
-    if((dir = opendir("/proc/")) == NULL)
-    {
-        fprintf(stderr, "Error: couldn't load the /proc directory\n");
-        return NULL;
-    }
-
-    task_list = g_array_sized_new (FALSE, FALSE, sizeof (struct task), 128);
-
-    while((dir_entry = readdir(dir)) != NULL)
-    {
-        if(atoi(dir_entry->d_name) != 0)
-        {
-            struct task task;
-            get_task_details(atoi(dir_entry->d_name),&task);
-            if(task.pid != -1 && task.size>0)	// don't show error or kenerl threads
-            {
-                g_array_append_val(task_list, task);
-                count++;
-            }
-        }
-    }
-
-    closedir(dir);
-
-    return task_list;
-}
-#else
 static int proc_filter(const struct dirent *d)
 {
     int c=d->d_name[0];
@@ -314,7 +180,6 @@ GArray *get_task_list(void)
     free(namelist);
     return task_list;
 }
-#endif
 
 gboolean get_cpu_usage_from_proc(system_status *sys_stat)
 {
