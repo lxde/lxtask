@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2012-01-05 17:06+0200\n"
+"PO-Revision-Date: 2012-01-07 22:15+0200\n"
 "Last-Translator: Klemen <klemen.kosir@gmx.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -63,7 +63,7 @@ msgstr "Zasedenost pomnilnika: %d MB od %d MB"
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "Zasedenost CPE: %0.0f %%"
+msgstr "Obremenjenost procesorja: %0.0f %%"
 
 #: ../src/interface.c:69
 msgid "_File"
