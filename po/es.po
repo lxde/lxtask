@@ -11,15 +11,15 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2009-12-03 21:30+0100\n"
-"Last-Translator: Hugo Florentino <sysadmin@cips.cu>\n"
+"PO-Revision-Date: 2012-01-09 03:03+0200\n"
+"Last-Translator: Hugo <sysadmin@cips.cu>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Pootle 2.0.5\n"
 "X-Poedit-Language: Spanish\n"
 
 #: ../lxtask.desktop.in.h:1
@@ -183,7 +183,7 @@ msgstr "Mostrar otras tareas"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Mostrar la línea de comandos completa"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
