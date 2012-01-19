@@ -179,7 +179,7 @@ msgstr "他のユーザのタスクを表示"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "コマンドラインを完全表示"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
