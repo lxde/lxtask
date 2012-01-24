@@ -4,19 +4,20 @@
 # Jeff Bailes <thepizzaking@gmail.com>, 2007.
 #
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2010-03-28 21:48+0100\n"
-"Last-Translator: Steve Cook (Yorvyk) <yorvik.ubunto@googlemail.com>\n"
+"PO-Revision-Date: 2012-01-24 22:55+0200\n"
+"Last-Translator: Steve <yorvik.ubunto@gmail.com>\n"
 "Language-Team: English/GB\n"
-"Language: \n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
@@ -178,7 +179,7 @@ msgstr "Show other tasks"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Show full command line"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
@@ -204,7 +205,7 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright © 2008 LXDE team"
+msgstr "Copyright © 2008-2012 LXDE team"
 
 #: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
