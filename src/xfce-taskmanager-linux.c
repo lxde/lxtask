@@ -37,15 +37,15 @@ void get_task_details(gint pid,struct task *task)
 
 	task->pid=-1;
 	task->checked=FALSE;
-        task->size=0;
+	task->size=0;
 
 	sprintf(line,"/proc/%d/statm",pid);
         fd=open(line,O_RDONLY);
         if(fd==-1) return;
         read(fd,line,256);
-        sscanf(line,"%d %d",&task->size,&task->rss);
-        close(fd);
-        if(!task->size) return;
+	sscanf(line,"%d %d",&task->size,&task->rss);
+	close(fd);
+	if(!task->size) return;
 	task->size*=PAGE_SIZE;
 	task->rss*=PAGE_SIZE;
 

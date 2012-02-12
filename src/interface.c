@@ -430,10 +430,10 @@ void fill_list_item(gint i, GtkTreeIter *iter)
         gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_STATE, task->state, -1);
 
         /* size */
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_MEM, size_to_string(buf, task->size * 1024), -1);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_MEM, size_to_string(buf, ((guint64)task->size)*1024), -1);
 
         /* rss */
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_RSS, size_to_string(buf, task->rss*1024), -1);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_RSS, size_to_string(buf, ((guint64)task->rss)*1024), -1);
 
         gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_UNAME, task->uname, -1);
         sprintf(buf,"%0d%%", (guint)task->time_percentage);
