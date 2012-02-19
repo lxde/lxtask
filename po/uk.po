@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2012-01-05 17:39+0200\n"
+"PO-Revision-Date: 2012-02-19 11:26+0200\n"
 "Last-Translator: Y P <yupadmin@gmail.com>\n"
 "Language-Team: Ukrainian\n"
 "Language: uk\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr "Керувати запущеними процесами"
+msgstr "Керування запущеними процесами"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
