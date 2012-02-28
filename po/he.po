@@ -177,7 +177,7 @@ msgstr "הצגת משימות אחרות"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "הצגת הפקודה המלאה"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
