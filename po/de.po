@@ -205,7 +205,7 @@ msgstr ""
 "Enrico Tröger <enrico.troeger@uvena.de>, 2006.\n"
 "Fabian Nowak <timystery@arcor.de>, 2007.\n"
 "Mario Blättermann <mariobl@gnome.org>, 2008.\n"
-"Christoph Wickert <christoph.wickert@googlemail.com>, 2009."
+"Christoph Wickert <cwickert@fedoraproject.org>, 2009."
 
 #: ../src/interface.c:387 ../src/interface.c:389
 msgid "LXTask"
