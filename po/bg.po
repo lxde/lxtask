@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2010-03-21 10:13+0200\n"
-"Last-Translator: Радослав Иванов <rec_ku@hotmail.com>\n"
+"PO-Revision-Date: 2012-04-07 09:54+0200\n"
+"Last-Translator: Радослав <reckku@gmail.com>\n"
 "Language-Team: MIME-Version: 1.0\n"
-"Language: \n"
+"Language: bg\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 
@@ -106,11 +107,11 @@ msgstr "RSS"
 
 #: ../src/interface.c:202
 msgid "VM-Size"
-msgstr "Размер на ВП"
+msgstr "Виртуална памет"
 
 #: ../src/interface.c:208
 msgid "PID"
-msgstr "PID"
+msgstr "Номер на процес"
 
 #: ../src/interface.c:214
 msgid "State"
@@ -178,7 +179,7 @@ msgstr "Покажи други задачи"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Покажи пълна команда"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
@@ -189,7 +190,7 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask е извлечена от xfce4 Диспечер на задачите от:\n"
+"LXTask е извлечена от Xfce4 Task Manager от:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
@@ -216,7 +217,7 @@ msgstr "Предпочитания"
 
 #: ../src/interface.c:625
 msgid "General"
-msgstr "Основни"
+msgstr "Общи"
 
 #: ../src/interface.c:626
 msgid "Refresh rate (seconds):"
