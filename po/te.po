@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2011-07-12 17:39+0200\n"
+"PO-Revision-Date: 2012-04-11 03:55+0200\n"
 "Last-Translator: PraveenIlla <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
@@ -178,7 +178,7 @@ msgstr "ఇతర కార్యములను చూపించు"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "పూర్తి ఆదేశవ్యాక్యాన్ని చూపించు"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
