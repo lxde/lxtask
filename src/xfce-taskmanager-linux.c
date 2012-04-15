@@ -54,8 +54,8 @@ void get_task_details(pid_t pid,struct task *task)
 	sscanf(line,"%lu %lu",&t_size,&t_rss);
 	close(fd);
 	if(t_size == 0) return;
-	task->size = t_size * PAGE_SIZE;
-	task->rss = t_rss * PAGE_SIZE;
+	task->size = t_size * page_size;
+	task->rss = t_rss * page_size;
 
 	sprintf(line,"/proc/%d/stat",(gint)pid);
 	fd=open(line,O_RDONLY);
