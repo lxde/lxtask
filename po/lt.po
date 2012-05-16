@@ -180,7 +180,7 @@ msgstr "Rodyti kitus procesus"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Rodyti visą komandą"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
