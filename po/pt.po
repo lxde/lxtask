@@ -2,15 +2,15 @@
 # Copyright (C) 2005 Johannes Zellner.
 # This file is distributed under the same license as the lxtask package.
 # Nuno Miguel <nunis@netcabo.pt>, 2007.
-# Sérgio Marques <smarquespt@gmail.com> 2009-2010
+# Sérgio Marques <smarquespt@gmail.com> 2009-2012
 # Adaptado ao acordo ortográfico de 1990
 msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2012-01-05 14:42+0200\n"
-"Last-Translator: Sérgio <smarquespt@gmail.com>\n"
+"PO-Revision-Date: 2012-05-18 15:09-0000\n"
+"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: Portuguese PT\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -27,9 +27,10 @@ msgstr "Gestão dos processos em execução"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "Gestor de processos"
+msgstr "Gestão de processos"
 
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:55
+#: ../lxtask.desktop.in.h:3
+#: ../src/interface.c:55
 msgid "Task Manager"
 msgstr "Gestor de tarefas"
 
@@ -55,12 +56,12 @@ msgstr "Terminar a tarefa ?"
 
 #: ../src/callbacks.c:62
 msgid "Really terminate the task?"
-msgstr "Tem a certeza que quer terminar a tarefa ?"
+msgstr "Tem a certeza de que quer terminar a tarefa?"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Memória: usados %d MB de %d MB"
+msgstr "Memória: a utilizar %d MB de %d MB"
 
 #: ../src/functions.c:156
 #, c-format
@@ -101,7 +102,7 @@ msgstr "Utilizador"
 
 #: ../src/interface.c:190
 msgid "CPU%"
-msgstr "CPU%"
+msgstr "CPU %"
 
 #: ../src/interface.c:196
 msgid "RSS"
@@ -141,7 +142,7 @@ msgstr "Terminar"
 
 #: ../src/interface.c:257
 msgid "Kill"
-msgstr "Neutralizar"
+msgstr "Terminar"
 
 #: ../src/interface.c:262
 msgid "Priority"
@@ -192,7 +193,7 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask foi baseado no Xfce4 Task Manager de:\n"
+"O LXTask tem como base o Xfce4 Task Manager de:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
@@ -202,18 +203,19 @@ msgstr ""
 "Álvaro Morais <alvarommorais@gmail.com>\n"
 "Sérgio Marques <smarquespt@gmail.com>"
 
-#: ../src/interface.c:387 ../src/interface.c:389
+#: ../src/interface.c:387
+#: ../src/interface.c:389
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright (C) 2008 Equipa LXDE"
+msgstr "Direitos de autor (C) 2008 A equipa LXDE"
 
 #: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
-msgstr "Gestor de tarefas para o projecto LXDE"
+msgstr "Gestor de tarefas para o projeto LXDE"
 
 #: ../src/interface.c:621
 msgid "Preferences"
@@ -234,3 +236,4 @@ msgstr "Erro"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Confirmar"
+
