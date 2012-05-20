@@ -1,14 +1,31 @@
 Source: lxtask
 Section: x11
-Priority: extra
-Maintainer: Andrew Lee <andrew@linux.org.tw>
-Build-Depends: debhelper (>= 5), autotools-dev, libgtk2.0-dev (>= 2.6), libglib2.0-dev (>= 2.6)
-Standards-Version: 3.8.0.0
-Homepage: http://lxde.org
+Priority: optional
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Uploaders:
+ Andrew Lee (李健秋) <ajqlee@debian.org>,
+ Nikolas Poniros <edhunter@sidux.com>, Daniel Baumann <daniel@debian.org>
+Build-Depends:
+ debhelper (>= 9), autotools-dev, intltool, libglib2.0-dev, libgtk2.0-dev, dh-autoreconf, autopoint
+Standards-Version: 3.9.3
+Homepage: http://www.lxde.org/
+Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/lxtask.git
+Vcs-Git: git://git.lxde.org/git/debian/lxtask.git
 
 Package: lxtask
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: process manager for Lightweight X11 Desktop Environment
- A GUI application for monitoring and controlling running processes.
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: LXDE task manager
+ LXTask is a GUI application for the Lightweight X11 Desktop Environment (LXDE).
+ .
+ It allows monitoring and controlling of running processes.
 
+Package: lxtask-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends}, lxtask
+Description: LXDE task manager (debug)
+ LXTask is a GUI application for the Lightweight X11 Desktop Environment (LXDE).
+ .
+ This package contains the debugging symbols.

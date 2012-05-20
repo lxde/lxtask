@@ -1,5 +1,104 @@
-lxtask (0.1-1) unstable; urgency=low
+lxtask (0.1.4-3) unstable; urgency=low
 
-  * Initial release (Closes: 495784)
+  * Correcting spelling of lxtask in package long description.
+  * Removing superfluous comma in copyright file.
+  * Making use of paragraphs in package long-description.
+  * Correcting spelling of upstream-name field in copyright file.
+  * Correcting spelling of lxtask in menu file.
+  * Moving package to priority optional.
+  * Adding debug package.
 
- -- Andrew Lee <andrew@linux.org.tw>  Wed, 20 Aug 2008 20:17:57 +0800
+ -- Daniel Baumann <daniel@debian.org>  Fri, 18 May 2012 19:26:03 +0200
+
+lxtask (0.1.4-2) unstable; urgency=low
+
+  * Updating maintainer field.
+  * Adding myself to uploaders.
+  * Updating vcs fields.
+  * Removing whitespaces at EOL and EOF.
+  * Updating package to debhelper version 9.
+  * Updating package to standards version 3.9.3.
+  * Making build-depends unversioned where already fulfiled as of
+    squeeze.
+  * Updating homepage field.
+  * Rewriting copyright file machine-readable format version 1.0.
+  * Prefixing debhelper files with package name.
+  * Rediffing kfreebsd.patch with common diff options.
+  * Decrufting rules file.
+  * Switching to xz compression for both the source and the binary
+    packages.
+  * Rewriting package descriptions.
+  * Adding upstreams todo file as documentation.
+  * Completing menu file.
+
+ -- Daniel Baumann <daniel@debian.org>  Sun, 15 Apr 2012 09:40:13 +0000
+
+lxtask (0.1.4-1) unstable; urgency=low
+
+  * Merging upstream version 0.1.4:
+    – default to use gtk2
+    – add gtk3 build option
+    – fix process name only have 15 chars
+    – same icon that the one in the desktop file
+    – fix memory leak in task refresh
+    – treat mem_buffered as mem_cached to make memory usage more accurate
+    – Fix garbled text (mw should be this)  (Bug 2986070)
+    – fixed compiler warnings: removed un-used variables,
+    - fixed implicit declaration of functions g_sprintf, textdomain,
+      bind_textdomain_codeset and bindtextdomain.
+  * Use debhelper 8
+  * Removing useless whitespaces at EOL and EOF.
+  * Sorting build-depends.
+  * Wapping build-depends.
+  * Bumped Standard-Version to 3.9.2.
+  * Updating Vcs-Browser and Vcs-Git tags.
+  * Sorting depends.
+  * Removing debian/dirs: let upstream makefile do the work.
+  * Removing debian/docs: empty NEWS, no useful README and TODO.
+  * Compacting rules file.
+  * Compacting watch file.
+  * Quilt refresh 01_kfreebsd.patch.
+  * Added debian/source/options file.
+  * Disabling dh_auto_test: failed in po/.
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 29 Jul 2011 20:45:36 +0800
+
+lxtask (0.1.3-2) unstable; urgency=low
+
+  [ Cyril Brulebois ]
+  * Replace PAGE_SIZE with page_size everywhere, since the former might
+    be defined through system-wide headers (e.g. on GNU/kFreeBSD).
+    (Closes:585969)
+
+  [ Andrew Lee (李健秋) ]
+  * Build-depends on debhelper >= 7.0.50~
+  * Bumped Standard-version to 3.9.1
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sat, 31 Jul 2010 17:15:40 -0400
+
+lxtask (0.1.3-1) unstable; urgency=low
+
+  [ Julien Lavergne ]
+  * New upstream release.
+   - Remove the VM size from simple view of task list.
+   - Take RSS in a different way, just like the htop.
+   - Fix bug of sort by memory size.
+   - Translations updates.
+  * debian/control:
+   - Set Maintainer to Debian LXDE Packaging Team.
+   - Wrap depends and build-depends.
+   - Add VCS fields.
+   - Bump Standards-Version to 3.8.4.0, no change needed.
+  * debian/rules & debian/compat & debian/control:
+   - Switch to dh7.
+  * debian/menu: Update needs and section.
+  * Switch to dpkg-source 3.0 (quilt) format
+
+  [ Nikolas Poniros ]
+  * Updated copyright
+  * Add intltool to build depends
+
+  [ Andrew Lee (李健秋) ]
+  * Initial release (Closes:#495784)
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sat, 12 Jun 2010 03:35:16 +0800

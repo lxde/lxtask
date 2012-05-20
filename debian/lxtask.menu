@@ -1,0 +1,4 @@
+?package(lxtask):needs="X11" section="Applications/System/Monitoring"\
+  title="LXTask" longtitle="LXDE task manager"\
+  description="LXTask is a GUI application for the Lightweight X11 Desktop Environment (LXDE). It allows monitoring and controlling of running processes."\
+  command="/usr/bin/lxtask"
