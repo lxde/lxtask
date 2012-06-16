@@ -55,7 +55,7 @@ void get_task_details(gint pid,struct task *task)
 	{
 		struct passwd *passwdp;
 		struct stat st;
-		char buf[2048],*p=buf;
+		char buf[2048],*p;
 		size_t len;
 		gint utime = 0;
 		gint stime = 0;
