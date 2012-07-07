@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2010-10-11 19:25+0200\n"
+"PO-Revision-Date: 2012-07-07 22:37+0200\n"
 "Last-Translator: kizito <kbirabwa@yahoo.co.uk>\n"
 "Language-Team: lg <kbirabwa@yahoo.co.uk>\n"
 "Language: lg\n"
@@ -178,7 +178,7 @@ msgstr "Ndaga emirimu emirala gyonna"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Laga ekiragiriro mu bujjuvu"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
