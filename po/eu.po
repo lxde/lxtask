@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2012-07-09 00:48+0200\n"
+"PO-Revision-Date: 2012-07-09 00:51+0200\n"
 "Last-Translator: Asier_Iturralde_Sarasola <asier.iturralde@gmail.com>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "Language: eu\n"
@@ -117,7 +117,7 @@ msgstr "Egoera"
 
 #: ../src/interface.c:220
 msgid "Prio"
-msgstr ""
+msgstr "Lehent"
 
 #: ../src/interface.c:226
 msgid "PPID"
@@ -177,7 +177,7 @@ msgstr "Erakutsi beste atazak"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Erakutsi komando-lerro osoa"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
@@ -205,7 +205,7 @@ msgstr "Copyright-a (C) 2008 LXDE taldea"
 
 #: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "LXDE proiektuarentzako ataza-kudeatzaile arina"
 
 #: ../src/interface.c:621
 msgid "Preferences"
@@ -217,7 +217,7 @@ msgstr "Orokorra"
 
 #: ../src/interface.c:626
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Freskatze-maiztasuna (segundoak):"
 
 #: ../src/utils.c:43
 msgid "Error"
