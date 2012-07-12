@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2012-07-09 00:51+0200\n"
+"PO-Revision-Date: 2012-07-12 20:53+0200\n"
 "Last-Translator: Asier_Iturralde_Sarasola <asier.iturralde@gmail.com>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "Language: eu\n"
@@ -21,16 +21,15 @@ msgstr ""
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr ""
+msgstr "Kudeatu martxan dauden prozesuak"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr ""
+msgstr "Prozesu-kudeatzailea"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:55
-#, fuzzy
 msgid "Task Manager"
-msgstr "xfce4-zereginkudeatzailea"
+msgstr "Ataza-kudeatzailea"
 
 #: ../src/xfce-taskmanager-linux.c:271
 #, c-format
@@ -61,7 +60,7 @@ msgstr "%d kB %d kB-tik erabiliak"
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "PUZ erabilera: %%%0.0f"
 
 #: ../src/interface.c:69
 msgid "_File"
@@ -77,7 +76,7 @@ msgstr "_Laguntza"
 
 #: ../src/interface.c:110
 msgid "cpu usage"
-msgstr "cpu erabilera"
+msgstr "puz erabilera"
 
 #: ../src/interface.c:121
 msgid "memory usage"
