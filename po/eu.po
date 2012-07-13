@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2012-07-12 20:53+0200\n"
+"PO-Revision-Date: 2012-07-13 14:58+0200\n"
 "Last-Translator: Asier_Iturralde_Sarasola <asier.iturralde@gmail.com>\n"
 "Language-Team: librezale <librezale@librezale.org>\n"
 "Language: eu\n"
@@ -38,11 +38,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Ezin izan da %s seinalea bidali %d IDa duen atazara\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Ezin izan zaio %d lehentasuna ezarri %d IDa duen atazari"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
@@ -53,9 +56,9 @@ msgid "Really terminate the task?"
 msgstr "Benetan ataza amaitu nahi duzu?"
 
 #: ../src/functions.c:148
-#, fuzzy, c-format
+#, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "%d kB %d kB-tik erabiliak"
+msgstr "Memoria: %d MB erabiliak %d MBtik"
 
 #: ../src/functions.c:156
 #, c-format
@@ -187,6 +190,8 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"Xfce4 ataza-kudeatzailearen eratorria da LXTask. Egilea:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:378
