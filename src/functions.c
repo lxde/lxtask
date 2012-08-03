@@ -242,9 +242,74 @@ void load_config(void)
     g_key_file_free(rc_file);
 }
 
+static int check_config(void)
+{
+	static const char group[]="General";
+	int res=0;
+    GKeyFile *rc_file = g_key_file_new();
+    g_key_file_load_from_file(rc_file, config_file, 0, NULL);
+    
+    if(show_user_tasks!=key_file_get_bool(rc_file, group, "show_user_tasks", TRUE))
+    {
+		res=1;
+		goto out;
+	}
+	if(show_root_tasks!=key_file_get_bool(rc_file, group, "show_root_tasks", FALSE))
+    {
+		res=1;
+		goto out;
+	}
+	if(show_other_tasks!=key_file_get_bool(rc_file, group, "show_other_tasks", FALSE))
+    {
+		res=1;
+		goto out;
+	}
+	if(show_full_path!=key_file_get_bool(rc_file, group, "show_full_path", FALSE))
+	{
+		res=1;
+		goto out;
+	}
+	if(show_cached_as_free!=key_file_get_bool(rc_file, group, "show_cached_as_free", TRUE))
+	{
+		res=1;
+		goto out;
+	}
+	if(full_view!=key_file_get_bool(rc_file, group, "full_view", TRUE))
+	{
+		res=1;
+		goto out;
+	}
+	gtk_window_get_size(GTK_WINDOW (main_window), (gint *) &win_width, (gint *) &win_height);
+	if(win_width != key_file_get_int(rc_file, group, "win_width", 500 ))
+	{
+		res=1;
+		goto out;
+	}
+	if(win_height != key_file_get_int(rc_file, group, "win_height", 400 ))
+	{
+		res=1;
+		goto out;
+	}
+	if(refresh_interval != key_file_get_int(rc_file, group, "refresh_interval", 2 ))
+	{
+		res=1;
+		goto out;
+	}
+out:
+    g_key_file_free(rc_file);
+	return res;
+}
+
 void save_config(void)
 {
-    FILE* rc_file = fopen( config_file, "w" );
+    FILE* rc_file ;
+   		
+    if(!check_config())
+    {
+    	return;
+    }
+
+    rc_file = fopen( config_file, "w" );
     if(!rc_file) return;
 
     fputs( "[General]\n", rc_file );

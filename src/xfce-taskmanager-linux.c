@@ -56,14 +56,27 @@ void get_task_details(gint pid,struct task *task)
 		struct passwd *passwdp;
 		struct stat st;
 		char buf[2048],*p;
+		ssize_t ret;
 		size_t len;
 		gint utime = 0;
 		gint stime = 0;
 
 		task->pid=pid;
 		
-		read(fd,buf,2048);
-		p=strchr(buf,'(');p++;
+		ret=read(fd,buf,2048-1);
+		if(ret<=0)
+		{
+			close(fd);
+			return;
+		}
+		buf[ret]=0;
+		p=strchr(buf,'(');
+		if(p==NULL)
+		{
+			close(fd);
+			return;
+		}
+		p++;
 		for(len=0;*p!=')';len++) task->name[len]=*p++;
 		task->name[len]=0;p++;
 		if(show_full_path)
