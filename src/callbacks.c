@@ -81,26 +81,17 @@ void handle_task_menu(GtkWidget *widget, gchar *signal)
             if(gtk_tree_selection_get_selected(selection, &model, &iter))
             {
                 gtk_tree_model_get(model, &iter, COLUMN_PID, &task_id, -1);
-                send_signal_to_task(atoi(task_id), task_action);
-                refresh_task_list();
+                if(atoi(task_id)==getpid() && task_action==SIGNAL_STOP)
+                {
+                    show_error(_("Can't stop process self"));
+                }
+                else
+                {
+                    send_signal_to_task(atoi(task_id), task_action);
+                    refresh_task_list();
+                }
             }
         }
-//      if (strcmp(signal, "KILL") == 0) s = _("Really kill the task?");
-//      else s = _("Really terminate the task?");
-//
-//      if(strcmp(signal, "STOP") == 0 || strcmp(signal, "CONT") == 0 || confirm(s))
-//      {
-//          gchar *task_id = "";
-//          GtkTreeModel *model;
-//          GtkTreeIter iter;
-//
-//          if(gtk_tree_selection_get_selected(selection, &model, &iter))
-//          {
-//              gtk_tree_model_get(model, &iter, 1, &task_id, -1);
-//              send_signal_to_task(atoi(task_id), signal);
-//              refresh_task_list();
-//          }
-//      }
     }
 }
 
