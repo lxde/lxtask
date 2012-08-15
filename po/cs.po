@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2009-12-09 18:32+0100\n"
-"Last-Translator: Michal Várady <miko.vaji@gmail.com>\n"
+"PO-Revision-Date: 2012-08-14 13:23+0200\n"
+"Last-Translator: ALIUM <info@aloisnespor.info>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
@@ -36,14 +37,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Nelze poslat signál %d úloze s identifikátorem %d\n"
+"Nelze poslat signál %d úloze s ID %d\n"
 "\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Nelze nastavit prioritu %d úloze s identifikátorem %d"
+msgstr "Nelze nastavit prioritu %d úloze s ID %d"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
@@ -56,7 +57,7 @@ msgstr "Chcete opravdu ukončit tuto úlohu?"
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "paměť: %d MB z %d MB použito"
+msgstr "Paměť: %d MB z %d MB použito"
 
 #: ../src/functions.c:156
 #, c-format
@@ -177,7 +178,7 @@ msgstr "Zobrazit jiné úlohy"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Zobrazit celou příkazovou řádku"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
@@ -194,7 +195,7 @@ msgstr ""
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:378
 msgid "translator-credits"
-msgstr "Michal Várady <miko.vaji@gmail.com>"
+msgstr "Michal Várady, Alois Nešpor"
 
 #: ../src/interface.c:387 ../src/interface.c:389
 msgid "LXTask"
@@ -203,7 +204,7 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright (C) 2008 LXDE team"
+msgstr "Copyright (C) 2008-2012 LXDE team"
 
 #: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
