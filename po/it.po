@@ -2,33 +2,34 @@
 # Copyright (C) 2007 THE xfce'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the xfce package.
 # Fabio Riga <usul@aruba.it>, 2007.
-#
+# Alessandro Pellizzari <alex@amiran.it>, 2009.
+# Daniele Forsi <daniele@forsi.it>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-05 10:33+0100\n"
-"PO-Revision-Date: 2009-12-08 16:40+0100\n"
-"Last-Translator: Alessandro Pellizzari <alex@amiran.it>\n"
-"Language-Team: Italian <xfce-i18n@xfce.org>\n"
+"PO-Revision-Date: 2012-08-25 18:15+0200\n"
+"Last-Translator: Daniele Forsi <daniele@forsi.it>\n"
+"Language-Team: Italian\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #: ../lxtask.desktop.in.h:1
 msgid "Manage running processes"
-msgstr "Gestione processi attivi"
+msgstr "Gestisce i processi attivi"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Process manager"
-msgstr "Gestione processi"
+msgstr "Gestore processi"
 
 #: ../lxtask.desktop.in.h:3 ../src/interface.c:55
 msgid "Task Manager"
-msgstr "Gestione Task"
+msgstr "Gestore task"
 
 #: ../src/xfce-taskmanager-linux.c:271
 #, c-format
@@ -37,7 +38,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Impossibile inviare segnale %d al processo con ID %d\n"
+"Impossibile inviare il segnale %d al processo con ID %d\n"
 "\n"
 "%s"
 
@@ -70,11 +71,11 @@ msgstr "_File"
 
 #: ../src/interface.c:77
 msgid "_View"
-msgstr "V_isualizza"
+msgstr "_Visualizza"
 
 #: ../src/interface.c:83
 msgid "_Help"
-msgstr "Ai_uto"
+msgstr "A_iuto"
 
 #: ../src/interface.c:110
 msgid "cpu usage"
@@ -178,7 +179,7 @@ msgstr "Mostra altri processi"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Mostra riga di comando completa"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
@@ -189,13 +190,14 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask è derivato da Xfce4 Task Manager by:\n"
+"LXTask è derivato da Xfce4 Task Manager di:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:378
 msgid "translator-credits"
-msgstr "Alessandro Pellizzari <alex@amiran.it>"
+msgstr "Alessandro Pellizzari <alex@amiran.it>\n"
+"Daniele Forsi <daniele@forsi.it>"
 
 #: ../src/interface.c:387 ../src/interface.c:389
 msgid "LXTask"
@@ -204,7 +206,7 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:392
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright (C) 2008 team LXDE"
+msgstr "Copyright © 2008 team LXDE"
 
 #: ../src/interface.c:393
 msgid "Lightweight task manager for LXDE project"
@@ -212,7 +214,7 @@ msgstr "Gestore di processi leggero per il progetto LXDE"
 
 #: ../src/interface.c:621
 msgid "Preferences"
-msgstr "Impostazioni"
+msgstr "Preferenze"
 
 #: ../src/interface.c:625
 msgid "General"
@@ -220,7 +222,7 @@ msgstr "Generale"
 
 #: ../src/interface.c:626
 msgid "Refresh rate (seconds):"
-msgstr "Tempo di aggiornamento (secondi)"
+msgstr "Tempo di aggiornamento (secondi):"
 
 #: ../src/utils.c:43
 msgid "Error"
