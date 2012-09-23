@@ -177,7 +177,7 @@ msgstr "أظهر المهام الأخرى"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "عرض سطر الأوامر الإفتراضي"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"

@@ -195,7 +195,7 @@ msgstr "Egyéb folyamatok megjelenítése"
 
 #: ../src/interface.c:336
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Teljes cmdline megjelenítése"
 
 #: ../src/interface.c:341
 msgid "Show memory used by cache as free"
