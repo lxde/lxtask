@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-05 10:33+0100\n"
+"POT-Creation-Date: 2012-09-23 15:31+0200\n"
 "PO-Revision-Date: 2012-04-08 12:48+0200\n"
 "Last-Translator: George <forfolias@gmail.com>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: ../lxtask.desktop.in.h:1
-msgid "Manage running processes"
-msgstr "Διαχείριση τρεχουσών διεργασιών"
-
-#: ../lxtask.desktop.in.h:2
-msgid "Process manager"
-msgstr "Διαχειριστής διεργασιών"
-
-#: ../lxtask.desktop.in.h:3 ../src/interface.c:55
+#: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
 msgstr "Διαχειριστής εργασιών"
 
-#: ../src/xfce-taskmanager-linux.c:271
+#: ../lxtask.desktop.in.h:2
+msgid "Manage running processes"
+msgstr "Διαχείριση τρεχουσών διεργασιών"
+
+#: ../lxtask.desktop.in.h:3
+msgid "Process manager"
+msgstr "Διαχειριστής διεργασιών"
+
+#: ../src/xfce-taskmanager-linux.c:284
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,7 +41,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:285
+#: ../src/xfce-taskmanager-linux.c:298
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Αδύνατος ο ορισμός προτεραιότητας %d στην εργασία με ID %d"
@@ -54,6 +54,10 @@ msgstr "Επιμένετε να τερματιστεί βίαια η εργασ�
 msgid "Really terminate the task?"
 msgstr "Επιμένετε να τερματιστεί η εργασία;"
 
+#: ../src/callbacks.c:86
+msgid "Can't stop process self"
+msgstr ""
+
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
@@ -64,127 +68,127 @@ msgstr "Μνήμη: %d MB από %d MB χρησιμοποιούνται"
 msgid "CPU usage: %0.0f %%"
 msgstr "Χρήση CPU: %0.0f %%"
 
-#: ../src/interface.c:69
+#: ../src/interface.c:70
 msgid "_File"
 msgstr "_Αρχείο"
 
-#: ../src/interface.c:77
+#: ../src/interface.c:91
 msgid "_View"
 msgstr "_Προβολή"
 
-#: ../src/interface.c:83
+#: ../src/interface.c:97
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: ../src/interface.c:110
+#: ../src/interface.c:124
 msgid "cpu usage"
 msgstr "χρήση cpu"
 
-#: ../src/interface.c:121
+#: ../src/interface.c:135
 msgid "memory usage"
 msgstr "χρήση μνήμης"
 
-#: ../src/interface.c:149
+#: ../src/interface.c:163
 msgid "more details"
 msgstr "περισσότερες λεπτομέρειες"
 
-#: ../src/interface.c:175
+#: ../src/interface.c:189
 msgid "Command"
 msgstr "Εργασία"
 
-#: ../src/interface.c:181
+#: ../src/interface.c:195
 msgid "User"
 msgstr "Χρήστης"
 
-#: ../src/interface.c:190
+#: ../src/interface.c:204
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:196
+#: ../src/interface.c:210
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:202
+#: ../src/interface.c:216
 msgid "VM-Size"
 msgstr "Μέγεθος-VM"
 
-#: ../src/interface.c:208
+#: ../src/interface.c:222
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:214
+#: ../src/interface.c:228
 msgid "State"
 msgstr "Κατάσταση"
 
-#: ../src/interface.c:220
+#: ../src/interface.c:234
 msgid "Prio"
 msgstr "Προτ"
 
-#: ../src/interface.c:226
+#: ../src/interface.c:240
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:242
+#: ../src/interface.c:256
 msgid "Stop"
 msgstr "Σταμάτημα"
 
-#: ../src/interface.c:247
+#: ../src/interface.c:261
 msgid "Continue"
 msgstr "Συνέχεια"
 
-#: ../src/interface.c:252
+#: ../src/interface.c:266
 msgid "Term"
 msgstr "Τερματισμός"
 
-#: ../src/interface.c:257
+#: ../src/interface.c:271
 msgid "Kill"
 msgstr "Βίαιος τερματισμός"
 
-#: ../src/interface.c:262
+#: ../src/interface.c:276
 msgid "Priority"
 msgstr "Προτεραιότητα"
 
-#: ../src/interface.c:275
+#: ../src/interface.c:289
 msgid "  -10"
 msgstr "-10"
 
-#: ../src/interface.c:280
+#: ../src/interface.c:294
 msgid "  -5"
 msgstr "-5"
 
-#: ../src/interface.c:285
+#: ../src/interface.c:299
 msgid "    0"
 msgstr "0"
 
-#: ../src/interface.c:290
+#: ../src/interface.c:304
 msgid "   5"
 msgstr "5"
 
-#: ../src/interface.c:295
+#: ../src/interface.c:309
 msgid "   10"
 msgstr "10"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:335
 msgid "Show user tasks"
 msgstr "Εμφάνιση εργασιών χρήστη"
 
-#: ../src/interface.c:326
+#: ../src/interface.c:340
 msgid "Show root tasks"
 msgstr "Εμφάνιση εργασιών διαχειριστή"
 
-#: ../src/interface.c:331
+#: ../src/interface.c:345
 msgid "Show other tasks"
 msgstr "Εμφάνιση άλλων εργασιών"
 
-#: ../src/interface.c:336
+#: ../src/interface.c:350
 msgid "Show full cmdline"
 msgstr "Εμφάνιση πλήρους γραμμής εντολών"
 
-#: ../src/interface.c:341
+#: ../src/interface.c:355
 msgid "Show memory used by cache as free"
 msgstr "Εμφάνιση χρησιμοποιημένης μνήνης από την προσωρινή μνήμη ως ελεύθερη"
 
-#: ../src/interface.c:373
+#: ../src/interface.c:387
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -193,35 +197,35 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:378
+#: ../src/interface.c:392
 msgid "translator-credits"
 msgstr ""
 "Κούτσικος Γιώργος <oege89@hotmail.com>\n"
 "Βασιλάκος Γιώργος  <forfolias@linuxteam.cs.teilar.gr>\n"
 "Ριζόπουλος Γιώργος <georgerizopoulos28@gmail.com>"
 
-#: ../src/interface.c:387 ../src/interface.c:389
+#: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"
 msgstr "LXTask"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:392
+#: ../src/interface.c:406
 msgid "Copyright (C) 2008 LXDE team"
 msgstr "Copyright (C) 2008 LXDE team"
 
-#: ../src/interface.c:393
+#: ../src/interface.c:407
 msgid "Lightweight task manager for LXDE project"
 msgstr "Ελαφρύς διαχειριστής εργασιών για το project LXDE"
 
-#: ../src/interface.c:621
+#: ../src/interface.c:635
 msgid "Preferences"
 msgstr "Προτιμήσεις"
 
-#: ../src/interface.c:625
+#: ../src/interface.c:639
 msgid "General"
 msgstr "Γενικά"
 
-#: ../src/interface.c:626
+#: ../src/interface.c:640
 msgid "Refresh rate (seconds):"
 msgstr "Ρυθμός ανανέωσης (δευτερόλεπτα):"
 
