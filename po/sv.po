@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-02-16 14:55+0200\n"
+"PO-Revision-Date: 2012-09-23 15:33+0200\n"
 "Last-Translator: Martin <brother@bsnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -37,14 +37,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Kunde inte skicka signal %d till aktiviteten med id %d\n"
+"Kunde inte skicka signal %d till aktiviteten med ID %d\n"
 "\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:298
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Kunde inte ställa in prioritet %d till aktiviteten med id %d"
+msgstr "Kunde inte ställa in prioritet %d till aktiviteten med ID %d"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
@@ -56,7 +56,7 @@ msgstr "Verkligen terminera aktiviteten?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "Kan inte stoppa den egna processen"
 
 #: ../src/functions.c:148
 #, c-format
@@ -200,6 +200,7 @@ msgstr ""
 #: ../src/interface.c:392
 msgid "translator-credits"
 msgstr ""
+"Martin Bagge / brother <brother@bsnet.se>\n"
 "Daniel Nylander <po@danielnylander.se>\n"
 "\n"
 "Skicka synpunkter på översättningen till\n"
