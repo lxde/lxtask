@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-01-22 18:40+0200\n"
+"PO-Revision-Date: 2012-09-24 21:08+0200\n"
 "Last-Translator: Anari <anari.jalakas@gmail.com>\n"
 "Language-Team: Gnome Estonian Translation Team <gnome-et linux ee>\n"
 "Language: et\n"
@@ -57,7 +57,7 @@ msgstr "Kas see protsess tõesti lõpetada?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "Ei saa lõpetada protsessi ennast"
 
 #: ../src/functions.c:148
 #, c-format
@@ -200,7 +200,9 @@ msgstr ""
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:392
 msgid "translator-credits"
-msgstr "Mattias Põldaru"
+msgstr ""
+"Mattias Põldaru\n"
+"Anari Jalakas"
 
 #: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"
