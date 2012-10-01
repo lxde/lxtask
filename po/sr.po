@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: LXTask x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-09-23 23:13+0200\n"
+"PO-Revision-Date: 2012-10-01 16:09+0200\n"
 "Last-Translator: Jay A. <tito.nehru.naser@gmail.com>\n"
 "Language-Team: \n"
 "Language: sr\n"
@@ -30,7 +30,7 @@ msgstr "Управљање покренутим процесима"
 
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
-msgstr "Управљач процесима"
+msgstr "Управљач процеса"
 
 #: ../src/xfce-taskmanager-linux.c:284
 #, c-format
@@ -129,11 +129,11 @@ msgstr "Приоритет"
 
 #: ../src/interface.c:240
 msgid "PPID"
-msgstr "ИБ-Р"
+msgstr "ПИБ"
 
 #: ../src/interface.c:256
 msgid "Stop"
-msgstr "Privremeno заустави процес"
+msgstr "Привремено заустави процес"
 
 #: ../src/interface.c:261
 msgid "Continue"
