@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: LXDE\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-03-07 19:41+0200\n"
+"PO-Revision-Date: 2012-10-09 11:36+0200\n"
 "Last-Translator: Mișu <dumol@l10n.ro>\n"
 "Language-Team: Romanian <LL@li.org>\n"
 "Language: ro\n"
@@ -52,7 +52,7 @@ msgstr "Sigur doriți să închideți procesul?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "Propriul proces nu poate fi oprit"
 
 #: ../src/functions.c:148
 #, c-format
