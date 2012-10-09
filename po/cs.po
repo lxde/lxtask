@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-08-14 13:23+0200\n"
+"PO-Revision-Date: 2012-10-09 17:30+0200\n"
 "Last-Translator: ALIUM <info@aloisnespor.info>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "Language: cs\n"
@@ -56,7 +56,7 @@ msgstr "Chcete opravdu ukončit tuto úlohu?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "Nelze zastavit proces"
 
 #: ../src/functions.c:148
 #, c-format
