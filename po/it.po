@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-08-25 18:15+0200\n"
-"Last-Translator: Daniele Forsi <daniele@forsi.it>\n"
+"PO-Revision-Date: 2012-10-17 14:15+0200\n"
+"Last-Translator: Daniele <daniele@forsi.it>\n"
 "Language-Team: Italian\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -57,7 +57,7 @@ msgstr "Terminare il processo?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "Impossibile fermare il proprio processo"
 
 #: ../src/functions.c:148
 #, c-format
