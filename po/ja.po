@@ -57,7 +57,7 @@ msgstr "本当にこのタスクを終了しますか?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "自分自身を停止することはできません"
 
 #: ../src/functions.c:148
 #, c-format
