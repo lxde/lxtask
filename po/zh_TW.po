@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-10-26 02:11+0200\n"
+"PO-Revision-Date: 2012-10-26 02:45+0200\n"
 "Last-Translator: Walter <wwycheuk@gmail.com>\n"
 "Language-Team: Tradictional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -49,7 +49,7 @@ msgstr "無法將 %2$d 號工作的優先權設定為 %1$d"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
-msgstr "確定強行終止這個程式？"
+msgstr "確定強行終止這個工作？"
 
 #: ../src/callbacks.c:62
 msgid "Really terminate the task?"
@@ -171,11 +171,11 @@ msgstr "加10"
 
 #: ../src/interface.c:335
 msgid "Show user tasks"
-msgstr "顯示使用者工作"
+msgstr "顯示使用者的工作"
 
 #: ../src/interface.c:340
 msgid "Show root tasks"
-msgstr "顯示 root 工作"
+msgstr "顯示 root 的工作"
 
 #: ../src/interface.c:345
 msgid "Show other tasks"
@@ -194,7 +194,7 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask 是由 Xfce4 Task Manager 改成，其原作者為:\n"
+"LXTask 是由 Xfce4 Task Manager 修改而成，其原作者為：\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
