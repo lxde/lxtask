@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-10-26 02:02+0200\n"
+"PO-Revision-Date: 2012-10-26 02:11+0200\n"
 "Last-Translator: Walter <wwycheuk@gmail.com>\n"
 "Language-Team: Tradictional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -95,7 +95,7 @@ msgstr "更多細節"
 
 #: ../src/interface.c:189
 msgid "Command"
-msgstr "命令"
+msgstr "指令"
 
 #: ../src/interface.c:195
 msgid "User"
@@ -107,11 +107,11 @@ msgstr "CPU%"
 
 #: ../src/interface.c:210
 msgid "RSS"
-msgstr "RSS"
+msgstr "實際記憶體用量"
 
 #: ../src/interface.c:216
 msgid "VM-Size"
-msgstr "虛擬記憶體容量"
+msgstr "虛擬記憶體用量"
 
 #: ../src/interface.c:222
 msgid "PID"
