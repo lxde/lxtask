@@ -267,6 +267,7 @@ gboolean get_system_status (system_status *sys_stat)
             }
         }
         fclose (file);
+        if(!cpu_count) cpu_count++; /* cpu_count should be at least 1 */
     }
     sys_stat->cpu_count=cpu_count;
     return TRUE;
