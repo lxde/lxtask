@@ -28,7 +28,7 @@
 #include <glib/gi18n.h>
 #include <glib/gprintf.h>
 #include "xfce-taskmanager-linux.h"
-
+#include <sys/sysinfo.h>
 
 void get_task_details(pid_t pid,struct task *task)
 {
@@ -276,18 +276,7 @@ gboolean get_system_status (system_status *sys_stat)
 
     if(!cpu_count)
     {
-        file = fopen ("/proc/cpuinfo", "r");
-        if(!file) return FALSE;
-        while (fgets (buffer, 100, file) != NULL)
-        {
-            if(buffer[0]!='p') continue;
-            if(!strncmp(buffer,"processor",9))
-            {
-                cpu_count++;
-            }
-        }
-        fclose (file);
-        if(!cpu_count) cpu_count++; /* cpu_count should be at least 1 */
+        cpu_count=get_nprocs();
     }
     sys_stat->cpu_count=cpu_count;
     return TRUE;
