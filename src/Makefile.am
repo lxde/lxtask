@@ -1,4 +1,4 @@
-INCLUDES = \
+lxtask_CPPFLAGS = \
 	-I$(top_srcdir)/include \
 	-DG_LOG_DOMAIN=\"xfce4-taskmanager\" \
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\"
