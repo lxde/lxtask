@@ -22,19 +22,6 @@ if [ "x${ACLOCAL_DIR}" != "x" ]; then
     ACLOCAL_ARG=-I ${ACLOCAL_DIR}
 fi
 
-if gtkdocize --copy; then
-    echo "Files needed by gtk-doc are generated."
-else
-    echo "You need gtk-doc to build this package."
-    echo "http://www.gtk.org/gtk-doc/"
-    exit 1
-fi
-
-echo
-echo "If you are going to 'make dist', please add configure option --enable-gtk-doc."
-echo "Otherwise, API documents for libfm won't be correctly built by gtk-doc."
-echo
-
 set -x
 
 ${ACLOCAL:-aclocal$AM_VERSION} ${ACLOCAL_ARG}
