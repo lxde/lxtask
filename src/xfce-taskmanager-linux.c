@@ -43,7 +43,7 @@ void get_task_details(gint pid,struct task *task)
         fd=open(line,O_RDONLY);
         if(fd==-1) return;
         read(fd,line,256);
-	sscanf(line,"%d %d",&task->size,&task->rss);
+	sscanf(line,"%ld %ld",&task->size,&task->rss);
 	close(fd);
 	if(!task->size) return;
 	task->size*=PAGE_SIZE;

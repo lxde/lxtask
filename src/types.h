@@ -32,8 +32,8 @@ struct task
     gchar uname[64];
     gchar name[255];
     gchar state[16];
-    gint size;
-    gint rss;
+    glong size;
+    glong rss;
     gboolean checked;
     gint time;
     gint old_time;
