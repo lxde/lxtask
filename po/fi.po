@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-03-23 15:20+0200\n"
+"PO-Revision-Date: 2013-08-27 13:01+0000\n"
 "Last-Translator: Juhani <juhaninumminen0@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1377608507.0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -58,7 +59,7 @@ msgstr "Haluatko katkaista tehtävän suorittamisen?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "Ohjelman omaa prosessia ei voi lopettaa"
 
 #: ../src/functions.c:148
 #, c-format
@@ -84,7 +85,7 @@ msgstr "_Ohje"
 
 #: ../src/interface.c:124
 msgid "cpu usage"
-msgstr "prosessorin käyttö"
+msgstr "suorittimen käyttö"
 
 #: ../src/interface.c:135
 msgid "memory usage"
@@ -195,13 +196,15 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask on johdettu Xfce 4 tehtävienhallinnasta, tekijä:\n"
-"  * Johannes Zellnerin <webmaster@nebulon.de>"
+"LXTask on johdettu Xfce4:n tehtävienhallinnasta, tekijä:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:392
 msgid "translator-credits"
-msgstr "Elias Julkunen"
+msgstr ""
+"Elias Julkunen\n"
+"Juhani Numminen"
 
 #: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"
@@ -234,7 +237,7 @@ msgstr "Virhe"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr "Varmista"
+msgstr "Vahvista"
 
 #~ msgid "%0.0f %%"
 #~ msgstr "%0.0f %%"
