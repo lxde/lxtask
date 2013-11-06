@@ -11,28 +11,28 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 15:31+0200\n"
-"PO-Revision-Date: 2012-01-09 03:03+0200\n"
-"Last-Translator: Hugo <sysadmin@cips.cu>\n"
+"PO-Revision-Date: 2013-11-06 04:09+0000\n"
+"Last-Translator: Adolfo <fitoschido@ubuntu.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
-"X-Poedit-Language: Spanish\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1383710987.0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
-msgstr "Administrador de tareas"
+msgstr "Gestor de tareas"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Manage running processes"
-msgstr "Administrar procesos en ejecución"
+msgstr "Gestione los procesos en ejecución"
 
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
-msgstr "Administrador de procesos"
+msgstr "Gestor de procesos"
 
 #: ../src/xfce-taskmanager-linux.c:284
 #, c-format
@@ -41,14 +41,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"No se ha podido enviar la señal %d a la tarea con ID %d\n"
+"No se pudo enviar la señal %d a la tarea con el id. %d\n"
 "\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:298
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "No se ha podido fijar la prioridad %d a la tarea con ID %d"
+msgstr "No se pudo fijar la prioridad %d a la tarea con el id. %d"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
@@ -60,7 +60,7 @@ msgstr "¿Quiere terminar la tarea?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "No se puede detener el proceso propio"
 
 #: ../src/functions.c:148
 #, c-format
@@ -99,7 +99,7 @@ msgstr "más detalles"
 
 #: ../src/interface.c:189
 msgid "Command"
-msgstr "Comando"
+msgstr "Orden"
 
 #: ../src/interface.c:195
 msgid "User"
@@ -155,11 +155,11 @@ msgstr "Prioridad"
 
 #: ../src/interface.c:289
 msgid "  -10"
-msgstr "  -10"
+msgstr "  −10"
 
 #: ../src/interface.c:294
 msgid "  -5"
-msgstr "  -5"
+msgstr "  −5"
 
 #: ../src/interface.c:299
 msgid "    0"
@@ -179,7 +179,7 @@ msgstr "Mostrar tareas de usuario"
 
 #: ../src/interface.c:340
 msgid "Show root tasks"
-msgstr "Mostrar tareas de root"
+msgstr "Mostrar tareas del superusuario"
 
 #: ../src/interface.c:345
 msgid "Show other tasks"
@@ -187,7 +187,7 @@ msgstr "Mostrar otras tareas"
 
 #: ../src/interface.c:350
 msgid "Show full cmdline"
-msgstr "Mostrar la línea de comandos completa"
+msgstr "Mostrar la línea de órdenes entera"
 
 #: ../src/interface.c:355
 msgid "Show memory used by cache as free"
@@ -209,7 +209,8 @@ msgstr ""
 "Daniel Pacheco <daniel@tunki.org>, 2008\n"
 "Julio Napurí Carlos <julionc@gmail.com>, 2008\n"
 "Guillermo Iguarán <tronador@cuteam.org>, 2009\n"
-"Hugo Florentino <sysadmin@cips.cu>, 2009"
+"Hugo Florentino <sysadmin@cips.cu>, 2009\n"
+"Adolfo Jayme Barrientos <fitoschido@ubuntu.com>, 2013"
 
 #: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"
@@ -218,11 +219,11 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:406
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Copyright (C) 2008 Equipo LXDE"
+msgstr "Copyright © 2008 del equipo de LXDE"
 
 #: ../src/interface.c:407
 msgid "Lightweight task manager for LXDE project"
-msgstr "Administrador de tareas ligero para el escritorio LXDE"
+msgstr "Gestor de tareas ligero para el escritorio LXDE"
 
 #: ../src/interface.c:635
 msgid "Preferences"
@@ -234,7 +235,7 @@ msgstr "General"
 
 #: ../src/interface.c:640
 msgid "Refresh rate (seconds):"
-msgstr "Tasa de refresco (segundos):"
+msgstr "Tasa de actualización (segundos):"
 
 #: ../src/utils.c:43
 msgid "Error"
