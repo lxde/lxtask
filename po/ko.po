@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-23 15:31+0200\n"
+"POT-Creation-Date: 2013-11-13 23:42+0100\n"
 "PO-Revision-Date: 2012-10-16 17:54+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../lxtask.desktop.in.h:1
-#: ../src/interface.c:55
+#: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
 msgstr "작업 관리자"
 
@@ -30,7 +29,7 @@ msgstr "실행중인 프로세스를 관리합니다"
 msgid "Process manager"
 msgstr "프로세스 관리자"
 
-#: ../src/xfce-taskmanager-linux.c:284
+#: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -41,7 +40,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:298
+#: ../src/xfce-taskmanager-linux.c:299
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "%d 우선순위를 ID 작업 %d에 설정할 수 없습니다"
@@ -201,8 +200,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Seong-ho Cho <darkcircle.0426@gmail.com>"
 
-#: ../src/interface.c:401
-#: ../src/interface.c:403
+#: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"
 msgstr "LXTask"
 
@@ -234,4 +232,3 @@ msgstr "오류"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "확인"
-

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-23 15:31+0200\n"
+"POT-Creation-Date: 2013-11-13 23:42+0100\n"
 "PO-Revision-Date: 2010-10-10 08:34+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -29,7 +29,7 @@ msgstr "ਚੱਲ ਰਹੇ ਪਰੋਸੈਸ ਦਾ ਪਰਬੰਧ"
 msgid "Process manager"
 msgstr "ਪਰੋਸੈਸ ਮੈਨੇਜਰ"
 
-#: ../src/xfce-taskmanager-linux.c:284
+#: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -40,7 +40,7 @@ msgstr ""
 "\n"
 "%3$s"
 
-#: ../src/xfce-taskmanager-linux.c:298
+#: ../src/xfce-taskmanager-linux.c:299
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "%2$d ID ਵਾਲੀ ਟਾਸਕ ਲਈ ਤਰਜੀਹ %1$d ਸੈੱਟ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕਦੀ"

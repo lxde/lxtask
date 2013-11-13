@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-23 15:31+0200\n"
+"POT-Creation-Date: 2013-11-13 23:42+0100\n"
 "PO-Revision-Date: 2012-10-29 12:15+0200\n"
 "Last-Translator: Sérgio <smarquespt@gmail.com>\n"
 "Language-Team: Portuguese PT\n"
@@ -33,7 +33,7 @@ msgstr "Gestão dos processos em execução"
 msgid "Process manager"
 msgstr "Gestão de processos"
 
-#: ../src/xfce-taskmanager-linux.c:284
+#: ../src/xfce-taskmanager-linux.c:285
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -44,7 +44,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:298
+#: ../src/xfce-taskmanager-linux.c:299
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Não foi possível definir a prioridade %d para a tarefa com a ID %d"
