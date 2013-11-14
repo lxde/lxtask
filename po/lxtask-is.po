@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+
+#: ../lxtask.desktop.in.h:1 ../src/interface.c:55
+msgid "Task Manager"
+msgstr ""
+
+#: ../lxtask.desktop.in.h:2
+msgid "Manage running processes"
+msgstr ""
+
+#: ../lxtask.desktop.in.h:3
+msgid "Process manager"
+msgstr ""
+
+#: ../src/xfce-taskmanager-linux.c:285
+#, c-format
+msgid ""
+"Couldn't send signal %d to the task with ID %d\n"
+"\n"
+"%s"
+msgstr ""
+
+#: ../src/xfce-taskmanager-linux.c:299
+#, c-format
+msgid "Couldn't set priority %d to the task with ID %d"
+msgstr ""
+
+#: ../src/callbacks.c:58
+msgid "Really kill the task?"
+msgstr ""
+
+#: ../src/callbacks.c:62
+msgid "Really terminate the task?"
+msgstr ""
+
+#: ../src/callbacks.c:86
+msgid "Can't stop process self"
+msgstr ""
+
+#: ../src/functions.c:148
+#, c-format
+msgid "Memory: %d MB of %d MB used"
+msgstr ""
+
+#: ../src/functions.c:156
+#, c-format
+msgid "CPU usage: %0.0f %%"
+msgstr ""
+
+#: ../src/interface.c:70
+msgid "_File"
+msgstr ""
+
+#: ../src/interface.c:91
+msgid "_View"
+msgstr ""
+
+#: ../src/interface.c:97
+msgid "_Help"
+msgstr ""
+
+#: ../src/interface.c:124
+msgid "cpu usage"
+msgstr ""
+
+#: ../src/interface.c:135
+msgid "memory usage"
+msgstr ""
+
+#: ../src/interface.c:163
+msgid "more details"
+msgstr ""
+
+#: ../src/interface.c:189
+msgid "Command"
+msgstr ""
+
+#: ../src/interface.c:195
+msgid "User"
+msgstr ""
+
+#: ../src/interface.c:204
+msgid "CPU%"
+msgstr ""
+
+#: ../src/interface.c:210
+msgid "RSS"
+msgstr ""
+
+#: ../src/interface.c:216
+msgid "VM-Size"
+msgstr ""
+
+#: ../src/interface.c:222
+msgid "PID"
+msgstr ""
+
+#: ../src/interface.c:228
+msgid "State"
+msgstr ""
+
+#: ../src/interface.c:234
+msgid "Prio"
+msgstr ""
+
+#: ../src/interface.c:240
+msgid "PPID"
+msgstr ""
+
+#: ../src/interface.c:256
+msgid "Stop"
+msgstr ""
+
+#: ../src/interface.c:261
+msgid "Continue"
+msgstr ""
+
+#: ../src/interface.c:266
+msgid "Term"
+msgstr ""
+
+#: ../src/interface.c:271
+msgid "Kill"
+msgstr ""
+
+#: ../src/interface.c:276
+msgid "Priority"
+msgstr ""
+
+#: ../src/interface.c:289
+msgid "  -10"
+msgstr ""
+
+#: ../src/interface.c:294
+msgid "  -5"
+msgstr ""
+
+#: ../src/interface.c:299
+msgid "    0"
+msgstr ""
+
+#: ../src/interface.c:304
+msgid "   5"
+msgstr ""
+
+#: ../src/interface.c:309
+msgid "   10"
+msgstr ""
+
+#: ../src/interface.c:335
+msgid "Show user tasks"
+msgstr ""
+
+#: ../src/interface.c:340
+msgid "Show root tasks"
+msgstr ""
+
+#: ../src/interface.c:345
+msgid "Show other tasks"
+msgstr ""
+
+#: ../src/interface.c:350
+msgid "Show full cmdline"
+msgstr ""
+
+#: ../src/interface.c:355
+msgid "Show memory used by cache as free"
+msgstr ""
+
+#: ../src/interface.c:387
+msgid ""
+"LXTask is derived from Xfce4 Task Manager by:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+msgstr ""
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/interface.c:392
+msgid "translator-credits"
+msgstr ""
+
+#: ../src/interface.c:401 ../src/interface.c:403
+msgid "LXTask"
+msgstr ""
+
+#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
+#: ../src/interface.c:406
+msgid "Copyright (C) 2008 LXDE team"
+msgstr ""
+
+#: ../src/interface.c:407
+msgid "Lightweight task manager for LXDE project"
+msgstr ""
+
+#: ../src/interface.c:635
+msgid "Preferences"
+msgstr ""
+
+#: ../src/interface.c:639
+msgid "General"
+msgstr ""
+
+#: ../src/interface.c:640
+msgid "Refresh rate (seconds):"
+msgstr ""
+
+#: ../src/utils.c:43
+msgid "Error"
+msgstr ""
+
+#: ../src/utils.c:56
+msgid "Confirm"
+msgstr ""
