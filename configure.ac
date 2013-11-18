@@ -1,6 +1,6 @@
 AC_PREREQ([2.57])
 AC_INIT(lxtask,[0.1.4], [],lxtask)
-AM_INIT_AUTOMAKE()
+AM_INIT_AUTOMAKE([foreign no-dist-gzip dist-xz])
 AC_PROG_INTLTOOL(, [no-xml])
 AM_MAINTAINER_MODE
 
