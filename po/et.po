@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 23:42+0100\n"
-"PO-Revision-Date: 2013-12-18 11:24+0000\n"
+"PO-Revision-Date: 2013-12-20 11:32+0000\n"
 "Last-Translator: mahfiaz <mahfiaz@gmail.com>\n"
 "Language-Team: Gnome Estonian Translation Team <gnome-et linux ee>\n"
 "Language: et\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1387365846.0\n"
+"X-POOTLE-MTIME: 1387539138.0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -91,7 +91,7 @@ msgstr "mälukasutus"
 
 #: ../src/interface.c:163
 msgid "more details"
-msgstr "üksikasjad"
+msgstr "Täpsem"
 
 #: ../src/interface.c:189
 msgid "Command"
@@ -123,7 +123,7 @@ msgstr "Olek"
 
 #: ../src/interface.c:234
 msgid "Prio"
-msgstr "Priorit."
+msgstr "Prior"
 
 #: ../src/interface.c:240
 msgid "PPID"
