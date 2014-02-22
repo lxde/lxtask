@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the lxtask package.
 # Terje Uriansrud <ter@operamail.com>, 2007, 2009.
 # Joe Hansen <joedalton2@yahoo.dk>, 2010.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 23:42+0100\n"
-"PO-Revision-Date: 2010-04-01 10:38+0100\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"PO-Revision-Date: 2014-02-22 23:52+0000\n"
+"Last-Translator: Peter <flywheel@illogical.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1393113149.0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -183,7 +183,7 @@ msgstr "Vis andre opgaver"
 
 #: ../src/interface.c:350
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Vis hele kommandolinien"
 
 #: ../src/interface.c:355
 msgid "Show memory used by cache as free"
