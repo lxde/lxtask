@@ -366,7 +366,7 @@ GtkWidget* create_mainmenu (void)
     gtk_widget_show(preferences1);
     gtk_menu_shell_append(GTK_MENU_SHELL(mainmenu), preferences1);
 
-    g_signal_connect ((gpointer) show_user_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)own_uid);
+    g_signal_connect ((gpointer) show_user_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)(gsize)own_uid);
     g_signal_connect ((gpointer) show_root_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)0);
     g_signal_connect ((gpointer) show_other_tasks1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)-1);
     g_signal_connect ((gpointer) show_full_path1, "toggled", G_CALLBACK (on_show_tasks_toggled), (void *)-2);
