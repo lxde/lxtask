@@ -85,6 +85,7 @@ AC_OUTPUT([
   Makefile
   src/Makefile
   po/Makefile.in
+  data/lxtask.1
 ])
 
 echo

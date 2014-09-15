@@ -7,6 +7,8 @@ desktop_in_files = data/lxtask.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
+man_MANS = data/lxtask.1
+
 distclean-local:
 	rm -rf *.cache *~
 

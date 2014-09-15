@@ -18,3 +18,4 @@ po/LINGUAS
 po/POTFILES
 stamp-*
 lxtask.desktop
+lxtask.1
