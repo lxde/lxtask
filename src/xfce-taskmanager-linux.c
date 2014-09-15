@@ -63,7 +63,7 @@ void get_task_details(pid_t pid,struct task *task)
 	{
 		struct passwd *passwdp;
 		struct stat st;
-		char buf[2048],*p;
+		char buf[2048],*p,*e;
 		size_t len;
 		gint utime = 0;
 		gint stime = 0;
@@ -85,8 +85,16 @@ void get_task_details(pid_t pid,struct task *task)
 			return;
 		}
 		p++;
-		for(len=0;*p!=')';len++) task->name[len]=*p++;
-		task->name[len]=0;p++;
+		e = strrchr(p, ')');
+		if (e == NULL || e >= &p[sizeof(task->name)])
+		{
+		    close(fd);
+		    return;
+		}
+		len = e - p;
+		strncpy(task->name, p, len);
+		task->name[len]=0;
+		p = &e[1];
 		if(show_full_path)
 		{
 			FILE *fp;
