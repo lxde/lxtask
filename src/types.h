@@ -26,14 +26,14 @@
 
 struct task
 {
-    gint pid;
-    gint ppid;
-    gint uid;
+    pid_t pid;
+    pid_t ppid;
+    uid_t uid;
     gchar uname[64];
     gchar name[255];
     gchar state[16];
-    glong size;
-    glong rss;
+    guint64 size;
+    guint64 rss;
     gboolean checked;
     gint time;
     gint old_time;
@@ -61,7 +61,7 @@ extern GtkWidget *main_window;
 
 extern GArray *task_array;
 extern gint tasks;
-extern gint own_uid;
+extern uid_t own_uid;
 
 extern gchar *config_file;
 
@@ -74,8 +74,8 @@ extern gboolean show_cached_as_free; /* Show memory used Cache as free memory */
 
 extern gboolean full_view;
 
-extern guint win_width;
-extern guint win_height;
+extern gint win_width;
+extern gint win_height;
 
 const gchar *custom_signal_0;
 const gchar *custom_signal_1;

@@ -73,14 +73,14 @@ GtkWidget *create_prio_submenu(void);
 
 void show_about_dialog(void);
 
-void fill_list_item(gint i, GtkTreeIter *iter);
-void add_new_list_item(gint i);
+void fill_list_item(guint i, GtkTreeIter *iter);
+void add_new_list_item(guint i);
 gint compare_list_item(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer user_data);
 gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer user_data);
 gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column);
 gint compare_string_list_item(GtkTreeModel *model, GtkTreeIter *a, GtkTreeIter *b, gpointer user_data);
-void remove_list_item(gint i);
-void refresh_list_item(gint i);
+void remove_list_item(pid_t i);
+void refresh_list_item(guint i);
 
 void change_task_view(void);
 void change_full_path(void);

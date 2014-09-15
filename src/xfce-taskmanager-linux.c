@@ -30,36 +30,44 @@
 #include "xfce-taskmanager-linux.h"
 
 
-void get_task_details(gint pid,struct task *task)
+void get_task_details(pid_t pid,struct task *task)
 {
 	int fd;
 	gchar line[256];
+	gulong t_size, t_rss;
+	ssize_t ret;
 
 	task->pid=-1;
 	task->checked=FALSE;
 	task->size=0;
 
-	sprintf(line,"/proc/%d/statm",pid);
+	sprintf(line,"/proc/%d/statm",(int)pid);
         fd=open(line,O_RDONLY);
         if(fd==-1) return;
-        read(fd,line,256);
-	sscanf(line,"%ld %ld",&task->size,&task->rss);
+        ret = read(fd,line,255);
+        if (ret <= 0)
+        {
+            close(fd);
+            return;
+        }
+        line[ret] = '\0';
+	sscanf(line,"%lu %lu",&t_size,&t_rss);
 	close(fd);
-	if(!task->size) return;
-	task->size*=PAGE_SIZE;
-	task->rss*=PAGE_SIZE;
+	if(t_size == 0) return;
+	task->size = t_size * PAGE_SIZE;
+	task->rss = t_rss * PAGE_SIZE;
 
-	sprintf(line,"/proc/%d/stat",pid);
+	sprintf(line,"/proc/%d/stat",(gint)pid);
 	fd=open(line,O_RDONLY);
 	if(fd!=-1)
 	{
 		struct passwd *passwdp;
 		struct stat st;
 		char buf[2048],*p;
-		ssize_t ret;
 		size_t len;
 		gint utime = 0;
 		gint stime = 0;
+		glong ppid;
 
 		task->pid=pid;
 		
@@ -82,7 +90,7 @@ void get_task_details(gint pid,struct task *task)
 		if(show_full_path)
 		{
 			FILE *fp;
-			sprintf(line,"/proc/%d/cmdline",pid);
+			sprintf(line,"/proc/%d/cmdline",(int)pid);
 			fp=fopen(line,"r");
 			if(fp)
 			{
@@ -90,15 +98,15 @@ void get_task_details(gint pid,struct task *task)
 				size=fread(task->name,1,sizeof(task->name)-1,fp);
 				if(size>0)
 				{
-					int i;
+					size_t x;
 					task->name[size]=0;
-					for(i=0;i<size;i++)
+					for(x=0;x<size;x++)
 					{
-						if(task->name[i]=='\0')
+						if(task->name[x]=='\0')
 						{
-							if(task->name[i+1]=='\n')
+							if(task->name[x+1]=='\n')
 								break;
-							task->name[i]=' ';
+							task->name[x]=' ';
 						}
 					}
 				}
@@ -108,24 +116,27 @@ void get_task_details(gint pid,struct task *task)
 		else if(len>=15)
 		{
 			FILE *fp;
-			sprintf(line,"/proc/%d/cmdline",pid);
+			sprintf(line,"/proc/%d/cmdline",(int)pid);
 			fp=fopen(line,"r");
 			if(fp)
 			{
 				char *p;
-				fscanf(fp, "%255s", line);
+				if (fscanf(fp, "%255s", line) > 0)
+				{
+				    p=strrchr(line,'/');
+				    if(p != NULL)
+					strncpy(task->name, p+1, sizeof(task->name)-1);
+				    else
+					strncpy(task->name, line, sizeof(task->name)-1);
+				    task->name[sizeof(task->name)-1] = '\0';
+				}
 				fclose(fp);
-				p=strrchr(line,'/');
-				if(p != NULL)
-					strcpy(task->name, p+1);
-				else
-					strcpy(task->name, line);
 			}
 		}
 
-		sscanf(p, "%1s %i %s %s %s %s %s %s %s %s %s %i %i %s %s %s %i",
+		sscanf(p, "%1s %ld %s %s %s %s %s %s %s %s %s %i %i %s %s %s %i",
                         task->state, // processstate
-                        &task->ppid, // parentid
+                        &ppid,     // parentid
                         line,      // processs groupid
 
                         line,      // session id
@@ -148,6 +159,7 @@ void get_task_details(gint pid,struct task *task)
 		task->time = stime + utime;
 		task->old_time = task->time;
 		task->time_percentage = 0;
+		task->ppid = ppid;
 
 		fstat(fd,&st);
 		task->uid=st.st_uid;
@@ -180,11 +192,11 @@ GArray *get_task_list(void)
     g_array_set_size(task_list,n);
     while(n--)
     {
-        int pid=atoi(namelist[n]->d_name);
+        pid_t pid = atol(namelist[n]->d_name);
         struct task *task=&g_array_index(task_list, struct task, count);
 	free(namelist[n]);
         get_task_details(pid,task);
-        if(task->pid != -1 && task->size>0)	// don't show error or kenerl threads
+        if(task->pid > 0 && task->size > 0)	// don't show error or kenerl threads
         {
             count++;
         }

@@ -31,13 +31,13 @@
 
 #include "functions.h"
 
-extern guint refresh_interval;
+extern gint refresh_interval;
 
 static system_status *sys_stat =NULL;
 
 gboolean refresh_task_list(void)
 {
-    gint i, j;
+    guint i, j;
     GArray *new_task_list;
     gdouble cpu_usage;
     guint num_cpus;
@@ -70,11 +70,11 @@ gboolean refresh_task_list(void)
 
                 new_tmp->time_percentage = (gfloat)(tmp->time - tmp->old_time) * (gfloat)(1000.0f / (refresh_interval * 1000 * num_cpus));
                 if(
-                    (gint)tmp->ppid != (gint)new_tmp->ppid ||
+                    tmp->ppid != new_tmp->ppid ||
                     tmp->state[0]!=new_tmp->state[0] ||
-                    (unsigned int)tmp->size != (unsigned int)new_tmp->size ||
-                    (unsigned int)tmp->rss != (unsigned int)new_tmp->rss ||
-                    (unsigned int)tmp->time_percentage != (unsigned int)new_tmp->time_percentage ||
+                    tmp->size != new_tmp->size ||
+                    tmp->rss != new_tmp->rss ||
+                    tmp->time_percentage != new_tmp->time_percentage ||
                     tmp->prio != new_tmp->prio
                  )
                 {
@@ -109,7 +109,7 @@ gboolean refresh_task_list(void)
 
         if(!tmp->checked)
         {
-            remove_list_item((gint)tmp->pid);
+            remove_list_item(tmp->pid);
             g_array_remove_index(task_array, i);
             tasks--;
         }
@@ -171,7 +171,7 @@ gdouble get_cpu_usage(system_status *sys_stat)
 
     if ( get_cpu_usage_from_proc( sys_stat ) == FALSE )
     {
-        gint i = 0;
+        guint i = 0;
 
         for(i = 0; i < task_array->len; i++)
         {
@@ -279,7 +279,7 @@ static int check_config(void)
 		res=1;
 		goto out;
 	}
-	gtk_window_get_size(GTK_WINDOW (main_window), (gint *) &win_width, (gint *) &win_height);
+	gtk_window_get_size(GTK_WINDOW (main_window), &win_width, &win_height);
 	if(win_width != key_file_get_int(rc_file, group, "win_width", 500 ))
 	{
 		res=1;
@@ -322,7 +322,7 @@ void save_config(void)
 
     fprintf( rc_file, "full_view=%d\n", full_view);
 
-    gtk_window_get_size(GTK_WINDOW (main_window), (gint *) &win_width, (gint *) &win_height);
+    gtk_window_get_size(GTK_WINDOW (main_window), &win_width, &win_height);
 
     fprintf( rc_file, "win_width=%d\n", win_width);
     fprintf( rc_file, "win_height=%d\n", win_height);

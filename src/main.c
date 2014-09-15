@@ -38,7 +38,7 @@ GtkWidget *main_window;
 
 GArray *task_array;
 gint tasks;
-gint own_uid;
+uid_t own_uid;
 
 gchar *config_file;
 
@@ -52,9 +52,9 @@ gboolean show_cached_as_free; /* Show memory used Cache as free memory */
 gboolean full_view;
 
 
-guint win_width;
-guint win_height;
-guint refresh_interval;
+gint win_width;
+gint win_height;
+gint refresh_interval;
 guint rID;
 
 int PAGE_SIZE;

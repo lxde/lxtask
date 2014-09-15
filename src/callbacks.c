@@ -110,9 +110,11 @@ void handle_prio_menu(GtkWidget *widget, gchar *prio)
     }
 }
 
-void on_show_tasks_toggled (GtkMenuItem *menuitem, gint uid)
+void on_show_tasks_toggled (GtkMenuItem *menuitem, gpointer data)
 {
-    if(uid == own_uid)
+    gssize uid = (gssize)data;
+
+    if(uid == (gssize)own_uid)
         show_user_tasks = gtk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM(menuitem));
     else if(uid == 0)
         show_root_tasks = gtk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM(menuitem));
@@ -128,7 +130,7 @@ void on_show_tasks_toggled (GtkMenuItem *menuitem, gint uid)
     change_task_view();
 }
 
-void on_show_cached_as_free_toggled (GtkMenuItem *menuitem, gint uid)
+void on_show_cached_as_free_toggled (GtkMenuItem *menuitem, gpointer data)
 {
     show_cached_as_free = !show_cached_as_free;
     change_task_view();
