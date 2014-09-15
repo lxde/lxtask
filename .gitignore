@@ -6,7 +6,7 @@ lxtask
 Makefile.in
 Makefile
 config.*
-aclocal.m4
+*.m4
 compile
 depcomp
 missing

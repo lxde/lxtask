@@ -1,3 +1,5 @@
+ACLOCAL_AMFLAGS = -I .
+
 SUBDIRS =	po src
 
 desktopdir = $(datadir)/applications

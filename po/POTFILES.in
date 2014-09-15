@@ -1,4 +1,4 @@
-lxtask.desktop.in
+data/lxtask.desktop.in
 src/xfce-taskmanager-linux.c
 src/callbacks.c
 src/functions.c

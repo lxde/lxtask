@@ -3,6 +3,7 @@ AC_INIT(lxtask,[0.1.4], [],lxtask)
 AM_INIT_AUTOMAKE([foreign no-dist-gzip dist-xz])
 AC_PROG_INTLTOOL(, [no-xml])
 AM_MAINTAINER_MODE([enable])
+AC_CONFIG_MACRO_DIR([.])
 
 AM_CONFIG_HEADER(config.h)
 
