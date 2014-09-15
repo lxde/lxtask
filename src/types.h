@@ -43,17 +43,17 @@ struct task
 
 typedef struct
 {
-    guint mem_total;
-    guint mem_free;
-    guint mem_cached;
-    guint mem_buffered;
-    guint cpu_count;
-    guint cpu_idle;
-    guint cpu_user;
-    guint cpu_nice;
-    guint cpu_system;
-    guint cpu_old_jiffies;
-    guint cpu_old_used;
+    guint64 mem_total;
+    guint64 mem_free;
+    guint64 mem_cached;
+    guint64 mem_buffered;
+    guint64 cpu_count;
+    guint64 cpu_idle;
+    guint64 cpu_user;
+    guint64 cpu_nice;
+    guint64 cpu_system;
+    guint64 cpu_old_jiffies;
+    guint64 cpu_old_used;
     gboolean valid_proc_reading;
 } system_status;
 

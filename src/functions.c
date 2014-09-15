@@ -41,7 +41,7 @@ gboolean refresh_task_list(void)
     GArray *new_task_list;
     gdouble cpu_usage;
     guint num_cpus;
-    guint memory_used;
+    guint64 memory_used;
     char tooltip[256];
 
     if (sys_stat!=NULL)
@@ -145,7 +145,9 @@ gboolean refresh_task_list(void)
     {
         memory_used-=sys_stat->mem_cached+sys_stat->mem_buffered;
     }
-    sprintf (tooltip, _("Memory: %d MB of %d MB used"), memory_used / 1024, sys_stat->mem_total / 1024);
+    /* FIXME: this will work only for < 2048 TB but where so many memory... */
+    sprintf (tooltip, _("Memory: %d MB of %d MB used"), (int)(memory_used / 1024),
+             (int)(sys_stat->mem_total / 1024));
     if(strcmp(tooltip,gtk_progress_bar_get_text(GTK_PROGRESS_BAR(mem_usage_progress_bar))))
     {
         gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (mem_usage_progress_bar),  (gdouble)memory_used / sys_stat->mem_total);

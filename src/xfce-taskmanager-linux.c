@@ -237,7 +237,7 @@ gboolean get_cpu_usage_from_proc(system_status *sys_stat)
 
     file = fopen (file_name, "rb");
     if(!file) return FALSE;
-    if ( fscanf (file, "cpu\t%u %u %u %u",
+    if ( fscanf (file, "cpu\t%"G_GUINT64_FORMAT" %"G_GUINT64_FORMAT" %"G_GUINT64_FORMAT" %"G_GUINT64_FORMAT,
                  &sys_stat->cpu_user,
                  &sys_stat->cpu_nice,
                  &sys_stat->cpu_system,
