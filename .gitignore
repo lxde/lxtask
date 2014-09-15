@@ -17,5 +17,4 @@ po/Makefile.in.in
 po/LINGUAS
 po/POTFILES
 stamp-*
-intltool-*
 lxtask.desktop

@@ -15,13 +15,7 @@ rpm: dist
 	@rm -f $(PACKAGE)-$(VERSION).tar.gz
 
 EXTRA_DIST =								\
-	intltool-extract.in						\
-	intltool-merge.in						\
-	intltool-update.in						\
 	$(desktop_in_files)
-	
+
 DISTCLEANFILES =							\
-	intltool-extract						\
-	intltool-merge							\
-	intltool-update							\
 	$(desktop_DATA)
