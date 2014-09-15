@@ -43,8 +43,16 @@ AM_GNU_GETTEXT_VERSION(0.14.1)
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 
-#These codes are NOT maintained by Pootle ca el en_GB lv sq
-ALL_LINGUAS="af ar ca cs da de el en_GB es et eu fa fi fr gl hr hu id it ja ko lt lv ml nb nl nn pl ps pt pt_BR ru sk sl sq sv tr uk ur ur_PK vi zh_CN zh_TW"
+# Generate po/LINGUAS on the fly rather than relying on translators
+# to maintain it manually. This also overcome the problem that Transifex
+# cannot add a language to po/LINGUAS if a new po file is submitted.
+rm -f $srcdir/po/LINGUAS
+for po_file in `ls $srcdir/po/*.po | sort`;
+do
+    lang=`echo "$po_file" | sed "s|.*/po/\(.*\)\.po|\1|g"`
+    echo $lang >> $srcdir/po/LINGUAS
+done
+
 AM_GLIB_GNU_GETTEXT
 
 AC_OUTPUT([
