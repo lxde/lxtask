@@ -28,7 +28,7 @@
 #include <glib/gi18n.h>
 #include <glib/gprintf.h>
 #include "xfce-taskmanager-linux.h"
-#include <sys/sysinfo.h>
+/* #include <sys/sysinfo.h> */
 
 void get_task_details(pid_t pid,struct task *task)
 {
@@ -276,7 +276,8 @@ gboolean get_system_status (system_status *sys_stat)
 
     if(!cpu_count)
     {
-        cpu_count=get_nprocs();
+        /* cpu_count=get_nprocs(); */
+        cpu_count = sysconf(_SC_NPROCESSORS_ONLN);
     }
     sys_stat->cpu_count=cpu_count;
     return TRUE;
