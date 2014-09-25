@@ -2,10 +2,10 @@
 _Name=Task Manager
 _Comment=Manage running processes
 _GenericName=Process manager
+_Keywords=task;kill;suspend;processor;memory;monitoring;performance;
 Exec=lxtask
 Icon=utilities-system-monitor
 Terminal=false
 StartupNotify=true
 Type=Application
 Categories=GTK;System;Monitor;
-
