@@ -2,22 +2,21 @@
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
 # This file is distributed under the same license as the xfce4-taskmanager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 23:42+0100\n"
-"PO-Revision-Date: 2013-07-09 11:47+0000\n"
-"Last-Translator: Miguel Anxo <mbouzada@gmail.com>\n"
+"PO-Revision-Date: 2014-11-27 09:40+0000\n"
+"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.net>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1373370431.0\n"
+"X-Generator: Pootle 2.6.0-rc2\n"
+"X-POOTLE-MTIME: 1417081219.000000\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -38,7 +37,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Non foi posíbel enviarlle o sinal %d á tarefa con ID %d\n"
+"Non foi posíbel enviarlle o sinal %d á tarefa co ID %d\n"
 "\n"
 "%s"
 
@@ -67,7 +66,7 @@ msgstr "Memoria: usados %d MB de %d MB"
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "Uso da CPU: %0.de %%"
+msgstr "Uso da CPU: %0.0f %%"
 
 #: ../src/interface.c:70
 msgid "_File"
@@ -187,7 +186,7 @@ msgstr "Amosar a liña de ordes completa"
 
 #: ../src/interface.c:355
 msgid "Show memory used by cache as free"
-msgstr "Amosar a memoria usada por caché como libre"
+msgstr "Amosar a memoria usada pola caché como libre"
 
 #: ../src/interface.c:387
 msgid ""
