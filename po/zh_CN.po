@@ -1,20 +1,20 @@
 # Simplified Chinese translations for lxtask.
 # by ideal <05281253@bjtu.edu.cn>, 2008.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
-"PO-Revision-Date: 2012-10-14 12:22+0200\n"
-"Last-Translator: Wylmer <wantinghard@gmail.com>\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
+"PO-Revision-Date: 2014-12-03 12:12+0000\n"
+"Last-Translator: Wylmer Wang <wantinghard@gmail.com>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.6.0-rc2\n"
+"X-POOTLE-MTIME: 1417608759.000000\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -27,6 +27,12 @@ msgstr "管理运行中的进程"
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "进程管理器"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
+"task;kill;suspend;processor;memory;monitoring;performance;任务;终止;杀死;挂起;进程;内存;监"
+"视;性能;"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format
