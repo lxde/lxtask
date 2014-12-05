@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LXDE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
 "PO-Revision-Date: 2012-10-09 11:36+0200\n"
 "Last-Translator: Mișu <dumol@l10n.ro>\n"
 "Language-Team: Romanian <LL@li.org>\n"
@@ -25,6 +25,10 @@ msgstr "Gestionați programele pornite"
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "Manager de procese"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

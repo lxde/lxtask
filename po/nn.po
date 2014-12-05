@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
 "PO-Revision-Date: 2009-12-31 00:12+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -29,6 +29,10 @@ msgstr "Handsam prosessar som køyrer"
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "Prosesshandsamar"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

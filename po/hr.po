@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask_hr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
 "PO-Revision-Date: 2012-01-06 01:23+0200\n"
 "Last-Translator: zvacet <ikoli@yahoo.com>\n"
 "Language-Team: <asjlob AT vip.hr>\n"
@@ -29,6 +29,10 @@ msgstr "Upravljaj pokrenutim procesima"
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "Upravitelj procesa"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

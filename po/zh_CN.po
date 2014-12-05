@@ -31,8 +31,8 @@ msgstr "进程管理器"
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
 msgstr ""
-"task;kill;suspend;processor;memory;monitoring;performance;任务;终止;杀死;挂起;进程;内存;监"
-"视;性能;"
+"task;kill;suspend;processor;memory;monitoring;performance;任务;终止;杀死;挂"
+"起;进程;内存;监视;性能;"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

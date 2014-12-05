@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LXTask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
 "PO-Revision-Date: 2009-12-21 11:15+0100\n"
 "Last-Translator: Ismaeel AL-zahrani <end-of-dream@hotmail.com>\n"
 "Language-Team: Arabic\n"
@@ -28,6 +28,10 @@ msgstr "إدارة العمليات الجارية"
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "إدارة العملية"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

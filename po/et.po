@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
 "PO-Revision-Date: 2013-12-20 11:32+0000\n"
 "Last-Translator: mahfiaz <mahfiaz@gmail.com>\n"
 "Language-Team: Gnome Estonian Translation Team <gnome-et linux ee>\n"
@@ -30,6 +30,10 @@ msgstr "Töötavate protsesside haldamine"
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "Protsesside haldamine"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

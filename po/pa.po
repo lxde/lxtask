@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
 "PO-Revision-Date: 2010-10-10 08:34+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -28,6 +28,10 @@ msgstr "ਚੱਲ ਰਹੇ ਪਰੋਸੈਸ ਦਾ ਪਰਬੰਧ"
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "ਪਰੋਸੈਸ ਮੈਨੇਜਰ"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

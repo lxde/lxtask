@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager 0.4.0-rc1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
 "PO-Revision-Date: 2012-10-02 19:39+0200\n"
 "Last-Translator: Alexander <kazancas@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -31,6 +31,10 @@ msgstr "Управлять запущенными приложениями и п
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "Диспетчер процессов"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

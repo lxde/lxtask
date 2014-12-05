@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask 0.1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:42+0100\n"
+"POT-Creation-Date: 2014-09-26 01:30+0300\n"
 "PO-Revision-Date: 2013-08-27 10:24+0000\n"
 "Last-Translator: Piotr <strebski@o2.pl>\n"
 "Language-Team: Polish <>\n"
@@ -34,6 +34,10 @@ msgstr "Zarządza uruchomionymi procesami"
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "Menedżer procesów"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr ""
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

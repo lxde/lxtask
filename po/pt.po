@@ -34,7 +34,8 @@ msgstr "Gestão de processos"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr "tarefa;terminar;suspender;processador;memória;monitorização;desempenho;"
+msgstr ""
+"tarefa;terminar;suspender;processador;memória;monitorização;desempenho;"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format

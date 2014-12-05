@@ -230,5 +230,3 @@ msgstr "Villa"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Staðfesta"
-
-
