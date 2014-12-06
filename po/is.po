@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2014-12-03 12:56+0000\n"
+"PO-Revision-Date: 2014-12-06 21:44+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -51,7 +51,7 @@ msgstr "Kála verkefni?"
 
 #: ../src/callbacks.c:62
 msgid "Really terminate the task?"
-msgstr ""
+msgstr "Hætta í alvörunni við verkið?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
@@ -60,7 +60,7 @@ msgstr ""
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr ""
+msgstr "Minni: %d MB af %d MB used"
 
 #: ../src/functions.c:156
 #, c-format
@@ -137,11 +137,11 @@ msgstr "Halda áfram"
 
 #: ../src/interface.c:266
 msgid "Term"
-msgstr ""
+msgstr "Ljúka"
 
 #: ../src/interface.c:271
 msgid "Kill"
-msgstr ""
+msgstr "Kála"
 
 #: ../src/interface.c:276
 msgid "Priority"
@@ -169,29 +169,31 @@ msgstr "   10"
 
 #: ../src/interface.c:335
 msgid "Show user tasks"
-msgstr ""
+msgstr "Birta verk notanda"
 
 #: ../src/interface.c:340
 msgid "Show root tasks"
-msgstr ""
+msgstr "Birta verk kerfisstjóra"
 
 #: ../src/interface.c:345
 msgid "Show other tasks"
-msgstr ""
+msgstr "Birta önnur verk"
 
 #: ../src/interface.c:350
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Sýna alla skipanalínuna"
 
 #: ../src/interface.c:355
 msgid "Show memory used by cache as free"
-msgstr ""
+msgstr "Sýna laust það minni notað er sem skyndiminni"
 
 #: ../src/interface.c:387
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
+"LXTask er afleitt af Xfce4 Task Manager eftir:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:392
@@ -209,7 +211,7 @@ msgstr "Höfundarréttur (C) 2008 LXDE teymið"
 
 #: ../src/interface.c:407
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Léttur verkferlastjóri fyrir LXDE verkefnið"
 
 #: ../src/interface.c:635
 msgid "Preferences"
@@ -230,3 +232,5 @@ msgstr "Villa"
 #: ../src/utils.c:56
 msgid "Confirm"
 msgstr "Staðfesta"
+
+
