@@ -16,6 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0\n"
+"X-Pootle-Path: /ms/lxtask/po/ms.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"

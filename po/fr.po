@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the xfce4-taskmanager package.
 # Peggy Kutyla <peggy.kutyla@laposte.net>, 2005.
 # Maximilian Schleiss <maximilian@xfce.org>, 2006-2007.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
@@ -19,6 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1376385131.0\n"
+"X-Pootle-Path: /fr/lxtask/po/fr.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"

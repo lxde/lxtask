@@ -19,6 +19,8 @@ msgstr ""
 "X-Poedit-Language: Urdu\n"
 "X-Poedit-Country: PAKISTAN\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Pootle-Path: /ur/lxtask/po/ur.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"

@@ -8,26 +8,29 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2009-09-26 16:54+0200\n"
-"Last-Translator: alexandre raymond <alekcxjo@gmail.com>\n"
+"PO-Revision-Date: 2014-12-05 13:50+0000\n"
+"Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: frp\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0\n"
+"X-Generator: Pootle 2.7.0-alpha1\n"
+"X-POOTLE-MTIME: 1417787401.000000\n"
+"X-Pootle-Path: /frp/lxtask/po/frp.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
-msgstr ""
+msgstr "Διαχειριστής εργασιών"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Manage running processes"
-msgstr ""
+msgstr "Διαχείριση τρεχουσών διεργασιών"
 
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
-msgstr ""
+msgstr "Διαχειριστής διεργασιών"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
@@ -40,19 +43,22 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Αδύνατη η αποστολή σήματος %d στην εργασία με ID %d\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:299
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Αδύνατος ο ορισμός προτεραιότητας %d στην εργασία με ID %d"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
-msgstr ""
+msgstr "Επιμένετε να τερματιστεί βίαια η εργασία; "
 
 #: ../src/callbacks.c:62
 msgid "Really terminate the task?"
-msgstr ""
+msgstr "Επιμένετε να τερματιστεί η εργασία;"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
@@ -61,12 +67,12 @@ msgstr ""
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr ""
+msgstr "Μνήμη: %d MB από %d MB χρησιμοποιούνται"
 
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr ""
+msgstr "Χρήση CPU: %0.0f %%"
 
 #: ../src/interface.c:70
 msgid "_File"
@@ -114,7 +120,7 @@ msgstr "VM-Talyi"
 
 #: ../src/interface.c:222
 msgid "PID"
-msgstr ""
+msgstr "PID"
 
 #: ../src/interface.c:228
 msgid "State"
@@ -122,11 +128,11 @@ msgstr "Ehtâ"
 
 #: ../src/interface.c:234
 msgid "Prio"
-msgstr ""
+msgstr "Προτ"
 
 #: ../src/interface.c:240
 msgid "PPID"
-msgstr ""
+msgstr "PPID"
 
 #: ../src/interface.c:256
 msgid "Stop"
@@ -138,11 +144,11 @@ msgstr "Continuar"
 
 #: ../src/interface.c:266
 msgid "Term"
-msgstr ""
+msgstr "Τερματισμός"
 
 #: ../src/interface.c:271
 msgid "Kill"
-msgstr ""
+msgstr "Βίαιος τερματισμός"
 
 #: ../src/interface.c:276
 msgid "Priority"
@@ -170,23 +176,23 @@ msgstr "   10"
 
 #: ../src/interface.c:335
 msgid "Show user tasks"
-msgstr ""
+msgstr "Εμφάνιση εργασιών χρήστη"
 
 #: ../src/interface.c:340
 msgid "Show root tasks"
-msgstr ""
+msgstr "Εμφάνιση εργασιών διαχειριστή"
 
 #: ../src/interface.c:345
 msgid "Show other tasks"
-msgstr ""
+msgstr "Εμφάνιση άλλων εργασιών"
 
 #: ../src/interface.c:350
 msgid "Show full cmdline"
-msgstr ""
+msgstr "Εμφάνιση πλήρους γραμμής εντολών"
 
 #: ../src/interface.c:355
 msgid "Show memory used by cache as free"
-msgstr ""
+msgstr "Εμφάνιση χρησιμοποιημένης μνήνης από την προσωρινή μνήμη ως ελεύθερη"
 
 #: ../src/interface.c:387
 msgid ""
@@ -200,6 +206,9 @@ msgstr ""
 #: ../src/interface.c:392
 msgid "translator-credits"
 msgstr ""
+"Κούτσικος Γιώργος <oege89@hotmail.com>\n"
+"Βασιλάκος Γιώργος  <forfolias@linuxteam.cs.teilar.gr>\n"
+"Ριζόπουλος Γιώργος <georgerizopoulos28@gmail.com>"
 
 #: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"
@@ -212,19 +221,19 @@ msgstr "Drét de Copie / Copyright (C) 2008 LXDE team"
 
 #: ../src/interface.c:407
 msgid "Lightweight task manager for LXDE project"
-msgstr ""
+msgstr "Ελαφρύς διαχειριστής εργασιών για το project LXDE"
 
 #: ../src/interface.c:635
 msgid "Preferences"
-msgstr ""
+msgstr "Προτιμήσεις"
 
 #: ../src/interface.c:639
 msgid "General"
-msgstr ""
+msgstr "Γενικά"
 
 #: ../src/interface.c:640
 msgid "Refresh rate (seconds):"
-msgstr ""
+msgstr "Ρυθμός ανανέωσης (δευτερόλεπτα):"
 
 #: ../src/utils.c:43
 msgid "Error"

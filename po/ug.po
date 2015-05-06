@@ -2,7 +2,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Gheyret Kenji <gheyret@gmail.com>, 2011.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
@@ -17,6 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.5\n"
+"X-Pootle-Path: /ug/lxtask/po/ug.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -198,7 +199,8 @@ msgid ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
 "LXTask بولسا Xfce4 ۋەزىپە باشقۇرغۇ(Xfce4 Task Manager) ئاساسىدا ياسالغان. "
-"ئاپتور:\\n\n"
+"ئاپتور:\\n"
+"\n"
 "* Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.

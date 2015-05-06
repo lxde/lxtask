@@ -18,6 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1373644072.0\n"
+"X-Pootle-Path: /kk/lxtask/po/kk.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
