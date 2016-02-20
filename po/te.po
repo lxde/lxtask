@@ -8,18 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2013-07-20 04:43+0000\n"
-"Last-Translator: Praveen <mail2ipn@gmail.com>\n"
+"PO-Revision-Date: 2015-06-19 13:28+0000\n"
+"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1374295392.0\n"
-"X-Pootle-Path: /te/lxtask/po/te.po\n"
-"X-Pootle-Revision: 0\n"
+"X-Generator: Pootle 2.7\n"
+"X-POOTLE-MTIME: 1434720523.000000\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -35,7 +33,7 @@ msgstr "ప్రక్రియ నిర్వాహకం"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr ""
+msgstr "పని;అంతంచేయి;అర్థంతరంగానిలుపు;ప్రాసెసర్;మెమొరి;పర్యవేక్షణ;పనితనం;"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format
@@ -157,23 +155,23 @@ msgstr "ప్రాధాన్యత"
 
 #: ../src/interface.c:289
 msgid "  -10"
-msgstr "-10"
+msgstr "  -10"
 
 #: ../src/interface.c:294
 msgid "  -5"
-msgstr "-5"
+msgstr "  -5"
 
 #: ../src/interface.c:299
 msgid "    0"
-msgstr "0"
+msgstr "    0"
 
 #: ../src/interface.c:304
 msgid "   5"
-msgstr "5"
+msgstr "   5"
 
 #: ../src/interface.c:309
 msgid "   10"
-msgstr "10"
+msgstr "   10"
 
 #: ../src/interface.c:335
 msgid "Show user tasks"
@@ -206,7 +204,7 @@ msgstr ""
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:392
 msgid "translator-credits"
-msgstr "Praveen Illa <mail2ipn@gmail.com>, 2011"
+msgstr "Praveen Illa <mail2ipn@gmail.com>, 2011-2015"
 
 #: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"
