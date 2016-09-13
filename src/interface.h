@@ -38,16 +38,15 @@
 #include "callbacks.h"
 #include "types.h"
 
-GtkTreeStore *list_store;
-GtkTreeSelection *selection;
-GtkWidget *treeview;
-GtkWidget *mainmenu;
-GtkWidget *taskpopup;
-GtkWidget *priopopup;
-GtkWidget *cpu_usage_progress_bar;
-GtkWidget *mem_usage_progress_bar;
-GtkWidget *cpu_usage_progress_bar_box;
-GtkWidget *mem_usage_progress_bar_box;
+extern GtkTreeStore *list_store;
+extern GtkTreeSelection *selection;
+extern GtkWidget *treeview;
+extern GtkWidget *mainmenu;
+extern GtkWidget *taskpopup;
+extern GtkWidget *cpu_usage_progress_bar;
+extern GtkWidget *mem_usage_progress_bar;
+extern GtkWidget *cpu_usage_progress_bar_box;
+extern GtkWidget *mem_usage_progress_bar_box;
 
 enum {
     COLUMN_NAME = 0,
@@ -61,7 +60,7 @@ enum {
     COLUMN_PPID
 };
 
-GtkTreeViewColumn *column;
+extern GtkTreeViewColumn *column;
 
 void change_list_store_view(void);
 void create_list_store(void);

@@ -26,6 +26,18 @@
 #include <glib/gi18n.h>
 #include "interface.h"
 
+GtkTreeStore *list_store;
+GtkTreeSelection *selection;
+GtkWidget *treeview;
+GtkWidget *mainmenu;
+GtkWidget *taskpopup;
+GtkWidget *cpu_usage_progress_bar;
+GtkWidget *mem_usage_progress_bar;
+GtkWidget *cpu_usage_progress_bar_box;
+GtkWidget *mem_usage_progress_bar_box;
+
+GtkTreeViewColumn *column;
+
 #define GLADE_HOOKUP_OBJECT(component,widget,name) \
   g_object_set_data_full (G_OBJECT (component), name, \
     gtk_widget_ref (widget), (GDestroyNotify) gtk_widget_unref)

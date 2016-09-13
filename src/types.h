@@ -77,9 +77,6 @@ extern gboolean full_view;
 extern gint win_width;
 extern gint win_height;
 
-const gchar *custom_signal_0;
-const gchar *custom_signal_1;
-
 extern int page_size;
 
 #endif
