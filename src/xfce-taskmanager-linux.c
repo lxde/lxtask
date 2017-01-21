@@ -169,7 +169,10 @@ void get_task_details(pid_t pid,struct task *task)
 		task->time_percentage = 0;
 		task->ppid = ppid;
 
-		fstat(fd,&st);
+		sprintf(line,"/proc/%d/task",(int)pid);
+		/* SF bug #843: /proc/%d/stat owned by UID instead of EUID */
+		if (stat(line,&st) < 0)
+			fstat(fd,&st);
 		task->uid=st.st_uid;
 		passwdp = getpwuid(task->uid);
 		if( passwdp != NULL && passwdp->pw_name != NULL)
