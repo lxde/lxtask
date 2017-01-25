@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT(lxtask,[0.1.7], [],lxtask)
+AC_INIT(lxtask,[0.1.8], [],lxtask)
 AM_INIT_AUTOMAKE([foreign no-dist-gzip dist-xz])
 
 AM_MAINTAINER_MODE([enable])
