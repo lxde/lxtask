@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2017-05-22 22:49+0000\n"
+"PO-Revision-Date: 2017-05-23 17:46+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.8\n"
-"X-POOTLE-MTIME: 1495493368.286606\n"
+"X-POOTLE-MTIME: 1495561612.153318\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -219,7 +219,7 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:406
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Ophavsret 2008 LXDE-holdet"
+msgstr "Ophavsret (C) 2008 LXDE-holdet"
 
 #: ../src/interface.c:407
 msgid "Lightweight task manager for LXDE project"
@@ -227,7 +227,7 @@ msgstr "Enkel opgavehåndtering til LXDE-projektet"
 
 #: ../src/interface.c:635
 msgid "Preferences"
-msgstr "Præferencer"
+msgstr "Indstillinger"
 
 #: ../src/interface.c:639
 msgid "General"
