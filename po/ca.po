@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2015-08-16 10:58+0000\n"
+"PO-Revision-Date: 2017-06-09 09:15+0000\n"
 "Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: LXDE Catalan translators group\n"
 "Language: ca\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
-"X-POOTLE-MTIME: 1439722691.000000\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1496999732.922623\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -57,7 +57,7 @@ msgstr "Voleu aturar aquesta tasca?"
 
 #: ../src/callbacks.c:62
 msgid "Really terminate the task?"
-msgstr "Voleu finalitzar aquesta tasca?"
+msgstr "Voleu fer acabar la tasca?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
@@ -66,7 +66,7 @@ msgstr "No es pot aturar el procés per si mateix"
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Memòria: s'estan emprant %d MB de %d MB"
+msgstr "Memòria: s'usen %d MB de %d MB"
 
 #: ../src/functions.c:156
 #, c-format
@@ -143,7 +143,7 @@ msgstr "Continua"
 
 #: ../src/interface.c:266
 msgid "Term"
-msgstr "Finalitza"
+msgstr "Terme"
 
 #: ../src/interface.c:271
 msgid "Kill"
@@ -179,7 +179,7 @@ msgstr "Mostra les tasques d’usuari"
 
 #: ../src/interface.c:340
 msgid "Show root tasks"
-msgstr "Mostra les tasques de superusuari"
+msgstr "Mostra les tasques d'arrel"
 
 #: ../src/interface.c:345
 msgid "Show other tasks"

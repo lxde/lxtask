@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2015-08-17 01:30+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
+"PO-Revision-Date: 2017-06-01 21:18+0000\n"
+"Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lietuvių <>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -18,25 +18,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Pootle 2.8\n"
 "X-Language: lt_LT\n"
-"X-POOTLE-MTIME: 1439775043.842793\n"
+"X-POOTLE-MTIME: 1496351933.738480\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
-msgstr "Užduočių tvarkyklė"
+msgstr "Užduočių tvarkytuvė"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Manage running processes"
-msgstr "Valdo veikiančius procesus"
+msgstr "Tvarkyti vykdomus procesus"
 
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
-msgstr "Procesų valdyklė"
+msgstr "Procesų tvarkytuvė"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr ""
+msgstr "užduotis;nutraukti;pristabdyti;procesorius;atmintis;stebėjimas;našumas;"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format
@@ -45,26 +45,26 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Nepavyko nusiųsti signalo %d užduočiai su ID %d\n"
+"Nepavyko išsiųsti signalo %d užduočiai, kurios ID %d\n"
 "\n"
 "%s"
 
 #: ../src/xfce-taskmanager-linux.c:299
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "Nepavyko nustatyti prioriteto %d užduočiai su ID %d"
+msgstr "Nepavyko nustatyti pirmenybės %d užduočiai, kurios ID %d"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
-msgstr "Ar tikrai norite priverstinai užbaigti užduotį?"
+msgstr "Ar tikrai norite nutraukti užduotį?"
 
 #: ../src/callbacks.c:62
 msgid "Really terminate the task?"
-msgstr "Ar tikrai norite užbaigti užduotį?"
+msgstr "Ar tikrai norite baigti užduotį?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr "Neįmanoma sustabdyti proceso"
+msgstr "Nepavyksta sustabdyti proceso"
 
 #: ../src/functions.c:148
 #, c-format
@@ -74,7 +74,7 @@ msgstr "Atmintis: naudojama %d MB iš %d MB"
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "CPU apkrova: %0.0f %%"
+msgstr "Procesoriaus naudojimas: %0.0f %%"
 
 #: ../src/interface.c:70
 msgid "_File"
@@ -82,7 +82,7 @@ msgstr "_Failas"
 
 #: ../src/interface.c:91
 msgid "_View"
-msgstr "_Rodymas"
+msgstr "_Rodinys"
 
 #: ../src/interface.c:97
 msgid "_Help"
@@ -90,7 +90,7 @@ msgstr "Ž_inynas"
 
 #: ../src/interface.c:124
 msgid "cpu usage"
-msgstr "cpu apkrova"
+msgstr "procesoriaus naudojimas"
 
 #: ../src/interface.c:135
 msgid "memory usage"
@@ -98,7 +98,7 @@ msgstr "atminties naudojimas"
 
 #: ../src/interface.c:163
 msgid "more details"
-msgstr "daugiau detalių"
+msgstr "išsamiau"
 
 #: ../src/interface.c:189
 msgid "Command"
@@ -130,7 +130,7 @@ msgstr "Būsena"
 
 #: ../src/interface.c:234
 msgid "Prio"
-msgstr "Prioritetas"
+msgstr "Pirmenybė"
 
 #: ../src/interface.c:240
 msgid "PPID"
@@ -138,7 +138,7 @@ msgstr "PPID"
 
 #: ../src/interface.c:256
 msgid "Stop"
-msgstr "Sustabdyti"
+msgstr "Stabdyti"
 
 #: ../src/interface.c:261
 msgid "Continue"
@@ -146,15 +146,15 @@ msgstr "Tęsti"
 
 #: ../src/interface.c:266
 msgid "Term"
-msgstr "Užbaigti"
+msgstr "Baigti"
 
 #: ../src/interface.c:271
 msgid "Kill"
-msgstr "Priverstinai užbaigti"
+msgstr "Nutraukti"
 
 #: ../src/interface.c:276
 msgid "Priority"
-msgstr "Prioritetas"
+msgstr "Pirmenybė"
 
 #: ../src/interface.c:289
 msgid "  -10"
@@ -178,30 +178,30 @@ msgstr "   10"
 
 #: ../src/interface.c:335
 msgid "Show user tasks"
-msgstr "Rodyti naudotojo procesus"
+msgstr "Rodyti naudotojo užduotis"
 
 #: ../src/interface.c:340
 msgid "Show root tasks"
-msgstr "Rodyti root procesus"
+msgstr "Rodyti root užduotis"
 
 #: ../src/interface.c:345
 msgid "Show other tasks"
-msgstr "Rodyti kitus procesus"
+msgstr "Rodyti kitas užduotis"
 
 #: ../src/interface.c:350
 msgid "Show full cmdline"
-msgstr "Rodyti visą komandą"
+msgstr "Rodyti pilną komandą"
 
 #: ../src/interface.c:355
 msgid "Show memory used by cache as free"
-msgstr "Podėlio atmintį rodyti kaip laisvą"
+msgstr "Rodyti podėlio naudojamą atmintį kaip laisvą"
 
 #: ../src/interface.c:387
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask naudoja Xfce4 Task Manager kodą, kurį parašė:\n"
+"LXTask yra kilusi iš Xfce4 užduočių tvarkytuvės pagal:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
@@ -209,7 +209,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Julius Vitkauskas <zadintuvas@gmail.com>\n"
-"Algimantas Margevičius <margevicius.algimantas@gmail.com>"
+"Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
+"Moo"
 
 #: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"
@@ -218,23 +219,23 @@ msgstr "LXTask"
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:406
 msgid "Copyright (C) 2008 LXDE team"
-msgstr "Autorinės teisės (C) 2008 LXDE komanda"
+msgstr "Autorių teisės (C) 2008 LXDE komanda"
 
 #: ../src/interface.c:407
 msgid "Lightweight task manager for LXDE project"
-msgstr "Lengva LXDE projekto procesų tvarkyklė"
+msgstr "Supaprastinta LXDE projekto užduočių tvarkytuvė"
 
 #: ../src/interface.c:635
 msgid "Preferences"
-msgstr "Nustatymai"
+msgstr "Nuostatos"
 
 #: ../src/interface.c:639
 msgid "General"
-msgstr "Bendri"
+msgstr "Bendros"
 
 #: ../src/interface.c:640
 msgid "Refresh rate (seconds):"
-msgstr "Atnaujinimo intervalas (sekundėmis):"
+msgstr "Atnaujinimo dažnis (sekundėmis):"
 
 #: ../src/utils.c:43
 msgid "Error"
