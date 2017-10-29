@@ -524,10 +524,8 @@ void remove_list_item(pid_t pid)
 
 gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
 {
-    gchar *s1 = "";
-    gchar *s2 = "";
-
-    gint ret;
+    gchar *s1;
+    gchar *s2;
 
     gtk_tree_model_get(model, iter1, column, &s1, -1);
     gtk_tree_model_get(model, iter2, column, &s2, -1);
@@ -540,7 +538,7 @@ gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter 
     if(s2 != NULL)
         i2 = atoi(s2);
 
-    ret = i2 - i1;
+    gint ret = i1 - i2;
 
     g_free(s1);
     g_free(s2);
@@ -550,10 +548,8 @@ gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter 
 
 gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
 {
-    gchar *s1 = "";
-    gchar *s2 = "";
-
-    gint ret;
+    gchar *s1;
+    gchar *s2;
 
     gtk_tree_model_get(model, iter1, column, &s1, -1);
     gtk_tree_model_get(model, iter2, column, &s2, -1);
@@ -561,7 +557,7 @@ gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter
     guint64 i1 = string_to_size(s1);
     guint64 i2 = string_to_size(s2);
 
-    ret = (i2 > i1) - (i2 < i1);
+    gint ret = (i1 > i2) - (i1 < i2);
 
     g_free(s1);
     g_free(s2);
@@ -571,8 +567,8 @@ gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter
 
 gint compare_string_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
 {
-    gchar *s1 = "";
-    gchar *s2 = "";
+    gchar *s1;
+    gchar *s2;
 
     gint ret = 0;
 
@@ -580,7 +576,7 @@ gint compare_string_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIt
     gtk_tree_model_get(model, iter2, GPOINTER_TO_INT(column), &s2, -1);
 
     if(s1 != NULL && s2 != NULL)
-        ret = strcasecmp(s2, s1);
+        ret = strcasecmp(s1, s2);
 
     g_free(s1);
     g_free(s2);
