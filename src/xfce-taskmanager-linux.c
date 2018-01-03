@@ -306,7 +306,7 @@ void set_priority_to_task(gint task_id, gint prio)
     {
     	int status = 0;
         gchar command[128] = "";
-        g_sprintf(command, "renice %d %d > /dev/null", prio, task_id);
+        g_sprintf(command, "sh -c \"renice %d %d > /dev/null\"", prio, task_id);
 
         if( ! g_spawn_command_line_sync(command, NULL, NULL, &status, NULL) ||status )
             show_error(_("Couldn't set priority %d to the task with ID %d"), prio, task_id);

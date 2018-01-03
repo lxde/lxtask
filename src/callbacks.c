@@ -103,7 +103,7 @@ void handle_prio_menu(GtkWidget *widget, gchar *prio)
 
     if(gtk_tree_selection_get_selected(selection, &model, &iter))
     {
-        gtk_tree_model_get(model, &iter, 1, &task_id, -1);
+        gtk_tree_model_get(model, &iter, COLUMN_PID, &task_id, -1);
 
         set_priority_to_task(atoi(task_id), atoi(prio));
         refresh_task_list();
