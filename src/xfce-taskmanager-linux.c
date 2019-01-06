@@ -263,6 +263,11 @@ gboolean get_system_status (system_status *sys_stat)
     file = fopen ("/proc/meminfo", "r");
     if(!file) return FALSE;
     reach=0;
+
+    /* Same approach as 'free' from procps-3.3.12: mem_cached
+     * is Cached+SReclaimable (see proc/sysinfo.c line 707 */
+    sys_stat->mem_cached = 0;
+
     while (fgets (buffer, 100, file) != NULL)
     {
         if(!strncmp(buffer,"MemTotal:",9))
@@ -270,10 +275,12 @@ gboolean get_system_status (system_status *sys_stat)
         else if(!strncmp(buffer,"MemFree:",8))
             sys_stat->mem_free=atoi(buffer+9),reach++;
         else if(!strncmp(buffer,"Cached:",7))
-            sys_stat->mem_cached=atoi(buffer+8),reach++;
+            sys_stat->mem_cached+=atoi(buffer+8),reach++;
+	else if(!strncmp(buffer,"SReclaimable:", 13))
+	    sys_stat->mem_cached+=atoi(buffer+14),reach++;
         else if(!strncmp(buffer,"Buffers:",8))
             sys_stat->mem_buffered=atoi(buffer+9),reach++;
-        if(reach==4) break;
+        if(reach==5) break;
     }
     fclose (file);
 
