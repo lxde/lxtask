@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: lxtask 0.1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2015-05-04 04:28+0000\n"
-"Last-Translator: rago1975 <take1975@kumamoto.email.ne.jp>\n"
+"PO-Revision-Date: 2019-02-23 07:27+0000\n"
+"Last-Translator: Mamoru TASAKA <mtasaka@fedoraproject.org>\n"
 "Language-Team: Japanese <hironao@users.sourceforge.net>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
-"X-POOTLE-MTIME: 1430713737.000000\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1550906849.926110\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -36,7 +36,7 @@ msgstr "プロセスマネージャ"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr ""
+msgstr "タスク;強制終了;サスペンド;プロセッサ;メモリ;監視;パフォーマンス;"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format
@@ -52,7 +52,7 @@ msgstr ""
 #: ../src/xfce-taskmanager-linux.c:299
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr "タスクID %d に優先度 %d を設定することができませんでした"
+msgstr "タスクID %2$d に優先度 %1$d を設定することができませんでした"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
@@ -69,7 +69,7 @@ msgstr "自分自身を停止することはできません"
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "メモリ: %d MB 中の %d MB が使用中"
+msgstr "メモリ: %2$d MB 中の %1$d MB が使用中"
 
 #: ../src/functions.c:156
 #, c-format
@@ -130,7 +130,7 @@ msgstr "状態"
 
 #: ../src/interface.c:234
 msgid "Prio"
-msgstr "Prio"
+msgstr "優先度"
 
 #: ../src/interface.c:240
 msgid "PPID"
@@ -209,7 +209,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Daichi Kawahata <daichi@xfce.org>\n"
-"Hironao Komatsu <hironao@users.sourceforge.net>"
+"Hironao Komatsu <hironao@users.sourceforge.net>\n"
+"Mamoru TASAKA <mtasaka@fedoraproject.org>"
 
 #: ../src/interface.c:401 ../src/interface.c:403
 msgid "LXTask"

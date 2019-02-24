@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2017-09-14 15:16+0000\n"
+"PO-Revision-Date: 2018-09-28 11:32+0000\n"
 "Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: LXDE Catalan translators group\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.8\n"
-"X-POOTLE-MTIME: 1505402167.376277\n"
+"X-POOTLE-MTIME: 1538134320.174268\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
@@ -71,7 +71,7 @@ msgstr "Memòria: s'usen %d MB de %d MB"
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "Utilització del processador: %0.0f %%"
+msgstr "Ús del processador: %0.0f %%"
 
 #: ../src/interface.c:70
 msgid "_File"
