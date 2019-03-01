@@ -1,11 +1,9 @@
 # $Id: ja.po 2350 2007-01-13 10:12:31Z nick $
-#
 # Japanese translations for xfce4-taskmanager package.
 # Copyright (C) 2005-2006 Johannes Zellner.
 # This file is distributed under the same license as the package.
 # Daichi Kawahata <daichi@xfce.org>, 2006.
 # Hironao Komatsu <hironao@users.sourceforge.net>, 2008-2009.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: lxtask 0.1.1\n"
@@ -14,13 +12,13 @@ msgstr ""
 "PO-Revision-Date: 2019-02-23 07:27+0000\n"
 "Last-Translator: Mamoru TASAKA <mtasaka@fedoraproject.org>\n"
 "Language-Team: Japanese <hironao@users.sourceforge.net>\n"
-"Language: ja\n"
+"Language: templates\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.8\n"
-"X-POOTLE-MTIME: 1550906849.926110\n"
+"X-Generator: Pootle 2.7\n"
+"X-POOTLE-MTIME: 1439775046.447069\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
 msgid "Task Manager"
