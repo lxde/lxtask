@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2020-10-16 22:24+0200\n"
+"PO-Revision-Date: 2020-10-18 19:37+0200\n"
 "Last-Translator: Ingo Brückl <ib@wupperonline.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: templates\n"
@@ -75,7 +75,7 @@ msgstr "Speicher: %d MB von %d MB benutzt"
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "CPU-Auslastung: %0.0f %%"
+msgstr "CPU-Auslastung: %0.0f%%"
 
 #: ../src/interface.c:70
 msgid "_File"
