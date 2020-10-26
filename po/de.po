@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2014-10-29 18:03+0000\n"
-"Last-Translator: H.Humpel <H.Humpel@gmx.de>\n"
+"PO-Revision-Date: 2020-10-18 19:37+0200\n"
+"Last-Translator: Ingo Brückl <ib@wupperonline.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: templates\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr "Taskmanager"
 
 #: ../lxtask.desktop.in.h:2
 msgid "Manage running processes"
-msgstr "Laufende Prozesse verwalten"
+msgstr "Verwaltung laufender Prozesse"
 
 #: ../lxtask.desktop.in.h:3
 msgid "Process manager"
@@ -36,7 +36,7 @@ msgstr "Prozessverwaltung"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr "Anwendung;kill;aussetzen;Prozessor;Speicher;Überwachung;Leistung;"
+msgstr "Task;Prozess;Anwendung;abbrechen;kill;beenden;aussetzen;Prozessor;Speicher;Überwachung;Leistung;"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format
@@ -45,7 +45,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Signal %d konnte nicht an den Prozess mit der Kennung %d gesendet werden.\n"
+"Signal %d konnte an den Prozess mit der ID %d nicht gesendet werden.\n"
 "\n"
 "%s"
 
@@ -53,11 +53,11 @@ msgstr ""
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr ""
-"Priorität %d konnte nicht für den Prozess mit der Kennung %d gesetzt werden"
+"Priorität %d konnte für den Prozess mit der ID %d nicht gesetzt werden."
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
-msgstr "Prozess wirklich töten?"
+msgstr "Prozess wirklich abbrechen?"
 
 #: ../src/callbacks.c:62
 msgid "Really terminate the task?"
@@ -65,7 +65,7 @@ msgstr "Prozess wirklich beenden?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr "Prozess kann nicht selbst beendet werden"
+msgstr "Prozess kann nicht selbst angehalten werden."
 
 #: ../src/functions.c:148
 #, c-format
@@ -75,7 +75,7 @@ msgstr "Speicher: %d MB von %d MB benutzt"
 #: ../src/functions.c:156
 #, c-format
 msgid "CPU usage: %0.0f %%"
-msgstr "CPU-Auslastung: %0.0f %%"
+msgstr "CPU-Auslastung: %0.0f%%"
 
 #: ../src/interface.c:70
 msgid "_File"
@@ -99,7 +99,7 @@ msgstr "Speicherverbrauch"
 
 #: ../src/interface.c:163
 msgid "more details"
-msgstr "Mehr Info"
+msgstr "Mehr Details"
 
 #: ../src/interface.c:189
 msgid "Command"
@@ -111,15 +111,15 @@ msgstr "Benutzer"
 
 #: ../src/interface.c:204
 msgid "CPU%"
-msgstr "CPU%"
+msgstr "CPU"
 
 #: ../src/interface.c:210
 msgid "RSS"
-msgstr "RSS"
+msgstr "Speicher"
 
 #: ../src/interface.c:216
 msgid "VM-Size"
-msgstr "Speicher"
+msgstr "Zugeteilt"
 
 #: ../src/interface.c:222
 msgid "PID"
@@ -139,7 +139,7 @@ msgstr "PPID"
 
 #: ../src/interface.c:256
 msgid "Stop"
-msgstr "Stop"
+msgstr "Anhalten"
 
 #: ../src/interface.c:261
 msgid "Continue"
@@ -151,7 +151,7 @@ msgstr "Beenden"
 
 #: ../src/interface.c:271
 msgid "Kill"
-msgstr "Kill"
+msgstr "Abbrechen"
 
 #: ../src/interface.c:276
 msgid "Priority"
@@ -159,7 +159,7 @@ msgstr "Priorität"
 
 #: ../src/interface.c:289
 msgid "  -10"
-msgstr "  -10"
+msgstr "-10"
 
 #: ../src/interface.c:294
 msgid "  -5"
@@ -167,7 +167,7 @@ msgstr "  -5"
 
 #: ../src/interface.c:299
 msgid "    0"
-msgstr "    0"
+msgstr "   0"
 
 #: ../src/interface.c:304
 msgid "   5"
@@ -175,7 +175,7 @@ msgstr "   5"
 
 #: ../src/interface.c:309
 msgid "   10"
-msgstr "   10"
+msgstr " 10"
 
 #: ../src/interface.c:335
 msgid "Show user tasks"
@@ -195,7 +195,7 @@ msgstr "_Vollständige Befehlszeile anzeigen"
 
 #: ../src/interface.c:355
 msgid "Show memory used by cache as free"
-msgstr "Vom _Cache verwendeten Speicher als freien Speicher anzeigen"
+msgstr "Vom _Cache verwendeten Speicher als frei anzeigen"
 
 #: ../src/interface.c:387
 msgid ""
@@ -226,7 +226,7 @@ msgstr "Copyright (C) 2008 LXDE-Team"
 
 #: ../src/interface.c:407
 msgid "Lightweight task manager for LXDE project"
-msgstr "Leichtgewichtiger Taskmanager des LXDE-Projekts"
+msgstr "Schlanker Taskmanager des LXDE-Projekts"
 
 #: ../src/interface.c:635
 msgid "Preferences"
