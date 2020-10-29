@@ -21,17 +21,17 @@ AC_CHECK_HEADERS([dirent.h pwd.h sys/types.h sys/stat.h sys/param.h \
                   stdio.h stdlib.h string.h unistd.h stdlib.h signal.h])
 
 AC_ARG_ENABLE(gtk3,
-[  --enable-gtk3        enable to use gtk-3.0 instead of gtk-2.0 ],
+[  --disable-gtk3          set to use gtk-2.0 instead of gtk-3.0 ],
 [case "${enableval}" in
-  yes)  enable_gtk3=yes ;;
-  *)   enable_gtk3=no ;;
+  no)  disable_gtk3=yes ;;
+  *)   disable_gtk3=no ;;
 esac],[])
 
-echo "x$enable_gtk3"
-if test "x$enable_gtk3" = "xyes" ; then
-  pkg_modules="gtk+-3.0 >= 3.0.0"
-else
+echo "gtk3 disabled: x$disable_gtk3"
+if test "x$disable_gtk3" = "xyes" ; then
   pkg_modules="gtk+-2.0 >= 2.6.0"
+else
+  pkg_modules="gtk+-3.0 >= 3.0.0"
 fi
 
 PKG_CHECK_MODULES(GTK, [$pkg_modules])
