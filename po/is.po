@@ -1,20 +1,21 @@
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Sveinn í Felli <sv1@fellsnet.is>, 2014.
+# Icelandic translation for LXTask package.
+# Copyright (C) 2021 Free Software Foundation, Inc.
+# This file is distributed under the same license as the LXTask package.
+# Sveinn í Felli <sv1@fellsnet.is>, 2014, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-26 01:30+0300\n"
-"PO-Revision-Date: 2014-12-06 21:44+0000\n"
-"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"PO-Revision-Date: 2021-03-04 17:07+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: templates\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Lokalize 2.0\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
 #: ../lxtask.desktop.in.h:1 ../src/interface.c:55
@@ -31,7 +32,7 @@ msgstr "Ferlastjórnun"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr ""
+msgstr "verk;kill;kála;drepa;suspend;bið;hvíla;örgjörvi;minni;vöktun;afköst;"
 
 #: ../src/xfce-taskmanager-linux.c:285
 #, c-format
@@ -40,15 +41,18 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Gat ekki sent merkið %d á verkið með ID-auðkennið %d\n"
+"\n"
+"%s"
 
 #: ../src/xfce-taskmanager-linux.c:299
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
-msgstr ""
+msgstr "Gat ekki sett forganginn %d á verkið með ID-auðkennið %d"
 
 #: ../src/callbacks.c:58
 msgid "Really kill the task?"
-msgstr "Kála verkefni?"
+msgstr "Á í alvörunni að kála verkinu?"
 
 #: ../src/callbacks.c:62
 msgid "Really terminate the task?"
@@ -56,12 +60,12 @@ msgstr "Hætta í alvörunni við verkið?"
 
 #: ../src/callbacks.c:86
 msgid "Can't stop process self"
-msgstr ""
+msgstr "Get ekki stöðvað ferlið self"
 
 #: ../src/functions.c:148
 #, c-format
 msgid "Memory: %d MB of %d MB used"
-msgstr "Minni: %d MB af %d MB used"
+msgstr "Minni: %d MB af %d MB notað"
 
 #: ../src/functions.c:156
 #, c-format
