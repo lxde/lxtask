@@ -114,7 +114,7 @@ msgstr "RSS"
 
 #: ../src/interface.c:216
 msgid "VM-Size"
-msgstr "Tamany de memòria virtual"
+msgstr "Mida de la memòria virtual"
 
 #: ../src/interface.c:222
 msgid "PID"
