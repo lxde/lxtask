@@ -70,7 +70,7 @@ void get_task_details(pid_t pid,struct task *task)
 		glong ppid;
 
 		task->pid=pid;
-		
+
 		ret=read(fd,buf,2048-1);
 		if(ret<=0)
 		{

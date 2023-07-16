@@ -78,7 +78,7 @@ GtkWidget* create_main_window (void)
 
 	/* build menu */
 	menu = gtk_menu_new();
-	
+
 	item = gtk_menu_item_new_with_mnemonic( _("_File") );
 	gtk_menu_item_set_submenu(GTK_MENU_ITEM (item), menu );
 	gtk_menu_shell_append( (GtkMenuShell*)menubar, item );
@@ -87,14 +87,14 @@ GtkWidget* create_main_window (void)
 	GtkAccelGroup* accel_group = gtk_accel_group_new();
 	gtk_window_add_accel_group(GTK_WINDOW(window), accel_group);
 #if GTK_CHECK_VERSION(3,0,0)
-	gtk_widget_add_accelerator(item, "activate", accel_group, 
+	gtk_widget_add_accelerator(item, "activate", accel_group,
 		GDK_KEY_Escape, (GdkModifierType)0, GTK_ACCEL_VISIBLE);
-	gtk_widget_add_accelerator(item, "activate", accel_group, 
+	gtk_widget_add_accelerator(item, "activate", accel_group,
 		GDK_KEY_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 #else
-	gtk_widget_add_accelerator(item, "activate", accel_group, 
+	gtk_widget_add_accelerator(item, "activate", accel_group,
 		GDK_Escape, (GdkModifierType)NULL, GTK_ACCEL_VISIBLE);
-	gtk_widget_add_accelerator(item, "activate", accel_group, 
+	gtk_widget_add_accelerator(item, "activate", accel_group,
 		GDK_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
 #endif
 	gtk_menu_shell_append( (GtkMenuShell*)menu, item );
@@ -623,8 +623,8 @@ void change_full_path(void)
 	g_strlcpy(tmp->name, new_tmp->name, 255);
         refresh_list_item(i);
     }
-	
-    g_array_free(new_task_list, TRUE);    
+
+    g_array_free(new_task_list, TRUE);
 }
 
 void apply_prefs()

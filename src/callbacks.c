@@ -121,12 +121,12 @@ void on_show_tasks_toggled (GtkMenuItem *menuitem, gpointer data)
     else if(uid == -1)
         show_other_tasks = gtk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM(menuitem));
     else {
-	
+
 	show_full_path = gtk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM(menuitem));
         change_full_path();
         return;
     }
-    
+
     change_task_view();
 }
 

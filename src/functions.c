@@ -250,7 +250,7 @@ static int check_config(void)
 	int res=0;
     GKeyFile *rc_file = g_key_file_new();
     g_key_file_load_from_file(rc_file, config_file, 0, NULL);
-    
+
     if(show_user_tasks!=key_file_get_bool(rc_file, group, "show_user_tasks", TRUE))
     {
 		res=1;
@@ -305,7 +305,7 @@ out:
 void save_config(void)
 {
     FILE* rc_file ;
-   		
+
     if(!check_config())
     {
     	return;
