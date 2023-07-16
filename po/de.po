@@ -223,8 +223,8 @@ msgid "LXTask"
 msgstr "LXTask"
 
 #: ../src/interface.c:419
-msgid "Copyright (C) 2008-2020 LXDE team"
-msgstr "Copyright (C) 2008-2020 LXDE-Team"
+msgid "Copyright (C) 2008-2023 LXDE team"
+msgstr "Copyright (C) 2008-2023 LXDE-Team"
 
 #: ../src/interface.c:420
 msgid "Lightweight task manager for LXDE project"

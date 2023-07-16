@@ -215,7 +215,7 @@ msgstr "LXTask 工作管理員"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:406
-msgid "Copyright (C) 2008 LXDE team"
+msgid "Copyright (C) 2008-2023 LXDE team"
 msgstr "版權所有 (C) 2008 LXDE 團隊"
 
 #: ../src/interface.c:407

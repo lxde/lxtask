@@ -214,7 +214,7 @@ msgstr "ال‌ایکس‌تسک"
 
 #. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
 #: ../src/interface.c:406
-msgid "Copyright (C) 2008 LXDE team"
+msgid "Copyright (C) 2008-2023 LXDE team"
 msgstr "حق نشر (C) 2008 تیم LXDE"
 
 #: ../src/interface.c:407
