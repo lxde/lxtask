@@ -580,7 +580,7 @@ gint compare_string_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIt
     gtk_tree_model_get(model, iter2, GPOINTER_TO_INT(column), &s2, -1);
 
     if(s1 != NULL && s2 != NULL)
-        ret = strcmp(s2, s1);
+        ret = strcasecmp(s2, s1);
 
     g_free(s1);
     g_free(s2);
