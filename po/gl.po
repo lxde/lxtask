@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-26 01:30+0300\n"
+"POT-Creation-Date: 2023-07-16 10:35+0200\n"
 "PO-Revision-Date: 2019-02-22 09:51+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.net>\n"
-"Language: templates\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,15 +18,15 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
-#: ../lxtask.desktop.in.h:1 ../src/interface.c:55
+#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:67
 msgid "Task Manager"
 msgstr "Xestor de tarefas"
 
-#: ../lxtask.desktop.in.h:2
+#: ../data/lxtask.desktop.in.h:2
 msgid "Manage running processes"
 msgstr "Xestionar os procesos en execución"
 
-#: ../lxtask.desktop.in.h:3
+#: ../data/lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "Xestor de procesos"
 
@@ -34,7 +34,7 @@ msgstr "Xestor de procesos"
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
 msgstr "tarefa;matar;suspender;procesador;memoria;monitorización;rendemento;"
 
-#: ../src/xfce-taskmanager-linux.c:285
+#: ../src/xfce-taskmanager-linux.c:305
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -45,7 +45,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:299
+#: ../src/xfce-taskmanager-linux.c:319
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "No foi posíbel fixar a prioridade %d á tarefa con ID %d"
@@ -62,137 +62,138 @@ msgstr "Desexa terminar esta tarefa?"
 msgid "Can't stop process self"
 msgstr "O proceso non pode deterse a si mesmo"
 
-#: ../src/functions.c:148
+#. FIXME: this will work only for < 2048 TB but where so many memory...
+#: ../src/functions.c:149
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Memoria: usados %d MB de %d MB"
 
-#: ../src/functions.c:156
+#: ../src/functions.c:158
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "Uso da CPU: %0.0f %%"
 
-#: ../src/interface.c:70
+#: ../src/interface.c:82
 msgid "_File"
 msgstr "_Ficheiro"
 
-#: ../src/interface.c:91
+#: ../src/interface.c:103
 msgid "_View"
 msgstr "_Ver"
 
-#: ../src/interface.c:97
+#: ../src/interface.c:109
 msgid "_Help"
 msgstr "_Axuda"
 
-#: ../src/interface.c:124
+#: ../src/interface.c:136
 msgid "cpu usage"
 msgstr "uso da CPU"
 
-#: ../src/interface.c:135
+#: ../src/interface.c:147
 msgid "memory usage"
 msgstr "uso da memoria"
 
-#: ../src/interface.c:163
+#: ../src/interface.c:175
 msgid "more details"
 msgstr "ver máis detalles"
 
-#: ../src/interface.c:189
+#: ../src/interface.c:201
 msgid "Command"
 msgstr "Orde"
 
-#: ../src/interface.c:195
+#: ../src/interface.c:207
 msgid "User"
 msgstr "Usuario"
 
-#: ../src/interface.c:204
+#: ../src/interface.c:216
 msgid "CPU%"
 msgstr "% CPU"
 
-#: ../src/interface.c:210
+#: ../src/interface.c:222
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:228
 msgid "VM-Size"
 msgstr "Tamaño da memoria virtual"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:234
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:228
+#: ../src/interface.c:240
 msgid "State"
 msgstr "Estado"
 
-#: ../src/interface.c:234
+#: ../src/interface.c:246
 msgid "Prio"
 msgstr "Prioridade"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:252
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:256
+#: ../src/interface.c:268
 msgid "Stop"
 msgstr "Deter"
 
-#: ../src/interface.c:261
+#: ../src/interface.c:273
 msgid "Continue"
 msgstr "Continuar"
 
-#: ../src/interface.c:266
+#: ../src/interface.c:278
 msgid "Term"
 msgstr "Finalizar"
 
-#: ../src/interface.c:271
+#: ../src/interface.c:283
 msgid "Kill"
 msgstr "Matar"
 
-#: ../src/interface.c:276
+#: ../src/interface.c:288
 msgid "Priority"
 msgstr "Prioridade"
 
-#: ../src/interface.c:289
+#: ../src/interface.c:301
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:294
+#: ../src/interface.c:306
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:299
+#: ../src/interface.c:311
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:304
+#: ../src/interface.c:316
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:309
+#: ../src/interface.c:321
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:335
+#: ../src/interface.c:347
 msgid "Show user tasks"
 msgstr "Amosar as tarefas do usuario"
 
-#: ../src/interface.c:340
+#: ../src/interface.c:352
 msgid "Show root tasks"
 msgstr "Amosar as tarefas do administrador (root)"
 
-#: ../src/interface.c:345
+#: ../src/interface.c:357
 msgid "Show other tasks"
 msgstr "Amosar outras tarefas"
 
-#: ../src/interface.c:350
+#: ../src/interface.c:362
 msgid "Show full cmdline"
 msgstr "Amosar a liña de ordes completa"
 
-#: ../src/interface.c:355
+#: ../src/interface.c:367
 msgid "Show memory used by cache as free"
 msgstr "Amosar a memoria usada pola caché como libre"
 
-#: ../src/interface.c:387
+#: ../src/interface.c:399
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -201,7 +202,7 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:392
+#: ../src/interface.c:404
 msgid "translator-credits"
 msgstr ""
 "Miguel Anxo Bouzada <mbouzada@gmail.com>, 2009,2010, "
@@ -209,28 +210,27 @@ msgstr ""
 "Indalecio Freiría <ifreiria@gmail.com>, 2009.\n"
 "Proxecto Trasno <proxecto@trasno>"
 
-#: ../src/interface.c:401 ../src/interface.c:403
+#: ../src/interface.c:413 ../src/interface.c:415
 msgid "LXTask"
 msgstr "LXTask"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:406
+#: ../src/interface.c:419
 msgid "Copyright (C) 2008-2023 LXDE team"
 msgstr "Copyright (C) 2008 equipo LXDE"
 
-#: ../src/interface.c:407
+#: ../src/interface.c:420
 msgid "Lightweight task manager for LXDE project"
 msgstr "Administrador de tarefas lixeiro para o proxecto LXDE"
 
-#: ../src/interface.c:635
+#: ../src/interface.c:648
 msgid "Preferences"
 msgstr "Preferencias"
 
-#: ../src/interface.c:639
+#: ../src/interface.c:652
 msgid "General"
 msgstr "Xeral"
 
-#: ../src/interface.c:640
+#: ../src/interface.c:653
 msgid "Refresh rate (seconds):"
 msgstr "Taxa de actualización (segundos):"
 

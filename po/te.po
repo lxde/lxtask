@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-26 01:30+0300\n"
+"POT-Creation-Date: 2023-07-16 10:35+0200\n"
 "PO-Revision-Date: 2015-06-19 13:28+0000\n"
 "Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: templates\n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,15 +18,15 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
-#: ../lxtask.desktop.in.h:1 ../src/interface.c:55
+#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:67
 msgid "Task Manager"
 msgstr "కార్య నిర్వాహకం"
 
-#: ../lxtask.desktop.in.h:2
+#: ../data/lxtask.desktop.in.h:2
 msgid "Manage running processes"
 msgstr "నడుస్తున్న ప్రక్రియలను నిర్వహించు"
 
-#: ../lxtask.desktop.in.h:3
+#: ../data/lxtask.desktop.in.h:3
 msgid "Process manager"
 msgstr "ప్రక్రియ నిర్వాహకం"
 
@@ -34,7 +34,7 @@ msgstr "ప్రక్రియ నిర్వాహకం"
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
 msgstr "పని;అంతంచేయి;అర్థంతరంగానిలుపు;ప్రాసెసర్;మెమొరి;పర్యవేక్షణ;పనితనం;"
 
-#: ../src/xfce-taskmanager-linux.c:285
+#: ../src/xfce-taskmanager-linux.c:305
 #, c-format
 msgid ""
 "Couldn't send signal %d to the task with ID %d\n"
@@ -45,7 +45,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/xfce-taskmanager-linux.c:299
+#: ../src/xfce-taskmanager-linux.c:319
 #, c-format
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "%d ప్రాధాన్యతను %d ఐడితో ఉన్న కార్యమునకు అమర్చలేకపోతున్నది"
@@ -62,137 +62,138 @@ msgstr "నిజంగానే కార్యాన్ని ముగిం�
 msgid "Can't stop process self"
 msgstr "స్వయంగా ప్రక్రియను ఆపలేకపోతుంది"
 
-#: ../src/functions.c:148
+#. FIXME: this will work only for < 2048 TB but where so many memory...
+#: ../src/functions.c:149
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "మెమోరీ: %d MB కిగానూ %d MB వాడబడింది"
 
-#: ../src/functions.c:156
+#: ../src/functions.c:158
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU వాడుక: %0.0f %%"
 
-#: ../src/interface.c:70
+#: ../src/interface.c:82
 msgid "_File"
 msgstr "ఫైల్ (_F)"
 
-#: ../src/interface.c:91
+#: ../src/interface.c:103
 msgid "_View"
 msgstr "వీక్షణ (_V)"
 
-#: ../src/interface.c:97
+#: ../src/interface.c:109
 msgid "_Help"
 msgstr "సహాయం (_H)"
 
-#: ../src/interface.c:124
+#: ../src/interface.c:136
 msgid "cpu usage"
 msgstr "cpu వాడుక"
 
-#: ../src/interface.c:135
+#: ../src/interface.c:147
 msgid "memory usage"
 msgstr "మెమోరీ వాడుక"
 
-#: ../src/interface.c:163
+#: ../src/interface.c:175
 msgid "more details"
 msgstr "మరిన్ని వివరాలు"
 
-#: ../src/interface.c:189
+#: ../src/interface.c:201
 msgid "Command"
 msgstr "ఆదేశం"
 
-#: ../src/interface.c:195
+#: ../src/interface.c:207
 msgid "User"
 msgstr "వాడుకరి"
 
-#: ../src/interface.c:204
+#: ../src/interface.c:216
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:210
+#: ../src/interface.c:222
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:228
 msgid "VM-Size"
 msgstr "VM-Size"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:234
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:228
+#: ../src/interface.c:240
 msgid "State"
 msgstr "స్థితి"
 
-#: ../src/interface.c:234
+#: ../src/interface.c:246
 msgid "Prio"
 msgstr "ప్రాధాన్యత"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:252
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:256
+#: ../src/interface.c:268
 msgid "Stop"
 msgstr "ఆపు"
 
-#: ../src/interface.c:261
+#: ../src/interface.c:273
 msgid "Continue"
 msgstr "కొనసాగించు"
 
-#: ../src/interface.c:266
+#: ../src/interface.c:278
 msgid "Term"
 msgstr "టెర్మ్"
 
-#: ../src/interface.c:271
+#: ../src/interface.c:283
 msgid "Kill"
 msgstr "అంతముచేయి"
 
-#: ../src/interface.c:276
+#: ../src/interface.c:288
 msgid "Priority"
 msgstr "ప్రాధాన్యత"
 
-#: ../src/interface.c:289
+#: ../src/interface.c:301
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:294
+#: ../src/interface.c:306
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:299
+#: ../src/interface.c:311
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:304
+#: ../src/interface.c:316
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:309
+#: ../src/interface.c:321
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:335
+#: ../src/interface.c:347
 msgid "Show user tasks"
 msgstr "వాడుకరి కార్యములను చూపించు"
 
-#: ../src/interface.c:340
+#: ../src/interface.c:352
 msgid "Show root tasks"
 msgstr "రూట్ కార్యములను చూపించు"
 
-#: ../src/interface.c:345
+#: ../src/interface.c:357
 msgid "Show other tasks"
 msgstr "ఇతర కార్యములను చూపించు"
 
-#: ../src/interface.c:350
+#: ../src/interface.c:362
 msgid "Show full cmdline"
 msgstr "పూర్తి ఆదేశవ్యాక్యాన్ని చూపించు"
 
-#: ../src/interface.c:355
+#: ../src/interface.c:367
 msgid "Show memory used by cache as free"
 msgstr "క్యాచీచే ఉచితముగా వాడబడుతున్న మెమోరీని చూపించు"
 
-#: ../src/interface.c:387
+#: ../src/interface.c:399
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -201,32 +202,31 @@ msgstr ""
 "* జోహన్నస్ జెల్నర్ <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:392
+#: ../src/interface.c:404
 msgid "translator-credits"
 msgstr "Praveen Illa <mail2ipn@gmail.com>, 2011-2015"
 
-#: ../src/interface.c:401 ../src/interface.c:403
+#: ../src/interface.c:413 ../src/interface.c:415
 msgid "LXTask"
 msgstr "LXటాస్క్"
 
-#. gtk_about_dialog_set_logo( (GtkAboutDialog*)about_dlg, gdk_pixbuf_new_from_file(  PACKAGE_DATA_DIR"/pixmaps/lxtask.png", NULL ) );
-#: ../src/interface.c:406
+#: ../src/interface.c:419
 msgid "Copyright (C) 2008-2023 LXDE team"
 msgstr "నకలుహక్కు (C) 2008 LXDE జట్టు"
 
-#: ../src/interface.c:407
+#: ../src/interface.c:420
 msgid "Lightweight task manager for LXDE project"
 msgstr "LXDE ప్రోజెక్టు కొరకు తేలికపాటి కార్య నిర్వాహకం"
 
-#: ../src/interface.c:635
+#: ../src/interface.c:648
 msgid "Preferences"
 msgstr "ప్రాధాన్యతలు"
 
-#: ../src/interface.c:639
+#: ../src/interface.c:652
 msgid "General"
 msgstr "సాధారణ"
 
-#: ../src/interface.c:640
+#: ../src/interface.c:653
 msgid "Refresh rate (seconds):"
 msgstr "తాజాకరణ రేటు (సెకన్లు):"
 
