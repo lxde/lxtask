@@ -237,7 +237,7 @@ void load_config(void)
 
     full_view = key_file_get_bool(rc_file, group, "full_view", TRUE);
 
-    win_width = key_file_get_int(rc_file, group, "win_width", 500 );
+    win_width = key_file_get_int(rc_file, group, "win_width", 600 );
     win_height = key_file_get_int(rc_file, group, "win_height", 400 );
     refresh_interval = key_file_get_int(rc_file, group, "refresh_interval", 2 );
 
@@ -282,7 +282,7 @@ static int check_config(void)
 		goto out;
 	}
 	gtk_window_get_size(GTK_WINDOW (main_window), &win_width, &win_height);
-	if(win_width != key_file_get_int(rc_file, group, "win_width", 500 ))
+	if(win_width != key_file_get_int(rc_file, group, "win_width", 600 ))
 	{
 		res=1;
 		goto out;
