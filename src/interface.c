@@ -538,12 +538,10 @@ gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter 
     if(s2 != NULL)
         i2 = atoi(s2);
 
-    gint ret = i1 - i2;
-
     g_free(s1);
     g_free(s2);
 
-    return ret;
+    return i1 - i2;
 }
 
 gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
@@ -557,12 +555,10 @@ gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter
     guint64 i1 = string_to_size(s1);
     guint64 i2 = string_to_size(s2);
 
-    gint ret = (i1 > i2) - (i1 < i2);
-
     g_free(s1);
     g_free(s2);
 
-    return ret;
+    return (i1 > i2) - (i1 < i2);
 }
 
 gint compare_string_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
