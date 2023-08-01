@@ -218,6 +218,7 @@ msgid "LXTask"
 msgstr "LXTask"
 
 #: ../src/interface.c:419
+#, fuzzy
 msgid "Copyright (C) 2008-2023 LXDE team"
 msgstr "Autorių teisės (C) 2008 LXDE komanda"
 

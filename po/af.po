@@ -211,6 +211,7 @@ msgid "LXTask"
 msgstr "LXTaak"
 
 #: ../src/interface.c:419
+#, fuzzy
 msgid "Copyright (C) 2008-2023 LXDE team"
 msgstr "Kopiereg (C) 2008 LXDE-span"
 

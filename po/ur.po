@@ -218,6 +218,7 @@ msgid "LXTask"
 msgstr "ایل ایکس ٹاسک"
 
 #: ../src/interface.c:419
+#, fuzzy
 msgid "Copyright (C) 2008-2023 LXDE team"
 msgstr "کاپی رائٹ (C) 2008 ایل ایکس ڈی ای ٹیم"
 

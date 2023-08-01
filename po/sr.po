@@ -213,6 +213,7 @@ msgid "LXTask"
 msgstr "Праћење система"
 
 #: ../src/interface.c:419
+#, fuzzy
 msgid "Copyright (C) 2008-2023 LXDE team"
 msgstr "Ауторска права — 2008 ЛИкс-ДЕ програмери"
 
