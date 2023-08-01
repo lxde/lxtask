@@ -2,22 +2,23 @@
 # Copyright (C) 2005 Johannes Zellner.
 # This file is distributed under the same license as the lxtask package.
 # Nuno Miguel <nunis@netcabo.pt>, 2007.
-# Sérgio Marques <smarquespt@gmail.com> 2009-2012
+# Sérgio Marques <smarquespt@gmail.com>, 2009-2012.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022, 2023.
 # Adaptado ao acordo ortográfico de 1990
 msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-16 10:35+0200\n"
-"PO-Revision-Date: 2015-03-26 13:26+0000\n"
-"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
+"PO-Revision-Date: 2023-08-01 15:21+0100\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese PT\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
 #: ../data/lxtask.desktop.in.h:1 ../src/interface.c:67
@@ -34,8 +35,7 @@ msgstr "Gestão de processos"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr ""
-"tarefa;terminar;suspender;processador;memória;monitorização;desempenho;"
+msgstr "tarefa;terminar;suspender;processador;memória;monitorização;desempenho;"
 
 #: ../src/xfce-taskmanager-linux.c:305
 #, c-format
@@ -90,7 +90,7 @@ msgstr "_Ajuda"
 
 #: ../src/interface.c:136
 msgid "cpu usage"
-msgstr "utilização do cpu"
+msgstr "utilização da cpu"
 
 #: ../src/interface.c:147
 msgid "memory usage"
@@ -182,7 +182,7 @@ msgstr "Mostrar tarefas do utilizador"
 
 #: ../src/interface.c:352
 msgid "Show root tasks"
-msgstr "Mostrar tarefas de \"root\""
+msgstr "Mostrar tarefas do \"root\""
 
 #: ../src/interface.c:357
 msgid "Show other tasks"
@@ -209,7 +209,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Álvaro Morais <alvarommorais@gmail.com>\n"
-"Sérgio Marques <smarquespt@gmail.com>"
+"Sérgio Marques <smarquespt@gmail.com>\n"
+"Hugo Carvalho <hugokarvalho@hotmail.com>"
 
 #: ../src/interface.c:413 ../src/interface.c:415
 msgid "LXTask"
@@ -217,7 +218,7 @@ msgstr "LXTask"
 
 #: ../src/interface.c:419
 msgid "Copyright (C) 2008-2023 LXDE team"
-msgstr "Direitos de autor (C) 2008 A equipa LXDE"
+msgstr "Direitos de autor (C) 2008-2023 A equipa LXDE"
 
 #: ../src/interface.c:420
 msgid "Lightweight task manager for LXDE project"
@@ -241,4 +242,4 @@ msgstr "Erro"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr "Confirmação"
+msgstr "Confirmar"
