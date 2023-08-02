@@ -1,6 +1,7 @@
 /* $Id: interface.c 3940 2008-02-10 22:48:45Z nebulon $
  *
  * Copyright (c) 2006 Johannes Zellner, <webmaster@nebulon.de>
+ * Copyright (C) 2023 Ingo Brückl
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
