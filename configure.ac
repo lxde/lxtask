@@ -7,6 +7,10 @@ AC_CONFIG_MACRO_DIR([.])
 
 AC_CONFIG_HEADERS([config.h])
 
+dnl Support silent build rules. Disable by either passing --disable-silent-rules
+dnl to configure or passing V=1 to make
+AM_SILENT_RULES([yes])
+
 AC_PROG_CC
 AC_PROG_INSTALL
 AM_PROG_CC_C_O
