@@ -29,6 +29,7 @@ esac],[])
 
 echo "x$enable_gtk3"
 if test "x$enable_gtk3" = "xyes" ; then
+  CFLAGS="$CFLAGS -Wno-deprecated-declarations"
   pkg_modules="gtk+-3.0 >= 3.0.0"
 else
   pkg_modules="gtk+-2.0 >= 2.6.0"
