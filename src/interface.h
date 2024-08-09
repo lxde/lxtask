@@ -36,7 +36,6 @@
 
 #include "functions.h"
 #include "callbacks.h"
-#include "types.h"
 
 extern GtkTreeStore *list_store;
 extern GtkTreeSelection *selection;
