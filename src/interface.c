@@ -1,7 +1,7 @@
 /* $Id: interface.c 3940 2008-02-10 22:48:45Z nebulon $
  *
  * Copyright (c) 2006 Johannes Zellner, <webmaster@nebulon.de>
- * Copyright (C) 2023 Ingo Brückl
+ * Copyright (C) 2023-2024 Ingo Brückl
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -37,7 +37,8 @@ GtkWidget *mem_usage_progress_bar;
 GtkWidget *cpu_usage_progress_bar_box;
 GtkWidget *mem_usage_progress_bar_box;
 
-GtkTreeViewColumn *column;
+GtkTreeViewColumn *column[N_COLS];
+gint column_width[N_COLS];
 
 #define GLADE_HOOKUP_OBJECT(component,widget,name) \
   g_object_set_data_full (G_OBJECT (component), name, \
@@ -194,67 +195,111 @@ void create_list_store(void)
 {
     GtkCellRenderer *cell_renderer;
 
-    /* my change 8->9 */
-    list_store = gtk_tree_store_new(9, G_TYPE_STRING, G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING);
+    list_store = gtk_tree_store_new(N_COLS, G_TYPE_STRING, G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING);
 
     cell_renderer = gtk_cell_renderer_text_new();
 
-    column = gtk_tree_view_column_new_with_attributes(_("Command"), cell_renderer, "text", COLUMN_NAME, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_NAME);
+    column[0] = gtk_tree_view_column_new_with_attributes(_("Command"), cell_renderer, "text", COLUMN_NAME, NULL);
+    if (column_width[0] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[0], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[0], column_width[0]);
+    }
+    gtk_tree_view_column_set_resizable(column[0], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[0], COLUMN_NAME);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_NAME, compare_string_list_item, GUINT_TO_POINTER(COLUMN_NAME), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[0]);
 
-    column = gtk_tree_view_column_new_with_attributes(_("User"), cell_renderer, "text", COLUMN_UNAME, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_UNAME);
+    column[1] = gtk_tree_view_column_new_with_attributes(_("User"), cell_renderer, "text", COLUMN_UNAME, NULL);
+    if (column_width[1] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[1], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[1], column_width[1]);
+    }
+    gtk_tree_view_column_set_resizable(column[1], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[1], COLUMN_UNAME);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_UNAME, compare_string_list_item, GUINT_TO_POINTER(COLUMN_UNAME), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[1]);
 
     cell_renderer = gtk_cell_renderer_text_new();
     g_object_set(cell_renderer, "xalign", 1.0, NULL);
 
-    column = gtk_tree_view_column_new_with_attributes(_("CPU%"), cell_renderer, "text", COLUMN_TIME, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_TIME);
+    column[2] = gtk_tree_view_column_new_with_attributes(_("CPU%"), cell_renderer, "text", COLUMN_TIME, NULL);
+    if (column_width[2] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[2], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[2], column_width[2]);
+    }
+    gtk_tree_view_column_set_resizable(column[2], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[2], COLUMN_TIME);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_TIME, compare_int_list_item, GUINT_TO_POINTER(COLUMN_TIME), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[2]);
 
-    column = gtk_tree_view_column_new_with_attributes(_("RSS"), cell_renderer, "text", COLUMN_RSS, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_RSS);
+    column[3] = gtk_tree_view_column_new_with_attributes(_("RSS"), cell_renderer, "text", COLUMN_RSS, NULL);
+    if (column_width[3] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[3], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[3], column_width[3]);
+    }
+    gtk_tree_view_column_set_resizable(column[3], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[3], COLUMN_RSS);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_RSS, compare_size_list_item, GUINT_TO_POINTER(COLUMN_RSS), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[3]);
 
-    column = gtk_tree_view_column_new_with_attributes(_("VM-Size"), cell_renderer, "text", COLUMN_MEM, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_MEM);
+    column[4] = gtk_tree_view_column_new_with_attributes(_("VM-Size"), cell_renderer, "text", COLUMN_MEM, NULL);
+    if (column_width[4] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[4], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[4], column_width[4]);
+    }
+    gtk_tree_view_column_set_resizable(column[4], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[4], COLUMN_MEM);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_MEM, compare_size_list_item, GUINT_TO_POINTER(COLUMN_MEM), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[4]);
 
-    column = gtk_tree_view_column_new_with_attributes(_("PID"), cell_renderer, "text", COLUMN_PID, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_PID);
+    column[5] = gtk_tree_view_column_new_with_attributes(_("PID"), cell_renderer, "text", COLUMN_PID, NULL);
+    if (column_width[5] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[5], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[5], column_width[5]);
+    }
+    gtk_tree_view_column_set_resizable(column[5], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[5], COLUMN_PID);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_PID, compare_int_list_item, GUINT_TO_POINTER(COLUMN_PID), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[5]);
 
-    column = gtk_tree_view_column_new_with_attributes(_("State"), cell_renderer, "text", COLUMN_STATE, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_STATE);
+    column[6] = gtk_tree_view_column_new_with_attributes(_("State"), cell_renderer, "text", COLUMN_STATE, NULL);
+    if (column_width[6] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[6], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[6], column_width[6]);
+    }
+    gtk_tree_view_column_set_resizable(column[6], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[6], COLUMN_STATE);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_STATE, compare_string_list_item, GUINT_TO_POINTER(COLUMN_STATE), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[6]);
 
-    column = gtk_tree_view_column_new_with_attributes(_("Prio"), cell_renderer, "text", COLUMN_PRIO, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_PRIO);
+    column[7] = gtk_tree_view_column_new_with_attributes(_("Prio"), cell_renderer, "text", COLUMN_PRIO, NULL);
+    if (column_width[7] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[7], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[7], column_width[7]);
+    }
+    gtk_tree_view_column_set_resizable(column[7], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[7], COLUMN_PRIO);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_PRIO, compare_int_list_item, GUINT_TO_POINTER(COLUMN_PRIO), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[7]);
 
-    column = gtk_tree_view_column_new_with_attributes(_("PPID"), cell_renderer, "text", COLUMN_PPID, NULL);
-    gtk_tree_view_column_set_resizable(column, TRUE);
-    gtk_tree_view_column_set_sort_column_id(column, COLUMN_PPID);
+    column[8] = gtk_tree_view_column_new_with_attributes(_("PPID"), cell_renderer, "text", COLUMN_PPID, NULL);
+    if (column_width[8] > 0)
+    {
+      gtk_tree_view_column_set_sizing(column[8], GTK_TREE_VIEW_COLUMN_FIXED);
+      gtk_tree_view_column_set_fixed_width(column[8], column_width[8]);
+    }
+    gtk_tree_view_column_set_resizable(column[8], TRUE);
+    gtk_tree_view_column_set_sort_column_id(column[8], COLUMN_PPID);
     gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_PPID, compare_int_list_item, GUINT_TO_POINTER(COLUMN_PPID), NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column);
+    gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[8]);
 
     change_list_store_view();
 }

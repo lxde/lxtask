@@ -1,6 +1,7 @@
 /* $Id: functions.c 3940 2008-02-10 22:48:45Z nebulon $
  *
  * Copyright (c) 2006 Johannes Zellner, <webmaster@nebulon.de>
+ * Copyright (C) 2024 Ingo Brückl
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -215,6 +216,26 @@ static gboolean key_file_get_int( GKeyFile* kf, const char* group, const char* n
     return ret;
 }
 
+static void key_file_get_int_list (GKeyFile *kf, const char *group, const char *name, gint *ret, gsize len)
+{
+    gint *list;
+    gsize i, length;
+    GError *err = NULL;
+
+    list = g_key_file_get_integer_list(kf, group, name, &length, &err);
+
+    if (err)
+    {
+        g_error_free(err);
+        return;
+    }
+
+    for (i = 0; i < len && i < length; i++)
+        ret[i] = list[i];
+
+    g_free(list);
+}
+
 static gboolean key_file_get_bool( GKeyFile* kf, const char* group, const char* name, gboolean def )
 {
     return !!key_file_get_int(kf, group, name, def);
@@ -241,6 +262,8 @@ void load_config(void)
     win_height = key_file_get_int(rc_file, group, "win_height", 400 );
     refresh_interval = key_file_get_int(rc_file, group, "refresh_interval", 2 );
 
+    key_file_get_int_list(rc_file, group, "column_widths", column_width, N_COLS);
+
     g_key_file_free(rc_file);
 }
 
@@ -248,6 +271,7 @@ static int check_config(void)
 {
 	static const char group[]="General";
 	int res=0;
+    unsigned int i;
     GKeyFile *rc_file = g_key_file_new();
     g_key_file_load_from_file(rc_file, config_file, 0, NULL);
 
@@ -297,6 +321,17 @@ static int check_config(void)
 		res=1;
 		goto out;
 	}
+
+    key_file_get_int_list(rc_file, group, "column_widths", column_width, N_COLS);
+
+    for (i = 0; i < N_COLS; i++)
+    {
+      if (gtk_tree_view_column_get_width(column[i]) != column_width[i])
+      {
+        res = 1;
+        goto out;
+      }
+    }
 out:
     g_key_file_free(rc_file);
 	return res;
@@ -305,6 +340,7 @@ out:
 void save_config(void)
 {
     FILE* rc_file ;
+    unsigned int i;
 
     if(!check_config())
     {
@@ -329,6 +365,11 @@ void save_config(void)
     fprintf( rc_file, "win_width=%d\n", win_width);
     fprintf( rc_file, "win_height=%d\n", win_height);
     fprintf( rc_file, "refresh_interval=%d\n", refresh_interval);
+
+    fprintf(rc_file, "column_widths=");
+    for (i = 0; i < N_COLS; i++)
+        fprintf(rc_file, "%d;", gtk_tree_view_column_get_width(column[i]));
+    fprintf(rc_file, "\n");
 
     fclose(rc_file);
 }

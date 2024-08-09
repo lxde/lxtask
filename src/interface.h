@@ -1,6 +1,7 @@
 /* $Id: interface.h 3940 2008-02-10 22:48:45Z nebulon $
  *
  * Copyright (c) 2006 Johannes Zellner, <webmaster@nebulon.de>
+ * Copyright (C) 2024 Ingo Brückl
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -56,10 +57,12 @@ enum {
     COLUMN_PID,
     COLUMN_STATE,
     COLUMN_PRIO,
-    COLUMN_PPID
+    COLUMN_PPID,
+    N_COLS
 };
 
-extern GtkTreeViewColumn *column;
+extern GtkTreeViewColumn *column[N_COLS];
+extern gint column_width[N_COLS];
 
 void change_list_store_view(void);
 void create_list_store(void);
