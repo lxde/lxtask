@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-16 10:35+0200\n"
+"POT-Creation-Date: 2024-08-14 10:50+0200\n"
 "PO-Revision-Date: 2015-08-17 01:30+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
-#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:67
+#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:69
 msgid "Task Manager"
 msgstr "Oppgåvestyring"
 
@@ -63,137 +63,137 @@ msgid "Can't stop process self"
 msgstr ""
 
 #. FIXME: this will work only for < 2048 TB but where so many memory...
-#: ../src/functions.c:149
+#: ../src/functions.c:150
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Minne: %d MB av %d MB brukt"
 
-#: ../src/functions.c:158
+#: ../src/functions.c:159
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "Prosessorbruk: %0.0f %%"
 
-#: ../src/interface.c:82
+#: ../src/interface.c:84
 msgid "_File"
 msgstr "_Fil"
 
-#: ../src/interface.c:103
+#: ../src/interface.c:105
 msgid "_View"
 msgstr "_Vis"
 
-#: ../src/interface.c:109
+#: ../src/interface.c:111
 msgid "_Help"
 msgstr "_Hjelp"
 
-#: ../src/interface.c:136
+#: ../src/interface.c:138
 msgid "cpu usage"
 msgstr "prosessorbruk"
 
-#: ../src/interface.c:147
+#: ../src/interface.c:149
 msgid "memory usage"
 msgstr "minnebruk"
 
-#: ../src/interface.c:175
+#: ../src/interface.c:177
 msgid "more details"
 msgstr "detaljar"
 
-#: ../src/interface.c:201
+#: ../src/interface.c:202
 msgid "Command"
 msgstr "Kommando"
 
-#: ../src/interface.c:207
+#: ../src/interface.c:213
 msgid "User"
 msgstr "Brukar"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:227
 msgid "CPU%"
 msgstr "Prosessor-%"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:238
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:228
+#: ../src/interface.c:249
 msgid "VM-Size"
 msgstr "VM-storleik"
 
-#: ../src/interface.c:234
+#: ../src/interface.c:260
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:271
 msgid "State"
 msgstr "Tilstand"
 
-#: ../src/interface.c:246
+#: ../src/interface.c:282
 msgid "Prio"
 msgstr "Prioritert"
 
-#: ../src/interface.c:252
+#: ../src/interface.c:293
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:268
+#: ../src/interface.c:314
 msgid "Stop"
 msgstr "Stopp"
 
-#: ../src/interface.c:273
+#: ../src/interface.c:319
 msgid "Continue"
 msgstr "Hald fram"
 
-#: ../src/interface.c:278
+#: ../src/interface.c:324
 msgid "Term"
 msgstr "Avslutt"
 
-#: ../src/interface.c:283
+#: ../src/interface.c:329
 msgid "Kill"
 msgstr "Drep"
 
-#: ../src/interface.c:288
+#: ../src/interface.c:334
 msgid "Priority"
 msgstr "Prioritet"
 
-#: ../src/interface.c:301
+#: ../src/interface.c:347
 msgid "  -10"
 msgstr "  −10"
 
-#: ../src/interface.c:306
+#: ../src/interface.c:352
 msgid "  -5"
 msgstr "  −5"
 
-#: ../src/interface.c:311
+#: ../src/interface.c:357
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:362
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:367
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:347
+#: ../src/interface.c:393
 msgid "Show user tasks"
 msgstr "Vis brukaroppgåver"
 
-#: ../src/interface.c:352
+#: ../src/interface.c:398
 msgid "Show root tasks"
 msgstr "Vis rotoppgåver"
 
-#: ../src/interface.c:357
+#: ../src/interface.c:403
 msgid "Show other tasks"
 msgstr "Vis andre oppgåver"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:408
 msgid "Show full cmdline"
 msgstr ""
 
-#: ../src/interface.c:367
+#: ../src/interface.c:413
 msgid "Show memory used by cache as free"
 msgstr "Vis minne brukt av cache som ledig"
 
-#: ../src/interface.c:399
+#: ../src/interface.c:445
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -202,32 +202,32 @@ msgstr ""
 "  – Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:404
+#: ../src/interface.c:450
 msgid "translator-credits"
 msgstr "Karl Ove Hufthammer"
 
-#: ../src/interface.c:413 ../src/interface.c:415
+#: ../src/interface.c:459 ../src/interface.c:461
 msgid "LXTask"
 msgstr "LXTask"
 
-#: ../src/interface.c:419
+#: ../src/interface.c:465
 #, fuzzy
-msgid "Copyright (C) 2008-2023 LXDE team"
+msgid "Copyright (C) 2008-2024 LXDE team"
 msgstr "Copyright © 2008 LXDE team"
 
-#: ../src/interface.c:420
+#: ../src/interface.c:466
 msgid "Lightweight task manager for LXDE project"
 msgstr "Lett oppgåvestyrar for LXDE"
 
-#: ../src/interface.c:648
+#: ../src/interface.c:686
 msgid "Preferences"
 msgstr "Innstillingar"
 
-#: ../src/interface.c:652
+#: ../src/interface.c:690
 msgid "General"
 msgstr "Generelt"
 
-#: ../src/interface.c:653
+#: ../src/interface.c:691
 msgid "Refresh rate (seconds):"
 msgstr "Oppfriskingsrate (sekund):"
 

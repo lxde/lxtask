@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-16 10:35+0200\n"
+"POT-Creation-Date: 2024-08-14 10:50+0200\n"
 "PO-Revision-Date: 2015-08-17 01:30+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
-#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:67
+#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:69
 msgid "Task Manager"
 msgstr "Диспечер на задачи"
 
@@ -63,137 +63,137 @@ msgid "Can't stop process self"
 msgstr "Процесът не може да бъде спрян самостоятелно"
 
 #. FIXME: this will work only for < 2048 TB but where so many memory...
-#: ../src/functions.c:149
+#: ../src/functions.c:150
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "Памет: %d МБ от %d МБ използвана"
 
-#: ../src/functions.c:158
+#: ../src/functions.c:159
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU натоварване: %0.0f %%"
 
-#: ../src/interface.c:82
+#: ../src/interface.c:84
 msgid "_File"
 msgstr "_Файл"
 
-#: ../src/interface.c:103
+#: ../src/interface.c:105
 msgid "_View"
 msgstr "_Изглед"
 
-#: ../src/interface.c:109
+#: ../src/interface.c:111
 msgid "_Help"
 msgstr "_Помощ"
 
-#: ../src/interface.c:136
+#: ../src/interface.c:138
 msgid "cpu usage"
 msgstr "натоварване на процесора"
 
-#: ../src/interface.c:147
+#: ../src/interface.c:149
 msgid "memory usage"
 msgstr "използвана памет"
 
-#: ../src/interface.c:175
+#: ../src/interface.c:177
 msgid "more details"
 msgstr "повече информация"
 
-#: ../src/interface.c:201
+#: ../src/interface.c:202
 msgid "Command"
 msgstr "Команда"
 
-#: ../src/interface.c:207
+#: ../src/interface.c:213
 msgid "User"
 msgstr "Потребител"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:227
 msgid "CPU%"
 msgstr "Процесор%"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:238
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:228
+#: ../src/interface.c:249
 msgid "VM-Size"
 msgstr "Виртуална памет"
 
-#: ../src/interface.c:234
+#: ../src/interface.c:260
 msgid "PID"
 msgstr "Номер на процес"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:271
 msgid "State"
 msgstr "Състояние"
 
-#: ../src/interface.c:246
+#: ../src/interface.c:282
 msgid "Prio"
 msgstr "Прио"
 
-#: ../src/interface.c:252
+#: ../src/interface.c:293
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:268
+#: ../src/interface.c:314
 msgid "Stop"
 msgstr "Стоп"
 
-#: ../src/interface.c:273
+#: ../src/interface.c:319
 msgid "Continue"
 msgstr "Продължи"
 
-#: ../src/interface.c:278
+#: ../src/interface.c:324
 msgid "Term"
 msgstr "Период"
 
-#: ../src/interface.c:283
+#: ../src/interface.c:329
 msgid "Kill"
 msgstr "Убиване"
 
-#: ../src/interface.c:288
+#: ../src/interface.c:334
 msgid "Priority"
 msgstr "Приоритет"
 
-#: ../src/interface.c:301
+#: ../src/interface.c:347
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:306
+#: ../src/interface.c:352
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:311
+#: ../src/interface.c:357
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:362
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:367
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:347
+#: ../src/interface.c:393
 msgid "Show user tasks"
 msgstr "Показване на потребителските задачи"
 
-#: ../src/interface.c:352
+#: ../src/interface.c:398
 msgid "Show root tasks"
 msgstr "Покажи системните задачи (root)"
 
-#: ../src/interface.c:357
+#: ../src/interface.c:403
 msgid "Show other tasks"
 msgstr "Покажи други задачи"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:408
 msgid "Show full cmdline"
 msgstr "Покажи пълна команда"
 
-#: ../src/interface.c:367
+#: ../src/interface.c:413
 msgid "Show memory used by cache as free"
 msgstr "Покажи използваната памет за кеш като свободна"
 
-#: ../src/interface.c:399
+#: ../src/interface.c:445
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -202,32 +202,32 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:404
+#: ../src/interface.c:450
 msgid "translator-credits"
 msgstr "Радослав Иванов"
 
-#: ../src/interface.c:413 ../src/interface.c:415
+#: ../src/interface.c:459 ../src/interface.c:461
 msgid "LXTask"
 msgstr "LXTask"
 
-#: ../src/interface.c:419
+#: ../src/interface.c:465
 #, fuzzy
-msgid "Copyright (C) 2008-2023 LXDE team"
+msgid "Copyright (C) 2008-2024 LXDE team"
 msgstr "Copyright © 2008 LXDE"
 
-#: ../src/interface.c:420
+#: ../src/interface.c:466
 msgid "Lightweight task manager for LXDE project"
 msgstr "Диспечер на задачи за LXDE"
 
-#: ../src/interface.c:648
+#: ../src/interface.c:686
 msgid "Preferences"
 msgstr "Предпочитания"
 
-#: ../src/interface.c:652
+#: ../src/interface.c:690
 msgid "General"
 msgstr "Общи"
 
-#: ../src/interface.c:653
+#: ../src/interface.c:691
 msgid "Refresh rate (seconds):"
 msgstr "Честота на опресняване (Секунди):"
 

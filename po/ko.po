@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-16 10:35+0200\n"
+"POT-Creation-Date: 2024-08-14 10:50+0200\n"
 "PO-Revision-Date: 2015-07-20 14:02+0000\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
-#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:67
+#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:69
 msgid "Task Manager"
 msgstr "작업 관리자"
 
@@ -65,137 +65,137 @@ msgid "Can't stop process self"
 msgstr "프로세스 자신을 멈출 수 없습니다"
 
 #. FIXME: this will work only for < 2048 TB but where so many memory...
-#: ../src/functions.c:149
+#: ../src/functions.c:150
 #, c-format
 msgid "Memory: %d MB of %d MB used"
 msgstr "메모리: %d MB를 %d MB중 사용함"
 
-#: ../src/functions.c:158
+#: ../src/functions.c:159
 #, c-format
 msgid "CPU usage: %0.0f %%"
 msgstr "CPU 사용량: %0.0f %%"
 
-#: ../src/interface.c:82
+#: ../src/interface.c:84
 msgid "_File"
 msgstr "파일(_F)"
 
-#: ../src/interface.c:103
+#: ../src/interface.c:105
 msgid "_View"
 msgstr "보기(_V)"
 
-#: ../src/interface.c:109
+#: ../src/interface.c:111
 msgid "_Help"
 msgstr "도움말(_H)"
 
-#: ../src/interface.c:136
+#: ../src/interface.c:138
 msgid "cpu usage"
 msgstr "CPU 사용량"
 
-#: ../src/interface.c:147
+#: ../src/interface.c:149
 msgid "memory usage"
 msgstr "메모리 사용량"
 
-#: ../src/interface.c:175
+#: ../src/interface.c:177
 msgid "more details"
 msgstr "자세히"
 
-#: ../src/interface.c:201
+#: ../src/interface.c:202
 msgid "Command"
 msgstr "명령"
 
-#: ../src/interface.c:207
+#: ../src/interface.c:213
 msgid "User"
 msgstr "사용자"
 
-#: ../src/interface.c:216
+#: ../src/interface.c:227
 msgid "CPU%"
 msgstr "CPU%"
 
-#: ../src/interface.c:222
+#: ../src/interface.c:238
 msgid "RSS"
 msgstr " RSS"
 
-#: ../src/interface.c:228
+#: ../src/interface.c:249
 msgid "VM-Size"
 msgstr "VM-크기"
 
-#: ../src/interface.c:234
+#: ../src/interface.c:260
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:240
+#: ../src/interface.c:271
 msgid "State"
 msgstr "상태"
 
-#: ../src/interface.c:246
+#: ../src/interface.c:282
 msgid "Prio"
 msgstr "우선순위"
 
-#: ../src/interface.c:252
+#: ../src/interface.c:293
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:268
+#: ../src/interface.c:314
 msgid "Stop"
 msgstr "멈춤"
 
-#: ../src/interface.c:273
+#: ../src/interface.c:319
 msgid "Continue"
 msgstr "진행"
 
-#: ../src/interface.c:278
+#: ../src/interface.c:324
 msgid "Term"
 msgstr "중단"
 
-#: ../src/interface.c:283
+#: ../src/interface.c:329
 msgid "Kill"
 msgstr "죽이기"
 
-#: ../src/interface.c:288
+#: ../src/interface.c:334
 msgid "Priority"
 msgstr "우선순위"
 
-#: ../src/interface.c:301
+#: ../src/interface.c:347
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:306
+#: ../src/interface.c:352
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:311
+#: ../src/interface.c:357
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:316
+#: ../src/interface.c:362
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:321
+#: ../src/interface.c:367
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:347
+#: ../src/interface.c:393
 msgid "Show user tasks"
 msgstr "사용자 작업 표시"
 
-#: ../src/interface.c:352
+#: ../src/interface.c:398
 msgid "Show root tasks"
 msgstr "루트 작업 표시"
 
-#: ../src/interface.c:357
+#: ../src/interface.c:403
 msgid "Show other tasks"
 msgstr "다른 작업 표시"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:408
 msgid "Show full cmdline"
 msgstr "전체 명령줄 표시"
 
-#: ../src/interface.c:367
+#: ../src/interface.c:413
 msgid "Show memory used by cache as free"
 msgstr "캐시로 사용하고 남은 메모리 용량 표시"
 
-#: ../src/interface.c:399
+#: ../src/interface.c:445
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -204,31 +204,31 @@ msgstr ""
 "Johannes Zellner <webmaster@nebulon.de>가 계승했습니다."
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:404
+#: ../src/interface.c:450
 msgid "translator-credits"
 msgstr "Seong-ho Cho <shcho@gnome.org>"
 
-#: ../src/interface.c:413 ../src/interface.c:415
+#: ../src/interface.c:459 ../src/interface.c:461
 msgid "LXTask"
 msgstr "LXTask"
 
-#: ../src/interface.c:419
-msgid "Copyright (C) 2008-2023 LXDE team"
-msgstr "Copyright (C) 2008-2023 LXDE team"
+#: ../src/interface.c:465
+msgid "Copyright (C) 2008-2024 LXDE team"
+msgstr "Copyright (C) 2008-2024 LXDE team"
 
-#: ../src/interface.c:420
+#: ../src/interface.c:466
 msgid "Lightweight task manager for LXDE project"
 msgstr "LXDE프로젝트를 위한 가벼운 작업 관리자"
 
-#: ../src/interface.c:648
+#: ../src/interface.c:686
 msgid "Preferences"
 msgstr "기본 설정"
 
-#: ../src/interface.c:652
+#: ../src/interface.c:690
 msgid "General"
 msgstr "일반"
 
-#: ../src/interface.c:653
+#: ../src/interface.c:691
 msgid "Refresh rate (seconds):"
 msgstr "새로 고침 주기 (초):"
 
