@@ -684,7 +684,11 @@ void show_preferences(void)
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(refresh_spin), refresh_interval);
 
     dlg = gtk_dialog_new_with_buttons(_("Preferences"), NULL, 0, GTK_STOCK_CANCEL, GTK_RESPONSE_REJECT, GTK_STOCK_OK, GTK_RESPONSE_ACCEPT, NULL);
+#if GTK_CHECK_VERSION(2,14,0)
     c_area = gtk_dialog_get_content_area(GTK_DIALOG (dlg));
+#else
+    c_area = GTK_DIALOG(dlg)->vbox;
+#endif
 
     gtk_box_pack_start(GTK_BOX (c_area), notebook, TRUE, TRUE, 0);
     gtk_notebook_append_page(GTK_NOTEBOOK (notebook), general_box, gtk_label_new(_("General")));
