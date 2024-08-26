@@ -55,11 +55,11 @@ void handle_task_menu(GtkWidget *widget, gchar *signal)
         switch(signal[0])
         {
             case 'K':
-                if(confirm(_("Really kill the task?")))
+                if(confirm(_("Really kill the task?"), GTK_RESPONSE_NO))
                     task_action = SIGNAL_KILL;
                 break;
             case 'T':
-                if(confirm(_("Really terminate the task?")))
+                if(confirm(_("Really terminate the task?"), GTK_RESPONSE_YES))
                     task_action = SIGNAL_TERM;
                 break;
             case 'S':
