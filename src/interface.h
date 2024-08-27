@@ -87,4 +87,6 @@ void refresh_list_item(guint i);
 void change_task_view(void);
 void change_full_path(void);
 
+const char *details(void);
+
 #endif

@@ -2,6 +2,7 @@
  *  xfce4-taskmanager - very simple taskmanger
  *
  *  Copyright (c) 2006 Johannes Zellner, <webmaster@nebulon.de>
+ *  Copyright (C) 2024 Ingo Brückl
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -30,7 +31,8 @@ extern guint rID;
 
 void on_button3_toggled_event(GtkButton *button, GdkEventButton *event)
 {
-    full_view = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(button));
+    full_view = !full_view;
+    gtk_button_set_label(button, details());
     change_list_store_view();
 }
 

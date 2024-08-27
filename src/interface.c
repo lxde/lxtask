@@ -52,6 +52,11 @@ extern gint refresh_interval;
 extern guint rID;
 GtkWidget *refresh_spin;
 
+const char *details (void)
+{
+  return full_view ? _("Less details") : _("More details");
+}
+
 GtkWidget* create_main_window (void)
 {
     GtkWidget *window;
@@ -174,8 +179,8 @@ GtkWidget* create_main_window (void)
     gtk_box_pack_start(GTK_BOX(vbox1), bbox1, FALSE, TRUE, 0);
     gtk_widget_show (bbox1);
 
-    button3 = gtk_toggle_button_new_with_label (_("more details"));
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(button3), full_view);
+    button3 = gtk_button_new_with_label(details());
+    gtk_button_set_focus_on_click(GTK_BUTTON(button3), FALSE);
     gtk_widget_show (button3);
     gtk_box_pack_start (GTK_BOX (bbox1), button3, FALSE, FALSE, 0);
 
@@ -186,7 +191,7 @@ GtkWidget* create_main_window (void)
     g_signal_connect ((gpointer) window, "destroy", G_CALLBACK (on_quit), NULL);
     g_signal_connect_swapped ((gpointer) treeview, "button-press-event", G_CALLBACK(on_treeview1_button_press_event), NULL);
     g_signal_connect ((gpointer) button1, "clicked",  G_CALLBACK (on_quit),  NULL);
-    g_signal_connect ((gpointer) button3, "toggled",  G_CALLBACK (on_button3_toggled_event),  NULL);
+    g_signal_connect ((gpointer) button3, "clicked",  G_CALLBACK (on_button3_toggled_event),  NULL);
 
     return window;
 }
