@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 10:50+0200\n"
+"POT-Creation-Date: 2024-08-27 16:38+0200\n"
 "PO-Revision-Date: 2017-06-01 21:18+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lietuvių <>\n"
@@ -72,10 +72,16 @@ msgstr "Nepavyksta sustabdyti proceso"
 msgid "Memory: %d MB of %d MB used"
 msgstr "Atmintis: naudojama %d MB iš %d MB"
 
-#: ../src/functions.c:159
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/functions.c:160
 #, c-format
 msgid "CPU usage: %0.0f%%"
 msgstr "Procesoriaus naudojimas: %0.0f %%"
+
+#: ../src/functions.c:160
+#, c-format
+msgid "CPU usage: %0.1f%%"
+msgstr "Procesoriaus naudojimas: %0.1f %%"
 
 #: ../src/interface.c:84
 msgid "_File"
@@ -226,15 +232,21 @@ msgstr "Autorių teisės (C) 2008 LXDE komanda"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Supaprastinta LXDE projekto užduočių tvarkytuvė"
 
-#: ../src/interface.c:686
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/interface.c:513
+#, c-format
+msgid "%0.1f%%"
+msgstr "%0.1f %%"
+
+#: ../src/interface.c:709
 msgid "Preferences"
 msgstr "Nuostatos"
 
-#: ../src/interface.c:690
+#: ../src/interface.c:717
 msgid "General"
 msgstr "Bendros"
 
-#: ../src/interface.c:691
+#: ../src/interface.c:718
 msgid "Refresh rate (seconds):"
 msgstr "Atnaujinimo dažnis (sekundėmis):"
 

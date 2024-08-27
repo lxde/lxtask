@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xfce 4-taskmanager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 10:50+0200\n"
+"POT-Creation-Date: 2024-08-27 16:38+0200\n"
 "PO-Revision-Date: 2014-10-26 23:20+0000\n"
 "Last-Translator: Daniele Forsi <daniele@forsi.it>\n"
 "Language-Team: Italian\n"
@@ -70,10 +70,16 @@ msgstr "Impossibile fermare il proprio processo"
 msgid "Memory: %d MB of %d MB used"
 msgstr "Memoria: %d MB su %d MB usati"
 
-#: ../src/functions.c:159
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/functions.c:160
 #, c-format
 msgid "CPU usage: %0.0f%%"
 msgstr "Uso CPU: %0.0f %%"
+
+#: ../src/functions.c:160
+#, c-format
+msgid "CPU usage: %0.1f%%"
+msgstr "Uso CPU: %0.1f %%"
 
 #: ../src/interface.c:84
 msgid "_File"
@@ -223,15 +229,21 @@ msgstr "Copyright © 2008 team LXDE"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Gestore di processi leggero per il progetto LXDE"
 
-#: ../src/interface.c:686
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/interface.c:513
+#, c-format
+msgid "%0.1f%%"
+msgstr "%0.1f %%"
+
+#: ../src/interface.c:709
 msgid "Preferences"
 msgstr "Preferenze"
 
-#: ../src/interface.c:690
+#: ../src/interface.c:717
 msgid "General"
 msgstr "Generale"
 
-#: ../src/interface.c:691
+#: ../src/interface.c:718
 msgid "Refresh rate (seconds):"
 msgstr "Tempo di aggiornamento (secondi):"
 

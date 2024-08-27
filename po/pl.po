@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask 0.1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 10:50+0200\n"
+"POT-Creation-Date: 2024-08-27 16:38+0200\n"
 "PO-Revision-Date: 2017-05-25 07:06+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: Polish <>\n"
@@ -72,10 +72,16 @@ msgstr "Nie można zatrzymać samego procesu"
 msgid "Memory: %d MB of %d MB used"
 msgstr "Użycie pamięci: %d MB z %d MB"
 
-#: ../src/functions.c:159
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/functions.c:160
 #, c-format
 msgid "CPU usage: %0.0f%%"
 msgstr "Obciążenie CPU: %0.0f %%"
+
+#: ../src/functions.c:160
+#, c-format
+msgid "CPU usage: %0.1f%%"
+msgstr "Obciążenie CPU: %0.1f %%"
 
 #: ../src/interface.c:84
 msgid "_File"
@@ -228,15 +234,21 @@ msgstr "Prawa zastrzeżone (C) 2008 zespół LXDE"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Zarządza uruchomionymi procesami"
 
-#: ../src/interface.c:686
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/interface.c:513
+#, c-format
+msgid "%0.1f%%"
+msgstr "%0.1f %%"
+
+#: ../src/interface.c:709
 msgid "Preferences"
 msgstr "Preferencje"
 
-#: ../src/interface.c:690
+#: ../src/interface.c:717
 msgid "General"
 msgstr "Ogólne"
 
-#: ../src/interface.c:691
+#: ../src/interface.c:718
 msgid "Refresh rate (seconds):"
 msgstr "Tempo odświeżania (s):"
 

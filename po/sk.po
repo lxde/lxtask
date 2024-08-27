@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 10:50+0200\n"
+"POT-Creation-Date: 2024-08-27 16:38+0200\n"
 "PO-Revision-Date: 2018-12-13 10:06+0000\n"
 "Last-Translator: mirek <mirek@cnl.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -68,10 +68,16 @@ msgstr "Proces nemôže zastaviť sám seba"
 msgid "Memory: %d MB of %d MB used"
 msgstr "Pamäť: využitých %d MB z %d MB"
 
-#: ../src/functions.c:159
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/functions.c:160
 #, c-format
 msgid "CPU usage: %0.0f%%"
 msgstr "Využitie CPU: %0.0f %%"
+
+#: ../src/functions.c:160
+#, c-format
+msgid "CPU usage: %0.1f%%"
+msgstr "Využitie CPU: %0.1f %%"
 
 #: ../src/interface.c:84
 msgid "_File"
@@ -221,15 +227,21 @@ msgstr "Copyright (C) 2008, tím LXDE"
 msgid "Lightweight task manager for LXDE project"
 msgstr "Odľahčený správca úloh pre projekt LXDE"
 
-#: ../src/interface.c:686
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/interface.c:513
+#, c-format
+msgid "%0.1f%%"
+msgstr "%0.1f %%"
+
+#: ../src/interface.c:709
 msgid "Preferences"
 msgstr "Nastavenia"
 
-#: ../src/interface.c:690
+#: ../src/interface.c:717
 msgid "General"
 msgstr "Všeobecné"
 
-#: ../src/interface.c:691
+#: ../src/interface.c:718
 msgid "Refresh rate (seconds):"
 msgstr "Obnovovacia frekvencia (sekundy):"
 
