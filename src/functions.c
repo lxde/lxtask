@@ -157,7 +157,7 @@ gboolean refresh_task_list(void)
 
     cpu_usage = get_cpu_usage (sys_stat);
     /* TRANSLATORS: If it is customary, insert a space before the double percent sign. */
-    sprintf (tooltip,_("CPU usage: %0.0f%%"), cpu_usage * 100.0);
+    sprintf(tooltip, cpu_usage == 0.0 || cpu_usage >= 1.0 ? _("CPU usage: %0.0f%%") : _("CPU usage: %0.1f%%"), cpu_usage * 100.0);
     if(strcmp(tooltip,gtk_progress_bar_get_text(GTK_PROGRESS_BAR(cpu_usage_progress_bar))))
     {
         gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (cpu_usage_progress_bar), cpu_usage);
