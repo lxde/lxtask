@@ -107,8 +107,8 @@ msgid "User"
 msgstr "Карыстальнік"
 
 #: ../src/interface.c:227
-msgid "CPU%"
-msgstr "CPU%"
+msgid "CPU"
+msgstr "CPU"
 
 #: ../src/interface.c:238
 msgid "RSS"

@@ -224,7 +224,7 @@ void create_list_store(void)
     cell_renderer = gtk_cell_renderer_text_new();
     g_object_set(cell_renderer, "xalign", 1.0, NULL);
 
-    column[2] = gtk_tree_view_column_new_with_attributes(_("CPU%"), cell_renderer, "text", COLUMN_TIME, NULL);
+    column[2] = gtk_tree_view_column_new_with_attributes(_("CPU"), cell_renderer, "text", COLUMN_TIME, NULL);
     if (column_width[2] > 0)
     {
       gtk_tree_view_column_set_sizing(column[2], GTK_TREE_VIEW_COLUMN_FIXED);

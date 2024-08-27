@@ -107,7 +107,7 @@ msgid "User"
 msgstr "Uporabnik"
 
 #: ../src/interface.c:227
-msgid "CPU%"
+msgid "CPU"
 msgstr "CPE"
 
 #: ../src/interface.c:238

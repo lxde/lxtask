@@ -108,8 +108,8 @@ msgid "User"
 msgstr "Mukozesa"
 
 #: ../src/interface.c:227
-msgid "CPU%"
-msgstr "% ky'ekibazi"
+msgid "CPU"
+msgstr "ky'ekibazi"
 
 #: ../src/interface.c:238
 msgid "RSS"

@@ -105,8 +105,8 @@ msgid "User"
 msgstr "Usór"
 
 #: ../src/interface.c:227
-msgid "CPU%"
-msgstr "Processór%"
+msgid "CPU"
+msgstr "Processór"
 
 #: ../src/interface.c:238
 msgid "RSS"

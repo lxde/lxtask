@@ -106,8 +106,8 @@ msgid "User"
 msgstr "کاربر"
 
 #: ../src/interface.c:227
-msgid "CPU%"
-msgstr "واحد پردازشگر مرکزی%"
+msgid "CPU"
+msgstr "واحد پردازشگر مرکزی"
 
 #: ../src/interface.c:238
 msgid "RSS"

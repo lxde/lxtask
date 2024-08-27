@@ -106,8 +106,8 @@ msgid "User"
 msgstr "משתמש"
 
 #: ../src/interface.c:227
-msgid "CPU%"
-msgstr "%מהמעבד"
+msgid "CPU"
+msgstr "מהמעבד"
 
 #: ../src/interface.c:238
 msgid "RSS"

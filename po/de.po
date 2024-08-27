@@ -113,7 +113,7 @@ msgid "User"
 msgstr "Benutzer"
 
 #: ../src/interface.c:227
-msgid "CPU%"
+msgid "CPU"
 msgstr "CPU"
 
 #: ../src/interface.c:238
