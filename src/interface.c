@@ -702,7 +702,7 @@ void show_preferences(void)
     GtkWidget *c_area;
     GtkWidget *notebook = gtk_notebook_new();
     GtkWidget *general_box = gtk_vbox_new(FALSE, 0);
-    GtkWidget *refresh_box = gtk_hbox_new(FALSE, 0);
+    GtkWidget *refresh_box = gtk_hbox_new(FALSE, 4);
     refresh_spin = gtk_spin_button_new_with_range(1, 60, 1);
     gtk_spin_button_set_value(GTK_SPIN_BUTTON(refresh_spin), refresh_interval);
 
