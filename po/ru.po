@@ -74,7 +74,7 @@ msgstr "Память: %d МБ из %d МБ использовано"
 
 #: ../src/functions.c:159
 #, c-format
-msgid "CPU usage: %0.0f %%"
+msgid "CPU usage: %0.0f%%"
 msgstr "Процессор: %0.0f %% используется"
 
 #: ../src/interface.c:84

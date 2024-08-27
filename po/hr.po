@@ -68,7 +68,7 @@ msgstr "Memorija: %d MB od %d MB korišteno"
 
 #: ../src/functions.c:159
 #, c-format
-msgid "CPU usage: %0.0f %%"
+msgid "CPU usage: %0.0f%%"
 msgstr "Korištenje CPU: %0.0f %%"
 
 #: ../src/interface.c:84

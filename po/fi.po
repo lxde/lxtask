@@ -72,7 +72,7 @@ msgstr "Muisti: %d Mt/%d Mt käytössä"
 
 #: ../src/functions.c:159
 #, c-format
-msgid "CPU usage: %0.0f %%"
+msgid "CPU usage: %0.0f%%"
 msgstr "CPU:n käyttö: %0.0f %%"
 
 #: ../src/interface.c:84

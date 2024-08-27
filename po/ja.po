@@ -72,7 +72,7 @@ msgstr "メモリ: %2$d MB 中の %1$d MB が使用中"
 
 #: ../src/functions.c:159
 #, c-format
-msgid "CPU usage: %0.0f %%"
+msgid "CPU usage: %0.0f%%"
 msgstr "CPU 使用量: %0.0f %%"
 
 #: ../src/interface.c:84

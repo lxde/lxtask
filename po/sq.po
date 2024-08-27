@@ -68,7 +68,7 @@ msgstr "përdorur %d kB nga %d kB"
 
 #: ../src/functions.c:159
 #, c-format
-msgid "CPU usage: %0.0f %%"
+msgid "CPU usage: %0.0f%%"
 msgstr ""
 
 #: ../src/interface.c:84

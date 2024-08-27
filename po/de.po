@@ -77,7 +77,7 @@ msgstr "Speicher: %d MB von %d MB benutzt"
 
 #: ../src/functions.c:159
 #, c-format
-msgid "CPU usage: %0.0f %%"
+msgid "CPU usage: %0.0f%%"
 msgstr "CPU-Auslastung: %0.0f%%"
 
 #: ../src/interface.c:84
