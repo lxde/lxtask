@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxtask 0.1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-27 16:38+0200\n"
+"POT-Creation-Date: 2024-08-28 20:12+0200\n"
 "PO-Revision-Date: 2015-05-19 22:20+0000\n"
 "Last-Translator: Felipe Braga <fbobraga@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
-#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:69
+#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:75
 msgid "Task Manager"
 msgstr "Gerenciador de tarefas"
 
@@ -55,15 +55,15 @@ msgstr ""
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Não foi possível atribuir a prioridade %d para a tarefa com o ID %d"
 
-#: ../src/callbacks.c:58
+#: ../src/callbacks.c:60
 msgid "Really kill the task?"
 msgstr "Realmente finalizar a tarefa?"
 
-#: ../src/callbacks.c:62
+#: ../src/callbacks.c:64
 msgid "Really terminate the task?"
 msgstr "Terminar realmente a tarefa?"
 
-#: ../src/callbacks.c:86
+#: ../src/callbacks.c:88
 msgid "Can't stop process self"
 msgstr "Não pode parar seu próprio processo"
 
@@ -84,127 +84,133 @@ msgstr "Uso de CPU: %0.0f %%"
 msgid "CPU usage: %0.1f%%"
 msgstr "Uso de CPU: %0.1f %%"
 
-#: ../src/interface.c:84
+#: ../src/interface.c:57
+#, fuzzy
+#| msgid "More details"
+msgid "Less details"
+msgstr "+/- detalhes"
+
+#: ../src/interface.c:57
+msgid "More details"
+msgstr "+/- detalhes"
+
+#: ../src/interface.c:90
 msgid "_File"
 msgstr "_Arquivo"
 
-#: ../src/interface.c:105
+#: ../src/interface.c:111
 msgid "_View"
 msgstr "_Ver"
 
-#: ../src/interface.c:111
+#: ../src/interface.c:117
 msgid "_Help"
 msgstr "Aj_uda"
 
-#: ../src/interface.c:138
+#: ../src/interface.c:144
 msgid "cpu usage"
 msgstr "Uso de CPU"
 
-#: ../src/interface.c:149
+#: ../src/interface.c:155
 msgid "memory usage"
 msgstr "Uso de memória"
 
-#: ../src/interface.c:177
-msgid "more details"
-msgstr "+/- detalhes"
-
-#: ../src/interface.c:202
+#: ../src/interface.c:210
 msgid "Command"
 msgstr "Comando"
 
-#: ../src/interface.c:213
+#: ../src/interface.c:221
 msgid "User"
 msgstr "Usuário"
 
-#: ../src/interface.c:227
+#: ../src/interface.c:235
 msgid "CPU"
 msgstr "CPU"
 
-#: ../src/interface.c:238
+#: ../src/interface.c:246
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:249
+#: ../src/interface.c:257
 msgid "VM-Size"
 msgstr "Tamanho da memória virtual"
 
-#: ../src/interface.c:260
+#: ../src/interface.c:268
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:271
+#: ../src/interface.c:279
 msgid "State"
 msgstr "Estado"
 
-#: ../src/interface.c:282
+#: ../src/interface.c:290
 msgid "Prio"
 msgstr "Prioridade"
 
-#: ../src/interface.c:293
+#: ../src/interface.c:301
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:314
+#: ../src/interface.c:322
 msgid "Stop"
 msgstr "Parar"
 
-#: ../src/interface.c:319
+#: ../src/interface.c:327
 msgid "Continue"
 msgstr "Continuar"
 
-#: ../src/interface.c:324
+#: ../src/interface.c:332
 msgid "Term"
 msgstr "Terminar"
 
-#: ../src/interface.c:329
+#: ../src/interface.c:337
 msgid "Kill"
 msgstr "Finalizar"
 
-#: ../src/interface.c:334
+#: ../src/interface.c:342
 msgid "Priority"
 msgstr "Prioridade"
 
-#: ../src/interface.c:347
+#: ../src/interface.c:355
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:352
+#: ../src/interface.c:360
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:357
+#: ../src/interface.c:365
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:370
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:367
+#: ../src/interface.c:375
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:393
+#: ../src/interface.c:401
 msgid "Show user tasks"
 msgstr "Mostrar tarefas do usuário"
 
-#: ../src/interface.c:398
+#: ../src/interface.c:406
 msgid "Show root tasks"
 msgstr "Mostrar tarefas do superusuário"
 
-#: ../src/interface.c:403
+#: ../src/interface.c:411
 msgid "Show other tasks"
 msgstr "Mostrar outras tarefas"
 
-#: ../src/interface.c:408
+#: ../src/interface.c:416
 msgid "Show full cmdline"
 msgstr "Mostrar linha de comandos completa"
 
-#: ../src/interface.c:413
+#: ../src/interface.c:421
 msgid "Show memory used by cache as free"
 msgstr "Mostrar a memória usada pelo cache como livre"
 
-#: ../src/interface.c:445
+#: ../src/interface.c:453
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -213,7 +219,7 @@ msgstr ""
 "Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:450
+#: ../src/interface.c:458
 msgid "translator-credits"
 msgstr ""
 "Adriano H. Hedler <suporte@templosite.com>, 2009-2014Enrico Nicoletto "
@@ -222,34 +228,34 @@ msgstr ""
 "<hpmachado@gnome.org>, 2008-2009Og Maciel <ogmaciel@gnome.org>, 2009Sérgio "
 "B. Cipolla <secipolla@gmail.com>, 2010-2011"
 
-#: ../src/interface.c:459 ../src/interface.c:461
+#: ../src/interface.c:467 ../src/interface.c:469
 msgid "LXTask"
 msgstr "LXTask"
 
-#: ../src/interface.c:465
+#: ../src/interface.c:473
 #, fuzzy
 msgid "Copyright (C) 2008-2024 LXDE team"
 msgstr "Copyright (C) 2008 Time do LXDE"
 
-#: ../src/interface.c:466
+#: ../src/interface.c:474
 msgid "Lightweight task manager for LXDE project"
 msgstr "Gerenciador de tarefas leve para o projeto LXDE"
 
 #. TRANSLATORS: If it is customary, insert a space before the double percent sign.
-#: ../src/interface.c:513
+#: ../src/interface.c:521
 #, c-format
 msgid "%0.1f%%"
 msgstr "%0.1f %%"
 
-#: ../src/interface.c:709
+#: ../src/interface.c:717
 msgid "Preferences"
 msgstr "Preferências"
 
-#: ../src/interface.c:717
+#: ../src/interface.c:725
 msgid "General"
 msgstr "Geral"
 
-#: ../src/interface.c:718
+#: ../src/interface.c:726
 msgid "Refresh rate (seconds):"
 msgstr "Taxa de atualização (segundos):"
 

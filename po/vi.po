@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-27 16:38+0200\n"
+"POT-Creation-Date: 2024-08-28 20:12+0200\n"
 "PO-Revision-Date: 2015-08-17 01:30+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
-#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:69
+#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:75
 msgid "Task Manager"
 msgstr "Quản lý tác vụ"
 
@@ -50,15 +50,15 @@ msgstr ""
 msgid "Couldn't set priority %d to the task with ID %d"
 msgstr "Không thể đặt ưu tiên %d cho tiến trình với ID %d"
 
-#: ../src/callbacks.c:58
+#: ../src/callbacks.c:60
 msgid "Really kill the task?"
 msgstr "Thực sự muốn tắt ngay tác vụ?"
 
-#: ../src/callbacks.c:62
+#: ../src/callbacks.c:64
 msgid "Really terminate the task?"
 msgstr "Thực sự muốn kết thúc tác vụ?"
 
-#: ../src/callbacks.c:86
+#: ../src/callbacks.c:88
 msgid "Can't stop process self"
 msgstr "Không thể dừng tiến trình"
 
@@ -79,127 +79,133 @@ msgstr "Mức sử dụng CPU: %0.0f %%"
 msgid "CPU usage: %0.1f%%"
 msgstr "Mức sử dụng CPU: %0.1f %%"
 
-#: ../src/interface.c:84
+#: ../src/interface.c:57
+#, fuzzy
+#| msgid "More details"
+msgid "Less details"
+msgstr "thêm chi tiết"
+
+#: ../src/interface.c:57
+msgid "More details"
+msgstr "thêm chi tiết"
+
+#: ../src/interface.c:90
 msgid "_File"
 msgstr "_Tập tin"
 
-#: ../src/interface.c:105
+#: ../src/interface.c:111
 msgid "_View"
 msgstr "_Xem"
 
-#: ../src/interface.c:111
+#: ../src/interface.c:117
 msgid "_Help"
 msgstr "T_rợ giúp"
 
-#: ../src/interface.c:138
+#: ../src/interface.c:144
 msgid "cpu usage"
 msgstr "sử dụng cpu"
 
-#: ../src/interface.c:149
+#: ../src/interface.c:155
 msgid "memory usage"
 msgstr "sử dụng bộ nhớ"
 
-#: ../src/interface.c:177
-msgid "more details"
-msgstr "thêm chi tiết"
-
-#: ../src/interface.c:202
+#: ../src/interface.c:210
 msgid "Command"
 msgstr "Câu lệnh"
 
-#: ../src/interface.c:213
+#: ../src/interface.c:221
 msgid "User"
 msgstr "Người dùng"
 
-#: ../src/interface.c:227
+#: ../src/interface.c:235
 msgid "CPU"
 msgstr "CPU"
 
-#: ../src/interface.c:238
+#: ../src/interface.c:246
 msgid "RSS"
 msgstr "RSS"
 
-#: ../src/interface.c:249
+#: ../src/interface.c:257
 msgid "VM-Size"
 msgstr "Kích thước bộ nhớ ảo"
 
-#: ../src/interface.c:260
+#: ../src/interface.c:268
 msgid "PID"
 msgstr "PID"
 
-#: ../src/interface.c:271
+#: ../src/interface.c:279
 msgid "State"
 msgstr "Trạng thái"
 
-#: ../src/interface.c:282
+#: ../src/interface.c:290
 msgid "Prio"
 msgstr "Độ ưu tiên"
 
-#: ../src/interface.c:293
+#: ../src/interface.c:301
 msgid "PPID"
 msgstr "PPID"
 
-#: ../src/interface.c:314
+#: ../src/interface.c:322
 msgid "Stop"
 msgstr "Dừng"
 
-#: ../src/interface.c:319
+#: ../src/interface.c:327
 msgid "Continue"
 msgstr "Tiếp tục"
 
-#: ../src/interface.c:324
+#: ../src/interface.c:332
 msgid "Term"
 msgstr "Tắt"
 
-#: ../src/interface.c:329
+#: ../src/interface.c:337
 msgid "Kill"
 msgstr "Tắt ngay"
 
-#: ../src/interface.c:334
+#: ../src/interface.c:342
 msgid "Priority"
 msgstr "Độ ưu tiên"
 
-#: ../src/interface.c:347
+#: ../src/interface.c:355
 msgid "  -10"
 msgstr "  -10"
 
-#: ../src/interface.c:352
+#: ../src/interface.c:360
 msgid "  -5"
 msgstr "  -5"
 
-#: ../src/interface.c:357
+#: ../src/interface.c:365
 msgid "    0"
 msgstr "    0"
 
-#: ../src/interface.c:362
+#: ../src/interface.c:370
 msgid "   5"
 msgstr "   5"
 
-#: ../src/interface.c:367
+#: ../src/interface.c:375
 msgid "   10"
 msgstr "   10"
 
-#: ../src/interface.c:393
+#: ../src/interface.c:401
 msgid "Show user tasks"
 msgstr "Hiển thị tác vụ của người dùng"
 
-#: ../src/interface.c:398
+#: ../src/interface.c:406
 msgid "Show root tasks"
 msgstr "Hiện thị tác vụ của root"
 
-#: ../src/interface.c:403
+#: ../src/interface.c:411
 msgid "Show other tasks"
 msgstr "Hiển thị các tác vụ khác"
 
-#: ../src/interface.c:408
+#: ../src/interface.c:416
 msgid "Show full cmdline"
 msgstr "Hiển thị đầy đủ dòng lệnh"
 
-#: ../src/interface.c:413
+#: ../src/interface.c:421
 msgid "Show memory used by cache as free"
 msgstr "Xem các vùng nhớ đệm (cache) như là vùng trống"
 
-#: ../src/interface.c:445
+#: ../src/interface.c:453
 msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
@@ -208,38 +214,38 @@ msgstr ""
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../src/interface.c:450
+#: ../src/interface.c:458
 msgid "translator-credits"
 msgstr "nhóm Việt hoá: Duy-Hieu Bui <scamemiv@gmail.com>"
 
-#: ../src/interface.c:459 ../src/interface.c:461
+#: ../src/interface.c:467 ../src/interface.c:469
 msgid "LXTask"
 msgstr "LXTask"
 
-#: ../src/interface.c:465
+#: ../src/interface.c:473
 #, fuzzy
 msgid "Copyright (C) 2008-2024 LXDE team"
 msgstr "Bản quyền (C) 2008 LXDE team"
 
-#: ../src/interface.c:466
+#: ../src/interface.c:474
 msgid "Lightweight task manager for LXDE project"
 msgstr "Chương trình quản lý tác vụ cho dự án LXDE"
 
 #. TRANSLATORS: If it is customary, insert a space before the double percent sign.
-#: ../src/interface.c:513
+#: ../src/interface.c:521
 #, c-format
 msgid "%0.1f%%"
 msgstr "%0.1f %%"
 
-#: ../src/interface.c:709
+#: ../src/interface.c:717
 msgid "Preferences"
 msgstr "Tùy chỉnh"
 
-#: ../src/interface.c:717
+#: ../src/interface.c:725
 msgid "General"
 msgstr "Tổng quát"
 
-#: ../src/interface.c:718
+#: ../src/interface.c:726
 msgid "Refresh rate (seconds):"
 msgstr "Tốc độ làm tươi (giây):"
 
