@@ -69,6 +69,7 @@ GtkWidget* create_main_window (void)
     GtkWidget *button3;
 
     GtkWidget *system_info_box;
+    GtkWidget *alignment;
 
     window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title (GTK_WINDOW (window), _("Task Manager"));
@@ -175,18 +176,20 @@ GtkWidget* create_main_window (void)
 
     gtk_tree_sortable_set_sort_column_id(GTK_TREE_SORTABLE(list_store), COLUMN_TIME, GTK_SORT_DESCENDING);
 
-    bbox1 = gtk_hbutton_box_new();
+    bbox1 = gtk_table_new(1, 2, FALSE);
     gtk_box_pack_start(GTK_BOX(vbox1), bbox1, FALSE, TRUE, 0);
     gtk_widget_show (bbox1);
 
     button3 = gtk_button_new_with_label(details());
     gtk_button_set_focus_on_click(GTK_BUTTON(button3), FALSE);
     gtk_widget_show (button3);
-    gtk_box_pack_start (GTK_BOX (bbox1), button3, FALSE, FALSE, 0);
+    gtk_table_attach(GTK_TABLE(bbox1), button3, 0, 1, 0, 1, GTK_FILL, GTK_FILL, 0, 0);
 
     button1 = gtk_button_new_from_stock ("gtk-quit");
-    gtk_widget_show (button1);
-    gtk_box_pack_start (GTK_BOX (bbox1), button1, FALSE, FALSE, 0);
+    alignment = gtk_alignment_new(1, 0.5, 0, 0);
+    gtk_container_add(GTK_CONTAINER(alignment), button1);
+    gtk_table_attach(GTK_TABLE(bbox1), alignment, 1, 2, 0, 1, GTK_FILL | GTK_EXPAND, GTK_FILL, 0, 0);
+    gtk_widget_show_all(alignment);
 
     g_signal_connect ((gpointer) window, "destroy", G_CALLBACK (on_quit), NULL);
     g_signal_connect_swapped ((gpointer) treeview, "button-press-event", G_CALLBACK(on_treeview1_button_press_event), NULL);
