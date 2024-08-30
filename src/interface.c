@@ -27,6 +27,11 @@
 #include <glib/gi18n.h>
 #include "interface.h"
 
+#if !GTK_CHECK_VERSION(2,22,0)
+#define GDK_KEY_Escape GDK_Escape
+#define GDK_KEY_W GDK_W
+#endif
+
 GtkTreeStore *list_store;
 GtkTreeSelection *selection;
 GtkWidget *treeview;
@@ -94,17 +99,10 @@ GtkWidget* create_main_window (void)
 	item = gtk_image_menu_item_new_from_stock( GTK_STOCK_QUIT, NULL );
 	GtkAccelGroup* accel_group = gtk_accel_group_new();
 	gtk_window_add_accel_group(GTK_WINDOW(window), accel_group);
-#if GTK_CHECK_VERSION(3,0,0)
 	gtk_widget_add_accelerator(item, "activate", accel_group,
 		GDK_KEY_Escape, (GdkModifierType)0, GTK_ACCEL_VISIBLE);
 	gtk_widget_add_accelerator(item, "activate", accel_group,
 		GDK_KEY_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-#else
-	gtk_widget_add_accelerator(item, "activate", accel_group,
-		GDK_Escape, (GdkModifierType)NULL, GTK_ACCEL_VISIBLE);
-	gtk_widget_add_accelerator(item, "activate", accel_group,
-		GDK_W, GDK_CONTROL_MASK, GTK_ACCEL_VISIBLE);
-#endif
 	gtk_menu_shell_append( (GtkMenuShell*)menu, item );
 	g_signal_connect( item, "activate", G_CALLBACK(gtk_main_quit), NULL );
 
