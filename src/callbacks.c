@@ -46,6 +46,57 @@ gboolean on_treeview1_button_press_event(GtkButton *button, GdkEventButton *even
     return FALSE;
 }
 
+static void set_popup_position (GtkMenu *menu, gint *x, gint *y, gboolean *push_in, GtkTreeView *treeview)
+{
+    GtkTreeModel *model;
+    GtkTreeIter iter;
+    GtkTreePath *path;
+    GdkRectangle rect;
+    gint bx, by;
+
+    gtk_tree_selection_get_selected(selection, &model, &iter);
+
+    /* scroll to selected line to make it visible */
+    path = gtk_tree_model_get_path(model, &iter);
+    gtk_tree_view_scroll_to_cell(treeview, path, NULL, FALSE, 0, 0);
+
+    /* get bin_window coordinates of the name column of the selected row */
+    gtk_tree_view_get_cell_area(treeview, path, gtk_tree_view_get_column(treeview, COLUMN_NAME), &rect);
+    gtk_tree_path_free(path);
+
+    /* GTK+ 3 returns coordinates outside the visible area
+       after scrolling a row to the visible treeview area */
+#if GTK_CHECK_VERSION(3,0,0)
+    int bh = gdk_window_get_height(gtk_tree_view_get_bin_window(treeview));
+    if (rect.y > bh) rect.y = bh - rect.height;
+    if (rect.y < 0) rect.y = 0;
+#endif
+
+    /* get screen coordinates of bin_window */
+    gdk_window_get_origin(gtk_tree_view_get_bin_window(treeview), &bx, &by);
+
+    /* add relative coordinates of column and center on it */
+    *x = bx + rect.x + rect.width / 2;
+    *y = by + rect.y + rect.height / 2;
+
+    /* place pop-up menu inside the screen if parts of it would be outside */
+    *push_in = TRUE;
+}
+
+gboolean on_treeview_popup_menu (GtkWidget *widget, gpointer user_data)
+{
+    GtkTreeModel *model;
+    GtkTreeIter iter;
+
+    if (gtk_tree_selection_get_selected(selection, &model, &iter))
+    {
+        gtk_menu_popup(GTK_MENU(taskpopup), NULL, NULL, (GtkMenuPositionFunc) set_popup_position, widget, 0, gtk_get_current_event_time());
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
 void handle_task_menu(GtkWidget *widget, gchar *signal)
 {
     GtkTreeModel *model;

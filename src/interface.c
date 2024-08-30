@@ -194,6 +194,7 @@ GtkWidget* create_main_window (void)
 
     g_signal_connect ((gpointer) window, "destroy", G_CALLBACK (on_quit), NULL);
     g_signal_connect_swapped ((gpointer) treeview, "button-press-event", G_CALLBACK(on_treeview1_button_press_event), NULL);
+    g_signal_connect(treeview, "popup-menu", G_CALLBACK(on_treeview_popup_menu), NULL);
     g_signal_connect ((gpointer) button1, "clicked",  G_CALLBACK (on_quit),  NULL);
     g_signal_connect ((gpointer) button3, "clicked",  G_CALLBACK (on_button3_toggled_event),  NULL);
 
