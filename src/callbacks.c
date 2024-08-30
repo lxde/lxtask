@@ -79,16 +79,16 @@ void handle_task_menu(GtkWidget *widget, gchar *signal)
         {
             gchar *task_id = "";
 
-                gtk_tree_model_get(model, &iter, COLUMN_PID, &task_id, -1);
-                if(atoi(task_id)==getpid() && task_action==SIGNAL_STOP)
-                {
-                    show_error(_("Can't stop process self"));
-                }
-                else
-                {
-                    send_signal_to_task(atoi(task_id), task_action);
-                    refresh_task_list();
-                }
+            gtk_tree_model_get(model, &iter, COLUMN_PID, &task_id, -1);
+            if(atoi(task_id)==getpid() && task_action==SIGNAL_STOP)
+            {
+                show_error(_("Can't stop process self"));
+            }
+            else
+            {
+                send_signal_to_task(atoi(task_id), task_action);
+                refresh_task_list();
+            }
         }
     }
 }
