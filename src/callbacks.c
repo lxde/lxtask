@@ -38,7 +38,7 @@ void on_button3_toggled_event(GtkButton *button, GdkEventButton *event)
 
 gboolean on_treeview1_button_press_event(GtkButton *button, GdkEventButton *event)
 {
-    if(event->button == 3)
+    if (event->button == 3 && event->type == GDK_BUTTON_PRESS)
     {
         GdkEventButton *mouseevent = (GdkEventButton *)event;
         if(taskpopup == NULL)
