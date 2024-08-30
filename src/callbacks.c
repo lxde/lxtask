@@ -41,8 +41,6 @@ gboolean on_treeview1_button_press_event(GtkButton *button, GdkEventButton *even
     if (event->button == 3 && event->type == GDK_BUTTON_PRESS)
     {
         GdkEventButton *mouseevent = (GdkEventButton *)event;
-        if(taskpopup == NULL)
-            taskpopup = create_taskpopup ();
         gtk_menu_popup(GTK_MENU(taskpopup), NULL, NULL, NULL, NULL, mouseevent->button, mouseevent->time);
     }
     return FALSE;
@@ -50,7 +48,10 @@ gboolean on_treeview1_button_press_event(GtkButton *button, GdkEventButton *even
 
 void handle_task_menu(GtkWidget *widget, gchar *signal)
 {
-    if(signal != NULL)
+    GtkTreeModel *model;
+    GtkTreeIter iter;
+
+    if (signal && gtk_tree_selection_get_selected(selection, &model, &iter))
     {
         gint task_action = SIGNAL_NO;
 
@@ -77,11 +78,7 @@ void handle_task_menu(GtkWidget *widget, gchar *signal)
         if(task_action != SIGNAL_NO)
         {
             gchar *task_id = "";
-            GtkTreeModel *model;
-            GtkTreeIter iter;
 
-            if(gtk_tree_selection_get_selected(selection, &model, &iter))
-            {
                 gtk_tree_model_get(model, &iter, COLUMN_PID, &task_id, -1);
                 if(atoi(task_id)==getpid() && task_action==SIGNAL_STOP)
                 {
@@ -92,7 +89,6 @@ void handle_task_menu(GtkWidget *widget, gchar *signal)
                     send_signal_to_task(atoi(task_id), task_action);
                     refresh_task_list();
                 }
-            }
         }
     }
 }

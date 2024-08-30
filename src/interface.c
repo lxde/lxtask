@@ -28,6 +28,7 @@
 #include "interface.h"
 
 #if !GTK_CHECK_VERSION(2,22,0)
+#define GDK_KEY_Delete GDK_Delete
 #define GDK_KEY_Escape GDK_Escape
 #define GDK_KEY_W GDK_W
 #endif
@@ -174,6 +175,8 @@ GtkWidget* create_main_window (void)
 
     gtk_tree_sortable_set_sort_column_id(GTK_TREE_SORTABLE(list_store), COLUMN_TIME, GTK_SORT_DESCENDING);
 
+    create_taskpopup(accel_group);
+
     bbox1 = gtk_table_new(1, 2, FALSE);
     gtk_box_pack_start(GTK_BOX(vbox1), bbox1, FALSE, TRUE, 0);
     gtk_widget_show (bbox1);
@@ -310,9 +313,8 @@ void create_list_store(void)
     change_list_store_view();
 }
 
-GtkWidget* create_taskpopup (void)
+void create_taskpopup (GtkAccelGroup *accel_group)
 {
-    GtkWidget *taskpopup;
     GtkWidget *menu_item;
 
     taskpopup = gtk_menu_new ();
@@ -328,11 +330,15 @@ GtkWidget* create_taskpopup (void)
     g_signal_connect ((gpointer) menu_item, "activate", G_CALLBACK (handle_task_menu), "CONT");
 
     menu_item = gtk_menu_item_new_with_mnemonic (_("Term"));
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group,
+        GDK_KEY_Delete, (GdkModifierType) 0, GTK_ACCEL_VISIBLE);
     gtk_widget_show (menu_item);
     gtk_container_add (GTK_CONTAINER (taskpopup), menu_item);
     g_signal_connect ((gpointer) menu_item, "activate", G_CALLBACK (handle_task_menu), "TERM");
 
     menu_item = gtk_menu_item_new_with_mnemonic (_("Kill"));
+    gtk_widget_add_accelerator(menu_item, "activate", accel_group,
+        GDK_KEY_Delete, GDK_SHIFT_MASK, GTK_ACCEL_VISIBLE);
     gtk_widget_show (menu_item);
     gtk_container_add (GTK_CONTAINER (taskpopup), menu_item);
     g_signal_connect ((gpointer) menu_item, "activate", G_CALLBACK (handle_task_menu), "KILL");
@@ -341,8 +347,6 @@ GtkWidget* create_taskpopup (void)
     gtk_menu_item_set_submenu((gpointer) menu_item, create_prio_submenu());
     gtk_widget_show (menu_item);
     gtk_container_add (GTK_CONTAINER (taskpopup), menu_item);
-
-    return taskpopup;
 }
 
 GtkWidget *create_prio_submenu(void)
