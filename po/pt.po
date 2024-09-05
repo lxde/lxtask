@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the lxtask package.
 # Nuno Miguel <nunis@netcabo.pt>, 2007.
 # Sérgio Marques <smarquespt@gmail.com>, 2009-2012.
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022, 2023.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022, 2023, 2024.
 # Adaptado ao acordo ortográfico de 1990
 msgid ""
 msgstr ""
 "Project-Id-Version: lxtask\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-28 20:12+0200\n"
-"PO-Revision-Date: 2023-08-01 15:21+0100\n"
+"PO-Revision-Date: 2024-09-05 23:15+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese PT\n"
 "Language: pt\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
 #: ../data/lxtask.desktop.in.h:1 ../src/interface.c:75
@@ -35,8 +35,7 @@ msgstr "Gestão de processos"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr ""
-"tarefa;terminar;suspender;processador;memória;monitorização;desempenho;"
+msgstr "tarefa;terminar;suspender;processador;memória;monitorização;desempenho;"
 
 #: ../src/xfce-taskmanager-linux.c:305
 #, c-format
@@ -84,14 +83,12 @@ msgid "CPU usage: %0.1f%%"
 msgstr "Utilização do CPU: %0.1f %%"
 
 #: ../src/interface.c:57
-#, fuzzy
-#| msgid "More details"
 msgid "Less details"
-msgstr "mais detalhes"
+msgstr "Menos detalhes"
 
 #: ../src/interface.c:57
 msgid "More details"
-msgstr "mais detalhes"
+msgstr "Mais detalhes"
 
 #: ../src/interface.c:90
 msgid "_File"
