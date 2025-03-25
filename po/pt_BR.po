@@ -6,13 +6,14 @@
 # Pablo Galletti Vieira <pbgozer@gmail.com>, 2007.
 # Henrique P. Machado <zehrique@gmail.com>, 2009.
 # Sérgio Cipolla <secipolla@gmail.com>, 2011.
+# Thiago Dalsoto <thiagodalsoto@msn.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: lxtask 0.1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-28 20:12+0200\n"
 "PO-Revision-Date: 2015-05-19 22:20+0000\n"
-"Last-Translator: Felipe Braga <fbobraga@gmail.com>\n"
+"Last-Translator: Thiago Dalsoto <thiagodalsoto@msn.com>\n"
 "Language-Team: Brazilian Portuguese <ldp-br@bazar2.conectiva.com.br>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -36,8 +37,7 @@ msgstr "Gerenciador de processos"
 
 #: ../data/lxtask.desktop.in.h:4
 msgid "task;kill;suspend;processor;memory;monitoring;performance;"
-msgstr ""
-"tarefa;finalizar;suspender;processador;memória;monitoração;performance;"
+msgstr "tarefa;finalizar;suspender;processador;memória;monitoração;performance;"
 
 #: ../src/xfce-taskmanager-linux.c:305
 #, c-format
@@ -85,14 +85,8 @@ msgid "CPU usage: %0.1f%%"
 msgstr "Uso de CPU: %0.1f %%"
 
 #: ../src/interface.c:57
-#, fuzzy
-#| msgid "More details"
-msgid "Less details"
-msgstr "+/- detalhes"
-
-#: ../src/interface.c:57
-msgid "More details"
-msgstr "+/- detalhes"
+msgid "more details"
+msgstr "+/- Detalhes"
 
 #: ../src/interface.c:90
 msgid "_File"
@@ -226,7 +220,8 @@ msgstr ""
 "<liverig@gmail.com>, 2013Fábio Antunes <fabio.antunes@hotmail.com>, "
 "2008Felipe Braga <fbobraga@gmail.com>, 2015Henrique P. Machado "
 "<hpmachado@gnome.org>, 2008-2009Og Maciel <ogmaciel@gnome.org>, 2009Sérgio "
-"B. Cipolla <secipolla@gmail.com>, 2010-2011"
+"B. Cipolla <secipolla@gmail.com>, 2010-2011 "
+"Thiago Dalsoto <thiagodalsoto@msn.com>,2025 "
 
 #: ../src/interface.c:467 ../src/interface.c:469
 msgid "LXTask"
@@ -234,7 +229,7 @@ msgstr "LXTask"
 
 #: ../src/interface.c:473
 #, fuzzy
-msgid "Copyright (C) 2008-2025 LXDE team"
+msgid "Copyright (C) 2008-2024 LXDE team"
 msgstr "Copyright (C) 2008 Time do LXDE"
 
 #: ../src/interface.c:474
