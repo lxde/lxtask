@@ -226,7 +226,7 @@ msgstr "LXTahchi"
 
 #: ../src/interface.c:473
 #, fuzzy
-msgid "Copyright (C) 2008-2024 LXDE team"
+msgid "Copyright (C) 2008-2025 LXDE team"
 msgstr "Drét de Copie / Copyright (C) 2008 LXDE team"
 
 #: ../src/interface.c:474

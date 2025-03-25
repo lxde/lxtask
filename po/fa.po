@@ -227,7 +227,7 @@ msgstr "ال‌ایکس‌تسک"
 
 #: ../src/interface.c:473
 #, fuzzy
-msgid "Copyright (C) 2008-2024 LXDE team"
+msgid "Copyright (C) 2008-2025 LXDE team"
 msgstr "حق نشر (C) 2008 تیم LXDE"
 
 #: ../src/interface.c:474

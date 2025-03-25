@@ -224,7 +224,7 @@ msgstr "LXTask"
 
 #: ../src/interface.c:473
 #, fuzzy
-msgid "Copyright (C) 2008-2024 LXDE team"
+msgid "Copyright (C) 2008-2025 LXDE team"
 msgstr "版权所有 (C) 2008 LXDE 团队"
 
 #: ../src/interface.c:474

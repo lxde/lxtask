@@ -224,7 +224,7 @@ msgstr "LXTaak"
 
 #: ../src/interface.c:473
 #, fuzzy
-msgid "Copyright (C) 2008-2024 LXDE team"
+msgid "Copyright (C) 2008-2025 LXDE team"
 msgstr "Kopiereg (C) 2008 LXDE-span"
 
 #: ../src/interface.c:474
