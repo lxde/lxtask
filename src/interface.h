@@ -69,10 +69,10 @@ void create_list_store(void);
 
 GtkWidget* create_main_window (void);
 void create_taskpopup (GtkAccelGroup *);
-GtkWidget* create_mainmenu (void);
+GtkWidget* create_mainmenu (GtkWidget *window);
 GtkWidget *create_prio_submenu(void);
 
-void show_about_dialog(void);
+void show_about_dialog(GtkWidget *item, gpointer window);
 
 void fill_list_item(guint i, GtkTreeIter *iter);
 void add_new_list_item(guint i);
