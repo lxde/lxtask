@@ -4,10 +4,10 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-28 20:12+0200\n"
-"PO-Revision-Date: 2018-09-28 11:32+0000\n"
+"PO-Revision-Date: 2025-10-31 11:40+0100\n"
 "Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: LXDE Catalan translators group\n"
 "Language: ca\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Poedit 3.6\n"
 "X-POOTLE-MTIME: 1439775046.447069\n"
 
 #: ../data/lxtask.desktop.in.h:1 ../src/interface.c:75
@@ -80,14 +80,12 @@ msgid "CPU usage: %0.1f%%"
 msgstr "Ús del processador: %0.1f %%"
 
 #: ../src/interface.c:57
-#, fuzzy
-#| msgid "More details"
 msgid "Less details"
-msgstr "més detalls"
+msgstr "Menys detalls"
 
 #: ../src/interface.c:57
 msgid "More details"
-msgstr "més detalls"
+msgstr "Més detalls"
 
 #: ../src/interface.c:90
 msgid "_File"
@@ -103,11 +101,11 @@ msgstr "_Ajuda"
 
 #: ../src/interface.c:144
 msgid "cpu usage"
-msgstr "ús de cpu"
+msgstr "ús de la cpu"
 
 #: ../src/interface.c:155
 msgid "memory usage"
-msgstr "ús de memòria"
+msgstr "ús de la memòria"
 
 #: ../src/interface.c:210
 msgid "Command"
@@ -187,7 +185,7 @@ msgstr "   10"
 
 #: ../src/interface.c:401
 msgid "Show user tasks"
-msgstr "Mostra les tasques d’usuari"
+msgstr "Mostra les tasques de l’usuari"
 
 #: ../src/interface.c:406
 msgid "Show root tasks"
@@ -210,22 +208,21 @@ msgid ""
 "LXTask is derived from Xfce4 Task Manager by:\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 msgstr ""
-"LXTask està basat en el Gestor de tasques d'Xfce4 Task Manager fet per\n"
+"L'LXTask està basat en el Gestor de tasques d'Xfce4 Task Manager fet per\n"
 "  * Johannes Zellner <webmaster@nebulon.de>"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: ../src/interface.c:458
 msgid "translator-credits"
-msgstr "Crèdits dels traductors"
+msgstr "Davidmp"
 
 #: ../src/interface.c:467 ../src/interface.c:469
 msgid "LXTask"
 msgstr "LXTask"
 
 #: ../src/interface.c:473
-#, fuzzy
 msgid "Copyright (C) 2008-2025 LXDE team"
-msgstr "Copyright (C) 2008 de l'equip LXDE"
+msgstr "Copyright (C) 2008-2025 Equip de l'LXDE"
 
 #: ../src/interface.c:474
 msgid "Lightweight task manager for LXDE project"
@@ -247,7 +244,7 @@ msgstr "General"
 
 #: ../src/interface.c:726
 msgid "Refresh rate (seconds):"
-msgstr "Rati de refresc (segons)"
+msgstr "Freqüència d'actualització (segons):"
 
 #: ../src/utils.c:43
 msgid "Error"
@@ -255,4 +252,4 @@ msgstr "Error"
 
 #: ../src/utils.c:56
 msgid "Confirm"
-msgstr "Confirma"
+msgstr "Confirmeu-ho"
