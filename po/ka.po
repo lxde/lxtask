@@ -1,0 +1,254 @@
+# Georgian translation for lxtask.
+# Copyright (C) 2026 lxtask authors.
+# This file is distributed under the same license as the lxtask package.
+# Ekaterine Papava <papava.e@gtu.ge>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lxtask\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-28 20:12+0200\n"
+"PO-Revision-Date: 2026-02-02 11:06+0100\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
+"Language-Team: Georgian <(nothing)>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+
+#: ../data/lxtask.desktop.in.h:1 ../src/interface.c:75
+msgid "Task Manager"
+msgstr "ამოცანების მმართველი"
+
+#: ../data/lxtask.desktop.in.h:2
+msgid "Manage running processes"
+msgstr "გაშვებული პროცესების მართვა"
+
+#: ../data/lxtask.desktop.in.h:3
+msgid "Process manager"
+msgstr "პროცესების მმართველი"
+
+#: ../data/lxtask.desktop.in.h:4
+msgid "task;kill;suspend;processor;memory;monitoring;performance;"
+msgstr "task;kill;suspend;processor;memory;monitoring;performance;ამოცანა;მოკვლა;პროცესორი;მეხსიერება;წარმადობა;მონიტორინგი;"
+
+#: ../src/xfce-taskmanager-linux.c:305
+#, c-format
+msgid ""
+"Couldn't send signal %d to the task with ID %d\n"
+"\n"
+"%s"
+msgstr ""
+"%d სიგნალის გაგზავნის შეცდომა ამოცანისთვის ID-ით %d\n"
+"\n"
+"%s"
+
+#: ../src/xfce-taskmanager-linux.c:319
+#, c-format
+msgid "Couldn't set priority %d to the task with ID %d"
+msgstr "პრიორიტეტის %d დაყენების შეცდომა ამოცანაზე ID-ით %d"
+
+#: ../src/callbacks.c:60
+msgid "Really kill the task?"
+msgstr "მართლა მოვკლა ამოცანა?"
+
+#: ../src/callbacks.c:64
+msgid "Really terminate the task?"
+msgstr "მართლა შევწყვიტო ამოცანის შესრულება?"
+
+#: ../src/callbacks.c:88
+msgid "Can't stop process self"
+msgstr "პროცესს self ვერ გააჩერებთ"
+
+#. FIXME: this will work only for < 2048 TB but where so many memory...
+#: ../src/functions.c:150
+#, c-format
+msgid "Memory: %d MB of %d MB used"
+msgstr "მეხსიერება: გამოყენებულია %d მბ %d მბ-დან"
+
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/functions.c:160
+#, c-format
+msgid "CPU usage: %0.0f%%"
+msgstr "CPU-ის გამოყენება: %0.0f%%"
+
+#: ../src/functions.c:160
+#, c-format
+msgid "CPU usage: %0.1f%%"
+msgstr "CPU-ის გამოყენება: %0.1f%%"
+
+#: ../src/interface.c:57
+msgid "Less details"
+msgstr "ნაკლები დეტალები"
+
+#: ../src/interface.c:57
+msgid "More details"
+msgstr "მეტი დეტალი"
+
+#: ../src/interface.c:90
+msgid "_File"
+msgstr "_ფაილი"
+
+#: ../src/interface.c:111
+msgid "_View"
+msgstr "_ხედი"
+
+#: ../src/interface.c:117
+msgid "_Help"
+msgstr "_დახმარება"
+
+#: ../src/interface.c:144
+msgid "cpu usage"
+msgstr "CPU-ის გამოყენება"
+
+#: ../src/interface.c:155
+msgid "memory usage"
+msgstr "მეხსიერების გამოყენება"
+
+#: ../src/interface.c:210
+msgid "Command"
+msgstr "ბრძანება"
+
+#: ../src/interface.c:221
+msgid "User"
+msgstr "მომხმარებელი"
+
+#: ../src/interface.c:235
+msgid "CPU"
+msgstr "პროცესორი"
+
+#: ../src/interface.c:246
+msgid "RSS"
+msgstr "RSS"
+
+#: ../src/interface.c:257
+msgid "VM-Size"
+msgstr "ვმ-ის ზომა"
+
+#: ../src/interface.c:268
+msgid "PID"
+msgstr "PID"
+
+#: ../src/interface.c:279
+msgid "State"
+msgstr "მდგომარეობა"
+
+#: ../src/interface.c:290
+msgid "Prio"
+msgstr "პრიო"
+
+#: ../src/interface.c:301
+msgid "PPID"
+msgstr "PPID"
+
+#: ../src/interface.c:322
+msgid "Stop"
+msgstr "გაჩერება"
+
+#: ../src/interface.c:327
+msgid "Continue"
+msgstr "გაგრძელება"
+
+#: ../src/interface.c:332
+msgid "Term"
+msgstr "ტერმინი"
+
+#: ../src/interface.c:337
+msgid "Kill"
+msgstr "მოკვლა"
+
+#: ../src/interface.c:342
+msgid "Priority"
+msgstr "პრიორიტეტი"
+
+#: ../src/interface.c:355
+msgid "  -10"
+msgstr "  -10"
+
+#: ../src/interface.c:360
+msgid "  -5"
+msgstr "  -5"
+
+#: ../src/interface.c:365
+msgid "    0"
+msgstr "    0"
+
+#: ../src/interface.c:370
+msgid "   5"
+msgstr "   5"
+
+#: ../src/interface.c:375
+msgid "   10"
+msgstr "   10"
+
+#: ../src/interface.c:401
+msgid "Show user tasks"
+msgstr "მომხმარებლის ამოცანების ჩვენება"
+
+#: ../src/interface.c:406
+msgid "Show root tasks"
+msgstr "root-ის ამოცანების ჩვენება"
+
+#: ../src/interface.c:411
+msgid "Show other tasks"
+msgstr "სხვა ამოცანების ჩვენება"
+
+#: ../src/interface.c:416
+msgid "Show full cmdline"
+msgstr "სრული ბრძანების სტრიქონის ჩვენება"
+
+#: ../src/interface.c:421
+msgid "Show memory used by cache as free"
+msgstr "კეშად გამოყენებული მეხსიერების თავისუფლად ჩვენება"
+
+#: ../src/interface.c:453
+msgid ""
+"LXTask is derived from Xfce4 Task Manager by:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+msgstr ""
+"LXTask დაფუძნებულია Xfce4-ის ამოცანების მმართველზე, რომლის ავტორია:\n"
+"  * Johannes Zellner <webmaster@nebulon.de>"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/interface.c:458
+msgid "translator-credits"
+msgstr "ეკატერინე პაპავა"
+
+#: ../src/interface.c:467 ../src/interface.c:469
+msgid "LXTask"
+msgstr "LXTask"
+
+#: ../src/interface.c:473
+msgid "Copyright (C) 2008-2024 LXDE team"
+msgstr "საავტორო უფლებები დაცულია (C) 2008-2024 LXDE-ის გუნდი"
+
+#: ../src/interface.c:474
+msgid "Lightweight task manager for LXDE project"
+msgstr "მსუბუქი ამოცანების მმართველი პროექტისთვის LXDE"
+
+#. TRANSLATORS: If it is customary, insert a space before the double percent sign.
+#: ../src/interface.c:521
+#, c-format
+msgid "%0.1f%%"
+msgstr "%0.1f%%"
+
+#: ../src/interface.c:717
+msgid "Preferences"
+msgstr "მორგება"
+
+#: ../src/interface.c:725
+msgid "General"
+msgstr "ზოგადი"
+
+#: ../src/interface.c:726
+msgid "Refresh rate (seconds):"
+msgstr "განახლების სიხშირე (წმ):"
+
+#: ../src/utils.c:43
+msgid "Error"
+msgstr "შეცდომა"
+
+#: ../src/utils.c:56
+msgid "Confirm"
+msgstr "დადასტურება"
