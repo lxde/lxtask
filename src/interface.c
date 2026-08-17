@@ -201,11 +201,28 @@ GtkWidget* create_main_window (void)
     return window;
 }
 
+static void
+cpu_cell_data_func(GtkTreeViewColumn *column,
+                   GtkCellRenderer   *renderer,
+                   GtkTreeModel      *model,
+                   GtkTreeIter       *iter,
+                   gpointer           data)
+{
+    guint column_id = GPOINTER_TO_UINT(data);
+    gdouble value;
+
+    gtk_tree_model_get(model, iter, column_id, &value, -1);
+    /* TRANSLATORS: If it is customary, insert a space before the double percent sign. */
+    gchar *text = g_strdup_printf("%0.1f%%", value);
+    g_object_set(renderer, "text", text, NULL);
+    g_free(text);
+}
+
 void create_list_store(void)
 {
     GtkCellRenderer *cell_renderer;
 
-    list_store = gtk_tree_store_new(N_COLS, G_TYPE_STRING, G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING);
+    list_store = gtk_tree_store_new(N_COLS, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_DOUBLE,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING,G_TYPE_STRING);
 
     cell_renderer = gtk_cell_renderer_text_new();
 
@@ -240,7 +257,9 @@ void create_list_store(void)
     }
     gtk_tree_view_column_set_resizable(column[2], TRUE);
     gtk_tree_view_column_set_sort_column_id(column[2], COLUMN_TIME);
-    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_TIME, compare_double_list_item, GUINT_TO_POINTER(COLUMN_TIME), NULL);
+    gtk_tree_view_column_set_cell_data_func(column[2], cell_renderer,
+      cpu_cell_data_func, GUINT_TO_POINTER(COLUMN_TIME), NULL
+    );
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[2]);
 
     column[3] = gtk_tree_view_column_new_with_attributes(_("RSS"), cell_renderer, "text", COLUMN_RSS, NULL);
@@ -517,9 +536,7 @@ void fill_list_item(guint i, GtkTreeIter *iter)
         gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_RSS, size_to_string(buf, (task->rss)*1024), -1);
 
         gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_UNAME, task->uname, -1);
-        /* TRANSLATORS: If it is customary, insert a space before the double percent sign. */
-        sprintf(buf, _("%0.1f%%"), task->time_percentage);
-        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_TIME, buf, -1);
+        gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_TIME, (gdouble) task->time_percentage, -1);
         sprintf(buf,"%d",task->prio);
         gtk_tree_store_set(GTK_TREE_STORE(list_store), iter, COLUMN_PRIO, buf, -1);    /* my change */
     }
@@ -597,28 +614,6 @@ gint compare_int_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter 
     g_free(s2);
 
     return i1 - i2;
-}
-
-gint compare_double_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
-{
-    gchar *s1;
-    gchar *s2;
-
-    gtk_tree_model_get(model, iter1, GPOINTER_TO_UINT(column), &s1, -1);
-    gtk_tree_model_get(model, iter2, GPOINTER_TO_UINT(column), &s2, -1);
-
-    gdouble d1 = 0.0;
-    gdouble d2 = 0.0;
-
-    if(s1 != NULL)
-        d1 = atof(s1);
-    if(s2 != NULL)
-        d2 = atof(s2);
-
-    g_free(s1);
-    g_free(s2);
-
-    return (d1 > d2) - (d1 < d2);
 }
 
 gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
