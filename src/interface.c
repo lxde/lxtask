@@ -217,7 +217,6 @@ void create_list_store(void)
     }
     gtk_tree_view_column_set_resizable(column[0], TRUE);
     gtk_tree_view_column_set_sort_column_id(column[0], COLUMN_NAME);
-    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_NAME, compare_string_list_item, GUINT_TO_POINTER(COLUMN_NAME), NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[0]);
 
     column[1] = gtk_tree_view_column_new_with_attributes(_("User"), cell_renderer, "text", COLUMN_UNAME, NULL);
@@ -228,7 +227,6 @@ void create_list_store(void)
     }
     gtk_tree_view_column_set_resizable(column[1], TRUE);
     gtk_tree_view_column_set_sort_column_id(column[1], COLUMN_UNAME);
-    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_UNAME, compare_string_list_item, GUINT_TO_POINTER(COLUMN_UNAME), NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[1]);
 
     cell_renderer = gtk_cell_renderer_text_new();
@@ -286,7 +284,6 @@ void create_list_store(void)
     }
     gtk_tree_view_column_set_resizable(column[6], TRUE);
     gtk_tree_view_column_set_sort_column_id(column[6], COLUMN_STATE);
-    gtk_tree_sortable_set_sort_func(GTK_TREE_SORTABLE(list_store), COLUMN_STATE, compare_string_list_item, GUINT_TO_POINTER(COLUMN_STATE), NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(treeview), column[6]);
 
     column[7] = gtk_tree_view_column_new_with_attributes(_("Prio"), cell_renderer, "text", COLUMN_PRIO, NULL);
@@ -639,25 +636,6 @@ gint compare_size_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter
     g_free(s2);
 
     return (i1 > i2) - (i1 < i2);
-}
-
-gint compare_string_list_item(GtkTreeModel *model, GtkTreeIter *iter1, GtkTreeIter *iter2, gpointer column)
-{
-    gchar *s1;
-    gchar *s2;
-
-    gint ret = 0;
-
-    gtk_tree_model_get(model, iter1, GPOINTER_TO_UINT(column), &s1, -1);
-    gtk_tree_model_get(model, iter2, GPOINTER_TO_UINT(column), &s2, -1);
-
-    if(s1 != NULL && s2 != NULL)
-        ret = strcasecmp(s1, s2);
-
-    g_free(s1);
-    g_free(s2);
-
-    return ret;
 }
 
 /* change the task view (user, root, other) */
